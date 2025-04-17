@@ -1,7 +1,7 @@
 title: CONFEST 2026
 preposition: at
 description: >-
-  Conference of a random organization on January 1st in Zurich, Switzerland
+  CONFEST in Liverpool, UK
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://confest-2026.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 
@@ -65,9 +65,9 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: Digital Society Switzerland
+      name: University of Liverpool
       # img: ''
-      url: 'https://digitale-gesellschaft.ch/'
+      #url: 'https://digitale-gesellschaft.ch/'
     breakpoint: md
     links:
       - name: Program
@@ -81,9 +81,9 @@ conference:
       - name: Previous Editions
         menu:
           - name: 2025 (current)
-            absolute-url: https://conferences.au.dk/confest2025/
+            absolute_url: https://conferences.au.dk/confest2025/
           - name: 2024
-            absolute-url: https://confest2024.github.io
+            absolute_url: https://confest2024.github.io
           #   relative_url: /2019/
           # - name: 2018
           #   relative_url: /2018/
@@ -120,9 +120,9 @@ conference:
         ---
 
         See the [README](github.com/DigitaleGesellschaft/jekyll-theme-conference/) on the project's GitHub repository for further information on how to configure and adapt it to your needs.
-    - text: This is just some random content for demonstration purposes.
+    - text: Don't look at me! I am under construction!
       color: warning
-      pages_only: true
+      pages_only: false
 
   # Live indications
   live:
@@ -165,7 +165,7 @@ conference:
     # display it.
     map:
       # Initial map center point
-      home_coord: 47.37808, 8.53935
+      home_coord: 53.405122, -2.963189
       # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
       # The following do match the Bootstrap design not too badly:
       #   - Thunderforest.Neighbourhood
