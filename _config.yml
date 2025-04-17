@@ -72,7 +72,7 @@ conference:
     links:
       - name: Conferences
         menu:
-        - name: Concur
+        - name: CONCUR
           relative_url: /concur
         - name: QEST + FORMATS 
           absolute_url: https://www.qest-formats.org/
@@ -82,12 +82,12 @@ conference:
         menu:
           - name: SOS/EXPRESS
             absolute_url: https://conferences.au.dk/confest2025/
-          - name: 2024
-            absolute_url: https://confest2024.github.io
+          - name: RADICAL
+            absolute_url: https://sites.google.com/site/radicalconcur/
       - name: Program
         relative_url: /program/
-      - name: Talks
-        relative_url: /talks/
+      # - name: Talks
+      #   relative_url: /talks/
       - name: Speakers
         relative_url: /speakers/
       - name: Location
