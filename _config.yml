@@ -66,7 +66,7 @@ conference:
   navigation:
     logo:
       name: University of Liverpool
-      # img: ''
+      img: 'silly.png'
       #url: 'https://digitale-gesellschaft.ch/'
     breakpoint: md
     links:
