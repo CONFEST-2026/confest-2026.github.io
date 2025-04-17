@@ -70,6 +70,18 @@ conference:
       #url: 'https://digitale-gesellschaft.ch/'
     breakpoint: md
     links:
+      - name: Concur
+        relative_url: /concur
+      - name: QEST + FORMATS 
+        absolute_url: https://www.qest-formats.org/
+      - name: FMICS
+        absolute_url: https://fmics2025-ag-sks-websites-135be46425c7ded8977ddfe65ca7e22ac5bee.zivgitlabpages.uni-muenster.de//
+      - name: Workshops
+        menu:
+          - name: SOS/EXPRESS
+            absolute_url: https://conferences.au.dk/confest2025/
+          - name: 2024
+            absolute_url: https://confest2024.github.io
       - name: Program
         relative_url: /program/
       - name: Talks
