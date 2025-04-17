@@ -66,16 +66,18 @@ conference:
   navigation:
     logo:
       name: University of Liverpool
-      img: 'silly.png'
-      #url: 'https://digitale-gesellschaft.ch/'
+      img: 'uol.png'
+      url: 'https://www.liverpool.ac.uk/'
     breakpoint: md
     links:
-      - name: Concur
-        relative_url: /concur
-      - name: QEST + FORMATS 
-        absolute_url: https://www.qest-formats.org/
-      - name: FMICS
-        absolute_url: https://fmics2025-ag-sks-websites-135be46425c7ded8977ddfe65ca7e22ac5bee.zivgitlabpages.uni-muenster.de//
+      - name: Conferences
+        menu:
+        - name: Concur
+          relative_url: /concur
+        - name: QEST + FORMATS 
+          absolute_url: https://www.qest-formats.org/
+        - name: FMICS
+          absolute_url: https://fmics2025-ag-sks-websites-135be46425c7ded8977ddfe65ca7e22ac5bee.zivgitlabpages.uni-muenster.de//
       - name: Workshops
         menu:
           - name: SOS/EXPRESS
