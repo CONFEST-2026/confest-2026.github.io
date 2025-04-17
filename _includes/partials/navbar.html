@@ -85,7 +85,7 @@
       <div class="navbar-brand navbar-logo mr-0 ml-1 text-right overflow-hidden">
         <a href="{{ site.conference.navigation.logo.url }}">
           {%- if site.conference.navigation.logo.img %}
-            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" />
+            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" style="height: 1.5em"/>
           {%- else %}
             {{ site.conference.navigation.logo.name }}
           {%- endif %}
