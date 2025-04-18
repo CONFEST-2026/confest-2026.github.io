@@ -1,7 +1,7 @@
 title: CONFEST 2026
 preposition: at
 description: >-
-  CONFEST in Liverpool, UK
+  Liverpool, UK
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://confest-2026.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 
@@ -84,14 +84,22 @@ conference:
             absolute_url: https://conferences.au.dk/confest2025/
           - name: RADICAL
             absolute_url: https://sites.google.com/site/radicalconcur/
-      - name: Program
-        relative_url: /program/
-      # - name: Talks
-      #   relative_url: /talks/
-      - name: Speakers
-        relative_url: /speakers/
-      - name: Location
-        relative_url: /location/
+
+      - name: Local Info
+        menu:
+        - name: Location
+          relative_url: /location/
+        - name: Program
+          disabled: true
+          relative_url: /program/
+        # - name: Talks
+        #   relative_url: /talks/
+        - name: Speakers
+          disabled: true
+          relative_url: /speakers/
+        - name: Chat
+          disabled: true
+          absolute_url: https://highlights.zulipchat.com/
       - name: Previous Editions
         menu:
           - name: 2025 (current)
@@ -125,18 +133,18 @@ conference:
 
   # Information boxes
   info_bars:
-    - title: Welcome to the Conference Theme for Jekyll!
-      color: primary
-      main_only: true
-      text: |
-        The Theme was originally made for the [Winterkongress](https://www.digitale-gesellschaft.ch/kongress/), a yearly conference of the [Digital Society Switzerland](https://digitale-gesellschaft.ch/).
-
-        ---
-
-        See the [README](github.com/DigitaleGesellschaft/jekyll-theme-conference/) on the project's GitHub repository for further information on how to configure and adapt it to your needs.
-    - text: Don't look at me! I am under construction!
+    # - title: Welcome to the Conference Theme for Jekyll!
+    #   color: primary
+    #   main_only: true
+    #   text: |
+    #     The Theme was originally made for the [Winterkongress](https://www.digitale-gesellschaft.ch/kongress/), a yearly conference of the [Digital Society Switzerland](https://digitale-gesellschaft.ch/).
+    #
+    #     ---
+    #
+    #     See the [README](github.com/DigitaleGesellschaft/jekyll-theme-conference/) on the project's GitHub repository for further information on how to configure and adapt it to your needs.
+    - text: Don't look at me too closely yet! I am under construction!
       color: warning
-      pages_only: false
+      main_only: false
 
   # Live indications
   live:
