@@ -10,6 +10,6 @@ The 2026 edition will take place at the University of Liverpool on **September 1
 **Organisation**
 
 [Daniel Hausmann](https://www.csc.liv.ac.uk/~hausmann/) (publicity)  
-[David Pursert](https://www.davidpurser.net) (co-chair)  
+[David Purser](https://www.davidpurser.net) (co-chair)  
 [Parick Totzke](https://www.csc.liv.ac.uk/~patrick/) (co-conut)  
 [Shufang Zhu](https://shufang-zhu.github.io) (workshops)  
