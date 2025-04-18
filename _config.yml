@@ -123,11 +123,11 @@ conference:
     # logo:
     #   img: ''
     links:
-      - name: How to get there
-        relative_url: /location/
-      - name: Program
-        relative_url: /program/
-        disabled: true
+      # - name: How to get there
+      #   relative_url: /location/
+      # - name: Program
+      #   relative_url: /program/
+      #   disabled: true
       # - name: Tickets
       #   disabled: true
       #   absolute_url: ''
