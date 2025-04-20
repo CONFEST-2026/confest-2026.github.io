@@ -111,7 +111,7 @@ conference:
         menu:
           - name: 2025 (Aarhus, current)
             absolute_url: https://conferences.au.dk/confest2025/
-           - name: 2024 (Calgary)
+          - name: 2024 (Calgary)
             absolute_url: https://confest2024.github.io
           - name: 2023 (Antwerp)
             absolute_url: https://web.archive.org/web/20231103120956/https://www.uantwerpen.be/en/conferences/confest-2023/
