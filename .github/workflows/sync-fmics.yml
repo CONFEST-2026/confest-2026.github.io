@@ -1,0 +1,36 @@
+name: Sync fmics and Redeploy
+
+on:
+  repository_dispatch:
+    types: [sync-fmics]  # Custom event type for triggering the sync
+
+jobs:
+  sync-fmics:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo-1
+      uses: actions/checkout@v2
+      with:
+        ref: main  # or gh-pages, depending on your deployment setup
+
+    - name: Checkout repo-2 (fmics content)
+      uses: actions/checkout@v2
+      with:
+        repository: '2026/fmics'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: fmics
+
+    - name: Update submodule to latest commit
+      run: |
+        git submodule update --remote --merge
+        git add fmics
+        git commit -m "Update fmics content from repo-2"
+        git push origin main  # Push changes to repo-1
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./  # Directory to publish to GitHub Pages (adjust if needed)
+        publish_branch: gh-pages  # Branch where GitHub Pages is deployed
