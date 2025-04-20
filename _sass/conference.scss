@@ -14,6 +14,8 @@ $primary:                      #074 !default;
 $fa-font-path: '/assets/webfonts' !default;
 
 
+$uol-darker :  rgb(24,30,59);
+
 // Import Sources
 
 //   Style Framework: Bootstrap
@@ -76,6 +78,23 @@ ul.btn-group {
 }
 
 // Custom Styling
+
+.navbar-darker a { 
+  color : white !important ;
+}
+
+.navbar .dropdown-item {
+  color: $uol-darker !important;
+}
+
+
+.navbar {
+  background-color: rgb(33, 43, 88) !important;
+}
+
+.navbar-darker {
+  background-color: $uol-darker !important;
+}
 
 // General
 
