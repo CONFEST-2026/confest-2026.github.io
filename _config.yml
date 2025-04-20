@@ -109,30 +109,42 @@ conference:
           absolute_url: https://highlights.zulipchat.com/
       - name: Previous Editions
         menu:
-          - name: 2025 (current)
+          - name: 2025 (Aarhus, current)
             absolute_url: https://conferences.au.dk/confest2025/
-          - name: 2024
+           - name: 2024 (Calgary)
             absolute_url: https://confest2024.github.io
-          - name: 2023
+          - name: 2023 (Antwerp)
             absolute_url: https://web.archive.org/web/20231103120956/https://www.uantwerpen.be/en/conferences/confest-2023/
-          - name: 2022
+          - name: 2022 (Warsaw)
             absolute_url: https://concur2022.mimuw.edu.pl/
-          - name: 2021
+          - name: 2021 (Paris/Online)
             absolute_url: https://qonfest2021.lacl.fr/concur21.php
-          - name: 2020
+          - name: 2020 (Vienna/Online)
             absolute_url: https://concur2020.forsyte.at/
-          - name: 2019
+          - name: 2019 (Amsterdam)
             absolute_url: https://event.cwi.nl/concur2019/
-          - name: 2018
+          - name: 2018 (Beijing)
             absolute_url: https://lcs.ios.ac.cn/concur2018/
-          - name: 2017
+          - name: 2017 (Berlin)
             absolute_url: https://www.concur2017.tu-berlin.de/
-          - name: 2016
+          - name: 2016 (Québec City)
             absolute_url: https://www.concur2016.ulaval.ca/no_cache/home/index.html
-          - name: 2015
+          - name: 2015 (Madrid)
             absolute_url: https://mafalda.fdi.ucm.es/concur2015/
-          - name: 2014
+          - name: 2014 (Rome)
             absolute_url: https://www.concur2014.org/
+          - name: 2013 (Buenos Aires)
+            absolute_url: http://www.concur-conferences.org/
+          - name: 2012 (Newcastle upon Tyne)
+            absolute_url: https://web.archive.org/web/20120822151947/http://conferences.ncl.ac.uk/concur-2012/
+          - name: 2011 (Aachen)
+            absolute_url: https://web.archive.org/web/20110813223556/https://concur2011.rwth-aachen.de/concur2011
+          - name: 2010 (Paris)
+            absolute_url: https://web.archive.org/web/20100826102751/http://concur2010.inria.fr/
+          - name: 2009 (Bologna)
+            absolute_url: http://concur09.cs.unibo.it/satevents.html
+          - name: 2008 (Toronto)
+            absolute_url: https://web.archive.org/web/20081231155757/http://www.cse.yorku.ca/concur08/
 
           #   relative_url: /2019/
           # - name: 2018
