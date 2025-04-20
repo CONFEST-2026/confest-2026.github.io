@@ -35,10 +35,10 @@
 </head>
 
 <body class="pb-4">
-  <header>
+  <header class="mb-2">
     <!-- navigation bar (web only): -->
     {%- include partials/navbar.html -%}
-
+    {%- include partials/navbar_subnav.html -%}
     {%- unless page.url == "/" -%}
       <!-- site title (print only): -->
       <div class="container d-none d-print-block mt-4 mb-4">
@@ -53,5 +53,3 @@
 
     {%- include partials/info_bar.html -%}
 
-
-    {%- include partials/navbar_subnav.html -%}

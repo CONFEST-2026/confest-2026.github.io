@@ -71,8 +71,9 @@ conference:
     breakpoint: lg
     links:
       - name: CONCUR
+        relative_url: /concur
         subnav: concur
-        menu:
+        submenu:
         - name: CONCUR home
           relative_url: /concur
         - name: Call for papers
@@ -84,6 +85,13 @@ conference:
       - name: Workshops
         subnav: workshops
         menu:
+          - name: Call for Workshops
+            relative_url: /workshops
+          - name: SOS/EXPRESS
+            absolute_url: https://conferences.au.dk/confest2025/
+          - name: RADICAL
+            absolute_url: https://sites.google.com/site/radicalconcur/
+        submenu:
           - name: Call for Workshops
             relative_url: /workshops
           - name: SOS/EXPRESS
