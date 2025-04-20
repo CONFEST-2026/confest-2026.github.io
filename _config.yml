@@ -145,6 +145,28 @@ conference:
             absolute_url: http://concur09.cs.unibo.it/satevents.html
           - name: 2008 (Toronto)
             absolute_url: https://web.archive.org/web/20081231155757/http://www.cse.yorku.ca/concur08/
+          - name: 2007 (Lisbon)
+            absolute_url: https://web.archive.org/web/20240503021347/http://concur07.di.fc.ul.pt/
+          - name: 2006 (Bonn)
+            absolute_url: https://depend.cs.uni-saarland.de/index.php?id=355
+          - name: 2005 (San Francisco)
+            absolute_url: https://web.archive.org/web/20050826222047/http://www.soe.ucsc.edu/concur05/
+          - name: 2004 (London)
+            absolute_url: https://www.doc.ic.ac.uk/concur2004/
+          - name: 2003 (Marseille)
+            absolute_url: https://web.archive.org/web/20050730080515/http://concur03.univ-mrs.fr/
+          - name: 2002 (Brno)
+            absolute_url: https://www.fi.muni.cz/concur2002/
+          - name: 2001 (Aalborg)
+            absolute_url: https://web.archive.org/web/20020123054307/http://concur01.cs.auc.dk/
+          - name: 2000 (Pennsylvania)
+            absolute_url: https://web.archive.org/web/20021206184454/http://www.cse.psu.edu/concur2000/
+          - name: 1999 (Eindhoven)
+            absolute_url: https://web.archive.org/web/20000817170037/http://www.win.tue.nl/concur99/
+          - name: 1998 (Nice)
+            absolute_url: https://web.archive.org/web/19990224213620/http://www-sop.inria.fr/concur98/
+          - name: 1997 (Warsaw)
+            absolute_url: https://web.archive.org/web/19990221110042/http://www.ipipan.waw.pl/conferences/concur97/
 
           #   relative_url: /2019/
           # - name: 2018
