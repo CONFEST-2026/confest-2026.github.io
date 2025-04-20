@@ -83,14 +83,15 @@ conference:
       - name: FMICS
         absolute_url: https://fmics2025-ag-sks-websites-135be46425c7ded8977ddfe65ca7e22ac5bee.zivgitlabpages.uni-muenster.de//
       - name: Workshops
+        relative_url: /workshops
         subnav: workshops
-        menu:
-          - name: Call for Workshops
-            relative_url: /workshops
-          - name: SOS/EXPRESS
-            absolute_url: https://conferences.au.dk/confest2025/
-          - name: RADICAL
-            absolute_url: https://sites.google.com/site/radicalconcur/
+        # menu:
+        #   - name: Call for Workshops
+        #     relative_url: /workshops
+        #   - name: SOS/EXPRESS
+        #     absolute_url: https://conferences.au.dk/confest2025/
+        #   - name: RADICAL
+        #     absolute_url: https://sites.google.com/site/radicalconcur/
         submenu:
           - name: Call for Workshops
             relative_url: /workshops
