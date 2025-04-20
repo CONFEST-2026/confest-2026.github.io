@@ -1,0 +1,27 @@
+ 
+{% if page.subnav %}
+  <ul class="nav nav-pills d-print-none mb-3">
+    {% for topnav in  site.conference.navigation.links -%}
+      {% if topnav.menu and topnav.subnav and topnav.subnav == page.subnav  -%}
+            {%- for link in topnav.menu -%}
+            <li> 
+              {% assign current_url = page.url | remove: '.html' | remove: '/' %}
+              {% assign nav_url = link.relative_url | remove: '/' %}
+              {%- assign link_styleclass = "nav-link" -%}
+              {%- if current_url == nav_url -%}
+                {%- assign link_styleclass = link_styleclass | append: ' active' -%}
+              {%- endif -%}
+              {%- include partials/get_link.html -%}
+              {{ link_tag }}
+                {{ link.name }}
+              </a>
+
+
+              </li>
+            {%- endfor %}
+      {%- endif %}
+      
+    {%- endfor %}
+  </ul>
+
+{%- endif %}

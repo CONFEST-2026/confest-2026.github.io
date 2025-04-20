@@ -1,5 +1,6 @@
 ---
-layout: concur
+layout: default
+subnav: concur
 ---
 
 
