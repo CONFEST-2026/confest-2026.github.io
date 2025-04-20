@@ -70,6 +70,13 @@ conference:
       url: 'https://www.liverpool.ac.uk/'
     breakpoint: md
     links:
+
+      - name: CONCUR
+        menu:
+        - name: CONCUR home
+          relative_url: /concur
+        - name: Call for papers
+          relative_url: /concur/call-for-papers
       - name: Conferences
         menu:
         - name: CONCUR
@@ -106,6 +113,27 @@ conference:
             absolute_url: https://conferences.au.dk/confest2025/
           - name: 2024
             absolute_url: https://confest2024.github.io
+          - name: 2023
+            absolute_url: https://web.archive.org/web/20231103120956/https://www.uantwerpen.be/en/conferences/confest-2023/
+          - name: 2022
+            absolute_url: https://concur2022.mimuw.edu.pl/
+          - name: 2021
+            absolute_url: https://qonfest2021.lacl.fr/concur21.php
+          - name: 2020
+            absolute_url: https://concur2020.forsyte.at/
+          - name: 2019
+            absolute_url: https://event.cwi.nl/concur2019/
+          - name: 2018
+            absolute_url: https://lcs.ios.ac.cn/concur2018/
+          - name: 2017
+            absolute_url: https://www.concur2017.tu-berlin.de/
+          - name: 2016
+            absolute_url: https://www.concur2016.ulaval.ca/no_cache/home/index.html
+          - name: 2015
+            absolute_url: https://mafalda.fdi.ucm.es/concur2015/
+          - name: 2014
+            absolute_url: https://www.concur2014.org/
+
           #   relative_url: /2019/
           # - name: 2018
           #   relative_url: /2018/
