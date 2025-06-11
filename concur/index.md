@@ -27,8 +27,8 @@ The purpose of CONCUR 2026, the 37th International Conference on Concurrency The
  </head>
  <body>
     <div class="row">
-        <div class="column" style="background-color:#dbdbd4;">
-            <p>News:</p>
+        <div class="column">
+            <p><b>News:</b></p>
             <p>TBA</p>
         </div>   
      <style>
@@ -38,8 +38,8 @@ The purpose of CONCUR 2026, the 37th International Conference on Concurrency The
         }
     </style>
 
-        <div class="column" style="background-color:#dbdbd4;">
-            <p>Important Dates:</p>
+        <div class="column">
+            <p><b>Important Dates:</b></p>
             <p>TBA</p>
         </div>
     </div>
