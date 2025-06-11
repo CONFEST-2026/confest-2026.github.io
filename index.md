@@ -14,7 +14,7 @@ The 2026 edition will take place at the University of Liverpool on **September 1
 [Parick Totzke](https://www.csc.liv.ac.uk/~patrick/) (chair)  
 [Shufang Zhu](https://shufang-zhu.github.io) (workshops)  
 
-## Main Conferences
+### Main Conferences
 
 **[CONCUR 2026](https://confest-2026.github.io/concur), the 37th International Conference on Concurrency Theory**
 
