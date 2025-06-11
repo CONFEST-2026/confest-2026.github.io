@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-<img src="uol.jpg" width="200" height="100">
+<img src="/assets/images/uol.jpg" width="200" height="100">
 
 CONFEST brings together researchers, developers, and students in computer science, in order to advance the theory of concurrency, the study of stochastic and timed systems, and the application of formal methods to industrial systems. 
 
