@@ -27,13 +27,20 @@ The purpose of CONCUR 2026, the 37th International Conference on Concurrency The
  </head>
  <body>
     <div class="row">
-        <div class="column" style="background-color:#FFB695;">
-            <h2>Column 1</h2>
-            <p>Data..</p>
-        </div>
-        <div class="column" style="background-color:#96D1CD;">
-            <h2>Column 2</h2>
-            <p>Data..</p>
+        <div class="column" style="background-color:#dbdbd4;">
+            <p>News:</p>
+            <p>TBA</p>
+        </div>   
+     <style>
+        .vertical {
+            border-left: 2px solid black;
+            height: 200px;
+        }
+    </style>
+
+        <div class="column" style="background-color:#dbdbd4;">
+            <p>Important Dates:</p>
+            <p>TBA</p>
         </div>
     </div>
  </body>
