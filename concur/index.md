@@ -14,7 +14,6 @@ The purpose of CONCUR 2026, the 37th International Conference on Concurrency The
     }
     /* Set additional styling options for the columns*/
     .column {
-    float: left;
     width: 50%;
     }
 
@@ -31,13 +30,6 @@ The purpose of CONCUR 2026, the 37th International Conference on Concurrency The
             <p><b>News:</b></p>
             <p>TBA</p>
         </div>   
-     <style>
-        .vertical {
-            border-left: 2px solid black;
-            height: 200px;
-        }
-    </style>
-
         <div class="column">
             <p><b>Important Dates:</b></p>
             <p>TBA</p>
