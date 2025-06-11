@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-<img src="/assets/images/vict.png" width="800">
+<img src="/assets/images/vict.png" width="1000">
 
 CONFEST brings together researchers, developers, and students in computer science, in order to advance the theory of concurrency, the study of stochastic and timed systems, and the application of formal methods to industrial systems. 
 
