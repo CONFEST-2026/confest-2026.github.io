@@ -1,6 +1,8 @@
 ---
 layout: home
 ---
+<img src="uol.jpg" width="200" height="100">
+
 CONFEST brings together researchers, developers, and students in computer science, in order to advance the theory of concurrency, the study of stochastic and timed systems, and the application of formal methods to industrial systems. 
 
 This umbrella event consists of three main conferences CONCUR, FMICS and QEST+FORMATS, and affiliated workshops.
