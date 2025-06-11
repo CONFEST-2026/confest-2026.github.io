@@ -14,13 +14,15 @@ The 2026 edition will take place at the University of Liverpool on **September 1
 [Parick Totzke](https://www.csc.liv.ac.uk/~patrick/) (chair)  
 [Shufang Zhu](https://shufang-zhu.github.io) (workshops)  
 
-***Main Conferences***
+## Main Conferences
 
-**[CONCUR 2026](https://confest-2026.github.io/concur), the 37th International Conference on Concurrency Theory**
+### [CONCUR 2026](https://confest-2026.github.io/concur), the 37th International Conference on Concurrency Theory
+
 Program chairs: TBA
 
-**[FMICS 2026](https://fmics2025-ag-sks-websites-135be46425c7ded8977ddfe65ca7e22ac5bee.zivgitlabpages.uni-muenster.de//), the 31th IC on Formal Methods for Industrial Critical Systems**
+### [FMICS 2026](https://fmics2025-ag-sks-websites-135be46425c7ded8977ddfe65ca7e22ac5bee.zivgitlabpages.uni-muenster.de//), the 31th IC on Formal Methods for Industrial Critical Systems
+
 Program chairs: TBA
 
-**[QEST+FORMATS](https://www.qest-formats.org/), the joint IC on Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems**
+### [QEST+FORMATS](https://www.qest-formats.org/), the joint IC on Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems
 Program chairs: TBA
