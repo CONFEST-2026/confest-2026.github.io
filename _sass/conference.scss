@@ -1,3 +1,11 @@
+// Beatles Yellow Submarine Color Scheme
+$primary-yellow:  #FFD800;
+$deep-blue:       #00205B;
+$bright-red:      #FF3B3B;
+$sea-green:       #2ECCB0;
+$sub-orange:      #FF9900;
+$funky-purple:    #A259CA;
+$cream-bg:        #FFF8DC;
 
 // Framework Configuration
 
@@ -7,14 +15,33 @@ $alert-border-width:           4px !default;
 $alert-color-level:            9 !default;
 $badge-font-size:              .85em !default;
 $enable-responsive-font-sizes: true !default;
-//     Set different default as Bootstrap's choice is a very flashy blue
-$primary:                      #009CDD !default;
+
+// Beatles theme colors
+$primary:      $primary-yellow !default;
+$secondary:    $deep-blue !default;
+$success:      $sea-green !default;
+$info:         $funky-purple !default;
+$warning:      $sub-orange !default;
+$danger:       $bright-red !default;
+$light:        $cream-bg !default;
+$dark:         $deep-blue !default;
+
+$theme-colors: (
+  "primary":   $primary,
+  "secondary": $secondary,
+  "success":   $success,
+  "info":      $info,
+  "warning":   $warning,
+  "danger":    $danger,
+  "light":     $light,
+  "dark":      $dark
+);
 
 //   FontAwesome
 $fa-font-path: '/assets/webfonts' !default;
 
 
-$uol-darker :  rgb(24,30,59);
+$uol-darker : $deep-blue;
 
 // Import Sources
 
@@ -80,23 +107,22 @@ ul.btn-group {
 // Custom Styling
 
 .navbar-darker a { 
-  color : white !important ;
+  color: $primary-yellow !important;
 }
 
 .navbar .dropdown-item {
-  color: $uol-darker !important;
+  color: $deep-blue !important;
 }
 
-
 .navbar {
-  background-color: rgb(33, 43, 88) !important;
+  background-color: $deep-blue !important;
 }
 
 .navbar-darker {
-  background-color: $uol-darker !important;
+  background-color: $deep-blue !important;
 }
 .navbar-lighter {
-  background-color: rgb(219,219,212) !important;
+  background-color: $primary-yellow !important;
 }
 
 // General
@@ -189,9 +215,10 @@ main.container img {
 
 // Location
 .nav-pills .nav-link.active {
-  background-color: theme-color-level('primary', $alert-bg-level);
-  color: var(--dark);
+  background-color: $primary-yellow;
+  color: $deep-blue;
 }
+
 #map {
   height: 50vh;
   min-height: 400px;
@@ -267,6 +294,18 @@ main.container img {
     position: inherit;
   }
 
+  // Example custom alert styles
+  .alert-primary {
+    background-color: lighten($primary-yellow, 35%);
+    color: $deep-blue;
+    border-left: 4px solid $primary-yellow;
+  }
+  .alert-danger {
+    background-color: lighten($bright-red, 32%);
+    color: $deep-blue;
+    border-left: 4px solid $bright-red; 
+  }
+   
   // Remove live buttons
   .live-show {
     display: none;
