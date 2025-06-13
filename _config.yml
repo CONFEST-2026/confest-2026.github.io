@@ -87,13 +87,13 @@ conference:
         - name: Call for papers
           relative_url: /qestformats/call-for-papers
       - name: FMICS
-        relative_url: /fmics
+        relative_url: /fmics_
         subnav: fmics
         submenu:
         - name: FMICS home
-          relative_url: /fmics
+          relative_url: /fmics_
         - name: Call for papers
-          relative_url: /fmics/call-for-papers
+          relative_url: /fmics_/call-for-papers
       - name: Workshops
         relative_url: /workshops
         subnav: workshops
