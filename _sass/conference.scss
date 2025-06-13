@@ -17,11 +17,11 @@ $badge-font-size:              .85em !default;
 $enable-responsive-font-sizes: true !default;
 
 // Beatles theme colors
-$primary:      $primary-yellow !default;
+$primary:      $sub-orange !default;
 $secondary:    $deep-blue !default;
 $success:      $sea-green !default;
 $info:         $funky-purple !default;
-$warning:      $sub-orange !default;
+$warning:      $primary-yellow !default;
 $danger:       $bright-red !default;
 $light:        $cream-bg !default;
 $dark:         $deep-blue !default;
@@ -107,7 +107,7 @@ ul.btn-group {
 // Custom Styling
 
 .navbar-darker a { 
-  color: $primary-yellow !important;
+  color: $sub-orange !important;
 }
 
 .navbar .dropdown-item {
@@ -122,7 +122,7 @@ ul.btn-group {
   background-color: $deep-blue !important;
 }
 .navbar-lighter {
-  background-color: $primary-yellow !important;
+  background-color: $sub-orange !important;
 }
 
 // General
