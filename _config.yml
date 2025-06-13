@@ -112,21 +112,21 @@ conference:
           - name: RADICAL
             absolute_url: https://sites.google.com/site/radicalconcur/
 
-      - name: Local Info
-        menu:
-        - name: Location
-          relative_url: /location/
-        - name: Program
-          disabled: true
-          relative_url: /program/
-        # - name: Talks
-        #   relative_url: /talks/
-        - name: Speakers
-          disabled: true
-          relative_url: /speakers/
-        - name: Chat
-          disabled: true
-          absolute_url: https://highlights.zulipchat.com/
+      #- name: Local Info
+      #  menu:
+      #  - name: Location
+      #    relative_url: /location/
+      #  - name: Program
+      #    disabled: true
+      #    relative_url: /program/
+      #  - name: Talks
+      #    relative_url: /talks/
+      #  - name: Speakers
+      #    disabled: true
+      #    relative_url: /speakers/
+      #  - name: Chat
+      #    disabled: true
+      #    absolute_url: https://highlights.zulipchat.com/
       - name: Previous
         menu:
           - name: 2025 (Aarhus, current)
