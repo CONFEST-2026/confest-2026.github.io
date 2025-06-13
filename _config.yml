@@ -66,7 +66,7 @@ conference:
   navigation:
     logo:
       name: University of Liverpool
-      img: 'uol-white.png'
+      img: 'logo.png'
       url: 'https://www.liverpool.ac.uk/'
     breakpoint: lg
     links:
