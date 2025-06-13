@@ -66,10 +66,6 @@ conference:
   navigation:
     logo:
       name: University of Liverpool
-      img: 'logo.png'
-      url: 'https://confest-2026.github.io/'
-    logo:
-      name: University of Liverpool
       img: 'uol-white.png'
       url: 'https://www.liverpool.ac.uk/'
     breakpoint: lg
