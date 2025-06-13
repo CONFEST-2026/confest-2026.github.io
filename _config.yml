@@ -65,9 +65,9 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: University of Liverpool
+      name: CONFEST 2026
       img: 'logo.png'
-      url: 'https://www.liverpool.ac.uk/'
+      url: 'https://confest-2026.github.io/'
     breakpoint: lg
     links:
       - name: CONCUR
