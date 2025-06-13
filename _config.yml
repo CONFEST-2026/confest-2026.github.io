@@ -79,9 +79,21 @@ conference:
         - name: Call for papers
           relative_url: /concur/call-for-papers
       - name: QEST + FORMATS 
-        absolute_url: https://www.qest-formats.org/
+        relative_url: /qestformats
+        subnav: qestformats
+        submenu:
+        - name: QEST + FORMATS home
+          relative_url: /qestformats
+        - name: Call for papers
+          relative_url: /qestformats/call-for-papers
       - name: FMICS
-        absolute_url: https://fmics2025-ag-sks-websites-135be46425c7ded8977ddfe65ca7e22ac5bee.zivgitlabpages.uni-muenster.de//
+        relative_url: /fmics
+        subnav: fmics
+        submenu:
+        - name: FMICS home
+          relative_url: /fmics
+        - name: Call for papers
+          relative_url: /fmics/call-for-papers
       - name: Workshops
         relative_url: /workshops
         subnav: workshops
