@@ -107,10 +107,6 @@ conference:
         submenu:
           - name: Call for Workshops
             relative_url: /workshops
-          - name: SOS/EXPRESS
-            absolute_url: https://conferences.au.dk/confest2025/
-          - name: RADICAL
-            absolute_url: https://sites.google.com/site/radicalconcur/
 
       #- name: Local Info
       #  menu:
