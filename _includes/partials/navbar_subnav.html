@@ -2,10 +2,15 @@
 {% if page.subnav %}
 {% assign submenu_data = site.data.submenu.[page.subnav] %}
 
-<nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }}   navbar-light navbar-lighter">
+<nav class="navbar subnav navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }}   navbar-light navbar-lighter">
+
+     
+
   
   <div class="container">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    
+    <div class="" style="float:left" id="navbarSupportedContentsubnav">
       <ul class="navbar-nav mr-auto">
             {%- for link in submenu_data.submenu -%}
             {% assign current_url = page.url | remove: '.html' | remove: '/' %}
@@ -13,7 +18,7 @@
               {%- assign link_styleclass = "nav-link" -%}
 
               
-            <li class="nav-item {% if current_url == nav_url %}active{% endif %}">
+            <li class="nav-item navitem-collapse {% if current_url == nav_url %}active{%else%} collapse{% endif %}">
               {%- if current_url == nav_url -%}
                 {%- assign link_styleclass = link_styleclass | append: ' active' -%}
               {%- endif -%}
@@ -27,6 +32,11 @@
     {%- endfor %}
 </ul>
     </div>
+
+
+     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContentsubnav .nav-item:not(.active)" aria-controls="navbarSupportedContentsubnav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 </nav>
 

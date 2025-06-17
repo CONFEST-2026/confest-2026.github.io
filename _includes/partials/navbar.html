@@ -1,10 +1,13 @@
 
-<nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }} navbar-dark">
+
+
+
+<nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }} navbar-dark navbar-darker">
 <div class="container">
 
-      <div class="navbar-brand navbar-logo mr-0 ml-1 text-left overflow-hidden">
+    <div class="navbar-brand navbar-logo mr-0 ml-1 text-right overflow-hidden">
         <a href="{{ site.conference.navigation.logo.url }}">
-            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-left" alt="{{ site.conference.navigation.logo.name }}" style="height: 2.5em"/>
+            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" style="height: 2.5em"/>
         </a>
       </div>
 
@@ -13,14 +16,8 @@
     </button>
 
       
-
-  </div>
-</nav>
-<nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }}  navbar-dark navbar-darker">
-  
-  <div class="container">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         {%- for link in site.conference.navigation.links -%}
 
           {%- if link.menu %}

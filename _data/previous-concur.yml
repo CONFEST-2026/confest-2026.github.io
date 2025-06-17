@@ -1,0 +1,59 @@
+past_concur:
+  - name: 2025 (Aarhus)
+    absolute_url: https://conferences.au.dk/confest2025/
+  - name: 2024 (Calgary)
+    absolute_url: https://confest2024.github.io
+  - name: 2023 (Antwerp)
+    absolute_url: https://web.archive.org/web/20231103120956/https://www.uantwerpen.be/en/conferences/confest-2023/
+  - name: 2022 (Warsaw)
+    absolute_url: https://confest2022.mimuw.edu.pl/
+  - name: 2021 (Paris/Online)
+    absolute_url: https://qonfest2021.lacl.fr/
+  - name: 2020 (Vienna/Online)
+    absolute_url: https://qonfest2020.github.io/venue.html
+  - name: 2019 (Amsterdam)
+    absolute_url: https://event.cwi.nl/concur2019/
+  - name: 2018 (Beijing)
+    absolute_url: https://lcs.ios.ac.cn/concur2018/
+  - name: 2017 (Berlin)
+    absolute_url: https://www.concur2017.tu-berlin.de/
+  - name: 2016 (Québec City)
+    absolute_url: https://www.concur2016.ulaval.ca/no_cache/home/index.html
+  - name: 2015 (Madrid)
+    absolute_url: https://mafalda.fdi.ucm.es/concur2015/
+  - name: 2014 (Rome)
+    absolute_url: https://www.concur2014.org/
+  - name: 2013 (Buenos Aires)
+    absolute_url: http://www.concur-conferences.org/
+  - name: 2012 (Newcastle upon Tyne)
+    absolute_url: https://web.archive.org/web/20120822151947/http://conferences.ncl.ac.uk/concur-2012/
+  - name: 2011 (Aachen)
+    absolute_url: https://web.archive.org/web/20110813223556/https://concur2011.rwth-aachen.de/concur2011
+  - name: 2010 (Paris)
+    absolute_url: https://web.archive.org/web/20100826102751/http://concur2010.inria.fr/
+  - name: 2009 (Bologna)
+    absolute_url: http://concur09.cs.unibo.it/satevents.html
+  - name: 2008 (Toronto)
+    absolute_url: https://web.archive.org/web/20081231155757/http://www.cse.yorku.ca/concur08/
+  - name: 2007 (Lisbon)
+    absolute_url: https://web.archive.org/web/20240503021347/http://concur07.di.fc.ul.pt/
+  - name: 2006 (Bonn)
+    absolute_url: https://depend.cs.uni-saarland.de/index.php?id=355
+  - name: 2005 (San Francisco)
+    absolute_url: https://web.archive.org/web/20050826222047/http://www.soe.ucsc.edu/concur05/
+  - name: 2004 (London)
+    absolute_url: https://www.doc.ic.ac.uk/concur2004/
+  - name: 2003 (Marseille)
+    absolute_url: https://web.archive.org/web/20050730080515/http://concur03.univ-mrs.fr/
+  - name: 2002 (Brno)
+    absolute_url: https://www.fi.muni.cz/concur2002/
+  - name: 2001 (Aalborg)
+    absolute_url: https://web.archive.org/web/20020123054307/http://concur01.cs.auc.dk/
+  - name: 2000 (Pennsylvania)
+    absolute_url: https://web.archive.org/web/20021206184454/http://www.cse.psu.edu/concur2000/
+  - name: 1999 (Eindhoven)
+    absolute_url: https://web.archive.org/web/20000817170037/http://www.win.tue.nl/concur99/
+  - name: 1998 (Nice)
+    absolute_url: https://web.archive.org/web/19990224213620/http://www-sop.inria.fr/concur98/
+  - name: 1997 (Warsaw)
+    absolute_url: https://web.archive.org/web/19990221110042/http://www.ipipan.waw.pl/conferences/concur97/

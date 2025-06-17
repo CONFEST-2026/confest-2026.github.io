@@ -3,3 +3,5 @@ submenu:
     relative_url: /concur
   - name: Call for papers
     relative_url: /concur/call-for-papers
+  - name: Previous Editions
+    relative_url: /concur/past-editions

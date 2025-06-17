@@ -314,3 +314,13 @@ main.container img {
     display: inline-block !important;
   }
 }
+
+main {
+  min-height: 400px;
+}
+
+footer {
+  border-top: solid 1px #BBB;
+  padding-top: 1em;
+  margin-top: 1em;
+}

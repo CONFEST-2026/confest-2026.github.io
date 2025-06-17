@@ -206,6 +206,10 @@
           flex-basis: auto;
         }
 
+        .navitem-collapse{
+          display: block;
+        }
+
         .navbar-toggler {
           display: none;
         }
@@ -242,7 +246,7 @@
       }
     }
 
-    .show > .nav-link,
+    // .show > .nav-link,
     .active > .nav-link,
     .nav-link.show,
     .nav-link.active {
@@ -321,4 +325,9 @@
       }
     }
   }
+}
+
+
+.subnav .container{ 
+  align-items: flex-start;
 }
