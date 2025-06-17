@@ -1,7 +1,11 @@
 
   </main>
   <footer class="container">University of Liverpool
-  <img src="{{ uol-white.png | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-right" alt="{{ University of Liverpool }}" style="height: 1.5em"/></footer>
+    <div class="navbar-brand navbar-logo mr-0 ml-1 text-right overflow-hidden">
+      <a href="{{ https://www.liverpool.ac.uk/computer-science/ }}">
+        <img src="{{ uol.png | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-right" alt="{{ University of Liverpool }}" style="height: 1.5em"/></footer>
+      </a>
+    </div>
 
   {%- include partials/modal_link.html -%}
 
