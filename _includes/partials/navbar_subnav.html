@@ -1,13 +1,12 @@
  
 {% if page.subnav %}
+{% assign submenu_data = site.data[page.subnav | append: '/submenu'] %}
 <nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }}   navbar-light navbar-lighter">
   
   <div class="container">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-    {% for topnav in  site.conference.navigation.links -%}
-      {% if topnav.submenu and topnav.subnav and topnav.subnav == page.subnav  -%}
-            {%- for link in topnav.submenu -%}
+            {%- for link in submenu_data -%}
             {% assign current_url = page.url | remove: '.html' | remove: '/' %}
               {% assign nav_url = link.relative_url | remove: '/' %}
               {%- assign link_styleclass = "nav-link" -%}
@@ -23,8 +22,6 @@
               </a>
             </li>
             
-            {%- endfor %}
-      {%- endif %}
       
     {%- endfor %}
 </ul>

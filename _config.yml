@@ -81,32 +81,27 @@ conference:
       - name: QEST + FORMATS 
         relative_url: /qestformats
         subnav: qestformats
-        submenu:
-        - name: QEST + FORMATS home
-          relative_url: /qestformats
-        - name: Call for papers
-          relative_url: /qestformats/call-for-papers
       - name: FMICS
         relative_url: /fmics_
         subnav: fmics
-        submenu:
-        - name: FMICS home
-          relative_url: /fmics_
-        - name: Call for papers
-          relative_url: /fmics_/call-for-papers
+        # submenu:
+        # - name: FMICS home
+        #   relative_url: /fmics_
+        # - name: Call for papers
+        #   relative_url: /fmics_/call-for-papers
       - name: Workshops
         relative_url: /workshops
-        subnav: workshops
-        # menu:
+        # subnav: workshops
+        # # menu:
+        # #   - name: Call for Workshops
+        # #     relative_url: /workshops
+        # #   - name: SOS/EXPRESS
+        # #     absolute_url: https://conferences.au.dk/confest2025/
+        # #   - name: RADICAL
+        # #     absolute_url: https://sites.google.com/site/radicalconcur/
+        # submenu:
         #   - name: Call for Workshops
         #     relative_url: /workshops
-        #   - name: SOS/EXPRESS
-        #     absolute_url: https://conferences.au.dk/confest2025/
-        #   - name: RADICAL
-        #     absolute_url: https://sites.google.com/site/radicalconcur/
-        submenu:
-          - name: Call for Workshops
-            relative_url: /workshops
 
       #- name: Local Info
       #  menu:
