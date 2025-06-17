@@ -72,36 +72,15 @@ conference:
     links:
       - name: CONCUR
         relative_url: /concur
-        subnav: concur
-        submenu:
-        - name: CONCUR home
-          relative_url: /concur
-        - name: Call for papers
-          relative_url: /concur/call-for-papers
       - name: QEST + FORMATS 
         relative_url: /qestformats
-        subnav: qestformats
+        # submenus specified in _data/submenu/qestformats.yml
       - name: FMICS
-        relative_url: /fmics_
-        subnav: fmics
-        # submenu:
-        # - name: FMICS home
-        #   relative_url: /fmics_
-        # - name: Call for papers
-        #   relative_url: /fmics_/call-for-papers
+        relative_url: /fmics
+        # submenus specified in fmics/submenu.yml
       - name: Workshops
         relative_url: /workshops
-        # subnav: workshops
-        # # menu:
-        # #   - name: Call for Workshops
-        # #     relative_url: /workshops
-        # #   - name: SOS/EXPRESS
-        # #     absolute_url: https://conferences.au.dk/confest2025/
-        # #   - name: RADICAL
-        # #     absolute_url: https://sites.google.com/site/radicalconcur/
-        # submenu:
-        #   - name: Call for Workshops
-        #     relative_url: /workshops
+        # submenus specified in _data/submenu/workshops.yml
 
       #- name: Local Info
       #  menu:

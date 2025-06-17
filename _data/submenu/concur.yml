@@ -1,0 +1,5 @@
+submenu:
+  - name: CONCUR home
+    relative_url: /concur
+  - name: Call for papers
+    relative_url: /concur/call-for-papers

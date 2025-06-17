@@ -30,6 +30,7 @@ jobs:
           mkdir -p fmics
           cp -r temp-fmics/* fmics/
           rm -rf temp-fmics
+          mv fmics/submenu.yml fmics/_data/submenu/fmics.yml
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
