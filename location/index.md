@@ -11,7 +11,7 @@ title: Location
 ### Trains
 We encourage you to consider taking the train!
 
-Liverpool is exceptionally well-connected and easy to reach by train from major cities and airports across the UK. From Manchester, it’s just over half an hour away, and Manchester Airport can be reached in around 1 hour 20 minutes. Birmingham is also conveniently close, with journeys from both the city centre and the airport typically taking under two hours. And from London, fast direct trains make the trip in around two hours fifteen minutes (itself reachable from Paris and Brussels in a little over two hours).
+Liverpool is exceptionally well-connected and easy to reach by train from major cities and airports across the UK. From Manchester, it is just over half an hour away, and Manchester Airport can be reached in around 1 hour 20 minutes. Birmingham is also conveniently close, with journeys from both the city centre and the airport typically taking under two hours. From London, fast direct trains make the trip in around two hours fifteen minutes; London itself is reachable from Paris and Brussels in a little over two hours.
 
 Liverpool Lime Street is the main station in Liverpool (Liverpool Central is the local metro network hub only).
 
@@ -22,7 +22,7 @@ Liverpool Lime Street is the main station in Liverpool (Liverpool Central is the
 Liverpool is well connected to two international airports in easy reach.
 
 - Liverpool John Lennon Airport has regular flights between key European cities. Connects to the city by bus.
-- Manchester is a major international airport, with connections accross Europe, North America and Asia. Connects to Liverpool by train or coach.
+- Manchester is a major international airport, with connections accross Europe, North America and Asia. Connects in around 1 hour 20 minutes to Liverpool by train or coach.
 
 Liverpool can also be reached by train from Birmingham airport or from London airports, although the connection time will be longer.
 
@@ -40,6 +40,6 @@ The conference will be held on the campus of the University of Liverpool. The ca
 
 ### Where to stay
 
-We'll provide suggested accommodation in due course.
+Suggested accommodation will be provided in due course.
 </div>
 </div>
