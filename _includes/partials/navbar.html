@@ -2,18 +2,17 @@
 <nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }} navbar-dark">
 <div class="container">
 
-    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <div class="navbar-brand navbar-logo mr-0 ml-1 text-left overflow-hidden">
+        <a href="{{ site.conference.navigation.logo.url }}">
+            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-left" alt="{{ site.conference.navigation.logo.name }}" style="height: 2.5em"/>
+        </a>
+      </div>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
       
-      <div class="navbar-brand navbar-logo mr-0 ml-1 text-right overflow-hidden">
-        <a href="{{ site.conference.navigation.logo.url }}">
-            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" style="height: 2.5em"/>
-        </a>
-      </div>
 
   </div>
 </nav>
