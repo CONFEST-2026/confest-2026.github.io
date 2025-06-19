@@ -3,6 +3,6 @@ layout: default
 subnav: concur
 ---
 
-The 37th International Conference on Concurrency Theory
+**The 37th International Conference on Concurrency Theory**
 
-Here is the cfp
+The Call for Papers will be provided here in due time.
