@@ -6,7 +6,7 @@ layout: default
 
 # CONFEST 2026
 ### Liverpool, UK
-
+<br />
 CONFEST brings together researchers, developers, and students in computer science, in order to advance the theory of concurrency, the study of stochastic and timed systems, and the application of formal methods to industrial systems. 
 
 This umbrella event consists of three main conferences CONCUR, FMICS and QEST+FORMATS, and affiliated workshops.
