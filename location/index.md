@@ -22,7 +22,7 @@ Liverpool Lime Street is the main station in Liverpool (Liverpool Central is the
 Liverpool is well connected to two international airports in easy reach.
 
 - Liverpool John Lennon Airport has regular flights between key European cities. Connects to the city by bus.
-- Manchester is a major international airport, with connections accross Europe, North America and Asia. Connects in around 1 hour 20 minutes to Liverpool by train or coach.
+- Manchester is a major international airport, with connections accross Europe, North America and Asia. Connects in around 1 hour 20 minutes to Liverpool by train, and in just under 1 hour by coach.
 
 Liverpool can also be reached by train from Birmingham airport or from London airports, although the connection time will be longer.
 
@@ -36,7 +36,7 @@ We encourage taking public transport wherever possible, parking is limited. The 
 
 ### Getting around
 
-The conference will be held on the campus of the University of Liverpool. The campus is easily reached from the city centre, the station and many hotels on foot (and also by bus). 
+The conference will be held on the campus of the University of Liverpool (in the [Central Teaching Hub](https://confest-2026.github.io/concur](https://www.liverpool.ac.uk/central-teaching-hub/))). The campus is easily reached from the city centre, the station and many hotels on foot (and also by bus). 
 
 ### Where to stay
 
