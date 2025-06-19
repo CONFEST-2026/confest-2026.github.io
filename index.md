@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<br />
 <img src="/assets/images/vict.png" width="1000">
 
 # CONFEST 2026
