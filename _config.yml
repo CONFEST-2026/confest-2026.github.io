@@ -131,9 +131,9 @@ conference:
     #     ---
     #
     #     See the [README](github.com/DigitaleGesellschaft/jekyll-theme-conference/) on the project's GitHub repository for further information on how to configure and adapt it to your needs.
-    - text: Don't look at me too closely yet! I am under construction!
-      color: warning
-      main_only: false
+    #- text: Don't look at me too closely yet! I am under construction!
+    #  color: warning
+    #  main_only: false
 
   # Live indications
   live:
