@@ -2,7 +2,7 @@
 layout: default
 ---
 <br />
-<img src="/assets/images/vict.png" width="1120">
+<img src="/assets/images/vict.png" width="1100">
 
 # CONFEST 2026
 ### Liverpool, UK
