@@ -3,4 +3,4 @@ layout: default
 subnav: workshops
 ---
 
-CONFEST seeks amazing workshops.
+More details regarding the workshops at CONFEST 2026 will be provided in due time.
