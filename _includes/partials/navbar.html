@@ -20,7 +20,7 @@
           {%- elsif link.live -%}
           {%- else %}
           {% if page.url contains link.relative_url %}
-            <li class="nav-item d-none d-sm-block">
+            <li class="nav-item active d-none d-sm-block">
               {%- assign link_styleclass = "nav-link" -%}
               {%- include partials/get_link.html -%}
               {{ link_tag }}
