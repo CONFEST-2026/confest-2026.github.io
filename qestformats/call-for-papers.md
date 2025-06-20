@@ -3,6 +3,6 @@ layout: default
 subnav: qestformats
 ---
 
-QEST + FORMATS
+## QEST + FORMATS
 
-Here is the cfp
+The Call for Papers will be provided here in due time.
