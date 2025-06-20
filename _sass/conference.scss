@@ -110,6 +110,10 @@ ul.btn-group {
   color: $sub-orange !important;
 }
 
+.navbar-darker .active a {
+  color: $cream-bg !important;
+}
+
 .navbar .dropdown-item {
   color: $deep-blue !important;
 }
@@ -317,10 +321,12 @@ main.container img {
 
 main {
   min-height: 400px;
+  margin-top:1em;
 }
 
-footer {
-  border-top: solid 1px #BBB;
-  padding-top: 1em;
-  margin-top: 1em;
+// want the line to be the width of the text not the full width of the footer
+footer .footerline > div > div { 
+ border-top: solid 1px rgba(50,50,50,0.3); 
+ margin-top: 2em;
+ margin-bottom: 1.5em;
 }

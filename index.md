@@ -1,8 +1,9 @@
 ---
 layout: default
+heroimage: /assets/images/vgmext42.jpg
 ---
 <br />
-<img src="/assets/images/vict.png" width="1100">
+<!-- <img src="/assets/images/vict.png" width="1100"> -->
 
 # CONFEST 2026
 ### Liverpool, UK

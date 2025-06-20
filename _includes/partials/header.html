@@ -35,7 +35,7 @@
 </head>
 
 <body class="pb-4">
-  <header class="mb-2">
+  <header>
     <!-- navigation bar (web only): -->
     {%- include partials/navbar.html -%}
     {%- include partials/navbar_subnav.html -%}
@@ -49,6 +49,12 @@
     {%- endunless -%}
 
   </header>
+  {% if page.heroimage %}
+  <div style="height: 500px; background-size: cover; background-image: url('{{page.heroimage}}');background-position: center center;">
+
+  </div>
+  {%- endif %}
+
   <main class="container">
 
     {%- include partials/info_bar.html -%}
