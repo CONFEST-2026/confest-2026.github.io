@@ -330,3 +330,17 @@ footer .footerline > div > div {
  margin-top: 2em;
  margin-bottom: 1.5em;
 }
+
+.hero {
+  @include media-breakpoint-down(sm) {
+    height: 300px;
+  }
+  @include media-breakpoint-between(sm, md) {
+    height: 450px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 550px;
+  }
+  background-size: cover; 
+  background-position: center center;
+}

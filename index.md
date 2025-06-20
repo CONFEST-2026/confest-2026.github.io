@@ -1,6 +1,6 @@
 ---
 layout: default
-heroimage: /assets/images/vgmext42.jpg
+heroimage: /assets/images/vgm27.jpg
 ---
 <br />
 <!-- <img src="/assets/images/vict.png" width="1100"> -->
