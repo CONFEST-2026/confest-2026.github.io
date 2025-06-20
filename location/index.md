@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Location
+heroimage: /assets/images/lime.jpg
 ---
 
 <div class="row">
