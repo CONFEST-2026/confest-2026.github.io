@@ -210,6 +210,10 @@
           flex-basis: auto;
         }
 
+        .inverse-collapse {
+          display: none !important; // stylelint-disable-line declaration-no-important
+        }
+
         .navitem-collapse{
           display: block;
         }
@@ -333,5 +337,5 @@
 
 
 .subnav .container{ 
-  align-items: flex-start;
+  align-items: flex-start !important;
 }
