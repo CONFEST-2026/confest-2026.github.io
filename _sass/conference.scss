@@ -1,11 +1,15 @@
 // Beatles Yellow Submarine Color Scheme
 $primary-yellow:  #FFD800;
 $deep-blue:       #00205B;
-$bright-red:      #FF3B3B;
+$sky-blue:        #4FC3F7;
+$mid-blue:        #1976D2;
+$navy-blue:       #0D133D;
 $sea-green:       #2ECCB0;
 $sub-orange:      #FF9900;
 $funky-purple:    #A259CA;
 $cream-bg:        #FFF8DC;
+
+$bright-red:      #FF3B3B;
 
 // Framework Configuration
 
@@ -17,14 +21,14 @@ $badge-font-size:              .85em !default;
 $enable-responsive-font-sizes: true !default;
 
 // Beatles theme colors
-$primary:      $sub-orange !default;
-$secondary:    $deep-blue !default;
+$primary:      $deep-blue !default;
+$secondary:    $mid-blue !default;
 $success:      $sea-green !default;
-$info:         $funky-purple !default;
+$info:         $sky-blue !default;
 $warning:      $primary-yellow !default;
-$danger:       $bright-red !default;
+$danger:       $sub-orange !default;
 $light:        $cream-bg !default;
-$dark:         $deep-blue !default;
+$dark:         $navy-blue !default;
 
 $theme-colors: (
   "primary":   $primary,
@@ -37,12 +41,32 @@ $theme-colors: (
   "dark":      $dark
 );
 
+  // make the background blue
+body {
+  //height: 100%;
+  min-height: 100%;
+  background: none !important;
+  //color: #fff !important;
+}
+html {
+  min-height: 100%;
+    background: white;
+  /* background: linear-gradient( */
+  /*   to bottom, */
+  /*   //$sky-blue 0%, */
+  /*   $mid-blue 0%, */
+  /*   /* $deep-blue 40%, */ 
+  /*   /* $navy-blue 100% */
+  /* ) !important; */
+}
 //   FontAwesome
 $fa-font-path: '/assets/webfonts' !default;
 
 
 $uol-darker : $deep-blue;
 
+$jumbotron-bg : $primary-yellow;
+//$jumbotron-bg : $cream-bg;
 // Import Sources
 
 //   Style Framework: Bootstrap
@@ -56,6 +80,11 @@ $uol-darker : $deep-blue;
 @import 'leaflet/leaflet-easybutton';
 @import 'leaflet/leaflet-locatecontrol';
 
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+body {
+  /* font-family: 'Luckiest Guy', cursive, sans-serif; */
+}
 
 // Adapt Bootstrap Elements
 
@@ -106,28 +135,41 @@ ul.btn-group {
 
 // Custom Styling
 
-.navbar-darker a { 
+.navbar .dropdown-item {
   color: $sub-orange !important;
 }
 
-.navbar-darker .active a {
-  color: $cream-bg !important;
-}
-
-.navbar .dropdown-item {
-  color: $deep-blue !important;
-}
-
 .navbar {
-  background-color: $deep-blue !important;
+  /* background-color: $deep-blue !important; */
+  font-family: 'Luckiest Guy', cursive, sans-serif;
+  /* color: $funky-purple !important; */
 }
 
 .navbar-darker {
-  background-color: $deep-blue !important;
+  background-color: $mid-blue !important;
 }
-.navbar-lighter {
-  background-color: $sub-orange !important;
+.navbar-darker .nav-link {
+  color: $sky-blue !important;
 }
+
+.navbar-darker .active a {
+  color: $primary-yellow !important;
+}
+.subnav {
+  background-color: $primary-yellow !important;
+  //background-color: $mid-blue !important;
+}
+.navbar-lighter .nav-link {
+  //color: $sub-orange !important;
+  color: $mid-blue  !important;
+}
+
+.subnav .active {
+  //color: $bright-red !important;
+  color: $deep-blue !important
+}
+
+
 
 // General
 
