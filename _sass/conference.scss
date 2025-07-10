@@ -50,7 +50,7 @@ body {
 }
 html {
   min-height: 100%;
-    background: $sky-blue;
+    background: white;
   /* background: linear-gradient( */
   /*   to bottom, */
   /*   //$sky-blue 0%, */
@@ -161,10 +161,12 @@ ul.btn-group {
 }
 .navbar-lighter .nav-link {
   //color: $sub-orange !important;
-  color: $primary-yellow !important;
+  color: $mid-blue  !important;
 }
+
 .subnav .active {
-  color: $bright-red !important;
+  //color: $bright-red !important;
+  color: #00320f !important
 }
 
 
