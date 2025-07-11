@@ -158,6 +158,10 @@ ul.btn-group {
   /* background-color: $deep-blue !important; */
   font-family: 'Luckiest Guy', cursive, sans-serif;
   /* color: $funky-purple !important; */
+.nav-link {
+  font-size: 1.2em;
+  padding: .5rem .5rem;
+}
 }
 
 .navbar-darker {
@@ -197,17 +201,40 @@ ul.btn-group {
   /* font-family: 'Luckiest Guy', cursive, sans-serif; */
   /* font-size: 2rem; */
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-  padding: 0.3em 0.3em;
+  padding: 0.2em 0.2em;
+  //font-size: 1rem;
   margin-right: 4px;
   //transition: background 0.2s;
 }
+
+.navbar-darker .navbar-toggler{
+  //border-radius: 100%;
+ border: 2px solid rgba(255,255,255,0.7);
+  //box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  //margin-right: 4px;
+  /* Bubble effect: subtle white glow */
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,0.3),
+    0 2px 8px rgba(0,0,0,0.25);
+  transition: box-shadow 0.3s, border-color 0.3s, background 0.3s;
+  &:hover, &:focus {
+    //background: $sub-orange;
+    outline: 0px;
+    border-color: rgba(255,255,255,0.9);
+    box-shadow:
+      0 0 0 4px rgba(255,255,255,0.4),
+      0 2px 12px rgba(0,0,0,0.3);
+  }
+}
+
 .navbar-light .navbar-toggler {
   border-radius: 100%;
   border: 4px solid;
   box-shadow: none;
-  padding: 0.3em 0.3em;
-  margin-right: 0px;
-  transition: background 0.5s;
+  //padding: 0.4em 0.4em;
+  font-size: 1rem;
+  margin-right: 2em;
+  transition: background 0.3s;
   //border-color: $sub-orange;
   border-color: $bright-red;
     background: $deep-brown;
@@ -413,6 +440,10 @@ main.container img {
 main {
   min-height: 400px;
   margin-top:1em;
+
+  a {
+    color: $bright-red;
+  }
 }
 
 // want the line to be the width of the text not the full width of the footer
