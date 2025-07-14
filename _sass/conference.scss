@@ -96,6 +96,7 @@ $jumbotron-bg : $primary-yellow;
 @import 'leaflet/leaflet-locatecontrol';
 
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import 'font-beatles';
 
 body {
   /* font-family: 'Luckiest Guy', cursive, sans-serif; */
@@ -156,6 +157,7 @@ ul.btn-group {
 
 .navbar {
   /* background-color: $deep-blue !important; */
+  //font-family: 'Beatles', cursive, sans-serif;
   font-family: 'Luckiest Guy', cursive, sans-serif;
   /* color: $funky-purple !important; */
 .nav-link {
