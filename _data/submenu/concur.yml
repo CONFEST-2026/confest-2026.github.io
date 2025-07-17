@@ -1,7 +1,8 @@
 submenu:
-  - name: CONCUR home
+  - name: Info
     relative_url: /concur
   - name: Call for papers
+    disabled: true
     relative_url: /concur/call-for-papers
-  - name: Previous Editions
+  - name: Past Editions
     relative_url: /concur/past-editions

@@ -1,6 +1,5 @@
 ---
 layout: default
-subnav: workshops
 ---
 # Workshops at CONFEST 2026
 
