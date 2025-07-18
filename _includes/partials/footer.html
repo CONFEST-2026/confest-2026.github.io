@@ -1,14 +1,17 @@
 </main>
-  <footer class="container">
+
+{% capture footer_contents %}
+  &copy; Copyright
+  CONFEST 2026, University of Liverpool, UK;
+  Last updated on {{ 'now' | date: '%B %d, %Y' }}.
+{% endcapture %}
+
+
+
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    <div class="container">
     <div class="row footerline"><div class="col-12"><div></div></div></div>
-    <div class="row">
-      <div class="col-md-6 col-12 text-left">
-        CONFEST 2026, University of Liverpool, UK
-      </div>
-      <div class="col-md-6 col-12 text-md-right">
-      <!-- <a href="https://www.liverpool.ac.uk/computer-science/"> -->
-      <!--   <img src="{{ '/assets/images/uol.png' | prepend: site.baseurl }}" class="align-right" alt="University of Liverpool" style="height: 2em"/> -->
-      <!-- </a> -->
+      {{ footer_contents }}
     </div>
   </footer>
 
