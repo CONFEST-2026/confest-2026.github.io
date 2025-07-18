@@ -23,6 +23,12 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ---
 
+##### News
+
+{% include news.html %}
+
+---
+
 ##### Sponsors
 
 The following sponsors have confirmed their support for the event.

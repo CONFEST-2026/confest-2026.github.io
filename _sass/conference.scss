@@ -249,6 +249,27 @@ ul.btn-group {
   }
 }
 
+// NEWS
+
+//   Sticky header and first column
+.news .table {
+  // Sticky horizontal positioning
+  th {
+    background-color: unset;
+    width: 20%;
+    min-width: unset;
+  }
+  td {
+    width: 800%;
+  }
+}
+
+
+
+
+
+
+
 // General
 
 //   Extend logo when collapsed navbar is shown

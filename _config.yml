@@ -22,7 +22,11 @@ exclude:
   - purgecss.config.js
 
 # Collections and their defaults
+news_limit: 6
 collections:
+  news:
+    output: true
+    permalink: /news/:path/
   talks:
     output: true
     permalink: /:collection/:title/
@@ -34,6 +38,10 @@ collections:
     permalink: /:collection/:title/
 
 defaults:
+  - scope:
+      type: news
+    values:
+      inline: true
   - scope:
       path: ""
       type: talks
