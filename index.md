@@ -12,6 +12,7 @@ CONFEST brings together researchers, developers, and students in computer scienc
 This umbrella event consists of three main conferences [CONCUR](concur), [FMICS](fmics) and [QEST+FORMATS](qestformats), and affiliated workshops.
 The 2026 edition will take place on the main campus of the University of Liverpool, on **September 1-5, 2026**.  
 
+---
 
 ##### Organisation
 
@@ -20,6 +21,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 [Parick Totzke](https://www.csc.liv.ac.uk/~patrick/) (co-chair)  
 [Shufang Zhu](https://shufang-zhu.github.io) (workshops)  
 
+---
 
 ##### Sponsors
 
