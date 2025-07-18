@@ -20,6 +20,13 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 [Parick Totzke](https://www.csc.liv.ac.uk/~patrick/) (co-chair)  
 [Shufang Zhu](https://shufang-zhu.github.io) (workshops)  
 
+
+##### Sponsors
+
+The following sponsors have confirmed their support for the event.
+
+{% include sponsors.html %}
+
 {% comment %}
 ### Main Conferences
 

@@ -1,0 +1,13 @@
+- name: University of Liverpool
+  abbreviation: UoL
+  url: https://www.liverpool.ac.uk/computer-science/
+  logo: uol.png
+- name: Springer
+  abbreviation: Springer
+  #url: https://www.springer.com/
+  url: https://sci-hub.st  #UOL IT block this, can you believe it?!?
+  logo: springer.svg
+- name: European Research Consortium for Informatics and Mathematics
+  abbreviation: ERCIM
+  url: https://www.ercim.eu/
+  logo: ercim.png

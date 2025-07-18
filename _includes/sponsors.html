@@ -1,0 +1,11 @@
+<div class="row">
+   <div class="col-sm-12">
+      <p class="text-center">
+  {% for sponsor in site.data.sponsors %}
+      <a href="{{ sponsor.url }}">
+      <img src="{{ "/assets/images/" | relative_url }}{{ sponsor.logo }}" style="padding:15px" width="150px" alt="{{ sponsor.abbreviation}} logo">
+      </a>
+  {% endfor %}
+      </p>
+  </div>
+</div>
