@@ -13,6 +13,15 @@ This umbrella event consists of three main conferences [CONCUR](concur), [FMICS]
 The 2026 edition will take place on the main campus of the University of Liverpool, on **September 1-5, 2026**.  
 
 ---
+### Main Conferences
+
+**[CONCUR 2026](https://confest-2026.github.io/concur), the 37th International Conference on *Concurrency Theory***
+
+**[FMICS 2026](https://confest-2026.github.io/fmics), the 31th International Conference on *Formal Methods for Industrial Critical Systems***
+
+**[QEST+FORMATS 2026](https://confest-2026.github.io/qestformats), the joint International Conference on *Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems***
+
+---
 
 ##### Organisation
 
@@ -27,21 +36,14 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 {% include news.html %}
 
----
 
+{% comment %}
+---
+Not ready for this yet
 ##### Sponsors
 
 The following sponsors have confirmed their support for the event.
 
 {% include sponsors.html %}
-
-{% comment %}
-### Main Conferences
-
-**[CONCUR 2026](https://confest-2026.github.io/concur), the 37th International Conference on *Concurrency Theory***
-
-**[FMICS 2026](https://confest-2026.github.io/fmics), the 31th International Conference on *Formal Methods for Industrial Critical Systems***
-
-**[QEST+FORMATS 2026](https://confest-2026.github.io/qestformats), the joint International Conference on *Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems***
 
 {% endcomment %}

@@ -4,8 +4,7 @@
   logo: uol.png
 # - name: Springer
 #   abbreviation: Springer
-#   #url: https://www.springer.com/
-#   url: https://sci-hub.st  #UOL IT block this, can you believe it?!?
+#   url: https://www.springer.com/
 #   logo: springer.svg
 - name: European Research Consortium for Informatics and Mathematics
   abbreviation: ERCIM
