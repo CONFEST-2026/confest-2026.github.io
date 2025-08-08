@@ -1,23 +1,31 @@
 </main>
 
 {% capture footer_contents %}
-  CONFEST 2026, University of Liverpool, UK
-  <br>
+  CONFEST
+  1-5 September 2026<br>
   <span style="font-size:x-small">Last updated: {{ 'now' | date: '%B %d, %Y' }}</span>
 {% endcapture %}
 
+<div class="waves"></div>
+  <footer >
+    
 
-  <footer class="container">
-    <div class="row footerline"><div class="col-12"><div></div></div></div>
-    <div class="row">
-      <div class="col-md-6 col-12 text-left">
-        {{ footer_contents }}
+    <div class="container">
+      <div class="row footerline"><div class="col-12"><div></div></div></div>
+      <div class="row">
+        <div class="col-md-4 col-lg-2 mb-3">
+          <a href="https://www.liverpool.ac.uk/computer-science/">
+          <img src="{{ '/assets/images/uol-white.png' | prepend: site.baseurl }}" class="align-right" alt="University of Liverpool" style="max-width: 200px; width: 100%;"/>
+        </a>
+        </div>
+        <div class="col-md-5 col-lg-7 col-12 text-left">
+          {{ footer_contents }}
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+          <img src="/assets/images/subby.png" style="position:relative; height: 300px;top:-200px;margin-bottom:-200px">
       </div>
-      <div class="col-md-6 col-12 text-md-right">
-      <a href="https://www.liverpool.ac.uk/computer-science/">
-        <img src="{{ '/assets/images/uol.png' | prepend: site.baseurl }}" class="align-right" alt="University of Liverpool" style="height: 2em"/>
-      </a>
     </div>
+    
   </footer>
 
   {%- include partials/modal_link.html -%}
