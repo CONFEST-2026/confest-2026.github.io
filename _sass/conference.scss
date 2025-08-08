@@ -240,10 +240,10 @@ ul.btn-group {
   transition: background 0.3s;
   //border-color: $sub-orange;
   border-color: $bright-red;
-    background: $deep-brown;
+    background: $primary-yellow;
   &:hover, &:focus {
     //background: $li-brown;
-    background: $sub-orange;
+    background: $accent-yellow;
     outline: 0px;
     //color: $deep-blue !important;
     //border-color: $bright-red;
@@ -532,6 +532,7 @@ footer .footerline > div > div {
   75%  { transform: translateY(5px); }
   100% { transform: translateY(0); }
 }
+
 
 
 .master-logo {

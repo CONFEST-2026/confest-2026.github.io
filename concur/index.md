@@ -13,4 +13,9 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 ##### Important dates
 
 - Call for papers: TBA
-- Conference: 1 – 5 September, 2026
+- Conference:  September 1-4, 2026
+- Workshops: September 5, 2026
+- Submission deadline: TBA
+- Notification: TBA
+- Camera-ready: TBA
+- Registration: TBA
