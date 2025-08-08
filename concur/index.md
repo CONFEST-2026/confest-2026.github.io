@@ -1,7 +1,7 @@
 ---
 layout: default
 subnav: concur
-heroimage: /assets/images/liver.jpg
+heroimage: /assets/images/liverpoolpetri.png
 ---
 
 # CONCUR
