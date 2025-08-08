@@ -12,25 +12,25 @@
     
     <div class="" style="float:left" id="navbarSupportedContentsubnav">
       <ul class="navbar-nav mr-auto">
-            {%- for link in submenu_data.submenu -%}
-            {% assign current_url = page.url | remove: '.html' | remove: '/' %}
-              {% assign nav_url = link.relative_url | remove: '/' %}
-              {%- assign link_styleclass = "nav-link" -%}
+          {%- for link in submenu_data.submenu  -%}
+            {% unless link.disabled %}
+              {% assign current_url = page.url | remove: '.html' | remove: '/' %}
+                {% assign nav_url = link.relative_url | remove: '/' %}
+                {%- assign link_styleclass = "nav-link" -%}
 
-              
-            <li class="nav-item navitem-collapse {% if current_url == nav_url %}active{%else%} collapse{% endif %}">
-              {%- if current_url == nav_url -%}
-                {%- assign link_styleclass = link_styleclass | append: ' active' -%}
-              {%- endif -%}
-              {%- include partials/get_link.html -%}
-              {{ link_tag }}
-                {{ link.name }}
-              </a>
-            </li>
-            
-      
-    {%- endfor %}
-</ul>
+                
+              <li class="nav-item navitem-collapse {% if current_url == nav_url %}active{%else%} collapse{% endif %}">
+                {%- if current_url == nav_url -%}
+                  {%- assign link_styleclass = link_styleclass | append: ' active' -%}
+                {%- endif -%}
+                {%- include partials/get_link.html -%}
+                {{ link_tag }}
+                  {{ link.name }}
+                </a>
+              </li>
+            {% endunless %}
+          {%- endfor %}
+      </ul>
     </div>
 
 

@@ -1,5 +1,6 @@
 // Beatles Yellow Submarine Color Scheme
 $primary-yellow:  #F5D547;
+$accent-yellow:  #f3be42;
 $deep-blue:       #00205B;
 $sky-blue:        #6BC1E1;
 $mid-blue:        rgb(58,95,128);
@@ -47,11 +48,14 @@ $theme-colors: (
   // make the background blue
 body {
   //height: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   //background: none !important;
   background: $cream-bg !important;
   //color: #fff !important;
   margin-bottom: 0px;;
+  display: flex;
+  flex-direction: column;
+
 }
 html {
   min-height: 100%;
@@ -64,7 +68,6 @@ html {
   /*   /* $navy-blue 100% */
   /* ) !important; */
 }
-
 
 
 .nav-divider {
@@ -461,7 +464,7 @@ main.container img {
 }
 
 main {
-  min-height: 400px;
+  flex: 1;
   margin-top:1em;
 
   a {
@@ -504,6 +507,21 @@ footer .footerline > div > div {
   background: url("/assets/images/waves2.png") repeat-x center center;
   background-size: contain;
   min-height: 200px;
+
+
+
+}
+
+.subby { 
+  position:relative; height: 300px;top:-225px;margin-bottom:-225px;
+
+  // breakpoint for small size
+  @include media-breakpoint-down(sm) {
+    height: 200px;
+    top:-150px;
+    margin-bottom:-150px;
+  }
+
 }
 
 .master-logo {
@@ -512,9 +530,11 @@ footer .footerline > div > div {
   font-style: normal;
   font-size:40px;
   color: $primary-yellow;
+  position: relative;
+  top:5px;
   
   &:hover {
-    color: $sub-orange;
+    color: $accent-yellow;
     text-decoration:none
   }
 }
