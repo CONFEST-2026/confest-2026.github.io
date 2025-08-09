@@ -25,6 +25,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ##### Organisation
 
+CONFEST 2026 is organised by the School of Computer Science and Informatics at the University of Liverpool.
 
 <div class="people mt-4">
 <div class="person">
