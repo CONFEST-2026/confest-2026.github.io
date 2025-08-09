@@ -27,33 +27,10 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 CONFEST 2026 is organised by the School of Computer Science and Informatics at the University of Liverpool.
 
-<div class="people mt-4">
-<div class="person">
-    <a href="https://www.csc.liv.ac.uk/~hausmann/">
-    <img src="/assets/images/daniel.jpeg" alt="Daniel Hausmann"><br>
-    Daniel Hausmann</a><br>
-    publicity
-</div>
-<div class="person">
-    <a href="https://www.davidpurser.net/">
-    <img src="/assets/images/david.png" alt="David Purser"><br>
-    David Purser</a><br>
-    co-chair
-</div>
-<div class="person">
-    <a href="https://www.csc.liv.ac.uk/~patrick/">
-    <img src="/assets/images/patrick.jpg" alt="Patrick Totzke"><br>
-    Parick Totzke</a><br>
-    co-chair
-</div>
-<div class="person">
-    <a href="https://shufang-zhu.github.io">
-    <img src="/assets/images/shufang.jpg" alt="Shufang Zhu"><br>
-    Shufang Zhu</a><br>
-    workshops
-</div>
-</div>
-
+[Daniel Hausmann](https://www.csc.liv.ac.uk/~hausmann/) (publicity)  
+[David Purser](https://www.davidpurser.net) (co-chair)  
+[Parick Totzke](https://www.csc.liv.ac.uk/~patrick/) (co-chair)  
+[Shufang Zhu](https://shufang-zhu.github.io) (workshops)  
 
 ---
 
