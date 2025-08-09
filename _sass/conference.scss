@@ -523,10 +523,10 @@ footer .footerline > div > div {
   animation: oscillate-scroll 7s linear infinite;
 
   // breakpoint for small size
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down() {
     height: 175px;
     top:-150px;
-    left:-25px;
+    left:-5px;
     margin-bottom:-150px;
   }
 
