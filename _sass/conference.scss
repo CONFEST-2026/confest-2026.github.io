@@ -4,6 +4,7 @@ $accent-yellow:  #f3be42;
 $deep-blue:       #00205B;
 $sky-blue:        #6BC1E1;
 $mid-blue:        rgb(58,95,128);
+$maratime-blue:  rgb(83,128,163);
 $navy-blue:       #0D133D;
 $sea-green:       #2ECCB0;
 $sub-orange:      #FF9900;
@@ -23,6 +24,9 @@ $alert-border-width:           4px !default;
 $alert-color-level:            9 !default;
 $badge-font-size:              .85em !default;
 $enable-responsive-font-sizes: true !default;
+$navbar-nav-link-padding-x: 0.75rem !default;
+$paragraph-margin-bottom: 1.5rem !default;
+$line-height-base: 1.6 !default;
 
 // Beatles theme colors
 $primary:      $deep-blue !default;
@@ -100,12 +104,12 @@ $jumbotron-bg : $primary-yellow;
 @import 'leaflet/leaflet-easybutton';
 @import 'leaflet/leaflet-locatecontrol';
 
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
 @import 'font-beatles';
 
 body {
-  /* font-family: 'Luckiest Guy', cursive, sans-serif; */
+  font-family: 'Public Sans', sans-serif; 
   color: #2E2E2E;
 }
 
@@ -179,22 +183,23 @@ ul.btn-group {
    background: $mid-blue !important;
 }
 .navbar-darker .nav-link {
-  color: $sky-blue !important;
+  color: $cream-bg !important;
 }
 
 .navbar-darker .active a {
   color: $primary-yellow !important;
 }
 .subnav {
- background-color: $primary-yellow !important;
+ background-color: $maratime-blue !important;
 }
 .navbar-lighter .nav-link {
-  color: $sub-orange !important;
-  color: $mid-blue  !important;
+  color: $cream-bg !important;
 }
 .subnav .active {
   //color: $bright-red !important;
-  color: $deep-blue !important
+  color: $primary-yellow !important;
+  // font-weight: bold;
+  
 }
 .navbar-toggler {
   //color: $bright-red !important;
