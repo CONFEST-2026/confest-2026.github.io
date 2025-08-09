@@ -1,7 +1,7 @@
 ---
 layout: default
 subnav: concur
-heroimage: /assets/images/liverpoolpetri.png
+heroimage: /assets/images/liverpoolpetri-white.png
 ---
 
 # CONCUR
@@ -13,7 +13,7 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 ##### Important dates
 
 - Call for papers: TBA
-- Conference:  September 1-4, 2026
+- Conference: September 1-4, 2026
 - Workshops: September 5, 2026
 - Submission deadline: TBA
 - Notification: TBA
