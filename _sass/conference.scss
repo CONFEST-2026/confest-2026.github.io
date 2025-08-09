@@ -514,20 +514,20 @@ footer .footerline > div > div {
   background-size: contain;
   min-height: 200px;
 
-
-
 }
 
 .subby { 
-  position:absolute; height: 300px;top:-230px;margin-bottom:-225px;
+  position:absolute; 
+  top: -230px;
+  margin-bottom: -225px;
+  max-height: 300px;
+  max-width: 90%;
   animation: oscillate-scroll 7s linear infinite;
 
   // breakpoint for small size
-  @include media-breakpoint-down() {
-    height: 175px;
-    top:-150px;
-    left:-5px;
-    margin-bottom:-150px;
+  @include media-breakpoint-down(sm) {
+    top: -150px;
+    margin-bottom: -150px;
   }
 
 }
