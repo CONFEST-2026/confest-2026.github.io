@@ -1,6 +1,6 @@
 ---
 layout: default
-heroimage: /assets/images/liverpool-front-white.jpg
+heroimage: /assets/images/liverpool-front-white.webp
 ---
 <br />
 <!-- <img src="/assets/images/vict.png" width="1100"> -->
