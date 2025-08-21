@@ -29,7 +29,7 @@ CONFEST 2026 is organised by the School of Computer Science and Informatics at t
 
 [Daniel Hausmann](https://www.csc.liv.ac.uk/~hausmann/) (publicity)  
 [David Purser](https://www.davidpurser.net) (co-chair)  
-[Parick Totzke](https://www.csc.liv.ac.uk/~patrick/) (co-chair)  
+[Patrick Totzke](https://www.csc.liv.ac.uk/~patrick/) (co-chair)  
 [Shufang Zhu](https://shufang-zhu.github.io) (workshops)  
 
 ---
