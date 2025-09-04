@@ -1,6 +1,6 @@
 ---
 layout: default
-subnav: CONCUR
+subnav: concur
 heroimage: /assets/images/liverpoolpetri-white.png
 ---
 
