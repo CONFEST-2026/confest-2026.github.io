@@ -13,9 +13,9 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 ##### Important dates
 
 - *Abstracts:*       14 April, 2026
-- *submissions:*     20 April, 2026
+- *Submissions:*     20 April, 2026
 - *Rebuttal:*        28 May - 1 June, 2026
 - *Notification:*    15 June, 2026
 - *Camera Ready:*    29 June, 2026
-- *Conference:*      September, 2026
+- *Conference:*      1 - 4 September, 2026
 - *Workshops:*       5 September, 2026
