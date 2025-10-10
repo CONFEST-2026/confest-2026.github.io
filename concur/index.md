@@ -7,15 +7,15 @@ heroimage: /assets/images/liverpoolpetri-white.png
 # CONCUR
 
 The International Conference on Concurrency Theory (CONCUR) brings together researchers, developers, and students in order to advance the theory of concurrency, and promote its applications. 
-The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of workshops under the joint name CONFEST 2026 and will take place **September 1-5, 2026** at the University of Liverpool, UK.
+The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of workshops under the joint name CONFEST 2026, which will take place **September 1-5, 2026** at the University of Liverpool, UK.
 
 
 ##### Important dates
 
-- Call for papers: TBA
-- Conference: September 1-4, 2026
-- Workshops: September 5, 2026
-- Submission deadline: TBA
-- Notification: TBA
-- Camera-ready: TBA
-- Registration: TBA
+- *Abstracts:*       14 April, 2026
+- *submissions:*     20 April, 2026
+- *Rebuttal:*        28 May - 1 June, 2026
+- *Notification:*    15 June, 2026
+- *Camera Ready:*    29 June, 2026
+- *Conference:*      September, 2026
+- *Workshops:*       5 September, 2026
