@@ -5,7 +5,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
   repository_dispatch:
-    types: [rebuild-from-fmics]
+    types: [rebuild-from-fmics, rebuild-from-qestformats]
 
 permissions:
   contents: read
@@ -31,6 +31,15 @@ jobs:
           cp -r temp-fmics/* fmics/
           rm -rf temp-fmics
           mv fmics/submenu.yml _data/submenu/fmics.yml
+
+      - name: Clone qestformats repo into subdirectory
+        run: |
+          git clone --depth=1 https://github.com/CONFEST-2026/qestformats.git temp-qestformats
+          rm -rf qestformats
+          mkdir -p qestformats
+          cp -r temp-qestformats/* qestformats/
+          rm -rf temp-qestformats
+          mv qestformats/submenu.yml _data/submenu/qestformats.yml
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
