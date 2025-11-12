@@ -81,7 +81,7 @@ conference:
       - name: CONCUR
         relative_url: /concur
       - name: QEST + FORMATS 
-        relative_url: /qestformats
+        absolute_url: https://www.qest-formats.org/
         # submenus specified in _data/submenu/qestformats.yml
       - name: FMICS
         relative_url: /fmics
