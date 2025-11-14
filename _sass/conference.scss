@@ -578,3 +578,37 @@ a.email{
 	font-size: 0.8em;
 	font-family: monospace;
 }
+
+
+.overallschedule{
+  table-layout: fixed;
+  width: 500px;
+  border-collapse: revert;
+  margin:auto
+}
+.overallschedule thead {
+  font-style: italic;
+}
+.overallschedule .actual {
+  background: orange;
+  border: solid 1px black;
+  border-radius: 3px;
+  padding: 5px;
+}
+.overallschedule .concur {
+  background: $mid-blue;
+  color: white;
+}
+.overallschedule .qestformats{
+  background: $maratime-blue;
+  color: white;
+}
+.overallschedule .fmics {
+  background: $sky-blue;
+}
+.overallschedule .workshops {
+  background: $sub-orange;
+}
+.overallschedule .events {
+  background: $sea-green;
+}

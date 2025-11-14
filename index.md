@@ -23,6 +23,44 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ---
 
+##### Schedule
+
+
+<table class="overallschedule" >
+<thead>
+<tr>
+  <td>Tuesday</td>
+  <td>Wednesday</td>
+  <td>Thursday</td>
+  <td>Friday</td>
+  <td>Saturday</td>
+</tr>  
+</thead>
+<tbody>
+<tr>
+  <td colspan="4" class="actual concur">CONCUR</td>
+  <td rowspan="4" class="actual workshops">Workshops</td>
+  
+</tr>    
+<tr>
+  <td></td>
+  <td colspan="3" class="actual qestformats">QEST+FORMATS</td>
+</tr>    
+<tr>
+  <td></td>
+  <td colspan="3" class="actual fmics">FMICS</td>
+</tr>    
+<tr>
+  <td  class="actual events">Evening Reception</td>
+  <td></td>
+  <td  class="actual events">Social Activity</td>
+  <td></td>
+</tr>
+</tbody>  
+</table>
+
+---
+
 ##### Organisation
 
 CONFEST 2026 is organised by the School of Computer Science and Informatics at the University of Liverpool.
