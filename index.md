@@ -27,13 +27,13 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 
 <table class="overallschedule" >
-<thead>
+<thead align="center">
 <tr>
-  <td>Tuesday</td>
-  <td>Wednesday</td>
-  <td>Thursday</td>
-  <td>Friday</td>
-  <td>Saturday</td>
+<td class="weekday"><span class="abbr">Tue</span><span class="full">Tuesday</span></td>
+<td class="weekday"><span class="abbr">Wed</span><span class="full">Wednesday</span></td>
+<td class="weekday"><span class="abbr">Thu</span><span class="full">Thursday</span></td>
+<td class="weekday"><span class="abbr">Fri</span><span class="full">Friday</span></td>
+<td class="weekday"><span class="abbr">Sat</span><span class="full">Saturday</span></td>
 </tr>  
 </thead>
 <tbody>
