@@ -22,7 +22,7 @@ subnav: concur
 - [Corina Cirstea](https://web-archive.southampton.ac.uk/www.ecs.soton.ac.uk-2022/www.ecs.soton.ac.uk/people/cc2.html), University of Southampton, UK
 - [Wojciech Czerwiński](https://www.mimuw.edu.pl/~wczerwin/index.html), University of Warsaw, Poland
 - [Javier Esparza](https://www7.in.tum.de/~esparza/), TU Munich, Germany
-- [Tobias Kappe](https://tobias.kap.pe/), Leiden University, Netherlands
+- [Tobias Kappé](https://tobias.kap.pe/), Leiden University, Netherlands
 - [Stefan Kiefer](https://www.cs.ox.ac.uk/people/stefan.kiefer/), University of Oxford, UK
 - [Barbara König](https://www.uni-due.de/theoinf/people/koenig_en.php), University of Duisburg-Essen, Germany
 - [Antonín Kucera](https://www.fi.muni.cz/usr/kucera/), Masaryk University, Czech Republic
