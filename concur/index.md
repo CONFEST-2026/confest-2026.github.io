@@ -20,9 +20,3 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 - *Conference:*      1 -- 4 September, 2026
 - *Workshops:*       5 September, 2026
 
-##### PC Chairs
-- [Ana Sokolova][AS], University of Salzburg, Austria
-- [Patrick Totzke][PT], University of Liverpool, UK
-
-[AS]: https://www.cs.uni-salzburg.at/~anas/
-[PT]: https://cgi.csc.liv.ac.uk/~patrick/

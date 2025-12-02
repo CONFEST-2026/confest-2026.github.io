@@ -1,6 +1,8 @@
 submenu:
   - name: Info
     relative_url: /concur
+  - name: Committees
+    relative_url: /concur/committees
   - name: Call for papers
     disabled: true
     relative_url: /concur/call-for-papers
