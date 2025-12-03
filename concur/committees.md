@@ -3,12 +3,12 @@ layout: default
 subnav: concur
 ---
 
-##### Program Committee Chairs
+## Program Committee Chairs
 
 - [Ana Sokolova][AS], University of Salzburg, Austria
 - [Patrick Totzke][PT], University of Liverpool, UK
 
-##### Program Committee
+## Program Committee
 
 - [Parosh Abdulla](https://user.it.uu.se/~parosha/), Uppsala University, Sweden
 - [Giorgio Bacci](https://homes.cs.aau.dk/~grbacci/), Aalborg University, Denmark
@@ -48,7 +48,7 @@ subnav: concur
 - [Nisansala Yatapanage](https://yatapanage.com), Australian National University, Australia
 - [Florian Zuleger](https://forsyte.at/people/zuleger), TU Wien, Austria
 
-##### Steering Committee
+## Steering Committee
 
 - [Luca Aceto](https://staff.ru.is/luca/), Reykjavik University, Iceland
 - [Christel Baier](https://wwwtcs.inf.tu-dresden.de/~baier/), TU Dresden, Germany
