@@ -32,7 +32,7 @@ subnav: concur
 - [Roland Meyer](https://www.tu-braunschweig.de/tcs/team/meyer), TU Braunschweig, Germany
 - [Pierre Ohlmann](https://pageperso.lis-lab.fr/pierre.ohlmann/), CNRS, LIS Marseille, France
 - [Prakash Panangaden](https://www.cs.mcgill.ca/~prakash), McGill and University of Edinburgh, Canada/UK
-- [Kristin Peters](https://www.uni-augsburg.de/en/fakultaet/fai/informatik/prof/swtti/team/kirstin-peters/), University of Augsburg, Germany
+- [Kirstin Peters](https://www.uni-augsburg.de/en/fakultaet/fai/informatik/prof/swtti/team/kirstin-peters/), University of Augsburg, Germany
 - [Guillermo A. Pérez](https://gaperez64.github.io/), University of Antwerp, Belgium
 - [Damien Pous](https://perso.ens-lyon.fr/damien.pous/), CNRS, ENS Lyon, France
 - [Karin Quaas](https://www.informatik.uni-leipzig.de/~quaas/), University of Leipzig, Germany
