@@ -9,7 +9,7 @@ heroimage: /assets/images/liverpool-front-white.webp
 
 CONFEST brings together researchers, developers, and students in computer science, in order to advance the theory of concurrency, the study of stochastic and timed systems, and the application of formal methods to industrial systems. 
 
-This umbrella event consists of three main conferences [CONCUR](concur), [FMICS](fmics) and [QEST+FORMATS](qestformats), and affiliated workshops.
+This umbrella event consists of three main conferences [CONCUR](concur), [FMICS](fmics) and [QEST+FORMATS](https://www.qest-formats.org/), and affiliated workshops.
 The 2026 edition will take place on the main campus of the University of Liverpool, on **September 1-5, 2026**.  
 
 ---
@@ -19,7 +19,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 **[FMICS 2026](https://confest-2026.github.io/fmics), the 31th International Conference on *Formal Methods for Industrial Critical Systems***
 
-**[QEST+FORMATS 2026](https://confest-2026.github.io/qestformats), the joint International Conference on *Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems***
+**[QEST+FORMATS 2026](https://www.qest-formats.org/), the joint International Conference on *Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems***
 
 ---
 
