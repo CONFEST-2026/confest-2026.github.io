@@ -1,7 +1,8 @@
 ---
 layout: default
 subnav: concur
-heroimage: /assets/images/liverpoolpetri-white.png
+heroimage: /assets/images/liverpoolpetri-white-crop.png
+herocontain: True
 ---
 
 # CONCUR 2026

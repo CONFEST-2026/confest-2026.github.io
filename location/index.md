@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Location
-heroimage: /assets/images/lime.jpg
+heroimage: /assets/images/map.png
+herocontain: True
+herobackground: "#8aabbf"
 ---
 
 <div class="row">

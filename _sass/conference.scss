@@ -508,6 +508,11 @@ footer .footerline > div > div {
   background-size: cover; 
   background-position: center center;
 }
+.hero.herocontain {
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .waves {
   background: url("/assets/images/waves2.png") repeat-x center center;
