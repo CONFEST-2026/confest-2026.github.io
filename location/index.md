@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Location
-heroimage: /assets/images/map.png
-herocontain: True
+heroimage: /assets/images/mapeurope.png
+herofullheight: True
 herobackground: "#8aabbf"
 ---
 
