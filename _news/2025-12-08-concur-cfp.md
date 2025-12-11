@@ -1,4 +1,4 @@
 ---
 ---
 
-CfP for [CONCUR](concur/) published.
+[CfP](concur/call-for-papers/) for [CONCUR](concur/) published.
