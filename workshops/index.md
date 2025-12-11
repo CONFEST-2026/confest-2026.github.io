@@ -2,8 +2,7 @@
 layout: default
 ---
 
-# Call for Workshops — CONFEST 2026
-
+# Call for Workshops
 
 CONFEST is an umbrella event consisting of three main conferences CONCUR, FMICS and QEST+FORMATS, and affiliated workshops. The organizers of CONFEST 2026 invite proposals for satellite workshops to be co-located at CONFEST 2026 (University of Liverpool, 1–5 September 2026). 
 
@@ -39,7 +38,7 @@ Organizers of accepted workshops will be responsible for: maintaining their work
 
 ## Timeline for Workshop Proposals
 - Workshop proposal deadline: 30 January 2026 (AoE)
-- Notification:   6 February 2026 (AoE)
+- Notification: 6 February 2026 (AoE)
 
 
 ## Submission
