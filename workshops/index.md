@@ -4,14 +4,13 @@ layout: default
 
 # Call for Workshops
 
-CONFEST is an umbrella event consisting of three main conferences CONCUR, FMICS and QEST+FORMATS, and affiliated workshops. The organizers of CONFEST 2026 invite proposals for satellite workshops to be co-located at CONFEST 2026 (University of Liverpool, 1–5 September 2026). 
+CONFEST is an umbrella event consisting of three main conferences CONCUR, FMICS and QEST+FORMATS, and affiliated workshops. We invite proposals for satellite workshops to be co-located at CONFEST 2026 (University of Liverpool, 1–5 September 2026).
 
-All accepted workshops will be held on 5 September, 2026. The deadline for applications, including the information below, is *January 30, 2026*. Notifications will be sent by *February 6, 2026*.
+All accepted workshops will be held on 5 September, 2026. The deadline for applications is **January 30, 2026**. Notifications will be sent by *February 6, 2026*.
 
+## What We Provide
 
-## What CONFEST 2026 Provides to Accepted Workshops
-
-For workshops accepted to CONFEST 2026, the organisers will provide:
+For workshops accepted to CONFEST 2026, we will provide:
 
 - Meeting room on campus
 - Coffee breaks
@@ -32,15 +31,14 @@ If you wish to organize a workshop at CONFEST 2026, please send us a proposal in
 - Publication plan, if any (formal/informal, pre/post proceedings, publisher)
 - Tentative schedule for submission and notification
 
-
 Organizers of accepted workshops will be responsible for: maintaining their workshop webpage, publicising the Call for Participation (if any), handling submissions (if applicable), selecting participants, preparing the workshop program, and organizing any materials or special arrangements.
 
-
 ## Timeline for Workshop Proposals
+
 - Workshop proposal deadline: 30 January 2026 (AoE)
 - Notification: 6 February 2026 (AoE)
 
-
 ## Submission
 
-Please send your workshop proposal (as a PDF) to the Workshop Chair of CONFEST 2026 (Shufang Zhu, University of Liverpool, shufang.zhu@liverpool.ac.uk). Use the subject line: “CONFEST 2026 Workshop Proposal – WorkshopName”. Include all required information listed above. Informal questions can be directed to workshop chair.
+Please send your workshop proposal (as a PDF) to the Workshop Chair (<a href="mailto:{{ 'shufang.zhu@liverpool.ac.uk' | encode_email }}" title="Shufang Zhu">Shufang Zhu</a>) using the subject line: “CONFEST 2026 Workshop Proposal – WorkshopName”.
+Include all required information listed above. Informal questions can be directed to workshop chair.
