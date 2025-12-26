@@ -7,10 +7,14 @@ url: "https://confest-2026.github.io/" # the base hostname & protocol for your s
 
 #theme: jekyll-theme-conference
 
+plugins:
+  - jekyll-email-protect
+
 # Build settings
 markdown: kramdown
 sass:
   style: compressed
+
 
 # Additional exclude from processing
 exclude:
