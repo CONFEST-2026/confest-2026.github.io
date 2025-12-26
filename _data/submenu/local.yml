@@ -1,0 +1,5 @@
+submenu:
+  - name: Getting here
+    relative_url: /location
+  - name: In Liverpool
+    relative_url: /location/liverpool
