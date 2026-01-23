@@ -1,4 +1,4 @@
 ---
 ---
 
-Invited speakers for [CONCUR](concur/), [FMICS](fmics/) and [QUEST+FORMATS](https://www.qest-formats.org/) finalised.
+Invited speakers for [CONCUR](concur/), [FMICS](fmics/) and [QEST+FORMATS](https://www.qest-formats.org/) finalised.
