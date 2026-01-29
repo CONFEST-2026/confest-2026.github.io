@@ -1,3 +1,4 @@
+---
 name: 5
 full_name: Colin O'Halloran
 first_name: Colin
@@ -14,3 +15,4 @@ bio: Colin has over 40 years of experience in high integrity systems, operating 
 links:
   - name: Website
     href: https://www.drisq.com/about
+---
