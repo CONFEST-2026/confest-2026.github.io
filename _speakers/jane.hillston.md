@@ -8,8 +8,8 @@ affiliation: University of Edinburgh, UK
 invited: true
 joint: false
 conference: QEST
-hide: true
+hide: false
 links:
   - name: Website
-    href: https://homepages.inf.ed.ac.uk/jeh/
+    absolute_url: https://homepages.inf.ed.ac.uk/jeh/
 ---
