@@ -4,7 +4,7 @@ full_name: Ichiro Hasuo
 first_name: Ichiro
 last_name: Hasuo
 img: invited-IH.jpg
-affiliation: National Institute of Informatics (NII), Tokyo, Japan
+affiliation: Professor at the National Institute of Informatics (NII), Tokyo, Japan
 invited: true
 joint: true
 conference: all
