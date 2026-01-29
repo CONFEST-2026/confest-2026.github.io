@@ -1,3 +1,4 @@
+---
 name: 6
 full_name: Jade Alglave
 first_name: Jade
@@ -11,3 +12,4 @@ hide: true
 links:
   - name: Website
     href: http://www0.cs.ucl.ac.uk/staff/j.alglave/
+---
