@@ -1,3 +1,4 @@
+---
 name: 7
 full_name: Jean-François Raskin
 first_name: Jean-François
@@ -11,3 +12,4 @@ hide: true
 links:
   - name: Website
     href: https://verif.ulb.ac.be/jfr/
+---
