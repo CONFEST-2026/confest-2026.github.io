@@ -8,8 +8,8 @@ affiliation: Université Libre de Bruxelles, Belgium
 invited: true
 joint: false
 conference: CONCUR
-hide: true
+hide: false
 links:
   - name: Website
-    href: https://verif.ulb.ac.be/jfr/
+   absolute_url: https://verif.ulb.ac.be/jfr/
 ---
