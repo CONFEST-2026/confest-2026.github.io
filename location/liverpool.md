@@ -72,12 +72,15 @@ herobackground: white
   }
 
   // Your buildings
-  addBuilding(-2.96301, 53.40499, "Talks", 'red', 'n');
-  addBuilding(-2.96100, 53.40700, "Hotel", 'blue', 'ne');
+  addBuilding(-2.96301, 53.40499, "Talks", 'red', 's');
+  addBuilding(-2.960834, 53.40700, "Hotel", 'blue', 'n');
   addBuilding(-2.964978,53.405762, "Pub","blue",'s');
   addBuilding(-2.969002,53.404861,"Cathedral","green","s");
   addBuilding(-2.97313, 53.39743,"Cathedral","green","s");
   addBuilding(-2.97768,53.40759,"Liverpool Lime Street \n(Main station)","green","s");
+  addBuilding(-2.960834, 53.406564, "Reception", "red","s");
+  addBuilding(-2.962662,53.405973, "Halls", "blue","s");
+  addBuilding(-2.997151,53.404575, "Social Activity", "red","ne");
 </script>
 
 </div>
