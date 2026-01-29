@@ -2,11 +2,11 @@
   abbreviation: UoL
   url: https://www.liverpool.ac.uk/computer-science-and-informatics/
   logo: uol.png
-# - name: Springer
-#   abbreviation: Springer
-#   url: https://www.springer.com/
-#   logo: springer.svg
-- name: European Research Consortium for Informatics and Mathematics
-  abbreviation: ERCIM
-  url: https://www.ercim.eu/
-  logo: ercim.png
+- name: Springer
+  abbreviation: Springer
+  url: https://www.springer.com/
+  logo: springer.svg
+# - name: European Research Consortium for Informatics and Mathematics
+#   abbreviation: ERCIM
+#   url: https://www.ercim.eu/
+#   logo: ercim.png
