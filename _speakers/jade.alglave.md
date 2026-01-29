@@ -11,5 +11,5 @@ conference: CONCUR
 hide: false
 links:
   - name: Website
-    absolute_url: http://www0.cs.ucl.ac.uk/staff/j.alglave/
+    href: http://www0.cs.ucl.ac.uk/staff/j.alglave/
 ---
