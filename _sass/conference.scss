@@ -3,7 +3,7 @@ $primary-yellow:  #F5D547;
 $accent-yellow:  #f3be42;
 $deep-blue:       #00205B;
 $sky-blue:        #6BC1E1;
-$mid-blue:        rgb(58,95,128);
+]$mid-blue:        rgb(58,95,128);
 $maratime-blue:  rgb(83,128,163);
 $navy-blue:       #0D133D;
 $sea-green:       #2ECCB0;
@@ -176,12 +176,23 @@ ul.btn-group {
   font-size: 1.2em;
   padding: .5rem .5rem;
 }
+
+padding: 0;
+
+}
+
+.navbar:not(.subnav) .nav-item {
+  padding: 20px 0;
+}
+
+.navbar .active {
+  background-color: $maratime-blue !important;
+  background: $maratime-blue !important;
 }
 
 .navbar-darker {
   background-color: $mid-blue !important;
-  background-color: $deep-blue !important;
-   background: $mid-blue !important;
+  background: $mid-blue !important;
 }
 .navbar-darker .nav-link {
   color: $cream-bg !important;
