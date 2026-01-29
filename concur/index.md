@@ -24,6 +24,7 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 ##### Keynote speakers
 
 - [Jade Alglave](http://www0.cs.ucl.ac.uk/staff/j.alglave/), University College London / [arm](https://www.arm.com/), UK
+- [Ezio Bartocci](https://informatics.tuwien.ac.at/people/ezio-bartocci), TU Wien, Austria (Shared CONFEST Keynote)
 - [Ichiro Hasuo](https://group-mmm.org/~ichiro/), National Institute of Informatics, Japan (Shared CONFEST Keynote)
 - [Jean-François Raskin](https://verif.ulb.ac.be/jfr/), Université Libre de Bruxelles, Belgium
 - [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool. UK
