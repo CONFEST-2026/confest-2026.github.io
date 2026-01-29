@@ -1,3 +1,4 @@
+---
 name: 2
 full_name: Ichiro Hasuo
 first_name: Ichiro
@@ -12,3 +13,4 @@ bio: Ichiro Hasuo, Ph.D., is a Professor at National Institute of Informatics (N
 links:
   - name: Website
     href: https://group-mmm.org/~ichiro/
+---
