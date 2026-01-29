@@ -8,8 +8,8 @@ affiliation: Aalborg University, Denmark
 invited: true
 joint: false
 conference: QEST
-hide: true
+hide: false
 links:
   - name: Website
-    href: https://kgl.cs.aau.dk/
+    absolute_url: https://kgl.cs.aau.dk/
 ---
