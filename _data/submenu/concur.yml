@@ -1,5 +1,5 @@
 submenu:
-  - name: Home
+  - name: CONCUR Home
     relative_url: /concur
   - name: Committees
     relative_url: /concur/committees
