@@ -11,5 +11,5 @@ conference: CONCUR
 hide: false
 links:
   - name: Website
-   absolute_url: https://verif.ulb.ac.be/jfr/
+    absolute_url: https://verif.ulb.ac.be/jfr/
 ---
