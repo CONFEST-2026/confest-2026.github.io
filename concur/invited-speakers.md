@@ -10,7 +10,6 @@ subnav: concur
 <div class="card-deck">
   {% for speaker in speakers %}
       {% if speaker.invited %}
-      {% if speaker.conference == CONCUR %}
       {% assign website = speaker.links | first %}
     <div class="card" style="width:200px">
       <img class="card-img-top" 
@@ -22,7 +21,6 @@ subnav: concur
           <a href="{{ website.href }}" class="stretched-link"></a>
       </div>
     </div>
-      {% endif %}
       {% endif %}
   {% endfor %}
 </div>
