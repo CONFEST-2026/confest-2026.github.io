@@ -47,8 +47,8 @@
       </div>
 
   </header>
-  {% if page.heroimage %}
-  <div style="background-image: url('{{page.heroimage}}');{% if page.herobackground %} background-color: {{page.herobackground}};{% endif %}" class="hero {% if page.herocontain %}herocontain{% endif %} {% if page.herofullheight %}herofullheight{% endif %} mb-4">
+  {% if page.heroimage or page.herobackground %}
+  <div style="{% if page.heroimage %}background-image: url('{{page.heroimage}}'){% endif %};{% if page.herobackground %} background-color: {{page.herobackground}};{% endif %}" id="heroimage" class="hero {% if page.herocontain %}herocontain{% endif %} {% if page.herofullheight %}herofullheight{% endif %} mb-4">
 
   </div>
   {%- endif %}
