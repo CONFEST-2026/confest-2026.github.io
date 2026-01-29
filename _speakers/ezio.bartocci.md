@@ -3,7 +3,7 @@ name: 3
 full_name: Ezio Bartocci
 first_name: Ezio
 last_name: Bartocci
-img: in‌vited-eb.png
+img: invited-eb.png
 affiliation: Professor at TU Wien, Vienna, Austria
 invited: true
 joint: true
