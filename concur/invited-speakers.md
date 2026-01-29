@@ -44,6 +44,7 @@ subnav: concur
           <h5 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
           <p class="card-text">{{ speaker.affiliation }}</p>
           {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
+          {% if speaker.bio %}<p class="card-text">{{ speaker.bio }}</p>{% endif %}
           <a href="{{ website.href }}" class="stretched-link"></a>
       </div>
     </div>
