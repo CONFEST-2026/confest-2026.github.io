@@ -4,8 +4,7 @@ full_name: Colin O'Halloran
 first_name: Colin
 last_name: O'Halloran
 img: invited-fmics-co.png
-affiliation: Honourary Visiting Professor at the University of York, UK
-CTO of D-RiSQ Ltd, UK
+affiliation: Honourary Visiting Professor at the University of York, UK; CTO of D-RiSQ Ltd, UK
 invited: true
 joint: false
 conference: FMICS
