@@ -18,7 +18,7 @@ subnav: concur
           <h5 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
           <p class="card-text">{{ speaker.affiliation }}</p>
           {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
-          <a href="{{ website.href }}" class="stretched-link"></a>
+          <a href="{{ website.absolute_url }}" class="stretched-link"></a>
       </div>
     </div>
       {% endif %}
@@ -45,9 +45,31 @@ subnav: concur
           <p class="card-text">{{ speaker.affiliation }}</p>
           {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
           {% if speaker.bio %}<p class="card-text">{{ speaker.bio }}</p>{% endif %}
-          <a href="{{ website.href }}" class="stretched-link"></a>
+          <a href="{{ website.absolute_url}}" class="stretched-link"></a>
       </div>
     </div>
       {% endif %}
   {% endfor %}
 </div>
+
+{% assign speakers = site.speakers | sort_natural: 'last_name' %}
+
+{% for speaker in speakers %}
+    {% if speaker.joint %}
+    {% assign website = speaker.links | first %}
+    <div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:left; vertical-align: middle; padding:40px 20px;">
+      <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
+      {{ speaker.affiliation }}
+      <h3>{{ speaker.title }}</h3>
+      <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
+        <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.name }}" style="float:right; padding:0 10px; width:30%">
+      </a>
+      {{ speaker.abstract }}
+      </p>
+      <h3>Bio</h3>
+      {{ speaker.bio }}
+    </div>
+    {% endif %}
+{% endfor %}
+
+
