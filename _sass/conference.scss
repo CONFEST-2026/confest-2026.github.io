@@ -3,7 +3,7 @@ $primary-yellow:  #F5D547;
 $accent-yellow:  #f3be42;
 $deep-blue:       #00205B;
 $sky-blue:        #6BC1E1;
-]$mid-blue:        rgb(58,95,128);
+$mid-blue:        rgb(58,95,128);
 $maratime-blue:  rgb(83,128,163);
 $navy-blue:       #0D133D;
 $sea-green:       #2ECCB0;
@@ -182,10 +182,10 @@ padding: 0;
 }
 
 .navbar:not(.subnav) .nav-item {
-  padding: 20px 0;
+  padding: 20px 3px;
 }
 
-.navbar .active {
+.navbar .navbar-collapse  .active {
   background-color: $maratime-blue !important;
   background: $maratime-blue !important;
 }
@@ -198,9 +198,9 @@ padding: 0;
   color: $cream-bg !important;
 }
 
-.navbar-darker .active a {
-  color: $primary-yellow !important;
-}
+// .navbar-darker .active a {
+//   color: $primary-yellow !important;
+// }
 .subnav {
  background-color: $maratime-blue !important;
 }
