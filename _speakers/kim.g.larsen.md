@@ -1,3 +1,4 @@
+---
 name: 10
 full_name: Kim G. Larsen
 first_name: Kim G.
@@ -11,3 +12,4 @@ hide: true
 links:
   - name: Website
     href: https://kgl.cs.aau.dk/
+---
