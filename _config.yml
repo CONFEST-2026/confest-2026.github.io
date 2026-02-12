@@ -94,7 +94,7 @@ conference:
         relative_url: /workshops
         # submenus specified in _data/submenu/workshops.yml
       - name: Local Info
-        relative_url: /location/
+        relative_url: /local/
         # later becomes a submenu with links to the location, program, talks, speakers, chat, etc.
         # menu:
         # - name: Location

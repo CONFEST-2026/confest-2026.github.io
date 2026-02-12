@@ -1,5 +1,7 @@
 submenu:
   - name: Getting here
-    relative_url: /location
+    relative_url: /local
   - name: In Liverpool
-    relative_url: /location/liverpool
+    relative_url: /local/liverpool
+  - name: Code of Conduct
+    relative_url: /local/code-of-conduct
