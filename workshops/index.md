@@ -12,28 +12,36 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
   <div class="workshop-box">
     <div class="workshop-title">Trends 2026</div>
     <div class="organisers">
+      {% comment %}
       Organisers:<br>
+      {% endcomment %}
     </div>
   </div>
 
   <div class="workshop-box">
     <div class="workshop-title">Express/SOS 2026</div>
     <div class="organisers">
+      {% comment %}
       Organisers:<br>
+      {% endcomment %}
     </div>
   </div>
 
   <div class="workshop-box">
     <div class="workshop-title">Radical 2026</div>
     <div class="organisers">
+      {% comment %}
       Organisers:<br>
+      {% endcomment %}
     </div>
   </div>
 
   <div class="workshop-box">
     <div class="workshop-title">YR-Concur 2026</div>
     <div class="organisers">
+      {% comment %}
       Organisers:<br>
+      {% endcomment %}
     </div>
   </div>
 
