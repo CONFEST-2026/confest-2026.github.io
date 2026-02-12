@@ -4,10 +4,8 @@ title: Location
 subnav: local
 ---
 
-## CONFEST Code of Conduct
 
-<div id="confest-safety-advocate" 
-     style="width:300px; float:right; margin:0 0 1em 1.5em; padding:16px; box-sizing:border-box; border:1px solid #ddd; border-radius:8px; background:#f9f9f9; font-family:Arial, sans-serif; font-size:14px; line-height:1.5;">
+<div id="confest-safety-advocate">
 
   <h3>
     CONFEST Advocate
@@ -31,16 +29,8 @@ subnav: local
   </div>
 </div>
 
-<style>
-@media screen and (max-width: 600px) {
-  #confest-safety-advocate {
-    float: none !important;
-    width: 100% !important;
-    margin: 1em 0 !important;
-  }
-}
-</style>
 
+## CONFEST Code of Conduct
 
 CONFEST is committed to inclusive event experiences, respectful of all participants, and free of discrimination, harassment, bullying, or retaliation. An inclusive and respectful atmosphere is vital to free expression and the open exchange of ideas, serving the main purpose of the events.
 

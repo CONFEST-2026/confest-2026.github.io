@@ -1,3 +1,13 @@
 submenu:
+  - name: Workshops
+    relative_url: /workshops/
+  - name: Trends 2026
+    relative_url: /workshops/#
+  - name: Express/SOS 2026
+    relative_url: /workshops/#
+  - name: Radical 2026
+    relative_url: /workshops/#
+  - name: YR-Concur
+    relative_url: /workshops/yr-concur
   - name: Call for Workshops
-    relative_url: /workshops
+    relative_url: /workshops/call-for-workshops

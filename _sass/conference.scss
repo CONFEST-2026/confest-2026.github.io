@@ -2,7 +2,7 @@
 $primary-yellow:  #F5D547;
 $accent-yellow:  #f3be42;
 $deep-blue:       #00205B;
-$sky-blue:        #6BC1E1;
+$sky-blue:        rgb(160,190,210);
 $mid-blue:        rgb(58,95,128);
 $maratime-blue:  rgb(83,128,163);
 $navy-blue:       #0D133D;
@@ -638,4 +638,50 @@ a.email{
 @media (min-width: 601px) {
   .overallschedule .weekday .abbr { display: none; }
   .overallschedule .weekday .full { display: inline; }
+}
+
+
+  .workshop-container {
+    display: flex;
+    flex-wrap: wrap;           /* allows wrapping onto new lines */
+    gap: 20px;                 /* space between boxes */
+    margin-bottom: 20px;
+
+      
+    .organisers {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  .workshop-box {
+    width: 260px;              /* fixed width */
+    background-color: $sky-blue; /* grey */
+    color: #000;               /* black text */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .workshop-title {
+    font-size: 24px;           /* large title */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+
+@media screen and (max-width: 600px) {
+  #confest-safety-advocate {
+    float: none !important;
+    width: 100% !important;
+    margin: 1em 0 !important;
+  }
+}
+
+#confest-safety-advocate {
+  width:300px; float:right; margin:0 0 1em 1.5em; padding:16px; box-sizing:border-box; border:1px solid #ddd;  background:#f9f9f9; font-family:Arial, sans-serif; font-size:14px; line-height:1.5;
+      background-color: $sky-blue; /* grey */
+
 }
