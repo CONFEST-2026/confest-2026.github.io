@@ -48,8 +48,10 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
 
 ### Registration for Workshops
 
-Registration for workshops is through the central CONFEST registration.
+Registration for workshops will be managed through the central CONFEST registration.
 
 ### Workshop chair
 
-Enquiries regarding workshops can be directed to the workshops chair: [Shufang Zhu](https://shufang-zhu.github.io) 
+Enquiries regarding individual workshops should be directed to their organisers, general workshop enquiries can be directed to the workshops chair: [Shufang Zhu](https://shufang-zhu.github.io). 
+
+
