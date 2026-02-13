@@ -644,21 +644,20 @@ a.email{
   .workshop-container {
     display: flex;
     flex-wrap: wrap;           /* allows wrapping onto new lines */
-    gap: 20px;                 /* space between boxes */
+    gap: 15px;                 /* space between boxes */
     margin-bottom: 20px;
 
       
     .organisers {
-      font-size: 14px;
-      line-height: 1.4;
+      line-height: 1.6;
     }
   }
 
   .workshop-box {
-    width: 260px;              /* fixed width */
+    width: 265px;              /* fixed width */
     background-color: $sky-blue; /* grey */
     color: #000;               /* black text */
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

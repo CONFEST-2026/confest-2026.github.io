@@ -2,11 +2,11 @@ submenu:
   - name: Workshops
     relative_url: /workshops/
   - name: Trends 2026
-    relative_url: /workshops/#
+    absolute_url: https://concurrency-theory.org/organizations/ifip
   - name: Express/SOS 2026
-    relative_url: /workshops/#
+    absolute_url: https://expresssos.github.io
   - name: Radical 2026
-    relative_url: /workshops/#
+    absolute_url: https://sites.google.com/site/radicalconcur
   - name: YR-Concur
     relative_url: /workshops/yr-concur
   - name: Call for Workshops

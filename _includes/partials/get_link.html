@@ -77,7 +77,7 @@
     {%- endif %}>
 
   {%- else -%}
-    <a{% if link_styleclass %} class="{{ link_styleclass }}"{% endif %} href="{{ link_href }}" title="{{ link.name }}">
+    <a{% if link_styleclass %} class="{{ link_styleclass }}"{% endif %} href="{{ link_href }}" title="{{ link.name }}"{% if link.absolute_url %} target="_blank" {% endif %}>
 
   {%- endif -%}
 {%- endcapture -%}
