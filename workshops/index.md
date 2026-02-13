@@ -10,15 +10,6 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
 <div class="workshop-container">
 
   <div class="workshop-box">
-    <div class="workshop-title"><a target="_blank" href="https://concurrency-theory.org/organizations/ifip">Trends 2026</a></div>
-    <div class="organisers">
-      Organisers:<br>
-      <a target="_blank" href="http://www.cs.famaf.unc.edu.ar/~dargenio/" >Pedro R. D’Argenio</a><br>
-      <a target="_blank" href="https://cs.uni-salzburg.at/~anas/" >Ana Sokolova</a>
-    </div>
-  </div>
-
-  <div class="workshop-box">
     <div class="workshop-title"><a target="_blank" href="https://expresssos.github.io/">Express/SOS 2026</a></div>
     <div class="organisers">
       Organisers:<br>
@@ -32,6 +23,15 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
       Organisers:<br>
       <a target="_blank" href="https://groupoid.moe/" >Dan Frumin</a><br>
       <a target="_blank" href="https://valvestate.github.io/" >Muhammad Najib</a>
+    </div>
+  </div>
+
+  <div class="workshop-box">
+    <div class="workshop-title"><a target="_blank" href="https://concurrency-theory.org/organizations/ifip">Trends 2026</a></div>
+    <div class="organisers">
+      Organisers:<br>
+      <a target="_blank" href="http://www.cs.famaf.unc.edu.ar/~dargenio/" >Pedro R. D’Argenio</a><br>
+      <a target="_blank" href="https://cs.uni-salzburg.at/~anas/" >Ana Sokolova</a>
     </div>
   </div>
 

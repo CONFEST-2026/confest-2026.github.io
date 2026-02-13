@@ -22,7 +22,7 @@ subnav: local
       <li>Support after experiencing harassment</li>
       <li>Help ensuring personal safety (e.g., accompaniment, room changes)</li>
       <li>Contact details for campus safety team or local police</li>
-      <li>Information about counseling or other resources</li>
+      <li>Information about counselling or other resources</li>
       <li>Guidance in handling professionally difficult situations</li>
       <li>Information about filing an official complaint</li>
     </ul>
@@ -30,7 +30,7 @@ subnav: local
 </div>
 
 
-## CONFEST Code of Conduct
+## Code of Conduct at CONFEST 2026
 
 CONFEST is committed to inclusive event experiences, respectful of all participants, and free of discrimination, harassment, bullying, or retaliation. An inclusive and respectful atmosphere is vital to free expression and the open exchange of ideas, serving the main purpose of the events.
 
@@ -38,7 +38,7 @@ CONFEST is committed to inclusive event experiences, respectful of all participa
 
 
 
-### Expected Behaviour
+#### Expected Behaviour
 
 We expect all participants in CONFEST events to:
 
@@ -49,11 +49,11 @@ We expect all participants in CONFEST events to:
 
 
 
-### Unacceptable Behaviour
+#### Unacceptable Behaviour
 
 Unacceptable at any CONFEST event is:
 
-#### Abuse
+##### Abuse
 
 Any action directed at an individual that:
 - (a) interferes with that person’s participation; or  
@@ -61,16 +61,15 @@ Any action directed at an individual that:
 
 This includes threats, intimidation, bullying, stalking, or other types of abuse.
 
-#### Discriminatory Harassment
+##### Discriminatory Harassment
 
 Any conduct that discriminates or denigrates an individual on the basis of race, ethnicity, religion, citizenship, nationality, age, sexual or gender identity, disability, or any other characteristic protected by law in the location where the event takes place.
 
-#### Sexual Harassment
+##### Sexual Harassment
 
-Unwelcome sexual advances, requests for sexual favors, or other verbal or physical conduct of a sexual nature.
+Unwelcome sexual advances, requests for sexual favours, or other verbal or physical conduct of a sexual nature.
 
 Examples include (but are not limited to):
-
 - Unwelcome advances or propositions, particularly when one individual has authority over the other;  
 - Inappropriate touching of an individual’s body;  
 - Degrading or humiliating comments about an individual’s appearance;  
@@ -78,13 +77,13 @@ Examples include (but are not limited to):
 
 
 
-#### Additional Examples of Unacceptable Behaviour
+##### Additional Examples of Unacceptable Behaviour
 
 Unacceptable behaviours include, but are not limited to:
 
 - Intimidating, harassing, abusive, discriminatory, derogatory, or demeaning speech or actions;  
 - Offensive, degrading, humiliating, harmful, or prejudicial verbal or written comments or visual images related to gender, sexual orientation, race, religion, disability, age, appearance, or other personal characteristics;  
-- Unwelcome sexual advances, requests for sexual favors, or other verbal or physical conduct of a sexual nature;  
+- Unwelcome sexual advances, requests for sexual favours, or other verbal or physical conduct of a sexual nature;  
 - Inappropriate or gratuitous use of nudity, sexual images, or stereotyped images, including using an activity-related communication channel to display or distribute sexually explicit or otherwise offensive or discriminatory images or messages;  
 - Deliberate intimidation, stalking, or following;  
 - Harassing photography or recording;  
@@ -100,7 +99,7 @@ Harassment committed in a joking manner or disguised as a compliment still const
 
 ---
 
-### Additional Resources
+#### Additional Resources
 
 - **Sexual Harassment Resources from the CRA-W**  
   <https://cra.org/cra-w/sexual-harassment>
