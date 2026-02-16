@@ -3,7 +3,7 @@ name: 8
 full_name: Qiyi Tang
 first_name: Qiyi
 last_name: Tang
-img: invited-concur-qt.jpg
+img: invited-concur-qtA.jpg
 affiliation: University of Liverpool, UK
 invited: true
 joint: false
