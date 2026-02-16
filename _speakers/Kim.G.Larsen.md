@@ -22,8 +22,10 @@ links:
   <div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:left; vertical-align: middle; padding:40px 20px;">
     <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
     {{ speaker.affiliation }}<br/>      
+    <p>
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
+    </p>
     {% if speaker.bio %}<h3>Bio</h3> {{ speaker.bio }}{% endif %}
   </div>
     {% endif %}
