@@ -9,7 +9,6 @@ subnav: concur
 
 <div class="card-deck">
   {% for speaker in speakers %}
-     {% if speaker.name <= 5 %}
       {% assign website = speaker.links | first %}
     <div class="card" style="width:200px">
       <img class="card-img-top" 
@@ -20,29 +19,10 @@ subnav: concur
           <a href="/speakers/{{ speaker.first_name }}.{{ speaker.last_name }}" class="stretched-link"></a>
       </div>
     </div>
-      {% endif %}
   {% endfor %}
 </div>
 
-<br />
 
-<div class="card-deck">
-  {% for speaker in speakers %}
-      {% if speaker.name > 5 %}
-      {% assign website = speaker.links | first %}
-    <div class="card" style="width:200px">
-      <img class="card-img-top" 
-      src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.name }}">
-      <div class="card-body">
-          <h5 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
-          {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
-          {% if speaker.last_name == "Larsen" %}<a href="/speakers/Kim.G.Larsen/" class="stretched-link"></a>{% endif %}   
-          {% if speaker.last_name != "Larsen" %}<a href="/speakers/{{ speaker.first_name }}.{{ speaker.last_name }}" class="stretched-link"></a>{% endif %}   
-      </div>
-    </div>
-      {% endif %}
-  {% endfor %}
-</div>
 
 ---
 
