@@ -3,7 +3,7 @@ name: 7
 full_name: Jean-François Raskin
 first_name: Jean-François
 last_name: Raskin
-img: invited-concur-jr.jpg
+img: invited-concur-jrA.jpg
 affiliation: Université Libre de Bruxelles, Belgium
 invited: true
 joint: false
