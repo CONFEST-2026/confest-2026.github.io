@@ -94,6 +94,8 @@ subnav: concur
   {% endfor %}
 </div>
 
+<br />
+
 {% assign speakers = site.speakers | sort_natural: 'last_name' %}
 
 {% for speaker in speakers %}
