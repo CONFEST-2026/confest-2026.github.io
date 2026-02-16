@@ -3,7 +3,7 @@ name: 6
 full_name: Jade Alglave
 first_name: Jade
 last_name: Alglave
-img: placeholder.png
+img: placeholderA.png
 affiliation: University College London, UK
 invited: true
 joint: false
