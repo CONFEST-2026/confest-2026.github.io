@@ -9,6 +9,7 @@ subnav: concur
 
 <div class="card-deck">
   {% for speaker in speakers %}
+      {% if speaker.joint  %}
       {% assign website = speaker.links | first %}
     <div class="card" style="width:200px">
       <img class="card-img-top" 
@@ -20,6 +21,7 @@ subnav: concur
           <a href="{{ website.absolute_url }}" class="stretched-link"></a>
       </div>
     </div>
+      {% endif %}
   {% endfor %}
 </div>
 
@@ -31,7 +33,25 @@ subnav: concur
 
 <div class="card-deck">
   {% for speaker in speakers %}
-      {% if speaker.conference == "CONCUR" %}
+      {% if speaker.conference == "CONCUR" | speaker.conference == "CONCUR" %}
+      {% assign website = speaker.links | first %}
+    <div class="card" style="width:200px">
+      <img class="card-img-top" 
+      src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.name }}">
+      <div class="card-body">
+          <h5 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
+          <p class="card-text">{{ speaker.affiliation }}</p>
+          {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
+          <a href="{{ website.absolute_url }}" class="stretched-link"></a>
+      </div>
+    </div>
+      {% endif %}
+  {% endfor %}
+</div>
+
+<div class="card-deck">
+  {% for speaker in speakers %}
+      {% if speaker.conference == "QEST" | speaker.conference == "FMICS" %}
       {% assign website = speaker.links | first %}
     <div class="card" style="width:200px">
       <img class="card-img-top" 
