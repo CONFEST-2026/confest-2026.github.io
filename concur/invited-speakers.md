@@ -24,6 +24,8 @@ subnav: concur
   {% endfor %}
 </div>
 
+<br />
+
 <div class="card-deck">
   {% for speaker in speakers %}
       {% if speaker.name > 5 %}
@@ -91,8 +93,6 @@ subnav: concur
       {% endif %}
   {% endfor %}
 </div>
-
-<br />
 
 {% assign speakers = site.speakers | sort_natural: 'last_name' %}
 
