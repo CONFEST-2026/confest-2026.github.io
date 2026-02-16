@@ -12,7 +12,7 @@ subnav: local
   </h3>
 
   <div style="margin-bottom:8px;">
-    <strong>Daniel Hausmann</strong><br>
+    [<strong>Daniel Hausmann</strong>](https://www.csc.liv.ac.uk/~hausmann/)<br>
     hausmann(at)liverpool.ac.uk
   </div>
 
