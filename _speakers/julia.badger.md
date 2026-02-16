@@ -3,7 +3,7 @@ name: 4
 full_name: Julia Badger
 first_name: Julia
 last_name: Badger
-img: invited-fmics-jb.jpg
+img: invited-fmics-jbA.jpg
 affiliation: NASA Johnson Space Center, USA
 invited: true
 joint: false
