@@ -17,7 +17,7 @@ links:
 {% assign speakers = site.speakers | sort_natural: 'last_name' %}
 
 {% for speaker in speakers %}
-    {% if speaker.last_name == "Larsen" %}
+    {% if speaker.last_name == "Larssen" %}
   ---
   <div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:left; vertical-align: middle; padding:40px 20px;">
     <h3>{{ speaker.first_name }} {{ speaker.last_name }}</h3>
