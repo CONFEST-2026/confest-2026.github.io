@@ -3,7 +3,7 @@ name: 10
 full_name: Kim G. Larsen
 first_name: Kim G.
 last_name: Larsen
-img: placeholder.png
+img: placeholderA.png
 affiliation: Aalborg University, Denmark
 invited: true
 joint: false
