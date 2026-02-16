@@ -15,6 +15,8 @@ links:
     absolute_url: https://group-mmm.org/~ichiro/
 ---
 
+{% assign speakers = site.speakers | sort_natural: 'last_name' %}
+
 {% for speaker in speakers %}
     {% if speaker.last_name == "Hasuo" %}
   ---
