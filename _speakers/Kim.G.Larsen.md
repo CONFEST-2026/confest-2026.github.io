@@ -25,7 +25,6 @@ links:
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     {% if speaker.bio %}<h3>Bio</h3> {{ speaker.bio }}{% endif %}
-    </p>
   </div>
     {% endif %}
 {% endfor %}
