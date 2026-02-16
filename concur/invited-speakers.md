@@ -9,7 +9,7 @@ subnav: concur
 
 <div class="card-deck">
   {% for speaker in speakers %}
-     {%  speaker.joint || speaker.conference == "CONCUR" %}
+     {%  if speaker.joint || speaker.conference == "CONCUR" %}
       {% assign website = speaker.links | first %}
     <div class="card" style="width:200px">
       <img class="card-img-top" 
