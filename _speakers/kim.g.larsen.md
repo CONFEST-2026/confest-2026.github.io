@@ -30,3 +30,5 @@ links:
     {% if speaker.bio %}{{ speaker.bio }}{% endif %}
     </p>
   </div>
+    {% endif %}
+{% endfor %}
