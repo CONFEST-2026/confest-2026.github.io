@@ -14,3 +14,16 @@ links:
   - name: Website
     absolute_url: https://group-mmm.org/~ichiro/
 ---
+
+  <div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:left; vertical-align: middle; padding:40px 20px;">
+    <h3>{{ first_name }} {{ last_name }}</h3>
+    {{ affiliation }}<br/>      
+    {% if atitle %}<h3>{{ atitle }}</h3>{% endif %}
+    <p><a href="{{ "/assets/images/" | relative_url }}{{ img }}">
+      <img src="{{ "/assets/images/" | relative_url }}{{ img }}" alt="{{ full_name: }}" style="float:right; padding:0 10px; width:30%">
+    </a>
+    {% if abstract %}{{ abstract }}{% endif %}
+    <h3>Bio</h3>
+    {% if bio %}{{ bio }}{% endif %}
+    </p>
+  </div>
