@@ -36,7 +36,8 @@ subnav: concur
       <div class="card-body">
           <h5 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
           {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
-          <a href="/speakers/{{ speaker.first_name }}.{{ speaker.last_name }}" class="stretched-link"></a>
+          {% if speaker.last_name == "Larsen" %}<a href="/speakers/Kim.G.Larsen/" class="stretched-link"></a>{% endif %}   
+          {% if speaker.last_name != "Larsen" %}<a href="/speakers/{{ speaker.first_name }}.{{ speaker.last_name }}" class="stretched-link"></a>{% endif %}   
       </div>
     </div>
       {% endif %}
