@@ -61,7 +61,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ---
 
-##### Invited Speakers CONFEST
+##### Invited Speakers
 
 {% assign speakers = site.speakers | sort_natural: 'last_name' %}
 
