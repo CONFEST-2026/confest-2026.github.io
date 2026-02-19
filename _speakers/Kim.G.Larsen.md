@@ -7,7 +7,7 @@ img: placeholderA.png
 affiliation: Aalborg University, Denmark
 invited: true
 joint: false
-conference: QEST+Formats
+conference: QEST+FORMATS
 hide: false
 links:
   - name: Website
