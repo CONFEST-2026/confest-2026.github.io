@@ -61,6 +61,36 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ---
 
+##### Invited Speakers CONFEST
+
+{% assign speakers = site.speakers | sort_natural: 'last_name' %}
+
+<div class="card-deck">
+  {% for speaker in speakers %}
+      {% assign website = speaker.links | first %}
+    <div class="card" style="width:200px">
+      <img class="card-img-top" 
+      src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.name }}">
+      <div class="card-body">
+          <h5 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
+          {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
+          {% if speaker.last_name != 'Larsen' %}
+                  <a href="/speakers/{{ speaker.first_name }}.{{ speaker.last_name }}" class="stretched-link"></a>
+          {% else %}
+                  <a href="/speakers/Kim.G.Larsen" class="stretched-link"></a>
+          {% endif %}
+          {% if speaker.conference == 'all' %}
+          Joint
+          {% else %}
+          {{speaker.conference}}
+          {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+---
+
 ##### Organisation
 
 CONFEST 2026 is organised by the School of Computer Science and Informatics at the University of Liverpool.
