@@ -9,5 +9,3 @@ submenu:
     absolute_url: https://concurrency-theory.org/organizations/ifip
   - name: YR-Concur
     relative_url: /workshops/yr-concur
-  - name: Call for Workshops
-    relative_url: /workshops/call-for-workshops
