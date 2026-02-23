@@ -28,3 +28,6 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 - [Ichiro Hasuo](https://group-mmm.org/~ichiro/), National Institute of Informatics, Japan (Shared CONFEST Keynote)
 - [Jean-François Raskin](https://verif.ulb.ac.be/jfr/), Université Libre de Bruxelles, Belgium
 - [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool. UK
+
+
+For questions please contact the PC chairs via <mailto://concur2026@easychair.org>.
