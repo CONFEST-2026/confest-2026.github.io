@@ -12,10 +12,10 @@ CONCUR solicits high quality papers reporting research results and/or experience
 
 - Abstracts: 20 April, 2026 (AoE)
 - Submissions: 27 April, 2026 (AoE)
-- Rebuttal: 1 – 3 June, 2026 (AoE)
+- Rebuttal: 1 -- 3 June, 2026 (AoE)
 - Notification: 15 June, 2026 (AoE)
 - Camera Ready: 29 June, 2026 (AoE)
-- Conference: 1 – 4 September, 2026
+- Conference: 1 -- 4 September, 2026
 - Workshops: 5 September, 2026
 
 ## Topics
@@ -57,11 +57,10 @@ such as component-based, object- and service-oriented.
 - All papers must be original, unpublished, and not submitted for publication elsewhere.
 - Each paper will undergo a thorough review process.
 - Papers must be submitted electronically as PDF files via EasyChair (<https://easychair.org/conferences?conf=concur2026>).
-- Proceedings will be published by LIPIcs, please use their style files (<https://drops.dagstuhl.de/entities/series/LIPIcs#author>) when preparing your submission.
-- Submissions follow a single blind process.
+- Proceedings will be published by LIPIcs; please use their style files (<https://drops.dagstuhl.de/entities/series/LIPIcs#author>) when preparing your submission.
+- Submissions follow a single-blind process.
 - Papers must not exceed 15 pages (excluding references and appendices, LIPIcs style)
-- An appendix may provide additional material and proofs, but cannot be expected to be scrutinized by the reviewers and will not be published in the proceedings.
-
+- An appendix may provide additional material and proofs, but should not be expected to be scrutinized by the reviewers and will not be published in the proceedings.
 
 
 ## Special Issue
@@ -71,17 +70,17 @@ Logical Methods in Computer Science.
 
 ## Awards
 
-There will be a CONCUR Test-of-Time award, Best Paper and Best Student Paper award in 2026.
-The winners will be announced at the conference. 
+There will be a CONCUR Test-of-Time award, Best Paper award, and Best Student Paper award in 2026.
+The winners will be announced at the conference.
 
 
 ## Invited Speakers
 
-- [Jade Alglave](http://www0.cs.ucl.ac.uk/staff/j.alglave/), University College London / arm, UK
+- [Jade Alglave](http://www0.cs.ucl.ac.uk/staff/j.alglave/), University College London / Arm, UK
 - [Ezio Bartocci](https://informatics.tuwien.ac.at/people/ezio-bartocci), TU Wien, Austria (Shared CONFEST Keynote)
 - [Ichiro Hasuo](https://group-mmm.org/~ichiro/), National Institute of Informatics, Japan (Shared CONFEST Keynote)
 - [Jean-François Raskin](https://verif.ulb.ac.be/jfr/), Université Libre de Bruxelles, Belgium
-- [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool. UK
+- [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool, UK
 
 ## Program Committee Chairs
 
@@ -103,7 +102,7 @@ The winners will be announced at the conference. 
 - [Wojciech Czerwiński](https://www.mimuw.edu.pl/~wczerwin/index.html), University of Warsaw, Poland
 - [Javier Esparza](https://www7.in.tum.de/~esparza/), TU Munich, Germany
 - [Benjamin Kaminski](https://quave.cs.uni-saarland.de/benjamin-kaminski/), Saarland University and UCL, Germany/UK
-- [Tobias Kappé](https://tobias.kap.pe/), Leiden University, Netherlands
+- [Tobias Kappé](https://tobias.kap.pe/), Leiden University, the Netherlands
 - [Stefan Kiefer](https://www.cs.ox.ac.uk/people/stefan.kiefer/), University of Oxford, UK
 - [Barbara König](https://www.uni-due.de/theoinf/people/koenig_en.php), University of Duisburg-Essen, Germany
 - [Antonín Kucera](https://www.fi.muni.cz/usr/kucera/), Masaryk University, Czech Republic
@@ -133,8 +132,8 @@ The winners will be announced at the conference. 
 - [Luca Aceto](https://staff.ru.is/luca/), Reykjavik University, Iceland
 - [Christel Baier](https://wwwtcs.inf.tu-dresden.de/~baier/), TU Dresden, Germany
 - [Pedro R. D’Argenio](https://cs.famaf.unc.edu.ar/~dargenio/), National University of Córdoba, Argentina
-- [Wan Fokkink](https://www.cs.vu.nl/~wanf/), VU Amsterdam, Netherlands
+- [Wan Fokkink](https://www.cs.vu.nl/~wanf/), VU Amsterdam, the Netherlands
 - [Catuscia Palamidessi](https://www.lix.polytechnique.fr/~catuscia/), INRIA Saclay and LIX, France
 - [Jiri Srba](https://people.cs.aau.dk/~srba/), Aalborg University, Denmark
 
-Questions on submissions should be directed to the PC chairs (<concur2026@easychair.org>)
+Questions regarding submissions should be directed to the PC chairs (<concur2026@easychair.org>).
