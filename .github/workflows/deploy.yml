@@ -5,7 +5,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
   repository_dispatch:
-    types: [rebuild-from-fmics, rebuild-from-qestformats]
+    types: [rebuild-from-fmics, rebuild-from-qestformats, rebuild-from-yr-concur]
 
 permissions:
   contents: read
