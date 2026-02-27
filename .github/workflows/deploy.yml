@@ -41,6 +41,17 @@ jobs:
           rm -rf temp-qestformats
           mv qestformats/submenu.yml _data/submenu/qestformats.yml
 
+      - name: Clone yr-concur repo into subdirectory
+        run: |
+          git clone --depth=1 https://github.com/CONFEST-2026/yr-concur.git temp-yr-concur
+          rm -rf workshops/yr-concur
+          mkdir -p workshops/yr-concur
+          cp -r temp-yr-concur/* workshops/yr-concur/
+          rm -rf temp-yr-concur
+          if [ -f workshops/yr-concur/submenu.yml ]; then
+            mv workshops/yr-concur/submenu.yml _data/submenu/yr-concur.yml
+          fi
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
         with:
