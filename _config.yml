@@ -93,6 +93,8 @@ conference:
       - name: Workshops
         relative_url: /workshops
         # submenus specified in _data/submenu/workshops.yml
+      - name: Sustainability
+        relative_url: /sustainability
       - name: Local Info
         relative_url: /local/
         # later becomes a submenu with links to the location, program, talks, speakers, chat, etc.
