@@ -3,7 +3,7 @@ name: 6
 full_name: Jade Alglave
 first_name: Jade
 last_name: Alglave
-img: placeholderA.png
+img: unknown
 affiliation: University College London, UK
 invited: true
 joint: false
@@ -24,7 +24,7 @@ links:
     {{ speaker.affiliation }}<br /> <br />      
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
-      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name: }}" style="float:right; padding:0 10px; width:30%">
+      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%">
     </a>
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     {% if speaker.bio %}<h3>Bio</h3> {{ speaker.bio }}{% endif %}

@@ -3,7 +3,7 @@ name: 10
 full_name: Kim G. Larsen
 first_name: Kim G.
 last_name: Larsen
-img: placeholderA.png
+img: unknown
 affiliation: Aalborg University, Denmark
 invited: true
 joint: false
@@ -24,7 +24,7 @@ links:
     {{ speaker.affiliation }}<br /> <br />      
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
-      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name: }}" style="float:right; padding:0 10px; width:30%">
+      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%">
     </a>
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     {% if speaker.bio %}<h3>Bio</h3> {{ speaker.bio }}{% endif %}

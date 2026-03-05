@@ -3,7 +3,7 @@ name: 4
 full_name: Julia Badger
 first_name: Julia
 last_name: Badger
-img: invited-fmics-jbA.jpg
+img: invited-fmics-jb
 affiliation: NASA Johnson Space Center, USA
 invited: true
 joint: false
@@ -26,7 +26,7 @@ links:
     {{ speaker.affiliation }}<br /> <br />      
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
-      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name: }}" style="float:right; padding:0 10px; width:30%">
+      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%">
     </a>
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     {% if speaker.bio %}<h3>Bio</h3> {{ speaker.bio }}{% endif %}

@@ -3,7 +3,7 @@ name: 5
 full_name: Colin O'Halloran
 first_name: Colin
 last_name: O'Halloran
-img: invited-fmics-coA.png
+img: invited-fmics-co
 affiliation: Honourary Visiting Professor at the University of York, UK; CTO of D-RiSQ Ltd, UK
 invited: true
 joint: false
@@ -27,7 +27,7 @@ links:
     {{ speaker.affiliation }}<br /><br />      
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
-      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name: }}" style="float:right; padding:0 10px; width:30%">
+      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%">
     </a>
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     <h3>Bio</h3>

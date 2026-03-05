@@ -3,7 +3,7 @@ name: 8
 full_name: Qiyi Tang
 first_name: Qiyi
 last_name: Tang
-img: invited-concur-qtA.jpg
+img: invited-concur-qt
 affiliation: University of Liverpool, UK
 invited: true
 joint: false
@@ -25,7 +25,7 @@ links:
     {{ speaker.affiliation }}<br/>      
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
-      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name: }}" style="float:right; padding:0 10px; width:30%">
+      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%">
     </a>
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     <h3>Bio</h3>

@@ -3,7 +3,7 @@ name: 3
 full_name: Ezio Bartocci
 first_name: Ezio
 last_name: Bartocci
-img: invited-ebA.png
+img: invited-eb
 affiliation: Professor at TU Wien, Vienna, Austria
 invited: true
 joint: true
@@ -25,7 +25,7 @@ links:
     {{ speaker.affiliation }}<br/>      
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
-      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name: }}" style="float:right; padding:0 10px; width:30%">
+      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%">
     </a>
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     <h3>Bio</h3>

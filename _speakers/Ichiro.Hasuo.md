@@ -3,7 +3,7 @@ name: 2
 full_name: Ichiro Hasuo
 first_name: Ichiro
 last_name: Hasuo
-img: invited-IHA.jpg
+img: invited-IH
 affiliation: Professor at the National Institute of Informatics (NII), Tokyo, Japan
 invited: true
 joint: true
@@ -25,7 +25,7 @@ links:
     {{ speaker.affiliation }}<br/>      
     {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
     <p><a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}">
-      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name: }}" style="float:right; padding:0 10px; width:30%">
+      <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%">
     </a>
     {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
     <h3>Bio</h3>
