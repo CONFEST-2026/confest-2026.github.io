@@ -10,6 +10,25 @@
   <h1 class="font-weight-light mb-3 text-break">
     {{ speaker.first_name }} {{ speaker.last_name }}
   </h1>
+  <h2>
+    {{ speaker.affiliation |newline_to_br }}
+  </h2>
+
+  <a href="{{ "/assets/images/" | relative_url }}{{ speaker.img }}.png">
+    <img src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}.webp" alt="{{ speaker.full_name }}" style="float:right; padding:0 10px; width:30%; max-width:200px">
+  </a>
+  {% if speaker.bio %}
+  <h5>Bio</h5>
+    {{ speaker.bio }}
+  {% endif %}
+
+  {% if speaker.atitle and speaker.abstract %}
+  <div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:left; vertical-align: middle; padding:40px 20px;">
+    {% if speaker.atitle %}<h3>{{ speaker.atitle }}</h3>{% endif %}
+    {% if speaker.abstract %}{{ speaker.abstract }}{% endif %}
+  </div>
+  {% endif %}
+
 
   {{ content }}
 
