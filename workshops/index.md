@@ -10,7 +10,7 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
 <div class="workshop-container">
 
   <div class="workshop-box">
-    <div class="workshop-title"><a target="_blank" href="https://expresssos.github.io/">Express/SOS 2026</a></div>
+    <div class="workshop-title"><a target="_blank" href="https://expresssos.github.io/conf/2026">Express/SOS 2026</a></div>
     <div class="organisers">
       Organisers:<br>
       <a target="_blank" href="https://homes.cs.aau.dk/~grbacci/" >Giorgio Bacci</a>
