@@ -40,6 +40,7 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
     <div class="workshop-title"><a href="/workshops/yr-concur">YR-Concur 2026</a></div>
     <div class="organisers">
       Organisers:<br>
+      Sarvin Bahmani<br>
       <a target="_blank" href="https://www.irif.fr/users/mfortin" >Marie Fortin</a><br>
       <a target="_blank" href="https://www.dcs.warwick.ac.uk/~mju/" >Marcin Jurdzinski</a>
     </div>
