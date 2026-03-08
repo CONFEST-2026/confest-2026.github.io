@@ -28,7 +28,7 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
   </div>
 
   <div class="workshop-box">
-    <div class="workshop-title"><a target="_blank" href="https://concurrency-theory.org/organizations/ifip">Trends 2026</a></div>
+    <div class="workshop-title"><a target="_blank" href="https://concurrency-theory.org/events/trends/2026/">Trends 2026</a></div>
     <div class="organisers">
       Organisers:<br>
       <a target="_blank" href="http://www.cs.famaf.unc.edu.ar/~dargenio/" >Pedro R. D’Argenio</a><br>
