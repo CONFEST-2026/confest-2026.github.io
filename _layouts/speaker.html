@@ -19,7 +19,7 @@
   </a>
   {% if speaker.bio %}
   <h5>Bio</h5>
-    {{ speaker.bio }}
+    {{ speaker.bio | markdownify }}
   {% endif %}
 
   {% if speaker.atitle and speaker.abstract %}
