@@ -30,4 +30,4 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 - [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool. UK
 
 
-For questions please contact the PC chairs via <mailto://concur2026@easychair.org>.
+For questions please contact the PC chairs via <mailto:concur2026@easychair.org>.
