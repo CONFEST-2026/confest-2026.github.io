@@ -5,6 +5,8 @@ submenu:
     absolute_url: https://expresssos.github.io/conf/2026
   - name: Radical 2026
     absolute_url: https://sites.google.com/site/radicalconcur
+  - name: SNR 2026
+    relative_url: /workshops/snr
   - name: Trends 2026
     absolute_url: https://concurrency-theory.org/events/trends/2026/
   - name: YR-Concur

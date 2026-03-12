@@ -10,7 +10,7 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
 <div class="workshop-container">
 
   <div class="workshop-box">
-    <div class="workshop-title"><a target="_blank" href="https://expresssos.github.io/conf/2026">Express/SOS 2026</a></div>
+    <div class="workshop-title"><a target="_blank" href="https://expresssos.github.io/conf/2026">Express/SOS</a></div>
     <div class="organisers">
       Organisers:<br>
       <a target="_blank" href="https://homes.cs.aau.dk/~grbacci/" >Giorgio Bacci</a><br>
@@ -19,7 +19,7 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
   </div>
 
   <div class="workshop-box">
-    <div class="workshop-title"><a target="_blank" href="https://sites.google.com/site/radicalconcur/">Radical 2026</a></div>
+    <div class="workshop-title"><a target="_blank" href="https://sites.google.com/site/radicalconcur/">Radical</a></div>
     <div class="organisers">
       Organisers:<br>
       <a target="_blank" href="https://groupoid.moe/" >Dan Frumin</a><br>
@@ -28,7 +28,18 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
   </div>
 
   <div class="workshop-box">
-    <div class="workshop-title"><a target="_blank" href="https://concurrency-theory.org/events/trends/2026/">Trends 2026</a></div>
+    <div class="workshop-title"><a href="/workshops/snr">SNR</a></div>
+    <div class="organisers">
+      Organisers:<br>
+      <a target="_blank" href="https://sites.google.com/view/sougatabose" >Sougata Bose</a><br>
+      <a target="_blank" href="https://soumyajit-paul.github.io/" >Soumyajit Paul</a><br>
+      <a target="_blank" href="http://ashutoshtrivedi.com/" >Ashutosh Trivedi</a><br>
+      <a target="_blank" href="https://intranet.csc.liv.ac.uk/~dominik/" >Dominik Wojtczak</a>
+    </div>
+  </div>
+
+  <div class="workshop-box">
+    <div class="workshop-title"><a target="_blank" href="https://concurrency-theory.org/events/trends/2026/">Trends</a></div>
     <div class="organisers">
       Organisers:<br>
       <a target="_blank" href="http://www.cs.famaf.unc.edu.ar/~dargenio/" >Pedro R. D’Argenio</a><br>
@@ -37,7 +48,7 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
   </div>
 
   <div class="workshop-box">
-    <div class="workshop-title"><a href="/workshops/yr-concur">YR-Concur 2026</a></div>
+    <div class="workshop-title"><a href="/workshops/yr-concur">YR-Concur</a></div>
     <div class="organisers">
       Organisers:<br>
       Sarvin Bahmani<br>
