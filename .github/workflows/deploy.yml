@@ -5,7 +5,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
   repository_dispatch:
-    types: [rebuild-from-fmics, rebuild-from-qestformats, rebuild-from-yr-concur]
+    types: [rebuild-from-fmics, rebuild-from-qestformats, rebuild-from-yr-concur, rebuild-from-snr]
 
 permissions:
   contents: read
@@ -50,6 +50,17 @@ jobs:
           rm -rf temp-yr-concur
           if [ -f workshops/yr-concur/submenu.yml ]; then
             mv workshops/yr-concur/submenu.yml _data/submenu/yr-concur.yml
+          fi
+
+      - name: Clone snr repo into subdirectory
+        run: |
+          git clone --depth=1 https://github.com/CONFEST-2026/snr.git temp-snr
+          rm -rf workshops/snr
+          mkdir -p workshops/snr
+          cp -r temp-snr/* workshops/snr/
+          rm -rf temp-snr
+          if [ -f workshops/snr/submenu.yml ]; then
+            mv workshops/snr/submenu.yml _data/submenu/snr.yml
           fi
 
       - name: Setup Ruby
