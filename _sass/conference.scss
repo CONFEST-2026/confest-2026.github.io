@@ -654,7 +654,8 @@ a.email{
   }
 
   .workshop-box {
-    width: 265px;              /* fixed width */
+    flex: 1 1 0;               /* equal basis → equal width on large screens */
+    min-width: min-content;    /* never narrower than longest title */
     background-color: $sky-blue; /* grey */
     color: #000;               /* black text */
     padding: 15px;
@@ -668,6 +669,7 @@ a.email{
     font-size: 24px;           /* large title */
     font-weight: bold;
     margin-bottom: 15px;
+    white-space: nowrap;       /* never break title across lines */
   }
 
 
