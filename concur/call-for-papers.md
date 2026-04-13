@@ -61,7 +61,7 @@ such as component-based, object- and service-oriented.
 - Submissions follow a single-blind process.
 - Papers must not exceed 15 pages (excluding references and appendices, LIPIcs style)
 - An appendix may provide additional material and proofs, but should not be expected to be scrutinized by the reviewers and will not be published in the proceedings.
-
+- PC members are allowed to submit. However, if it gets to a final vote on the last papers to be accepted, then PC-coauthored papers cannot be selected.
 
 ## Special Issue
 
