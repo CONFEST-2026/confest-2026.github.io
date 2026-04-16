@@ -19,12 +19,12 @@ Registration will be available from this page in due time.
   </thead>
   <tbody>
     <tr>
-      <td>Full Ticket Regular (Conference and Workshops)</td>
+      <td>Full Ticket Regular (Conferences and Workshops)</td>
       <td>TBA</td>
       <td>TBA</td>
     </tr>
     <tr>
-      <td>Full Ticket Student (Conference and Workshops)</td>
+      <td>Full Ticket Student (Conferences and Workshops)</td>
       <td>TBA</td>
       <td>TBA</td>
     </tr>
@@ -37,8 +37,8 @@ Registration will be available from this page in due time.
 </table>
 
 #### What's included?
- - The Full Ticket includes Conference and Workshops, and access to all social events. 
- - Workshop only ticket covers activities on Saturday 5 September only.
+ - The Full Ticket includes access to all three conferences, all workshops, and all social events. 
+ - Workshop only ticket covers all workshops taking place on Saturday 5 September only.
 
 
 #### Registration Deadline
