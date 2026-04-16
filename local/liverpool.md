@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location
+title: Where to stay in Liverpool
 subnav: local
 herobackground: white
 ---
@@ -90,6 +90,35 @@ herobackground: white
 
 The conference will be held on the campus of the University of Liverpool (in the [Central Teaching Hub](https://www.liverpool.ac.uk/central-teaching-hub/)). The campus is easily reached from the city centre, the station and many hotels on foot (and also by bus). 
 
-### Where to stay
+All buses use contactless payment as you board the bus and cost £2 per journey (flat rate). Bolt e-scooter and bikes are also available.
 
-Suggested accommodation will be provided in due course.
+
+### Staying on campus
+
+We are happy to offer a number of on-campus rooms in our student halls, right next door to the venue. These are single en-suite rooms and come with breakfast served in a nearby restaurant. There is also access to a small (shared) kitchen. 
+
+Further details on price and how to book will follow shortly.
+
+### Nearby Hotels
+
+There are many hotels in Liverpool.  The following hotels from well-known brands are available close to campus (ordered very approximately by walking distance). The Novotel is the closest hotel to the venue, while the others are closer to the city but only a short walk to the campus. 
+
+ - <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
+      4*, adjacent to campus, 4 minute walk
+ - <a href="https://www.theliner.co.uk/">The Liner Hotel</a> <br>
+      3*, next to the station, 15 minute walk
+ - <a href="https://www.premierinn.com/gb/en/hotels/england/merseyside/liverpool/liverpool-city-centre-lime-street.html">Premier Inn Liverpool City Centre (Lime Street) hotel</a> <br>
+      3*, adjacent to station, 15-20 minute walk
+ - <a href="https://www.radissonhotels.com/en-us/hotels/radisson-red-liverpool">Radisson RED Liverpool (Lime Street) </a><br>
+      4*, adjacent to station, 15-20 minute walk
+ - <a href="https://www.ihg.com/holidayinn/hotels/gb/en/liverpool/lplls/hoteldetail">Holiday Inn Liverpool - City Centre by IHG</a><br>
+      4*, adjacent to station, 15-20 minute walk
+ - <a href="https://www.adagio-city.com/gb/hotel-7332-aparthotel-adagio-liverpool-city-centre/index.shtml">Aparthotel Adagio Liverpool City Centre</a> <br>
+      4*, aparthotel, 15-20 minute walk 
+
+There are many more options in Liverpool, including options close to the historic docks, which would be a little longer walk to the venue.
+
+
+
+
+
