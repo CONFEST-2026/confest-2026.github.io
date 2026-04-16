@@ -116,7 +116,7 @@ There are many hotels in Liverpool.  The following hotels from well-known brands
  - <a href="https://www.adagio-city.com/gb/hotel-7332-aparthotel-adagio-liverpool-city-centre/index.shtml">Aparthotel Adagio Liverpool City Centre</a> <br>
       4*, aparthotel, 15-20 minute walk 
 
-There are many more options in Liverpool, including options close to the historic docks, which would be a little longer walk to the venue.
+There are many more options in Liverpool, including options close to the historic docks such as <a href="https://www.hilton.com/en/hotels/lplhihi-hilton-liverpool-city-centre/">Hilton Liverpool City Centre</a> which would be a little longer walk to the venue.
 
 
 
