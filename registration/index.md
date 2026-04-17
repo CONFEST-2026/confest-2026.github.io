@@ -24,17 +24,14 @@ Registration will be available from this page shortly.
       <td>TBA</td>
     </tr>
     <tr>
-      <td>Full Ticket Student <br><span class="small">(Conferences and Workshops)</span></td>
-      <td>TBA</td>
-      <td>TBA</td>
-    </tr>
-    <tr>
       <td>Workshop Only</td>
       <td>TBA</td>
       <td>TBA</td>
     </tr>
   </tbody>
 </table>
+
+In case the fees would be a barrier to your participation, please see the funding support below.
 
 #### What's included?
  - The Full Ticket includes access to all conferences and workshops throughout the week, lunch and coffee/snacks, and all social events. 
