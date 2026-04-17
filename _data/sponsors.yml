@@ -1,3 +1,7 @@
+- name: Engineering and Physical Sciences Research Council
+  abbreviation: EPSRC
+  url: https://www.ukri.org/councils/epsrc/
+  logo: epsrc.png
 - name: University of Liverpool
   abbreviation: UoL
   url: https://www.liverpool.ac.uk/computer-science-and-informatics/
