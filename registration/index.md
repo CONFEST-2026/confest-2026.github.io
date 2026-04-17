@@ -38,7 +38,7 @@ Registration will be available from this page shortly.
 
 #### What's included?
  - The Full Ticket includes access to all conferences and workshops throughout the week, lunch and coffee/snacks, and all social events. 
- - Workshop Only covers attendance, lunch and coffee/snacks for the workshops on Saturdaonly. Participants are free to switch between workshops.
+ - Workshop Only covers attendance, lunch and coffee/snacks for the workshops on Saturday only. Participants are free to switch between workshops.
 
 
 #### Registration Deadline
