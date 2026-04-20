@@ -9,27 +9,27 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
 
 <div class="workshop-container">
 
-  <div class="workshop-box">
+  <div class="workshop-box card">
     <div class="workshop-title"><a target="_blank" href="https://expresssos.github.io/conf/2026">Express/SOS</a></div>
-    <div class="organisers">
+    <div class="highlight">
       Organisers:<br>
       <a target="_blank" href="https://homes.cs.aau.dk/~grbacci/" >Giorgio Bacci</a><br>
       <a target="_blank" href="https://www.cs.ucy.ac.cy/~annap/" >Anna Philippou</a>
     </div>
   </div>
 
-  <div class="workshop-box">
+  <div class="workshop-box card">
     <div class="workshop-title"><a target="_blank" href="https://sites.google.com/site/radicalconcur/">Radical</a></div>
-    <div class="organisers">
+    <div class="highlight">
       Organisers:<br>
       <a target="_blank" href="https://groupoid.moe/" >Dan Frumin</a><br>
       <a target="_blank" href="https://valvestate.github.io/" >Muhammad Najib</a>
     </div>
   </div>
 
-  <div class="workshop-box">
+  <div class="workshop-box card">
     <div class="workshop-title"><a href="/workshops/snr">SNR</a></div>
-    <div class="organisers">
+    <div class="highlight">
       Organisers:<br>
       <a target="_blank" href="https://sites.google.com/view/sougatabose" >Sougata Bose</a><br>
       <a target="_blank" href="https://soumyajit-paul.github.io/" >Soumyajit Paul</a><br>
@@ -38,18 +38,18 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
     </div>
   </div>
 
-  <div class="workshop-box">
+  <div class="workshop-box card">
     <div class="workshop-title"><a target="_blank" href="https://concurrency-theory.org/events/trends/2026/">Trends</a></div>
-    <div class="organisers">
+    <div class="highlight">
       Organisers:<br>
       <a target="_blank" href="http://www.cs.famaf.unc.edu.ar/~dargenio/" >Pedro R. D’Argenio</a><br>
       <a target="_blank" href="https://cs.uni-salzburg.at/~anas/" >Ana Sokolova</a>
     </div>
   </div>
 
-  <div class="workshop-box">
+  <div class="workshop-box card">
     <div class="workshop-title"><a href="/workshops/yr-concur">YR-Concur</a></div>
-    <div class="organisers">
+    <div class="highlight">
       Organisers:<br>
       Sarvin Bahmani<br>
       <a target="_blank" href="https://www.irif.fr/users/mfortin" >Marie Fortin</a><br>

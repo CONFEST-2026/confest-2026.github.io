@@ -647,7 +647,6 @@ a.email{
     gap: 15px;                 /* space between boxes */
     margin-bottom: 20px;
 
-      
     .organisers {
       line-height: 1.6;
     }
@@ -656,8 +655,6 @@ a.email{
   .workshop-box {
     flex: 1 1 0;               /* equal basis → equal width on large screens */
     min-width: min-content;    /* never narrower than longest title */
-    background-color: $sky-blue; /* grey */
-    color: #000;               /* black text */
     padding: 15px;
     box-sizing: border-box;
     display: flex;
