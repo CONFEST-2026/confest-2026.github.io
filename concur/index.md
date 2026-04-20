@@ -30,4 +30,15 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 - [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool. UK
 
 
+##### Test-of-time Awards
+
+This year, **two** papers will receive the CONCUR Test-of-Time Award:
+
+- *Naoki Kobayashi*, [A New Type System for Deadlock-Free Processes, CONCUR'06](https://doi.org/10.1007/11817949_16)
+- *Krishnendu Chatterjee, Thomas A. Henzinger, Nir Piterman*, [Strategy Logic, CONCUR'07](https://doi.org/10.1007/978-3-540-74407-8_5)
+
+
+Congratulations to all authors!
+
+---
 For questions please contact the PC chairs via <mailto:concur2026@easychair.org>.
