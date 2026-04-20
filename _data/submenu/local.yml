@@ -3,5 +3,7 @@ submenu:
     relative_url: /local
   - name: In Liverpool
     relative_url: /local/liverpool
+  - name: Social Activities
+    relative_url: /local/social
   - name: Code of Conduct
     relative_url: /local/code-of-conduct
