@@ -709,3 +709,64 @@ a.email{
 }
 
 
+
+  .section {
+  margin: 1.5em 0;
+  }
+
+  .intro {
+    background: #eef6ff;
+    padding: 1.25rem;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0 1rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .section {
+    .card{
+      padding: 1.5rem;
+    }
+  }
+
+  .icon {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .highlight {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+
+  
+
+  .divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 1em 0;
+  }
+
+  p {
+    margin: 1em 0;
+  }

@@ -86,39 +86,109 @@ herobackground: white
 </div>
 
 
-### Getting around
 
-The conference will be held on the campus of the University of Liverpool (in the [Central Teaching Hub](https://www.liverpool.ac.uk/central-teaching-hub/)). The campus is easily reached from the city centre, the station and many hotels on foot (and also by bus). 
+<section class="section">
 
-All buses use contactless payment as you board the bus and cost £2 per journey (flat rate). Bolt e-scooter and bikes are also available.
+  <h2>Getting around</h2>
+
+  <div class="grid">
+
+    <!-- Walk -->
+    <div class="card">
+      <div class="icon">🚶</div>
+      <h3>Walking</h3>
+      <p>
+        The University of Liverpool campus (Central Teaching Hub) is within easy walking distance
+        of the city centre, Lime Street Station, and many nearby hotels.
+      </p>
+    </div>
+
+    <!-- Bus -->
+    <div class="card">
+      <div class="icon">🚌</div>
+      <h3>Bus</h3>
+      <p>
+        Local buses connect the city and campus. All buses accept contactless payment
+        when boarding.
+      </p>
+
+      <div class="highlight">
+        Flat fare: <strong>£2 per journey</strong>
+      </div>
+    </div>
+
+    <!-- Bolt -->
+    <div class="card">
+      <div class="icon">🛴</div>
+      <h3>Bike & e-scooter</h3>
+      <p>
+        Bolt bikes and e-scooters are available across the city and provide a quick way
+        to travel short distances between the centre and campus.
+      </p>
+    </div>
+
+  </div>
+</section>
 
 
-### Staying on campus
+<section class="section">
 
-We are happy to offer a number of on-campus rooms in our student halls, right next door to the venue. These are single en-suite rooms and come with breakfast served in a nearby restaurant. There is also access to a small (shared) kitchen. 
+  <h2>Where to stay</h2>
 
-Further details on price and how to book will follow shortly.
+  <div class="grid">
 
-### Nearby Hotels
+    <!-- On campus -->
+    <div class="card">
+      <div class="icon">🏫</div>
+      <h3>On-campus accommodation</h3>
 
-There are many hotels in Liverpool.  The following hotels from well-known brands are available close to campus (ordered very approximately by walking distance). The Novotel is the closest hotel to the venue, while the others are closer to the city but only a short walk to the campus. 
+      <p>
+        We are offering a limited number of rooms in student halls located next to the venue.
+      </p>
 
- - <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
-      4*, adjacent to campus, 4 minute walk
- - <a href="https://www.theliner.co.uk/">The Liner Hotel</a> <br>
-      3*, next to the station, 15 minute walk
- - <a href="https://www.premierinn.com/gb/en/hotels/england/merseyside/liverpool/liverpool-city-centre-lime-street.html">Premier Inn Liverpool City Centre (Lime Street) hotel</a> <br>
-      3*, adjacent to station, 15-20 minute walk
- - <a href="https://www.radissonhotels.com/en-us/hotels/radisson-red-liverpool">Radisson RED Liverpool (Lime Street) </a><br>
-      4*, adjacent to station, 15-20 minute walk
- - <a href="https://www.ihg.com/holidayinn/hotels/gb/en/liverpool/lplls/hoteldetail">Holiday Inn Liverpool - City Centre by IHG</a><br>
-      4*, adjacent to station, 15-20 minute walk
- - <a href="https://www.adagio-city.com/gb/hotel-7332-aparthotel-adagio-liverpool-city-centre/index.shtml">Aparthotel Adagio Liverpool City Centre</a> <br>
-      4*, aparthotel, 15-20 minute walk 
+      <div class="highlight">
+        <ul>
+          <li>Single en-suite rooms</li>
+          <li>Breakfast included (nearby restaurant)</li>
+          <li>Access to shared kitchen facilities</li>
+        </ul>
+      </div>
 
-There are many more options in Liverpool, including options close to the historic docks such as <a href="https://www.hilton.com/en/hotels/lplhihi-hilton-liverpool-city-centre/">Hilton Liverpool City Centre</a> which would be a little longer walk to the venue.
+      <p>
+        Further details on pricing and booking will follow shortly.
+      </p>
+    </div>
 
+    <!-- Hotels -->
+    <div class="card">
+      <div class="icon">💤</div>
+      <h3>Hotels</h3>
 
+      <p>
+        There are many hotels within walking distance of the campus and city centre.
+      </p>
 
+<div class="highlight" markdown="1">
+- <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
+    4*, adjacent to campus, 4 minute walk
+- <a href="https://www.theliner.co.uk/">The Liner Hotel</a> <br>
+    3*, next to the station, 15 minute walk
+- <a href="https://www.premierinn.com/gb/en/hotels/england/merseyside/liverpool/liverpool-city-centre-lime-street.html">Premier Inn Liverpool City Centre (Lime Street) hotel</a> <br>
+    3*, adjacent to station, 15-20 minute walk
+- <a href="https://www.radissonhotels.com/en-us/hotels/radisson-red-liverpool">Radisson RED Liverpool (Lime Street) </a><br>
+    4*, adjacent to station, 15-20 minute walk
+- <a href="https://www.ihg.com/holidayinn/hotels/gb/en/liverpool/lplls/hoteldetail">Holiday Inn Liverpool - City Centre by IHG</a><br>
+    4*, adjacent to station, 15-20 minute walk
+- <a href="https://www.adagio-city.com/gb/hotel-7332-aparthotel-adagio-liverpool-city-centre/index.shtml">Aparthotel Adagio Liverpool City Centre</a> <br>
+    4*, aparthotel, 15-20 minute walk 
+</div>
 
+      <p>
+        There are many more options in Liverpool, including options close to the historic docks such as <a href="https://www.hilton.com/en/hotels/lplhihi-hilton-liverpool-city-centre/">Hilton Liverpool City Centre</a> which would be a little longer walk to the venue.
+
+      </p>
+    </div>
+
+  </div>
+</section>
 

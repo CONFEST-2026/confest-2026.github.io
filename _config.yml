@@ -96,8 +96,11 @@ conference:
       - name: Local Info
         relative_url: /local/
 
-      - name: Registration
-        relative_url: /registration/
+      # - name: Registration
+      #   relative_url: /registration/
+      #   visible: false
+
+      
         # later becomes a submenu with links to the location, program, talks, speakers, chat, etc.
         # menu:
         # - name: Location
