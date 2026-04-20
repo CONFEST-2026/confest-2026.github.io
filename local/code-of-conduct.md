@@ -5,7 +5,32 @@ subnav: local
 ---
 
 
-<div id="confest-safety-advocate">
+## Code of Conduct at CONFEST 2026
+
+<section class="section">
+
+<div class="card" markdown=1>
+
+CONFEST is committed to inclusive event experiences, respectful of all participants, and free of discrimination, harassment, bullying, or retaliation. An inclusive and respectful atmosphere is vital to free expression and the open exchange of ideas, serving the main purpose of the events.
+</div>
+</section>
+
+
+
+<section class="section">
+
+<div class="grid">
+<div class="card" markdown=1>
+#### Expected Behaviour
+
+We expect all participants in CONFEST events to:
+
+- Exercise consideration and respect in their speech and actions;  
+- Refrain from demeaning, discriminatory, or harassing behaviour and speech;  
+- Be mindful of their surroundings and of their fellow participants;  
+- Alert the CONFEST Advocate (Daniel Hausmann), or other any person of the organising team (local organisers, PC chairs, steering committee members, and so on) if they notice a dangerous situation, someone in distress, or violations of this policy, even if they seem inconsequential.
+</div>
+<div class="card">
 
   <h3>
     CONFEST Advocate
@@ -28,60 +53,88 @@ subnav: local
     </ul>
   </div>
 </div>
+</div>
+</section>
 
-
-## Code of Conduct at CONFEST 2026
-
-CONFEST is committed to inclusive event experiences, respectful of all participants, and free of discrimination, harassment, bullying, or retaliation. An inclusive and respectful atmosphere is vital to free expression and the open exchange of ideas, serving the main purpose of the events.
-
-
-
-
-
-#### Expected Behaviour
-
-We expect all participants in CONFEST events to:
-
-- Exercise consideration and respect in their speech and actions;  
-- Refrain from demeaning, discriminatory, or harassing behaviour and speech;  
-- Be mindful of their surroundings and of their fellow participants;  
-- Alert the CONFEST Advocate (Daniel Hausmann), or other any person of the organising team (local organisers, PC chairs, steering committee members, and so on) if they notice a dangerous situation, someone in distress, or violations of this policy, even if they seem inconsequential.
-
-
+---
 
 #### Unacceptable Behaviour
 
 Unacceptable at any CONFEST event is:
 
-##### Abuse
+<section class="section">
 
-Any action directed at an individual that:
-- (a) interferes with that person’s participation; or  
-- (b) causes that person to fear for their personal safety.  
+  <div class="grid">
 
-This includes threats, intimidation, bullying, stalking, or other types of abuse.
+<!-- Abuse -->
+<div class="card">
+  <h3>Abuse</h3>
 
-##### Discriminatory Harassment
+  <p>
+    Any action directed at an individual that:
+  </p>
 
-Any conduct that discriminates or denigrates an individual on the basis of race, ethnicity, religion, citizenship, nationality, age, sexual or gender identity, disability, or any other characteristic protected by law in the location where the event takes place.
+  <ul class="highlight">
+    <li>interferes with that person’s participation</li>
+    <li>causes that person to fear for their personal safety</li>
+  </ul>
 
-##### Sexual Harassment
+  <p>
+    This includes threats, intimidation, bullying, stalking, or other types of abuse.
+  </p>
+</div>
 
-Unwelcome sexual advances, requests for sexual favours, or other verbal or physical conduct of a sexual nature.
+<!-- Discriminatory Harassment -->
+<div class="card">
+  <h3>Discriminatory Harassment</h3>
 
-Examples include (but are not limited to):
-- Unwelcome advances or propositions, particularly when one individual has authority over the other;  
-- Inappropriate touching of an individual’s body;  
-- Degrading or humiliating comments about an individual’s appearance;  
+  <p>
+    Any conduct that discriminates or denigrates an individual based on:
+  </p>
+
+  <div class="highlight">
+    <ul>
+      <li>Race or ethnicity</li>
+      <li>Religion</li>
+      <li>Citizenship or nationality</li>
+      <li>Age</li>
+      <li>Sexual or gender identity</li>
+      <li>Disability</li>
+      <li>Any other characteristic protected by law in the location where the event takes place</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Sexual Harassment -->
+<div class="card">
+  <h3>Sexual Harassment</h3>
+
+  <p>
+    Unwelcome sexual advances, requests for sexual favours, or other verbal or physical conduct of a sexual nature.
+  </p>
+  <p>
+<strong>Examples include</strong> (but are not limited to):</p>
+<div class="highlight" markdown=1>
+
+- Unwelcome advances or propositions, particularly when one individual has authority over the other
+- Inappropriate touching of an individual’s body
+- Degrading or humiliating comments about an individual’s appearance
 - Using an activity-related communication channel to display or distribute sexually explicit images or messages.
+</div>
+</div>
 
+</div>
+</section>
 
+<section class="section">
 
+<div class="card" markdown=1>
 ##### Additional Examples of Unacceptable Behaviour
 
 Unacceptable behaviours include, but are not limited to:
 
-- Intimidating, harassing, abusive, discriminatory, derogatory, or demeaning speech or actions;  
+<div class="highlight" markdown=1>
+- Intimidating, harassing, abusive, discriminatory, derogatory, or demeaning speech or actions;
 - Offensive, degrading, humiliating, harmful, or prejudicial verbal or written comments or visual images related to gender, sexual orientation, race, religion, disability, age, appearance, or other personal characteristics;  
 - Unwelcome sexual advances, requests for sexual favours, or other verbal or physical conduct of a sexual nature;  
 - Inappropriate or gratuitous use of nudity, sexual images, or stereotyped images, including using an activity-related communication channel to display or distribute sexually explicit or otherwise offensive or discriminatory images or messages;  
@@ -92,20 +145,26 @@ Unacceptable behaviours include, but are not limited to:
 - Physical assault (including unwelcome touch or groping);  
 - Real or implied threat of physical harm;  
 - Real or implied threat of professional or financial damage or harm.
-
+</div>
 
 
 Harassment committed in a joking manner or disguised as a compliment still constitutes unacceptable behaviour.
+</div>
+</section>
 
 ---
 
+<section class="section">
+
+<div class="card" markdown=1>
 #### Additional Resources
 
 - **Sexual Harassment Resources from the CRA-W**  
   <https://cra.org/cra-w/sexual-harassment>
 - **ACM Training Video**  
   <https://www.youtube.com/watch?v=jKfAAU2-qs0>
-
+</div>
+</section>
 
 ---
 
