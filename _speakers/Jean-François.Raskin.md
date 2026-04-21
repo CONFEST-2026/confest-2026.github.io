@@ -5,6 +5,7 @@ first_name: Jean-François
 last_name: Raskin
 img: invited-concur-jr
 affiliation: Université Libre de Bruxelles, Belgium
+short_affiliation: Bruxelles
 invited: true
 joint: false
 conference: CONCUR

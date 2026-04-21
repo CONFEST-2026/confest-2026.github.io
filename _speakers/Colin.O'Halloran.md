@@ -7,6 +7,7 @@ img: invited-fmics-co
 affiliation: |
   Honourary Visiting Professor at the University of York, UK;
   CTO of D-RiSQ Ltd, UK
+short_affiliation: D-RiSQ
 invited: true
 joint: false
 conference: FMICS

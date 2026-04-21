@@ -5,6 +5,7 @@ first_name: Ezio
 last_name: Bartocci
 img: invited-eb
 affiliation: Professor at TU Wien, Vienna, Austria
+short_affiliation: TU Wien
 invited: true
 joint: true
 conference: all

@@ -5,6 +5,7 @@ first_name: Julia
 last_name: Badger
 img: invited-fmics-jb
 affiliation: NASA Johnson Space Center, USA
+short_affiliation: NASA
 invited: true
 joint: false
 conference: FMICS

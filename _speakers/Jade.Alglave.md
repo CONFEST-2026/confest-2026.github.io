@@ -5,6 +5,7 @@ first_name: Jade
 last_name: Alglave
 img: invited-concur-ja
 affiliation: University College London, UK
+short_affiliation: UCL
 invited: true
 joint: false
 conference: CONCUR

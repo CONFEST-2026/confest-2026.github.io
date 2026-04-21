@@ -5,6 +5,7 @@ first_name: Jane
 last_name: Hillston
 img: invited-qest-jh
 affiliation: University of Edinburgh, UK
+short_affiliation: Edinburgh
 invited: true
 joint: false
 conference: QEST+FORMATS

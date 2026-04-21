@@ -5,6 +5,7 @@ first_name: Kim G.
 last_name: Larsen
 img: unknown
 affiliation: Aalborg University, Denmark
+short_affiliation: Aalborg
 invited: true
 joint: false
 conference: QEST+FORMATS
