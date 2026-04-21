@@ -104,9 +104,7 @@ CONFEST 2026 is organised by the School of Computer Science and Informatics at t
 
 ---
 
-##### Sponsors
-
-The following sponsors have confirmed their support for the event.
+CONFEST 2026 is supported by
 
 {% include sponsors.html %}
 
