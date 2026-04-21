@@ -32,9 +32,9 @@ We expect all participants in CONFEST events to:
 </div>
 <div class="card">
 
-  <h3>
+  <h4>
     CONFEST Advocate
-  </h3>
+  </h4>
 
   <div style="margin-bottom:8px;">
     <strong>Daniel Hausmann</strong><br>
@@ -68,7 +68,7 @@ Unacceptable at any CONFEST event is:
 
 <!-- Abuse -->
 <div class="card">
-  <h3>Abuse</h3>
+  <h4>Abuse</h4>
 
   <p>
     Any action directed at an individual that:
@@ -86,7 +86,7 @@ Unacceptable at any CONFEST event is:
 
 <!-- Discriminatory Harassment -->
 <div class="card">
-  <h3>Discriminatory Harassment</h3>
+  <h4>Discriminatory Harassment</h4>
 
   <p>
     Any conduct that discriminates or denigrates an individual based on:
@@ -107,7 +107,7 @@ Unacceptable at any CONFEST event is:
 
 <!-- Sexual Harassment -->
 <div class="card">
-  <h3>Sexual Harassment</h3>
+  <h4>Sexual Harassment</h4>
 
   <p>
     Unwelcome sexual advances, requests for sexual favours, or other verbal or physical conduct of a sexual nature.
