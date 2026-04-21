@@ -90,9 +90,9 @@ subnav: local
       <div class="card-content">
         <h3>Dinner and Cruise - Thursday</h3>
         <p>
-        The famous Mersey Ferries have been carrying passengers across the River Mersey for over 800 years, becoming one of Liverpool’s most iconic and enduring symbols.
+        The famous Mersey Ferries have been carrying passengers across the River Mersey for over 800 years.
         </p><p>
-          Enjoy a relaxed dinner and live entertainment on this evening river cruise,  taking in the famous waterfront landmarks.
+          Enjoy a relaxed dinner and live entertainment on this evening river cruise aboard the Mersey Ferry,  taking in the famous waterfront landmarks.
         </p>
       </div>
 
