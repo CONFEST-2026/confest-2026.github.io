@@ -68,9 +68,10 @@ subnav: local
       <div class="card-content">
         <h3>Welcome Reception - Tuesday</h3>
         <p>
-          The CONFEST 2025 welcome reception will take place at Spaces at the Spine nearby to the main conference venue. 
-          </p><p>Drinks reception while
-          enjoying views over the city skyline.
+          The CONFEST 2025 welcome reception will take place at Spaces at the Spine where you can enjoy excellent views over the city skyline 
+          </p>
+          <p>
+          The venue is just 200m from the talks.
         </p>
       </div>
 
