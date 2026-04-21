@@ -171,12 +171,20 @@ conference:
   talks:
     # Talk categories
     main_categories:
+      - name: Invited
+        color: success
       - name: CONCUR
         color: info
       - name: QEST+FORMATS
-        color: success
+        color: primary
       - name: FMICS
         color: warning
+      - name: Workshop
+        color: secondary
+      - name: Joint
+        color: success
+      - name: Test of Time
+        color: light
 
     # Hide icons on talk overview page
     hide_icons: false
