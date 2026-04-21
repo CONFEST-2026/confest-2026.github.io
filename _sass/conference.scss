@@ -723,6 +723,17 @@ a.email{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
   }
+  .grid23 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    .grid23 {
+      grid-template-columns: 1fr;
+    }
+  }
 
   .card {
     background: #fff;

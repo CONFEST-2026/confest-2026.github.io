@@ -9,7 +9,7 @@ herocontain: True
 
 
 <section class="section">
-<div class="grid" style="grid-template-columns: 2fr 1fr;">
+<div class="grid23" >
 <div class="card" markdown=1>
 
 The International Conference on Concurrency Theory (CONCUR) brings together researchers, developers, and students in order to advance the theory of concurrency, and promote its applications. 
