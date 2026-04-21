@@ -14,8 +14,8 @@ herobackground: "#8aabbf"
 
       <!-- Train -->
       <div class="card">
-        <div class="icon">🚆</div>
-        <h3>By Train</h3>
+        
+        <h3>Train</h3>
 
         <p>
           Liverpool is well-connected and easy to reach by train
@@ -45,8 +45,8 @@ herobackground: "#8aabbf"
 
       <!-- Airports -->
       <div class="card">
-        <div class="icon">✈️</div>
-        <h3>Airports</h3>
+        
+        <h3>Plane</h3>
 
         <p>
           Liverpool is well connected to two international airports within easy reach.
@@ -80,9 +80,11 @@ herobackground: "#8aabbf"
 
       <!-- Parking -->
       <div class="card">
-        <div class="icon">🅿️</div>
-        <h3>Parking</h3>
+        
+        <h3>Automobile</h3>
 
+
+        <h5>Parking</h5>
         <p>
           We strongly encourage using public transport wherever possible.
         </p>
@@ -97,8 +99,8 @@ herobackground: "#8aabbf"
 
         <div class="divider"></div>
 
-		  <div class="icon">🚖</div>
-		  <h3>Taxis</h3>
+		  
+		  <h5>Taxis</h5>
 
 		  <p>
 		    Ride-hailing services such as Uber are widely available in Liverpool.
@@ -107,7 +109,13 @@ herobackground: "#8aabbf"
 		  <div class="highlight">
 		    <strong>Typical fares:</strong>
 		    <ul>
-		      <li>Manchester Airport → £55–£75</li>
+		      <li>Manchester Airport → £55–£75
+          <details>
+          <summary>Click for pickup info</summary>
+          Arriving at Terminal 2, head to the ground floor of T2 West Multi-Storey Car Park in front of the terminal building.
+          </details>
+
+          </li>
 		      <li>Liverpool John Lennon Airport → £15–£25</li>
 		    </ul>
 		  </div>

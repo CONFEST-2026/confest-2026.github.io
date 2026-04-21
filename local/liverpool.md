@@ -95,7 +95,6 @@ herobackground: white
 
     <!-- Walk -->
     <div class="card">
-      <div class="icon">🚶</div>
       <h3>Walking</h3>
       <p>
         The University of Liverpool campus (Central Teaching Hub) is within easy walking distance
@@ -105,7 +104,6 @@ herobackground: white
 
     <!-- Bus -->
     <div class="card">
-      <div class="icon">🚌</div>
       <h3>Bus</h3>
       <p>
         Local buses connect the city and campus. All buses accept contactless payment
@@ -119,11 +117,13 @@ herobackground: white
 
     <!-- Bolt -->
     <div class="card">
-      <div class="icon">🛴</div>
       <h3>Bike & e-scooter</h3>
       <p>
         Bolt bikes and e-scooters are available across the city and provide a quick way
         to travel short distances between the centre and campus.
+      </p>
+      <p>
+      <a href="https://bolt.eu/en/cities/liverpool/">Bolt in Liverpool</a>
       </p>
     </div>
 
@@ -139,11 +139,10 @@ herobackground: white
 
     <!-- On campus -->
     <div class="card">
-      <div class="icon">🏫</div>
       <h3>On-campus accommodation</h3>
 
       <p>
-        We are offering a limited number of rooms in student halls located next to the venue.
+        We are offering a limited number of rooms in the Crown Place student halls located next to the venue.
       </p>
 
       <div class="highlight">
@@ -161,7 +160,6 @@ herobackground: white
 
     <!-- Hotels -->
     <div class="card">
-      <div class="icon">💤</div>
       <h3>Hotels</h3>
 
       <p>
