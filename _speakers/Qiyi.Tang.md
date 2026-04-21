@@ -5,6 +5,7 @@ first_name: Qiyi
 last_name: Tang
 img: invited-concur-qt
 affiliation: University of Liverpool, UK
+short_affiliation: Liverpool
 invited: true
 joint: false
 conference: CONCUR

@@ -9,19 +9,13 @@ herocontain: True
 
 
 <section class="section">
-
+<div class="grid" style="grid-template-columns: 2fr 1fr;">
 <div class="card" markdown=1>
 
 The International Conference on Concurrency Theory (CONCUR) brings together researchers, developers, and students in order to advance the theory of concurrency, and promote its applications. 
 The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of workshops under the joint name CONFEST 2026, which will take place **September 1-5, 2026** at the University of Liverpool, UK.
 </div>
-</section>
-
-
-<section class="section">
-
-<div class="grid">
-<div class="card" markdown=1>
+<div class="card" markdown=1 >
 ##### Important dates
 
 - *Abstracts:*       20 April, 2026 (AoE)
@@ -32,22 +26,46 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 - *Conference:*      1 -- 4 September, 2026
 - *Workshops:*       5 September, 2026
 </div>
-
-<div class="card" markdown=1>
-##### Keynote speakers
-
-- [Jade Alglave](http://www0.cs.ucl.ac.uk/staff/j.alglave/), University College London / [arm](https://www.arm.com/), UK
-- [Ezio Bartocci](https://informatics.tuwien.ac.at/people/ezio-bartocci), TU Wien, Austria (Joint CONFEST Keynote)
-- [Ichiro Hasuo](https://group-mmm.org/~ichiro/), National Institute of Informatics, Japan (Joint CONFEST Keynote)
-- [Jean-François Raskin](https://verif.ulb.ac.be/jfr/), Université Libre de Bruxelles, Belgium
-- [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool. UK
 </div>
+</section>
+
+---
+
+##### CONCUR Invited Speakers
+
+{% assign speakers_concur = site.speakers | where: "conference", "CONCUR" %}
+{% assign speakers_all = site.speakers | where: "conference", "all" %}
+
+{% assign speakers = speakers_concur | concat: speakers_all 
+  | where: "invited", true 
+  | sort_natural: "last_name" %}
+
+
+<div class="card-deck">
+  {% for speaker in speakers %}
+      {% assign website = speaker.links | first %}
+    <div class="card">
+      <img class="card-img-top" 
+      src="{{ "/assets/images/" | relative_url }}{{ speaker.img }}.webp" alt="{{ speaker.full_name }}">
+      <div class="card-body">
+          <h5 class="card-title">{{ speaker.first_name }} {{ speaker.last_name }}</h5>
+          {% if speaker.extra %}<p class="card-text">{{ speaker.extra }}</p>{% endif %}
+          {% if speaker.short_affiliation %}<p class="card-text small">{{ speaker.short_affiliation }}</p>{% endif %}
+                  <a href="{{ speaker.url }}" class="stretched-link"></a>
+                  <p class="small">
+			          {% if speaker.conference == 'all' %}
+			          Joint CONFEST Speaker
+			          {% else %}
+			          {{speaker.conference}} Speaker
+			          {% endif %}
+			      </p>
+      </div>
+    </div>
+  {% endfor %}
 </div>
- </section>
 
-<section class="section">
+---
 
-<div class="card" markdown=1>
 ##### Test-of-time Awards
 
 This year, **two** papers will receive the CONCUR Test-of-Time Award:
@@ -57,8 +75,6 @@ This year, **two** papers will receive the CONCUR Test-of-Time Award:
 
 
 Congratulations to all authors!
-</div>
-</section>
 
 <div class="divider"></div>
 
