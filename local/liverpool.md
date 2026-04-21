@@ -95,7 +95,6 @@ herobackground: white
 
     <!-- Walk -->
     <div class="card">
-      <div class="icon">🚶</div>
       <h3>Walking</h3>
       <p>
         The University of Liverpool campus (Central Teaching Hub) is within easy walking distance
@@ -105,7 +104,6 @@ herobackground: white
 
     <!-- Bus -->
     <div class="card">
-      <div class="icon">🚌</div>
       <h3>Bus</h3>
       <p>
         Local buses connect the city and campus. All buses accept contactless payment
@@ -119,11 +117,13 @@ herobackground: white
 
     <!-- Bolt -->
     <div class="card">
-      <div class="icon">🛴</div>
       <h3>Bike & e-scooter</h3>
       <p>
         Bolt bikes and e-scooters are available across the city and provide a quick way
         to travel short distances between the centre and campus.
+      </p>
+      <p>
+      <a href="https://bolt.eu/en/cities/liverpool/">Bolt in Liverpool</a>
       </p>
     </div>
 
@@ -139,11 +139,10 @@ herobackground: white
 
     <!-- On campus -->
     <div class="card">
-      <div class="icon">🏫</div>
       <h3>On-campus accommodation</h3>
 
       <p>
-        We are offering a limited number of rooms in student halls located next to the venue.
+        We are offering a limited number of rooms in the Crown Place student halls located next to the venue.
       </p>
 
       <div class="highlight">
@@ -161,7 +160,6 @@ herobackground: white
 
     <!-- Hotels -->
     <div class="card">
-      <div class="icon">💤</div>
       <h3>Hotels</h3>
 
       <p>
@@ -171,6 +169,59 @@ herobackground: white
 <div class="highlight" markdown="1">
 - <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
     4*, adjacent to campus, 4 minute walk
+  <details class="conference-code">
+  <summary>Conference Discount Code Available (Click for details)</summary>
+  <p>
+  Confest has agreed rates with Novotel Liverpool Paddington Village, Standard King rooms for single-occupancy with Bed & Breakfast at the following rates:
+  <br>
+
+  <table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+  <tr>
+  <th>Date</th>
+  <th>Rate (Single Occupancy, B&B)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>Monday 31 August</td>
+  <td>£97/night</td>
+  </tr>
+  <tr>
+  <td>Tuesday 1 September</td>
+  <td>£97/night</td>
+  </tr>
+  <tr>
+  <td>Wednesday 2 September</td>
+  <td>£97/night</td>
+  </tr>
+  <tr>
+  <td>Thursday 3 September</td>
+  <td>£97/night</td>
+  </tr>
+  <tr>
+  <td>Friday 4 September</td>
+  <td>£97/night</td>
+  </tr>
+  <tr>
+  <td>Saturday 5 September</td>
+  <td>£170/night</td>
+  </tr>
+  </tbody>
+  </table>
+  <br>
+  Bookings must be made by phone or email, quoting the unique discount code <strong>1265788</strong>.
+
+  Please contact the Reservations Team on +44 151 245 6694 or +44 151 245 6697 between the hours of 9am - 5pm Monday to Friday (UK hours). Alternatively, email <a href="mailto:HB737-RE@accor.com">HB737-RE@accor.com</a> and one of the team will be in touch as soon as possible.
+  <br><br>
+  Double occupancy available at £15/night.
+  <br><br>
+  Note: an additional Liverpool Accommodation BID Charge of £2.40/night is applicable to all
+  bookings.
+  </p>
+  <div class="divider"></div>
+  </details>
+
 - <a href="https://www.theliner.co.uk/">The Liner Hotel</a> <br>
     3*, next to the station, 15 minute walk
 - <a href="https://www.premierinn.com/gb/en/hotels/england/merseyside/liverpool/liverpool-city-centre-lime-street.html">Premier Inn Liverpool City Centre (Lime Street) hotel</a> <br>

@@ -746,6 +746,7 @@ a.email{
   .icon {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
+    display: inline-block;
   }
 
   .highlight {
@@ -766,3 +767,15 @@ a.email{
   p {
     margin: 1em 0;
   }
+
+  .conference-code {
+  summary {
+  font-weight: bold;
+  color: red
+  }
+  p{
+  margin-bottom:2em;
+  }
+  }
+
+
