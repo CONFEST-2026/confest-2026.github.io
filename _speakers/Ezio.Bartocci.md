@@ -1,5 +1,5 @@
 ---
-name: 3
+name: Ezio Bartocci
 full_name: Ezio Bartocci
 first_name: Ezio
 last_name: Bartocci

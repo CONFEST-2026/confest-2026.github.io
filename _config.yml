@@ -171,10 +171,12 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: Cat A
+      - name: CONCUR
         color: info
-      - name: Cat B
+      - name: QEST+FORMATS
         color: success
+      - name: FMICS
+        color: warning
 
     # Hide icons on talk overview page
     hide_icons: false

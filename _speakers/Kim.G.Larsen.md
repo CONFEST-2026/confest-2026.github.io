@@ -1,5 +1,5 @@
 ---
-name: 10
+name: Kim G. Larsen
 full_name: Kim G. Larsen
 first_name: Kim G.
 last_name: Larsen

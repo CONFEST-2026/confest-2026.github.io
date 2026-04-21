@@ -1,5 +1,5 @@
 ---
-name: 5
+name: "Colin O'Halloran"
 full_name: Colin O'Halloran
 first_name: Colin
 last_name: O'Halloran

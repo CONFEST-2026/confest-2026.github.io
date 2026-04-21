@@ -1,5 +1,5 @@
 ---
-name: 2
+name: Ichiro Hasuo
 full_name: Ichiro Hasuo
 first_name: Ichiro
 last_name: Hasuo
