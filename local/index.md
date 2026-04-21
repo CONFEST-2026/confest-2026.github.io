@@ -67,8 +67,8 @@ herobackground: "#8aabbf"
         <div class="highlight">
           Manchester Airport → Liverpool:
           <ul>
-            <li>~1h 20m by train</li>
-            <li>~1h by coach</li>
+            <li>~1h 20m by train (<a href="https://www.nationalrail.co.uk/journey-planner/">National Rail</a>)</li>
+            <li>~1h by coach (<a href="https://www.nationalexpress.com/en">National Express</a>)</li>
           </ul>
         </div>
 
@@ -80,6 +80,7 @@ herobackground: "#8aabbf"
 
       <!-- Parking -->
       <div class="card">
+
         
         <h3>Automobile</h3>
 
@@ -88,10 +89,6 @@ herobackground: "#8aabbf"
         <p>
           We strongly encourage using public transport wherever possible.
         </p>
-
-        <div class="highlight">
-          Parking is limited in the area.
-        </div>
 
         <p>
           The closest option is <strong>Paddington Village car park</strong>.
