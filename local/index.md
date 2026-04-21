@@ -7,22 +7,6 @@ herofullheight: True
 herobackground: "#8aabbf"
 ---
 
-
-
-
-  <div class="section">
-    <h1>Reaching Liverpool</h1>
-
-    <div class="intro">
-      <strong>Getting to Liverpool is easy:</strong>
-      <ul>
-        <li>Fast direct trains from London, Manchester and Birmingham</li>
-        <li>Two nearby international airports: <strong>Liverpool</strong> and <strong>Manchester</strong></li>
-        <li>Limited parking — public transport recommended</li>
-      </ul>
-    </div>
-  </div>
-
   <div class="section">
     <h2>Travel Options</h2>
 
@@ -34,8 +18,8 @@ herobackground: "#8aabbf"
         <h3>By Train</h3>
 
         <p>
-          Liverpool is exceptionally well-connected and easy to reach by train
-          from major cities and airports across the UK.
+          Liverpool is well-connected and easy to reach by train
+          from other major cities and airports across the UK.
         </p>
 
         <div class="highlight">
