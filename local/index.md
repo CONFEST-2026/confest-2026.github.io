@@ -28,7 +28,7 @@ herobackground: "#8aabbf"
             <li>Manchester → ~35 minutes</li>
             <li>Manchester Airport → ~1h 20m</li>
             <li>Birmingham → under 2 hours</li>
-            <li>London → ~2h 15m</li>
+            <li>London Euston → ~2h 15m</li>
             <li>Paris / Brussels → just over 2 hours to London</li>
           </ul>
         </div>
