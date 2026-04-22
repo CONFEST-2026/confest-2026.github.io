@@ -1,6 +1,6 @@
 ---
 name: "Football"
 categories:
-  - Schedule
+  - Social
 hide: true
 ---

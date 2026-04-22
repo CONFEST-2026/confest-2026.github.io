@@ -11,7 +11,7 @@
   {{ content }}
 
   {% for main_category in site.conference.talks.main_categories %}
-    {%- if main_category.name == 'Schedule' -%}
+    {%- if main_category.name == 'Schedule' or main_category.name == 'Social' -%}
       {%- continue -%}
     {%- endif -%}
     <h3 class="mt-4 mb-3">
@@ -21,7 +21,7 @@
     </h3>
     <ul class="list-unstyled">
       {% for talk in site.talks -%}
-        {%- unless talk.categories contains 'Schedule' -%}
+        {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
           {%- for cat in talk.categories -%}
             {%- if cat == main_category.name -%}
               {%- assign main_cat = main_category.name -%}

@@ -8,7 +8,7 @@ affiliation: Aalborg University, Denmark
 short_affiliation: Aalborg
 invited: true
 joint: false
-conference: QEST+FORMATS
+conference: Q+F
 hide: false
 links:
   - name: Website

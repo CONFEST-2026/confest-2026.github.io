@@ -5,5 +5,8 @@ speakers:
 categories:
   - Invited
   - Joint
+  - CONCUR
+  - FMICS
+  - Q+F
 hide: false
 ---

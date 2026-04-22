@@ -3,7 +3,7 @@ name: "Supporting Older Adults Living Independently"
 speakers:
   - Jane Hillston
 categories:
-  - QEST+FORMATS
+  - Q+F
   - Invited
 hide: false
 ---

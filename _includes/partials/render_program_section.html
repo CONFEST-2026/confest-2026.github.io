@@ -1,0 +1,325 @@
+{%- assign d = include.day -%}
+{%- assign nbr_rooms = d.rooms | size -%}
+{%- assign room_col_width = include.room_col_width -%}
+{%- assign section_start_total_min = include.section_start_total_min | plus: 0 -%}
+{%- assign section_end_total_min = include.section_end_total_min | plus: 0 -%}
+{%- assign show_header = include.show_header -%}
+{%- unless show_header == false or show_header == 'false' -%}
+  {%- assign show_header = true -%}
+{%- else -%}
+  {%- assign show_header = false -%}
+{%- endunless -%}
+
+{%- if show_header -%}
+  <div class="sticky-top syncscroll overflow-hidden" name="sync-table">
+    <table class="table program-table mb-0 w-100">
+      <colgroup>
+        <col style="width: 70px; min-width: 70px;">
+        <col style="width: 15px; min-width: 15px;">
+        {%- for r in d.rooms -%}
+          <col style="width: {{ room_col_width }}; min-width: {{ room_col_width }};">
+          {%- unless forloop.last -%}
+            <col style="width: 15px; min-width: 15px;">
+          {%- endunless -%}
+        {%- endfor -%}
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col" class="col-title text-right"><span class="invisible">I0</span></th>
+          <th class="col-space p-0" scope="col"></th>
+          {%- for r in d.rooms -%}
+            {%- assign room = site.rooms | where: 'name', r.name | first %}
+            <th scope="col" class="text-center" style="width: {{ room_col_width }}; min-width: {{ room_col_width }};">
+              {%- if room.hide or site.conference.location.hide -%}
+                {{- room.name -}}
+              {%- else -%}
+                <a class="text-reset" href="{{ room.url | prepend: site.baseurl }}">
+                  {{- room.name -}}
+                </a>
+              {%- endif -%}
+            </th>
+            {%- unless forloop.last %}
+              <th class="col-space p-0" scope="col"></th>
+            {%- endunless -%}
+          {%- endfor %}
+        </tr>
+      </thead>
+    </table>
+  </div>
+{%- endif -%}
+
+<div class="syncscroll overflow-y-hidden" name="sync-table">
+  <table class="table program-table w-100">
+    <colgroup>
+      <col style="width: 70px; min-width: 70px;">
+      <col style="width: 15px; min-width: 15px;">
+      {%- for r in d.rooms -%}
+        <col style="width: {{ room_col_width }}; min-width: {{ room_col_width }};">
+        {%- unless forloop.last -%}
+          <col style="width: 15px; min-width: 15px;">
+        {%- endunless -%}
+      {%- endfor -%}
+    </colgroup>
+    <tbody>
+      {%- assign day_duration_min = section_end_total_min | minus: section_start_total_min -%}
+      {%- assign nbr_steps = day_duration_min | divided_by: site.conference.program.time_steps -%}
+      {%- assign z-index-max = 999 -%}
+
+      {%- for i in (1..nbr_steps) -%}
+        {%- assign current_total_min = i | minus: 1 | times: site.conference.program.time_steps | plus: section_start_total_min -%}
+        {%- assign current_day = 0 -%}
+        {%- assign current_hour = current_total_min | divided_by: 60 | floor -%}
+        {%- assign current_min = current_total_min | modulo: 60 -%}
+        {%- if current_min < 10 -%}
+          {%- assign current_time = current_hour | append: ':0' | append: current_min -%}
+        {%- else -%}
+          {%- assign current_time = current_hour | append: ':' | append: current_min -%}
+        {%- endif -%}
+        {%- if current_hour < 10 -%}
+          {%- assign current_time_padded = '0' | append: current_time -%}
+        {%- else -%}
+          {%- assign current_time_padded = current_time -%}
+        {%- endif -%}
+
+        {%- assign show_time_label = false -%}
+        {%- for schedule_room in d.rooms -%}
+          {%- for schedule_talk in schedule_room.talks -%}
+            {%- if schedule_talk.show_time and schedule_talk.time_start == current_time_padded -%}
+              {%- assign show_time_label = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if show_time_label -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- assign shared_schedule_active = false -%}
+        {%- assign shared_schedule_starts_now = false -%}
+        {%- assign shared_schedule_name = '' -%}
+        {%- assign shared_schedule_time_start = '' -%}
+        {%- assign shared_schedule_time_end = '' -%}
+        {%- assign shared_schedule_nbr_steps = 0 -%}
+        {%- assign shared_joint_active = false -%}
+        {%- assign shared_joint_starts_now = false -%}
+        {%- assign shared_joint_name = '' -%}
+        {%- assign shared_joint_room_name = '' -%}
+        {%- assign shared_joint_time_start = '' -%}
+        {%- assign shared_joint_time_end = '' -%}
+        {%- assign shared_joint_start_total_min = 0 -%}
+        {%- assign shared_joint_end_total_min = 0 -%}
+        {%- assign shared_joint_nbr_steps = 0 -%}
+        {%- if nbr_rooms > 1 -%}
+          {%- assign reference_room = d.rooms | first -%}
+          {%- for shared_entry in reference_room.talks -%}
+            {%- assign talk = site.talks | where: 'name', shared_entry.name | first -%}
+            {%- assign entry_start_hour = shared_entry.time_start | split: ':' | first | plus: 0 -%}
+            {%- assign entry_start_min = shared_entry.time_start | split: ':' | last | plus: 0 -%}
+            {%- assign entry_end_hour = shared_entry.time_end | split: ':' | first | plus: 0 -%}
+            {%- assign entry_end_min = shared_entry.time_end | split: ':' | last | plus: 0 -%}
+            {%- assign entry_start_total_min = entry_start_hour | times: 60 | plus: entry_start_min -%}
+            {%- assign entry_end_total_min = entry_end_hour | times: 60 | plus: entry_end_min -%}
+
+            {%- assign shared_schedule_starts_now = false -%}
+            {%- if entry_start_total_min == current_total_min -%}
+              {%- assign shared_schedule_starts_now = true -%}
+            {%- endif -%}
+
+            {%- assign shared_schedule_active = false -%}
+            {%- if entry_start_total_min <= current_total_min and entry_end_total_min > current_total_min -%}
+              {%- assign shared_schedule_active = true -%}
+            {%- endif -%}
+
+            {%- assign is_shared_placeholder = false -%}
+            {%- if talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
+              {%- assign is_shared_placeholder = true -%}
+            {%- endif -%}
+            {%- if shared_schedule_active and is_shared_placeholder -%}
+              {%- assign shared_schedule_name = shared_entry.name -%}
+              {%- assign shared_schedule_time_start = shared_entry.time_start -%}
+              {%- assign shared_schedule_time_end = shared_entry.time_end -%}
+              {%- assign shared_schedule_nbr_steps = entry_end_total_min | minus: entry_start_total_min | divided_by: site.conference.program.time_steps -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if shared_schedule_name != '' -%}
+            {%- for shared_room in d.rooms offset:1 -%}
+              {%- assign room_matches_shared_schedule = false -%}
+              {%- for shared_entry in shared_room.talks -%}
+                {%- if shared_entry.name == shared_schedule_name and shared_entry.time_start == shared_schedule_time_start and shared_entry.time_end == shared_schedule_time_end -%}
+                  {%- assign room_matches_shared_schedule = true -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- unless room_matches_shared_schedule -%}
+                {%- assign shared_schedule_active = false -%}
+                {%- break -%}
+              {%- endunless -%}
+            {%- endfor -%}
+          {%- else -%}
+            {%- assign shared_schedule_active = false -%}
+          {%- endif -%}
+
+          {%- unless shared_schedule_active -%}
+            {%- for joint_room in d.rooms -%}
+              {%- for joint_entry in joint_room.talks -%}
+                {%- assign talk = site.talks | where: 'name', joint_entry.name | first -%}
+                {%- assign entry_start_hour = joint_entry.time_start | split: ':' | first | plus: 0 -%}
+                {%- assign entry_start_min = joint_entry.time_start | split: ':' | last | plus: 0 -%}
+                {%- assign entry_end_hour = joint_entry.time_end | split: ':' | first | plus: 0 -%}
+                {%- assign entry_end_min = joint_entry.time_end | split: ':' | last | plus: 0 -%}
+                {%- assign entry_start_total_min = entry_start_hour | times: 60 | plus: entry_start_min -%}
+                {%- assign entry_end_total_min = entry_end_hour | times: 60 | plus: entry_end_min -%}
+
+                {%- assign shared_joint_starts_now = false -%}
+                {%- if entry_start_total_min == current_total_min -%}
+                  {%- assign shared_joint_starts_now = true -%}
+                {%- endif -%}
+
+                {%- assign shared_joint_active = false -%}
+                {%- if entry_start_total_min <= current_total_min and entry_end_total_min > current_total_min and talk.categories contains 'Joint' -%}
+                  {%- assign shared_joint_active = true -%}
+                {%- endif -%}
+
+                {%- if shared_joint_active -%}
+                  {%- assign shared_joint_name = joint_entry.name -%}
+                  {%- assign shared_joint_room_name = joint_room.name -%}
+                  {%- assign shared_joint_time_start = joint_entry.time_start -%}
+                  {%- assign shared_joint_time_end = joint_entry.time_end -%}
+                  {%- assign shared_joint_start_total_min = entry_start_total_min -%}
+                  {%- assign shared_joint_end_total_min = entry_end_total_min -%}
+                  {%- assign shared_joint_nbr_steps = entry_end_total_min | minus: entry_start_total_min | divided_by: site.conference.program.time_steps -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if shared_joint_name != '' -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- if shared_joint_name != '' -%}
+              {%- for other_room in d.rooms -%}
+                {%- unless other_room.name == shared_joint_room_name -%}
+                  {%- assign room_has_overlap = false -%}
+                  {%- for other_entry in other_room.talks -%}
+                    {%- assign other_start_hour = other_entry.time_start | split: ':' | first | plus: 0 -%}
+                    {%- assign other_start_min = other_entry.time_start | split: ':' | last | plus: 0 -%}
+                    {%- assign other_end_hour = other_entry.time_end | split: ':' | first | plus: 0 -%}
+                    {%- assign other_end_min = other_entry.time_end | split: ':' | last | plus: 0 -%}
+                    {%- assign other_start_total_min = other_start_hour | times: 60 | plus: other_start_min -%}
+                    {%- assign other_end_total_min = other_end_hour | times: 60 | plus: other_end_min -%}
+                    {%- if other_start_total_min < shared_joint_end_total_min and other_end_total_min > shared_joint_start_total_min -%}
+                      {%- assign room_has_overlap = true -%}
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  {%- if room_has_overlap -%}
+                    {%- assign shared_joint_active = false -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endunless -%}
+              {%- endfor -%}
+            {%- else -%}
+              {%- assign shared_joint_active = false -%}
+            {%- endif -%}
+          {%- endunless -%}
+        {%- endif -%}
+
+        <tr>
+          {%- if show_time_label -%}
+            <th scope="row" class="col-title text-right" style="z-index: {{ z-index-max }}">
+              {{- current_time -}}
+            </th>
+          {%- else -%}
+            <th scope="row" class="col-title" style="z-index: {{ z-index-max }}"></th>
+          {%- endif %}
+          <td class="col-space p-0"></td>
+
+          {%- if shared_schedule_active -%}
+            {%- if shared_schedule_starts_now -%}
+              {%- assign talk = site.talks | where: 'name', shared_schedule_name | first -%}
+              {%- include partials/get_main_category.html -%}
+              <td colspan="{{ nbr_rooms | times: 2 | minus: 1 }}" rowspan="{{ shared_schedule_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}">
+                <p class="mb-2">{{- shared_schedule_name -}}</p>
+              </td>
+            {%- endif -%}
+          {%- elsif shared_joint_active -%}
+            {%- if shared_joint_starts_now -%}
+              {%- assign talk = site.talks | where: 'name', shared_joint_name | first -%}
+              {%- assign room = site.rooms | where: 'name', shared_joint_room_name | first -%}
+              {%- include partials/get_main_category.html -%}
+              <td colspan="{{ nbr_rooms | times: 2 | minus: 1 }}" rowspan="{{ shared_joint_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}">
+                {%- assign live_button_styleclass = "mb-2" -%}
+                {%- include partials/show_live_button.html -%}
+                <p class="mb-2">{%- include partials/show_talk.html %}</p>
+                <p class="font-weight-light mb-2">{%- include partials/list_speakers.html %}</p>
+                <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Invited</span></p>
+              </td>
+            {%- endif -%}
+          {%- else -%}
+            {%- for r in d.rooms -%}
+              {%- assign active_talk = false -%}
+              {%- for t in r.talks -%}
+                {%- assign talk = site.talks | where: 'name', t.name | first -%}
+                {%- include partials/get_talk_time.html -%}
+
+                {%- assign d_start_hour = current_day | minus: talk_start_day | times: 24 | plus: current_hour | minus: talk_start_hour -%}
+                {%- assign d_start_min = current_min | minus: talk_start_min -%}
+                {%- assign d_end_hour = current_day | minus: talk_end_day | times: 24 | plus: current_hour | minus: talk_end_hour -%}
+                {%- assign d_end_min = current_min | minus: talk_end_min -%}
+
+                {%- assign has_started = false -%}
+                {%- if d_start_hour == 0 and d_start_min > 0 -%}
+                  {%- assign has_started = true -%}
+                {%- endif -%}
+                {%- if d_start_hour > 0 -%}
+                  {%- assign has_started = true -%}
+                {%- endif -%}
+
+                {%- assign has_ended = false -%}
+                {%- if d_end_hour == 0 and d_end_min >= 0 -%}
+                  {%- assign has_ended = true -%}
+                {%- endif -%}
+                {%- if d_end_hour > 0 -%}
+                  {%- assign has_ended = true -%}
+                {%- endif -%}
+
+                {%- if has_started == true and has_ended == false -%}
+                  {%- assign active_talk = true -%}
+                {%- endif -%}
+
+                {%- if d_start_hour == 0 and d_start_min == 0 -%}
+                  {%- assign talk_nbr_steps = talk_duration_min | divided_by: site.conference.program.time_steps -%}
+                  {%- include partials/get_main_category.html -%}
+                  <td rowspan="{{ talk_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}; width: {{ room_col_width }}; min-width: {{ room_col_width }};">
+                    {%- assign live_button_styleclass = "mb-2" %}
+                    {%- include partials/show_live_button.html %}
+                    <p class="mb-2">{%- include partials/show_talk.html %}</p>
+                    {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
+                      <p class="font-weight-light mb-2">{%- include partials/list_speakers.html %}</p>
+                      {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
+                        <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Invited</span></p>
+                      {%- else -%}
+                        <p class="mb-1">{%- include partials/list_sub_categories.html %}</p>
+                      {%- endif -%}
+                    {%- endunless -%}
+                  </td>
+                  {%- assign active_talk = true %}
+                {%- endif %}
+              {%- endfor %}
+
+              {%- unless active_talk == true %}
+                <td class="p-0" style="width: {{ room_col_width }}; min-width: {{ room_col_width }};"></td>
+              {%- endunless -%}
+
+              {%- if forloop.last != true %}
+                <td class="col-space p-0"></td>
+              {%- endif -%}
+            {%- endfor %}
+          {%- endif -%}
+        </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>

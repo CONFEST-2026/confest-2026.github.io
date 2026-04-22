@@ -1,9 +1,9 @@
 ---
-name: "QEST+FORMATS Invited Talk 1"
+name: "Q+F Invited Talk 1"
 speakers:
   - Kim G. Larsen
 categories:
-  - QEST+FORMATS
+  - Q+F
   - Invited
 hide: false
 ---

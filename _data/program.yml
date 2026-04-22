@@ -72,6 +72,10 @@ days:
     - name: CONCUR Talk 13
       time_start: '17:15'
       time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
     - name: Reception
       time_start: '18:30'
       time_end: '20:00'
@@ -142,67 +146,75 @@ days:
     - name: CONCUR Talk 23
       time_start: '17:15'
       time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
   - name: Room B
     talks:
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: QEST+FORMATS Talk 1
+    - name: Q+F Talk 1
       time_start: '10:30'
       time_end: '10:55'
       show_time: true
-    - name: QEST+FORMATS Talk 2
+    - name: Q+F Talk 2
       time_start: '10:55'
       time_end: '11:15'
-    - name: QEST+FORMATS Talk 3
+    - name: Q+F Talk 3
       time_start: '11:15'
       time_end: '11:40'
-    - name: QEST+FORMATS Talk 4
+    - name: Q+F Talk 4
       time_start: '11:40'
       time_end: '12:00'
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: QEST+FORMATS Talk 5
+    - name: Q+F Talk 5
       time_start: '13:30'
       time_end: '13:55'
       show_time: true
-    - name: QEST+FORMATS Talk 6
+    - name: Q+F Talk 6
       time_start: '13:55'
       time_end: '14:15'
-    - name: QEST+FORMATS Talk 7
+    - name: Q+F Talk 7
       time_start: '14:15'
       time_end: '14:40'
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: QEST+FORMATS Talk 8
+    - name: Q+F Talk 8
       time_start: '15:00'
       time_end: '15:25'
       show_time: true
-    - name: QEST+FORMATS Talk 9
+    - name: Q+F Talk 9
       time_start: '15:25'
       time_end: '15:45'
-    - name: QEST+FORMATS Talk 10
+    - name: Q+F Talk 10
       time_start: '15:45'
       time_end: '16:10'
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: QEST+FORMATS Talk 11
+    - name: Q+F Talk 11
       time_start: '16:30'
       time_end: '16:55'
       show_time: true
-    - name: QEST+FORMATS Talk 12
+    - name: Q+F Talk 12
       time_start: '16:55'
       time_end: '17:15'
-    - name: QEST+FORMATS Talk 13
+    - name: Q+F Talk 13
       time_start: '17:15'
       time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
   - name: Room C
     talks:
     - name: Coffee Break
@@ -258,6 +270,10 @@ days:
     - name: FMICS Talk 10
       time_start: '17:15'
       time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
 - name: Thursday
   abbr: Thu
   date: 2026-09-03
@@ -321,6 +337,10 @@ days:
     - name: CONCUR Talk 33
       time_start: '17:15'
       time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
     - name: Boat Tour / Dinner
       time_start: '19:00'
       time_end: '21:00'
@@ -331,17 +351,17 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: QEST+FORMATS Talk 14
+    - name: Q+F Talk 14
       time_start: '10:30'
       time_end: '10:55'
       show_time: true
-    - name: QEST+FORMATS Talk 15
+    - name: Q+F Talk 15
       time_start: '10:55'
       time_end: '11:15'
-    - name: QEST+FORMATS Talk 16
+    - name: Q+F Talk 16
       time_start: '11:15'
       time_end: '11:40'
-    - name: QEST+FORMATS Talk 17
+    - name: Q+F Talk 17
       time_start: '11:40'
       time_end: '12:00'
     - name: Lunch
@@ -356,30 +376,34 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: QEST+FORMATS Talk 18
+    - name: Q+F Talk 18
       time_start: '15:00'
       time_end: '15:25'
       show_time: true
-    - name: QEST+FORMATS Talk 19
+    - name: Q+F Talk 19
       time_start: '15:25'
       time_end: '15:45'
-    - name: QEST+FORMATS Talk 20
+    - name: Q+F Talk 20
       time_start: '15:45'
       time_end: '16:10'
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: QEST+FORMATS Talk 21
+    - name: Q+F Talk 21
       time_start: '16:30'
       time_end: '16:55'
       show_time: true
-    - name: QEST+FORMATS Talk 22
+    - name: Q+F Talk 22
       time_start: '16:55'
       time_end: '17:15'
-    - name: QEST+FORMATS Talk 23
+    - name: Q+F Talk 23
       time_start: '17:15'
       time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
     - name: Boat Tour / Dinner
       time_start: '19:00'
       time_end: '21:00'
@@ -445,6 +469,10 @@ days:
     - name: FMICS Talk 23
       time_start: '17:15'
       time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
     - name: Boat Tour / Dinner
       time_start: '19:00'
       time_end: '21:00'
@@ -501,13 +529,17 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
+    - name: Closing
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
     - name: Football
       time_start: '19:00'
       time_end: '21:00'
       show_time: true
   - name: Room B
     talks:
-    - name: QEST+FORMATS Invited Talk 1
+    - name: Q+F Invited Talk 1
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
@@ -515,47 +547,51 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: QEST+FORMATS Talk 24
+    - name: Q+F Talk 24
       time_start: '10:30'
       time_end: '10:55'
       show_time: true
-    - name: QEST+FORMATS Talk 25
+    - name: Q+F Talk 25
       time_start: '10:55'
       time_end: '11:15'
-    - name: QEST+FORMATS Talk 26
+    - name: Q+F Talk 26
       time_start: '11:15'
       time_end: '11:40'
-    - name: QEST+FORMATS Talk 27
+    - name: Q+F Talk 27
       time_start: '11:40'
       time_end: '12:00'
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: QEST+FORMATS Talk 28
+    - name: Q+F Talk 28
       time_start: '13:30'
       time_end: '13:55'
       show_time: true
-    - name: QEST+FORMATS Talk 29
+    - name: Q+F Talk 29
       time_start: '13:55'
       time_end: '14:15'
-    - name: QEST+FORMATS Talk 30
+    - name: Q+F Talk 30
       time_start: '14:15'
       time_end: '14:40'
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: QEST+FORMATS Talk 31
+    - name: Q+F Talk 31
       time_start: '15:00'
       time_end: '15:25'
       show_time: true
-    - name: QEST+FORMATS Talk 32
+    - name: Q+F Talk 32
       time_start: '15:25'
       time_end: '15:45'
-    - name: QEST+FORMATS Talk 33
+    - name: Q+F Talk 33
       time_start: '15:45'
       time_end: '16:10'
+    - name: Closing
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
     - name: Football
       time_start: '19:00'
       time_end: '21:00'
@@ -609,6 +645,10 @@ days:
     - name: FMICS Talk 32
       time_start: '15:45'
       time_end: '16:10'
+    - name: Closing
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
     - name: Football
       time_start: '19:00'
       time_end: '21:00'
@@ -653,7 +693,7 @@ days:
       show_time: true
     - name: Closing
       time_start: '16:30'
-      time_end: '17:00'
+      time_end: '16:50'
       show_time: true
   - name: Radical
     talks:
@@ -691,7 +731,7 @@ days:
       show_time: true
     - name: Closing
       time_start: '16:30'
-      time_end: '17:00'
+      time_end: '16:50'
       show_time: true
   - name: SNR
     talks:
@@ -729,7 +769,7 @@ days:
       show_time: true
     - name: Closing
       time_start: '16:30'
-      time_end: '17:00'
+      time_end: '16:50'
       show_time: true
   - name: Trends
     talks:
@@ -767,7 +807,7 @@ days:
       show_time: true
     - name: Closing
       time_start: '16:30'
-      time_end: '17:00'
+      time_end: '16:50'
       show_time: true
   - name: YR-CONCUR
     talks:
@@ -805,5 +845,5 @@ days:
       show_time: true
     - name: Closing
       time_start: '16:30'
-      time_end: '17:00'
+      time_end: '16:50'
       show_time: true

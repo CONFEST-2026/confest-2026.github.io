@@ -1,6 +1,6 @@
 ---
 name: "Boat Tour / Dinner"
 categories:
-  - Schedule
+  - Social
 hide: true
 ---

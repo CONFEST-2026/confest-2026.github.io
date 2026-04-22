@@ -36,7 +36,7 @@
         <table class="list-program">
         {%- for t in r.talks -%}
           {%- assign talk = site.talks | where: 'name', t.name | first -%}
-          {%- unless talk.categories contains 'Schedule' -%}
+          {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
             {%- include partials/get_main_category.html %}
 
             <tr>

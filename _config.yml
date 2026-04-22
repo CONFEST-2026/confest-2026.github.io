@@ -173,20 +173,22 @@ conference:
     main_categories:
       - name: Invited
         color: success
+      - name: Joint
+        color: success
       - name: CONCUR
         color: info
-      - name: QEST+FORMATS
-        color: primary
+      - name: Q+F
+        color: danger
       - name: FMICS
         color: warning
       - name: Workshop
         color: secondary
       - name: Schedule
-        color: dark
-      - name: Joint
-        color: success
+        color: neutral
+      - name: Social
+        color: social
       - name: Test of Time
-        color: light
+        color: warning
 
     # Hide icons on talk overview page
     hide_icons: false

@@ -2,14 +2,14 @@
 $primary-yellow:  #F5D547;
 $accent-yellow:  #f3be42;
 $deep-blue:       #00205B;
-$sky-blue:        rgb(160,190,210);
+$sky-blue:        #8CC8F0;
 $mid-blue:        rgb(58,95,128);
 $maratime-blue:  rgb(83,128,163);
 $navy-blue:       #0D133D;
 $sea-green:       #2ECCB0;
 $sub-orange:      #FF9900;
 $funky-purple:    #A259CA;
-$cream-bg:        #F9F9F9;
+$cream-bg:        #FCFCFC;
 $footer-bg:      rgb(58,95,128);
 
 $bright-red:      #FF3B3B;
@@ -37,6 +37,8 @@ $info:         $sky-blue !default;
 $warning:      $primary-yellow !default;
 $danger:       $sub-orange !default;
 $light:        $cream-bg !default;
+$neutral:      #E6EBF0 !default;
+$social:       $bright-red !default;
 $dark:         $navy-blue !default;
 
 $theme-colors: (
@@ -47,6 +49,8 @@ $theme-colors: (
   "warning":   $warning,
   "danger":    $danger,
   "light":     $light,
+  "neutral":   $neutral,
+  "social":    $social,
   "dark":      $dark
 );
 
@@ -132,6 +136,22 @@ body {
   .bg-soft-#{$color} {
     @include gradient-bg(theme-color-level($color, $alert-bg-level));
   }
+}
+
+.alert-neutral {
+  background-color: $neutral;
+  border-color: darken($neutral, 6%);
+  border-left-color: darken($neutral, 10%);
+  color: $body-color;
+}
+
+.border-soft-neutral {
+  border-color: darken($neutral, 10%);
+}
+
+.bg-soft-neutral {
+  background-color: $neutral;
+  background-image: none;
 }
 
 //   Button group for lists
@@ -375,6 +395,14 @@ main.container img {
       width: 70px;
       min-width: 70px;
     }
+  }
+}
+
+.program-table {
+  width: 100%;
+
+  th, td {
+    width: auto;
   }
 }
 
@@ -778,7 +806,6 @@ a.email{
   p {
     margin: 1em 0;
   }
-
   .conference-code {
   summary {
   font-weight: bold;
@@ -788,5 +815,3 @@ a.email{
   margin-bottom:2em;
   }
   }
-
-

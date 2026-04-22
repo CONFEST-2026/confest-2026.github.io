@@ -1,6 +1,6 @@
 ---
-name: "QEST+FORMATS Talk 20"
+name: "Q+F Talk 20"
 categories:
-  - QEST+FORMATS
+  - Q+F
 hide: false
 ---

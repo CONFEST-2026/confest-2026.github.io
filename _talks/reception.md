@@ -1,6 +1,6 @@
 ---
 name: "Reception"
 categories:
-  - Schedule
+  - Social
 hide: true
 ---
