@@ -1,6 +1,6 @@
 ---
 name: "Radical Workshop Session 4"
 categories:
-  - Workshop
+  - Radical
 hide: false
 ---

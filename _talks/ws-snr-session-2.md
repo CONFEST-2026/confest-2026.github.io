@@ -1,6 +1,6 @@
 ---
 name: "SNR Workshop Session 2"
 categories:
-  - Workshop
+  - SNR
 hide: false
 ---

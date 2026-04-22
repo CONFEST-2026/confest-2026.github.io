@@ -657,7 +657,7 @@ days:
   abbr: Sat
   date: 2026-09-05
   rooms:
-  - name: Express/SOS
+  - name: Room A
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -695,7 +695,7 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: Radical
+  - name: Room B
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -733,7 +733,7 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: SNR
+  - name: Room C
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -771,7 +771,7 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: Trends
+  - name: Room D
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -809,7 +809,7 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: YR-CONCUR
+  - name: Room E
     talks:
     - name: Registration & Coffee
       time_start: '08:30'

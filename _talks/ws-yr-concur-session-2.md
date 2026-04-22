@@ -1,6 +1,6 @@
 ---
 name: "YR-CONCUR Workshop Session 2"
 categories:
-  - Workshop
+  - YR-CONCUR
 hide: false
 ---

@@ -181,8 +181,16 @@ conference:
         color: danger
       - name: FMICS
         color: warning
-      - name: Workshop
-        color: secondary
+      - name: Express/SOS
+        color: primary
+      - name: Radical
+        color: danger
+      - name: SNR
+        color: warning
+      - name: Trends
+        color: success
+      - name: YR-CONCUR
+        color: purple
       - name: Schedule
         color: neutral
       - name: Social

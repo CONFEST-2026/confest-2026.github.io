@@ -1,6 +1,6 @@
 ---
 name: "Express/SOS Workshop Session 4"
 categories:
-  - Workshop
+  - Express/SOS
 hide: false
 ---

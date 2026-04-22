@@ -1,6 +1,6 @@
 ---
 name: "Trends Workshop Session 4"
 categories:
-  - Workshop
+  - Trends
 hide: false
 ---
