@@ -90,30 +90,16 @@
             {%- else -%}
               {%- assign current_time = current_hour | append: ':' | append: current_min -%}
             {%- endif -%}
-            {%- if current_hour < 10 -%}
-              {%- assign current_time_padded = '0' | append: current_time -%}
-            {%- else -%}
-              {%- assign current_time_padded = current_time -%}
-            {%- endif -%}
-
-            {%- assign show_time_label = false -%}
-            {%- for schedule_room in d.rooms -%}
-              {%- for schedule_talk in schedule_room.talks -%}
-                {%- if schedule_talk.show_time and schedule_talk.time_start == current_time_padded -%}
-                  {%- assign show_time_label = true -%}
-                  {%- break -%}
-                {%- endif -%}
-              {%- endfor -%}
-              {%- if show_time_label -%}
-                {%- break -%}
-              {%- endif -%}
-            {%- endfor -%}
 
             <tr>
 
-              {%- if show_time_label -%}
+              {%- if current_min == 0 -%}
                 <th scope="row" class="col-title text-right" style="z-index: {{ z-index-max }}">
                   {{- current_time -}}
+                </th>
+              {%- elsif site.conference.program.show_alltimes -%}
+                <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: {{ z-index-max }}">
+                  :{{ current_min }}
                 </th>
               {%- else -%}
                 <th scope="row" class="col-title" style="z-index: {{ z-index-max }}"></th>

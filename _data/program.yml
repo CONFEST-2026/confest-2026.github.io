@@ -3,463 +3,807 @@ days:
   abbr: Tue
   date: 2026-09-01
   rooms:
-  - name: "Room A"
+  - name: Room A
     talks:
-      - name: "CONCUR Invited Talk 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "CONCUR Talk 1"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "CONCUR Talk 2"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "CONCUR Talk 3"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "CONCUR Talk 4"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "CONCUR Talk 5"
-        time_start: '13:30'
-        time_end: '13:53'
-      - name: "CONCUR Talk 6"
-        time_start: '13:53'
-        time_end: '14:17'
-      - name: "CONCUR Talk 7"
-        time_start: '14:17'
-        time_end: '14:40'
-      - name: "CONCUR Talk 8"
-        time_start: '15:00'
-        time_end: '15:23'
-      - name: "CONCUR Talk 9"
-        time_start: '15:23'
-        time_end: '15:47'
-      - name: "CONCUR Talk 10"
-        time_start: '15:47'
-        time_end: '16:10'
-      - name: "CONCUR Talk 11"
-        time_start: '16:30'
-        time_end: '16:53'
-      - name: "CONCUR Talk 12"
-        time_start: '16:53'
-        time_end: '17:17'
-      - name: "CONCUR Talk 13"
-        time_start: '17:17'
-        time_end: '17:40'
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
+    - name: CONCUR Invited Talk 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: CONCUR Talk 1
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: CONCUR Talk 2
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: CONCUR Talk 3
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: CONCUR Talk 4
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: CONCUR Talk 5
+      time_start: '13:30'
+      time_end: '13:55'
+      show_time: true
+    - name: CONCUR Talk 6
+      time_start: '13:55'
+      time_end: '14:15'
+    - name: CONCUR Talk 7
+      time_start: '14:15'
+      time_end: '14:40'
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: CONCUR Talk 8
+      time_start: '15:00'
+      time_end: '15:25'
+      show_time: true
+    - name: CONCUR Talk 9
+      time_start: '15:25'
+      time_end: '15:45'
+    - name: CONCUR Talk 10
+      time_start: '15:45'
+      time_end: '16:10'
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: CONCUR Talk 11
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: CONCUR Talk 12
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: CONCUR Talk 13
+      time_start: '17:15'
+      time_end: '17:40'
+    - name: Reception
+      time_start: '18:30'
+      time_end: '20:00'
+      show_time: true
 - name: Wednesday
   abbr: Wed
   date: 2026-09-02
   rooms:
-  - name: "Room A"
+  - name: Room A
     talks:
-      - name: "Joint Invited Talk 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "CONCUR Talk 14"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "CONCUR Talk 15"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "CONCUR Talk 16"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "CONCUR Talk 17"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "CONCUR Talk 18"
-        time_start: '13:30'
-        time_end: '13:53'
-      - name: "CONCUR Talk 19"
-        time_start: '13:53'
-        time_end: '14:17'
-      - name: "CONCUR Talk 20"
-        time_start: '14:17'
-        time_end: '14:40'
-      - name: "A New Type System for Deadlock-Free Processes"
-        time_start: '15:00'
-        time_end: '15:30'
-      - name: "Strategy Logic"
-        time_start: '15:30'
-        time_end: '16:00'
-      - name: "CONCUR Talk 21"
-        time_start: '16:30'
-        time_end: '16:53'
-      - name: "CONCUR Talk 22"
-        time_start: '16:53'
-        time_end: '17:17'
-      - name: "CONCUR Talk 23"
-        time_start: '17:17'
-        time_end: '17:40'
-  - name: "Room B"
+    - name: Joint Invited Talk 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: CONCUR Talk 14
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: CONCUR Talk 15
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: CONCUR Talk 16
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: CONCUR Talk 17
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: CONCUR Talk 18
+      time_start: '13:30'
+      time_end: '13:55'
+      show_time: true
+    - name: CONCUR Talk 19
+      time_start: '13:55'
+      time_end: '14:15'
+    - name: CONCUR Talk 20
+      time_start: '14:15'
+      time_end: '14:40'
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: A New Type System for Deadlock-Free Processes
+      time_start: '15:00'
+      time_end: '15:35'
+      show_time: true
+    - name: Strategy Logic
+      time_start: '15:35'
+      time_end: '16:10'
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: CONCUR Talk 21
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: CONCUR Talk 22
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: CONCUR Talk 23
+      time_start: '17:15'
+      time_end: '17:40'
+  - name: Room B
     talks:
-      - name: "QEST+FORMATS Talk 1"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "QEST+FORMATS Talk 2"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "QEST+FORMATS Talk 3"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "QEST+FORMATS Talk 4"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "QEST+FORMATS Talk 5"
-        time_start: '13:30'
-        time_end: '13:53'
-      - name: "QEST+FORMATS Talk 6"
-        time_start: '13:53'
-        time_end: '14:17'
-      - name: "QEST+FORMATS Talk 7"
-        time_start: '14:17'
-        time_end: '14:40'
-      - name: "QEST+FORMATS Talk 8"
-        time_start: '15:00'
-        time_end: '15:23'
-      - name: "QEST+FORMATS Talk 9"
-        time_start: '15:23'
-        time_end: '15:47'
-      - name: "QEST+FORMATS Talk 10"
-        time_start: '15:47'
-        time_end: '16:10'
-      - name: "QEST+FORMATS Talk 11"
-        time_start: '16:30'
-        time_end: '16:53'
-      - name: "QEST+FORMATS Talk 12"
-        time_start: '16:53'
-        time_end: '17:17'
-      - name: "QEST+FORMATS Talk 13"
-        time_start: '17:17'
-        time_end: '17:40'
-  - name: "Room C"
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: QEST+FORMATS Talk 1
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: QEST+FORMATS Talk 2
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: QEST+FORMATS Talk 3
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: QEST+FORMATS Talk 4
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: QEST+FORMATS Talk 5
+      time_start: '13:30'
+      time_end: '13:55'
+      show_time: true
+    - name: QEST+FORMATS Talk 6
+      time_start: '13:55'
+      time_end: '14:15'
+    - name: QEST+FORMATS Talk 7
+      time_start: '14:15'
+      time_end: '14:40'
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: QEST+FORMATS Talk 8
+      time_start: '15:00'
+      time_end: '15:25'
+      show_time: true
+    - name: QEST+FORMATS Talk 9
+      time_start: '15:25'
+      time_end: '15:45'
+    - name: QEST+FORMATS Talk 10
+      time_start: '15:45'
+      time_end: '16:10'
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: QEST+FORMATS Talk 11
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: QEST+FORMATS Talk 12
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: QEST+FORMATS Talk 13
+      time_start: '17:15'
+      time_end: '17:40'
+  - name: Room C
     talks:
-      - name: "FMICS Talk 1"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "FMICS Talk 2"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "FMICS Talk 3"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "FMICS Talk 4"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "Reducing Time to Market through Formal Methods"
-        time_start: '13:30'
-        time_end: '14:40'
-      - name: "FMICS Talk 5"
-        time_start: '15:00'
-        time_end: '15:23'
-      - name: "FMICS Talk 6"
-        time_start: '15:23'
-        time_end: '15:47'
-      - name: "FMICS Talk 7"
-        time_start: '15:47'
-        time_end: '16:10'
-      - name: "FMICS Talk 8"
-        time_start: '16:30'
-        time_end: '16:53'
-      - name: "FMICS Talk 9"
-        time_start: '16:53'
-        time_end: '17:17'
-      - name: "FMICS Talk 10"
-        time_start: '17:17'
-        time_end: '17:40'
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: FMICS Talk 1
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: FMICS Talk 2
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: FMICS Talk 3
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: FMICS Talk 4
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: Reducing Time to Market through Formal Methods
+      time_start: '13:30'
+      time_end: '14:40'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: FMICS Talk 5
+      time_start: '15:00'
+      time_end: '15:25'
+      show_time: true
+    - name: FMICS Talk 6
+      time_start: '15:25'
+      time_end: '15:45'
+    - name: FMICS Talk 7
+      time_start: '15:45'
+      time_end: '16:10'
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: FMICS Talk 8
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: FMICS Talk 9
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: FMICS Talk 10
+      time_start: '17:15'
+      time_end: '17:40'
 - name: Thursday
   abbr: Thu
   date: 2026-09-03
   rooms:
-  - name: "Room A"
+  - name: Room A
     talks:
-      - name: "Joint Invited Talk 2"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "CONCUR Talk 24"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "CONCUR Talk 25"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "CONCUR Talk 26"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "CONCUR Talk 27"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "CONCUR Talk 28"
-        time_start: '13:30'
-        time_end: '13:53'
-      - name: "CONCUR Talk 29"
-        time_start: '13:53'
-        time_end: '14:17'
-      - name: "CONCUR Talk 30"
-        time_start: '14:17'
-        time_end: '14:40'
-      - name: "CONCUR Invited Talk 2"
-        time_start: '15:00'
-        time_end: '16:10'
-      - name: "CONCUR Talk 31"
-        time_start: '16:30'
-        time_end: '16:53'
-      - name: "CONCUR Talk 32"
-        time_start: '16:53'
-        time_end: '17:17'
-      - name: "CONCUR Talk 33"
-        time_start: '17:17'
-        time_end: '17:40'
-  - name: "Room B"
+    - name: Joint Invited Talk 2
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: CONCUR Talk 24
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: CONCUR Talk 25
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: CONCUR Talk 26
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: CONCUR Talk 27
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: CONCUR Talk 28
+      time_start: '13:30'
+      time_end: '13:55'
+      show_time: true
+    - name: CONCUR Talk 29
+      time_start: '13:55'
+      time_end: '14:15'
+    - name: CONCUR Talk 30
+      time_start: '14:15'
+      time_end: '14:40'
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: CONCUR Invited Talk 2
+      time_start: '15:00'
+      time_end: '16:10'
+      show_time: true
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: CONCUR Talk 31
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: CONCUR Talk 32
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: CONCUR Talk 33
+      time_start: '17:15'
+      time_end: '17:40'
+    - name: Boat Tour / Dinner
+      time_start: '19:00'
+      time_end: '21:00'
+      show_time: true
+  - name: Room B
     talks:
-      - name: "QEST+FORMATS Talk 14"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "QEST+FORMATS Talk 15"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "QEST+FORMATS Talk 16"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "QEST+FORMATS Talk 17"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "Supporting Older Adults Living Independently"
-        time_start: '13:30'
-        time_end: '14:40'
-      - name: "QEST+FORMATS Talk 18"
-        time_start: '15:00'
-        time_end: '15:23'
-      - name: "QEST+FORMATS Talk 19"
-        time_start: '15:23'
-        time_end: '15:47'
-      - name: "QEST+FORMATS Talk 20"
-        time_start: '15:47'
-        time_end: '16:10'
-      - name: "QEST+FORMATS Talk 21"
-        time_start: '16:30'
-        time_end: '16:53'
-      - name: "QEST+FORMATS Talk 22"
-        time_start: '16:53'
-        time_end: '17:17'
-      - name: "QEST+FORMATS Talk 23"
-        time_start: '17:17'
-        time_end: '17:40'
-  - name: "Room C"
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: QEST+FORMATS Talk 14
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: QEST+FORMATS Talk 15
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: QEST+FORMATS Talk 16
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: QEST+FORMATS Talk 17
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: Supporting Older Adults Living Independently
+      time_start: '13:30'
+      time_end: '14:40'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: QEST+FORMATS Talk 18
+      time_start: '15:00'
+      time_end: '15:25'
+      show_time: true
+    - name: QEST+FORMATS Talk 19
+      time_start: '15:25'
+      time_end: '15:45'
+    - name: QEST+FORMATS Talk 20
+      time_start: '15:45'
+      time_end: '16:10'
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: QEST+FORMATS Talk 21
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: QEST+FORMATS Talk 22
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: QEST+FORMATS Talk 23
+      time_start: '17:15'
+      time_end: '17:40'
+    - name: Boat Tour / Dinner
+      time_start: '19:00'
+      time_end: '21:00'
+      show_time: true
+  - name: Room C
     talks:
-      - name: "FMICS Talk 11"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "FMICS Talk 12"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "FMICS Talk 13"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "FMICS Talk 14"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "FMICS Talk 15"
-        time_start: '13:30'
-        time_end: '13:53'
-      - name: "FMICS Talk 16"
-        time_start: '13:53'
-        time_end: '14:17'
-      - name: "FMICS Talk 17"
-        time_start: '14:17'
-        time_end: '14:40'
-      - name: "FMICS Talk 18"
-        time_start: '15:00'
-        time_end: '15:23'
-      - name: "FMICS Talk 19"
-        time_start: '15:23'
-        time_end: '15:47'
-      - name: "FMICS Talk 20"
-        time_start: '15:47'
-        time_end: '16:10'
-      - name: "FMICS Talk 21"
-        time_start: '16:30'
-        time_end: '16:53'
-      - name: "FMICS Talk 22"
-        time_start: '16:53'
-        time_end: '17:17'
-      - name: "FMICS Talk 23"
-        time_start: '17:17'
-        time_end: '17:40'
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: FMICS Talk 11
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: FMICS Talk 12
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: FMICS Talk 13
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: FMICS Talk 14
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: FMICS Talk 15
+      time_start: '13:30'
+      time_end: '13:55'
+      show_time: true
+    - name: FMICS Talk 16
+      time_start: '13:55'
+      time_end: '14:15'
+    - name: FMICS Talk 17
+      time_start: '14:15'
+      time_end: '14:40'
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: FMICS Talk 18
+      time_start: '15:00'
+      time_end: '15:25'
+      show_time: true
+    - name: FMICS Talk 19
+      time_start: '15:25'
+      time_end: '15:45'
+    - name: FMICS Talk 20
+      time_start: '15:45'
+      time_end: '16:10'
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: FMICS Talk 21
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: FMICS Talk 22
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: FMICS Talk 23
+      time_start: '17:15'
+      time_end: '17:40'
+    - name: Boat Tour / Dinner
+      time_start: '19:00'
+      time_end: '21:00'
+      show_time: true
 - name: Friday
   abbr: Fri
   date: 2026-09-04
   rooms:
-  - name: "Room A"
+  - name: Room A
     talks:
-      - name: "CONCUR Talk 34"
-        time_start: '09:00'
-        time_end: '09:30'
-      - name: "CONCUR Talk 35"
-        time_start: '09:30'
-        time_end: '10:00'
-      - name: "CONCUR Talk 36"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "CONCUR Talk 37"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "CONCUR Talk 38"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "CONCUR Talk 39"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "CONCUR Talk 40"
-        time_start: '13:30'
-        time_end: '13:53'
-      - name: "CONCUR Talk 41"
-        time_start: '13:53'
-        time_end: '14:17'
-      - name: "CONCUR Talk 42"
-        time_start: '14:17'
-        time_end: '14:40'
-      - name: "CONCUR Invited Talk 3"
-        time_start: '15:00'
-        time_end: '16:10'
-  - name: "Room B"
+    - name: CONCUR Talk 34
+      time_start: '09:00'
+      time_end: '09:30'
+      show_time: true
+    - name: CONCUR Talk 35
+      time_start: '09:30'
+      time_end: '10:00'
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: CONCUR Talk 36
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: CONCUR Talk 37
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: CONCUR Talk 38
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: CONCUR Talk 39
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: CONCUR Talk 40
+      time_start: '13:30'
+      time_end: '13:55'
+      show_time: true
+    - name: CONCUR Talk 41
+      time_start: '13:55'
+      time_end: '14:15'
+    - name: CONCUR Talk 42
+      time_start: '14:15'
+      time_end: '14:40'
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: CONCUR Invited Talk 3
+      time_start: '15:00'
+      time_end: '16:10'
+      show_time: true
+    - name: Football
+      time_start: '19:00'
+      time_end: '21:00'
+      show_time: true
+  - name: Room B
     talks:
-      - name: "QEST+FORMATS Invited Talk 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "QEST+FORMATS Talk 24"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "QEST+FORMATS Talk 25"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "QEST+FORMATS Talk 26"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "QEST+FORMATS Talk 27"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "QEST+FORMATS Talk 28"
-        time_start: '13:30'
-        time_end: '13:53'
-      - name: "QEST+FORMATS Talk 29"
-        time_start: '13:53'
-        time_end: '14:17'
-      - name: "QEST+FORMATS Talk 30"
-        time_start: '14:17'
-        time_end: '14:40'
-      - name: "QEST+FORMATS Talk 31"
-        time_start: '15:00'
-        time_end: '15:23'
-      - name: "QEST+FORMATS Talk 32"
-        time_start: '15:23'
-        time_end: '15:47'
-      - name: "QEST+FORMATS Talk 33"
-        time_start: '15:47'
-        time_end: '16:10'
-  - name: "Room C"
+    - name: QEST+FORMATS Invited Talk 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: QEST+FORMATS Talk 24
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: QEST+FORMATS Talk 25
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: QEST+FORMATS Talk 26
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: QEST+FORMATS Talk 27
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: QEST+FORMATS Talk 28
+      time_start: '13:30'
+      time_end: '13:55'
+      show_time: true
+    - name: QEST+FORMATS Talk 29
+      time_start: '13:55'
+      time_end: '14:15'
+    - name: QEST+FORMATS Talk 30
+      time_start: '14:15'
+      time_end: '14:40'
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: QEST+FORMATS Talk 31
+      time_start: '15:00'
+      time_end: '15:25'
+      show_time: true
+    - name: QEST+FORMATS Talk 32
+      time_start: '15:25'
+      time_end: '15:45'
+    - name: QEST+FORMATS Talk 33
+      time_start: '15:45'
+      time_end: '16:10'
+    - name: Football
+      time_start: '19:00'
+      time_end: '21:00'
+      show_time: true
+  - name: Room C
     talks:
-      - name: "FMICS Talk 24"
-        time_start: '09:00'
-        time_end: '09:30'
-      - name: "FMICS Talk 25"
-        time_start: '09:30'
-        time_end: '10:00'
-      - name: "FMICS Talk 26"
-        time_start: '10:30'
-        time_end: '10:52'
-      - name: "FMICS Talk 27"
-        time_start: '10:52'
-        time_end: '11:15'
-      - name: "FMICS Talk 28"
-        time_start: '11:15'
-        time_end: '11:37'
-      - name: "FMICS Talk 29"
-        time_start: '11:37'
-        time_end: '12:00'
-      - name: "Application of Formal Methods to Design and Verification of Autonomous Space Systems"
-        time_start: '13:30'
-        time_end: '14:40'
-      - name: "FMICS Talk 30"
-        time_start: '15:00'
-        time_end: '15:23'
-      - name: "FMICS Talk 31"
-        time_start: '15:23'
-        time_end: '15:47'
-      - name: "FMICS Talk 32"
-        time_start: '15:47'
-        time_end: '16:10'
+    - name: FMICS Talk 24
+      time_start: '09:00'
+      time_end: '09:30'
+      show_time: true
+    - name: FMICS Talk 25
+      time_start: '09:30'
+      time_end: '10:00'
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: FMICS Talk 26
+      time_start: '10:30'
+      time_end: '10:55'
+      show_time: true
+    - name: FMICS Talk 27
+      time_start: '10:55'
+      time_end: '11:15'
+    - name: FMICS Talk 28
+      time_start: '11:15'
+      time_end: '11:40'
+    - name: FMICS Talk 29
+      time_start: '11:40'
+      time_end: '12:00'
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: Application of Formal Methods to Design and Verification of Autonomous
+        Space Systems
+      time_start: '13:30'
+      time_end: '14:40'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:40'
+      time_end: '15:00'
+      show_time: true
+    - name: FMICS Talk 30
+      time_start: '15:00'
+      time_end: '15:25'
+      show_time: true
+    - name: FMICS Talk 31
+      time_start: '15:25'
+      time_end: '15:45'
+    - name: FMICS Talk 32
+      time_start: '15:45'
+      time_end: '16:10'
+    - name: Football
+      time_start: '19:00'
+      time_end: '21:00'
+      show_time: true
 - name: Saturday
   abbr: Sat
   date: 2026-09-05
   rooms:
-  - name: "Express/SOS"
+  - name: Express/SOS
     talks:
-      - name: "Express/SOS Workshop Session 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "Express/SOS Workshop Session 2"
-        time_start: '10:30'
-        time_end: '12:00'
-      - name: "Express/SOS Workshop Session 3"
-        time_start: '13:30'
-        time_end: '14:30'
-      - name: "Express/SOS Workshop Session 4"
-        time_start: '15:00'
-        time_end: '16:30'
-  - name: "Radical"
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
+    - name: Express/SOS Workshop Session 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: Express/SOS Workshop Session 2
+      time_start: '10:30'
+      time_end: '12:00'
+      show_time: true
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: Express/SOS Workshop Session 3
+      time_start: '13:30'
+      time_end: '14:30'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:30'
+      time_end: '15:00'
+      show_time: true
+    - name: Express/SOS Workshop Session 4
+      time_start: '15:00'
+      time_end: '16:30'
+      show_time: true
+    - name: Closing
+      time_start: '16:30'
+      time_end: '17:00'
+      show_time: true
+  - name: Radical
     talks:
-      - name: "Radical Workshop Session 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "Radical Workshop Session 2"
-        time_start: '10:30'
-        time_end: '12:00'
-      - name: "Radical Workshop Session 3"
-        time_start: '13:30'
-        time_end: '14:30'
-      - name: "Radical Workshop Session 4"
-        time_start: '15:00'
-        time_end: '16:30'
-  - name: "SNR"
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
+    - name: Radical Workshop Session 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: Radical Workshop Session 2
+      time_start: '10:30'
+      time_end: '12:00'
+      show_time: true
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: Radical Workshop Session 3
+      time_start: '13:30'
+      time_end: '14:30'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:30'
+      time_end: '15:00'
+      show_time: true
+    - name: Radical Workshop Session 4
+      time_start: '15:00'
+      time_end: '16:30'
+      show_time: true
+    - name: Closing
+      time_start: '16:30'
+      time_end: '17:00'
+      show_time: true
+  - name: SNR
     talks:
-      - name: "SNR Workshop Session 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "SNR Workshop Session 2"
-        time_start: '10:30'
-        time_end: '12:00'
-      - name: "SNR Workshop Session 3"
-        time_start: '13:30'
-        time_end: '14:30'
-      - name: "SNR Workshop Session 4"
-        time_start: '15:00'
-        time_end: '16:30'
-  - name: "Trends"
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
+    - name: SNR Workshop Session 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: SNR Workshop Session 2
+      time_start: '10:30'
+      time_end: '12:00'
+      show_time: true
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: SNR Workshop Session 3
+      time_start: '13:30'
+      time_end: '14:30'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:30'
+      time_end: '15:00'
+      show_time: true
+    - name: SNR Workshop Session 4
+      time_start: '15:00'
+      time_end: '16:30'
+      show_time: true
+    - name: Closing
+      time_start: '16:30'
+      time_end: '17:00'
+      show_time: true
+  - name: Trends
     talks:
-      - name: "Trends Workshop Session 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "Trends Workshop Session 2"
-        time_start: '10:30'
-        time_end: '12:00'
-      - name: "Trends Workshop Session 3"
-        time_start: '13:30'
-        time_end: '14:30'
-      - name: "Trends Workshop Session 4"
-        time_start: '15:00'
-        time_end: '16:30'
-  - name: "YR-CONCUR"
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
+    - name: Trends Workshop Session 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: Trends Workshop Session 2
+      time_start: '10:30'
+      time_end: '12:00'
+      show_time: true
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: Trends Workshop Session 3
+      time_start: '13:30'
+      time_end: '14:30'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:30'
+      time_end: '15:00'
+      show_time: true
+    - name: Trends Workshop Session 4
+      time_start: '15:00'
+      time_end: '16:30'
+      show_time: true
+    - name: Closing
+      time_start: '16:30'
+      time_end: '17:00'
+      show_time: true
+  - name: YR-CONCUR
     talks:
-      - name: "YR-CONCUR Workshop Session 1"
-        time_start: '09:00'
-        time_end: '10:00'
-      - name: "YR-CONCUR Workshop Session 2"
-        time_start: '10:30'
-        time_end: '12:00'
-      - name: "YR-CONCUR Workshop Session 3"
-        time_start: '13:30'
-        time_end: '14:30'
-      - name: "YR-CONCUR Workshop Session 4"
-        time_start: '15:00'
-        time_end: '16:30'
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
+    - name: YR-CONCUR Workshop Session 1
+      time_start: '09:00'
+      time_end: '10:00'
+      show_time: true
+    - name: Coffee Break
+      time_start: '10:00'
+      time_end: '10:30'
+      show_time: true
+    - name: YR-CONCUR Workshop Session 2
+      time_start: '10:30'
+      time_end: '12:00'
+      show_time: true
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: YR-CONCUR Workshop Session 3
+      time_start: '13:30'
+      time_end: '14:30'
+      show_time: true
+    - name: Coffee Break
+      time_start: '14:30'
+      time_end: '15:00'
+      show_time: true
+    - name: YR-CONCUR Workshop Session 4
+      time_start: '15:00'
+      time_end: '16:30'
+      show_time: true
+    - name: Closing
+      time_start: '16:30'
+      time_end: '17:00'
+      show_time: true

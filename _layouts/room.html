@@ -36,27 +36,29 @@
         <table class="list-program">
         {%- for t in r.talks -%}
           {%- assign talk = site.talks | where: 'name', t.name | first -%}
-          {%- include partials/get_main_category.html %}
+          {%- unless talk.categories contains 'Schedule' -%}
+            {%- include partials/get_main_category.html %}
 
-          <tr>
-            <td class="pr-2">
-              {%- include partials/get_talk_time.html -%}
-              {%- assign talk_day_hide = true -%}
-              {%- assign talk_time_styleclass = "w-100" -%}
-              {% include partials/show_talk_time.html %}
+            <tr>
+              <td class="pr-2">
+                {%- include partials/get_talk_time.html -%}
+                {%- assign talk_day_hide = true -%}
+                {%- assign talk_time_styleclass = "w-100" -%}
+                {% include partials/show_talk_time.html %}
 
-              {%- assign live_button_styleclass = "w-100" -%}
-              {% include partials/show_live_button.html %}
-            </td>
-            <td class="pl-2 border-soft-{{ main_cat_color }}">
-              <p class="mb-0">
-                {%- include partials/show_talk.html -%}
-              </p>
-              <p class="font-weight-light mb-0">
-                {%- include partials/list_speakers.html -%}
-              </p>
-            </td>
-          </tr>
+                {%- assign live_button_styleclass = "w-100" -%}
+                {% include partials/show_live_button.html %}
+              </td>
+              <td class="pl-2 border-soft-{{ main_cat_color }}">
+                <p class="mb-0">
+                  {%- include partials/show_talk.html -%}
+                </p>
+                <p class="font-weight-light mb-0">
+                  {%- include partials/list_speakers.html -%}
+                </p>
+              </td>
+            </tr>
+          {%- endunless -%}
         {%- endfor -%}
 
         </table>

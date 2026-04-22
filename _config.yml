@@ -181,6 +181,8 @@ conference:
         color: warning
       - name: Workshop
         color: secondary
+      - name: Schedule
+        color: dark
       - name: Joint
         color: success
       - name: Test of Time
@@ -218,7 +220,7 @@ conference:
     url: '/program'
 
     # Time steps in program table
-    time_steps: 15 # in minutes
+    time_steps: 5 # in minutes
 
     # Show intermediary time steps (next to full hours)
-    show_alltimes: true
+    show_alltimes: false
