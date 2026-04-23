@@ -80,7 +80,7 @@ herobackground: white
   addBuilding(-2.97768,53.40759,"Liverpool Lime Street \n(Main station)","green","s");
   addBuilding(-2.960834, 53.406564, "Reception", "red","s");
   addBuilding(-2.962662,53.405973, "Halls", "blue","s");
-  addBuilding(-2.997151,53.404575, "Social Activity", "red","ne");
+  addBuilding(-2.997151,53.404575, "Ferry Terminal", "red","ne");
 </script>
 
 </div>
@@ -99,12 +99,13 @@ herobackground: white
       <p>
         The University of Liverpool campus (Central Teaching Hub) is within easy walking distance
         of the city centre, Lime Street Station, and many nearby hotels.
+    A walk from the conference venue to the ferry terminal for the dinner on Thursday will not take more than 30 mins.
       </p>
     </div>
 
-    <!-- Bus -->
+    <!-- Buses -->
     <div class="card">
-      <h3>Bus</h3>
+      <h3>Buses</h3>
       <p>
         Local buses connect the city and campus. All buses accept contactless payment
         when boarding.
@@ -142,7 +143,9 @@ herobackground: white
       <h3>On-campus accommodation</h3>
 
       <p>
-        We are offering a limited number of rooms in the Crown Place student halls located next to the venue.
+        We offer a limited number of rooms in the 
+        <a href="https://www.liverpool.ac.uk/accommodation/find-accommodation/crown-place/">Crown Place student halls</a>
+located next to the venue.
       </p>
 
       <div class="highlight">
@@ -170,16 +173,16 @@ herobackground: white
 - <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
     4*, adjacent to campus, 4 minute walk
   <details class="conference-code">
-  <summary>Conference Discount Code Available (Click for details)</summary>
+  <summary>Conference Discount Code Available</summary>
   <p>
-  Confest has agreed rates with Novotel Liverpool Paddington Village, Standard King rooms for single-occupancy with Bed & Breakfast at the following rates:
+  We have agreed rates with Novotel Liverpool Paddington Village: Standard King rooms for single-occupancy with Bed & Breakfast at the following rates.
   <br>
 
   <table border="1" cellpadding="8" cellspacing="0">
   <thead>
   <tr>
   <th>Date</th>
-  <th>Rate (Single Occupancy, B&B)</th>
+  <th>Rate (single-occupancy, B&B)</th>
   </tr>
   </thead>
   <tbody>
@@ -214,7 +217,7 @@ herobackground: white
 
   Please contact the Reservations Team on +44 151 245 6694 or +44 151 245 6697 between the hours of 9am - 5pm Monday to Friday (UK hours). Alternatively, email <a href="mailto:HB737-RE@accor.com">HB737-RE@accor.com</a> and one of the team will be in touch as soon as possible.
   <br><br>
-  Double occupancy available at £15/night.
+  Double-occupancy is available at £15/night.
   <br><br>
   Note: an additional Liverpool Accommodation BID Charge of £2.40/night is applicable to all
   bookings.
@@ -235,7 +238,7 @@ herobackground: white
 </div>
 
       <p>
-        There are many more options in Liverpool, including options close to the historic docks such as <a href="https://www.hilton.com/en/hotels/lplhihi-hilton-liverpool-city-centre/">Hilton Liverpool City Centre</a> which would be a little longer walk to the venue.
+        There are many more options in Liverpool, including options close to the historic docks such as <a href="https://www.hilton.com/en/hotels/lplhihi-hilton-liverpool-city-centre/">Hilton Liverpool City Centre</a> which would be a slightly longer walk to the venue.
 
       </p>
     </div>
