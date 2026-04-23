@@ -111,12 +111,12 @@ subnav: local
     <div class="card-inner">
       
       <div class="card-content">
-        <h3>Football - TBC</h3>
+        <h3>Football - Friday</h3>
         <p>
-          We intend to organise the traditional CONFEST football game.
+          The traditional CONFEST football game.
         </p>
         <p>
-          The game will take place indoors, so please bring clean indoor trainers/shoes.
+          The game will take place indoors, so please bring clean indoor trainers/shoes if you wish to participate.
         </p>
       </div>
 

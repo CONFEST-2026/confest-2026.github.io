@@ -9,13 +9,11 @@ subnav: local
 
 <section class="section">
 
-<div class="card" markdown=1>
 
 CONFEST is committed to inclusive event experiences, respectful of all participants, and free of discrimination, harassment, bullying, or retaliation. An inclusive and respectful atmosphere is vital to free expression and the open exchange of ideas, serving the main purpose of the events.
-</div>
 </section>
 
-
+---
 
 <section class="section">
 
@@ -128,9 +126,8 @@ Examples include (but are not limited to):</p>
 </div>
 </section>
 
-<section class="section">
+<section class="section" markdown=1>
 
-<div class="card" markdown=1>
 ##### Additional Examples of Unacceptable Behaviour
 
 Unacceptable behaviours include, but are not limited to:
@@ -151,21 +148,18 @@ Unacceptable behaviours include, but are not limited to:
 
 
 Harassment committed in a joking manner or disguised as a compliment still constitutes unacceptable behaviour.
-</div>
 </section>
 
 ---
 
-<section class="section">
+<section class="section" markdown=1>
 
-<div class="card" markdown=1>
 #### Additional Resources
 
 - **Sexual Harassment Resources from the CRA-W**  
   <https://cra.org/cra-w/sexual-harassment>
 - **ACM Training Video**  
   <https://www.youtube.com/watch?v=jKfAAU2-qs0>
-</div>
 </section>
 
 ---
