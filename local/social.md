@@ -4,61 +4,7 @@ title: Location
 subnav: local
 ---
 <style>
-/* normal layout */
-.card-inner {
-  display: flex;
-  align-items: stretch;
-  gap: 1rem;
-  margin: -1.5rem;
-}
 
-/* flip it */
-.card--reverse .card-inner {
-  flex-direction: row-reverse;
-}
-
-/* keep proportions stable */
-.card-content {
-  flex: 2 1 0;
-  padding: 1.5rem;
-}
-
-.card-image {
-  flex: 1 1 0;
-  display: flex;
-  min-height: 200px;
-  overflow: hidden;
-  min-width: 40%;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-}
-
-@media (max-width: 700px) {
-  .card-inner {
-    flex-direction: column-reverse;
-  }
-
-  /* make sure reverse cards don't flip weirdly */
-  .card--reverse .card-inner {
-    flex-direction: column-reverse;
-  }
-
-  .card-image {
-    min-width: 100%;   /* override your 40% */
-    width: 100%;
-    height: 200px;     /* fixed height works better in vertical */
-    min-height: 200px; /* optional: prevents conflicts */
-  }
-
-  .card-content {
-    padding: 1.5rem;
-  }
-}
 </style>
 
 <div class="section">
@@ -111,12 +57,12 @@ subnav: local
     <div class="card-inner">
       
       <div class="card-content">
-        <h3>Football - TBC</h3>
+        <h3>Football - Friday</h3>
         <p>
-          We intend to organise the traditional CONFEST football game.
+          The traditional CONFEST football game.
         </p>
         <p>
-          The game will take place indoors, so please bring clean indoor trainers/shoes.
+          The game will take place indoors, so please bring clean indoor trainers/shoes if you wish to participate.
         </p>
       </div>
 

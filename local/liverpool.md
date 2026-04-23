@@ -139,7 +139,16 @@ herobackground: white
   <div class="grid">
 
     <!-- On campus -->
-    <div class="card">
+    <div class="card card--vertical">
+
+    <div class="card-inner">
+      
+      <div class="card-image">
+        <img src="/assets/images/crownplace.jpg" alt="Reception view">
+      </div>
+
+      <div class="card-content">
+      
       <h3>On-campus accommodation</h3>
 
       <p>
@@ -159,6 +168,11 @@ located next to the venue.
       <p>
         Further details on pricing and booking will follow shortly.
       </p>
+      </div>
+
+
+
+    </div>
     </div>
 
     <!-- Hotels -->
