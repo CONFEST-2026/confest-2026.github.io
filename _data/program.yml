@@ -323,23 +323,9 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
-    - name: Coffee Break
+    - name: Closing
       time_start: '16:10'
       time_end: '16:30'
-      show_time: true
-    - name: CONCUR Talk 31
-      time_start: '16:30'
-      time_end: '16:55'
-      show_time: true
-    - name: CONCUR Talk 32
-      time_start: '16:55'
-      time_end: '17:15'
-    - name: CONCUR Talk 33
-      time_start: '17:15'
-      time_end: '17:40'
-    - name: Closing
-      time_start: '17:40'
-      time_end: '18:00'
       show_time: true
     - name: Boat Tour / Dinner
       time_start: '19:00'
@@ -386,23 +372,9 @@ days:
     - name: Q+F Talk 20
       time_start: '15:45'
       time_end: '16:10'
-    - name: Coffee Break
+    - name: Closing
       time_start: '16:10'
       time_end: '16:30'
-      show_time: true
-    - name: Q+F Talk 21
-      time_start: '16:30'
-      time_end: '16:55'
-      show_time: true
-    - name: Q+F Talk 22
-      time_start: '16:55'
-      time_end: '17:15'
-    - name: Q+F Talk 23
-      time_start: '17:15'
-      time_end: '17:40'
-    - name: Closing
-      time_start: '17:40'
-      time_end: '18:00'
       show_time: true
     - name: Boat Tour / Dinner
       time_start: '19:00'
@@ -455,23 +427,9 @@ days:
     - name: FMICS Talk 20
       time_start: '15:45'
       time_end: '16:10'
-    - name: Coffee Break
+    - name: Closing
       time_start: '16:10'
       time_end: '16:30'
-      show_time: true
-    - name: FMICS Talk 21
-      time_start: '16:30'
-      time_end: '16:55'
-      show_time: true
-    - name: FMICS Talk 22
-      time_start: '16:55'
-      time_end: '17:15'
-    - name: FMICS Talk 23
-      time_start: '17:15'
-      time_end: '17:40'
-    - name: Closing
-      time_start: '17:40'
-      time_end: '18:00'
       show_time: true
     - name: Boat Tour / Dinner
       time_start: '19:00'
@@ -483,42 +441,42 @@ days:
   rooms:
   - name: Room A
     talks:
-    - name: CONCUR Talk 34
+    - name: CONCUR Talk 31
       time_start: '09:00'
       time_end: '09:30'
       show_time: true
-    - name: CONCUR Talk 35
+    - name: CONCUR Talk 32
       time_start: '09:30'
       time_end: '10:00'
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Talk 36
+    - name: CONCUR Talk 33
       time_start: '10:30'
       time_end: '10:55'
       show_time: true
-    - name: CONCUR Talk 37
+    - name: CONCUR Talk 34
       time_start: '10:55'
       time_end: '11:15'
-    - name: CONCUR Talk 38
+    - name: CONCUR Talk 35
       time_start: '11:15'
       time_end: '11:40'
-    - name: CONCUR Talk 39
+    - name: CONCUR Talk 36
       time_start: '11:40'
       time_end: '12:00'
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Talk 40
+    - name: CONCUR Talk 37
       time_start: '13:30'
       time_end: '13:55'
       show_time: true
-    - name: CONCUR Talk 41
+    - name: CONCUR Talk 38
       time_start: '13:55'
       time_end: '14:15'
-    - name: CONCUR Talk 42
+    - name: CONCUR Talk 39
       time_start: '14:15'
       time_end: '14:40'
     - name: Coffee Break
@@ -529,12 +487,26 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
-    - name: Closing
+    - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
+    - name: CONCUR Talk 40
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: CONCUR Talk 41
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: CONCUR Talk 42
+      time_start: '17:15'
+      time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
+      show_time: true
     - name: Football
-      time_start: '19:00'
+      time_start: '18:00'
       time_end: '21:00'
       show_time: true
   - name: Room B
@@ -547,50 +519,64 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Q+F Talk 24
+    - name: Q+F Talk 21
       time_start: '10:30'
       time_end: '10:55'
       show_time: true
-    - name: Q+F Talk 25
+    - name: Q+F Talk 22
       time_start: '10:55'
       time_end: '11:15'
-    - name: Q+F Talk 26
+    - name: Q+F Talk 23
       time_start: '11:15'
       time_end: '11:40'
-    - name: Q+F Talk 27
+    - name: Q+F Talk 24
       time_start: '11:40'
       time_end: '12:00'
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Q+F Talk 28
+    - name: Q+F Talk 25
       time_start: '13:30'
       time_end: '13:55'
       show_time: true
-    - name: Q+F Talk 29
+    - name: Q+F Talk 26
       time_start: '13:55'
       time_end: '14:15'
-    - name: Q+F Talk 30
+    - name: Q+F Talk 27
       time_start: '14:15'
       time_end: '14:40'
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Q+F Talk 31
+    - name: Q+F Talk 28
       time_start: '15:00'
       time_end: '15:25'
       show_time: true
-    - name: Q+F Talk 32
+    - name: Q+F Talk 29
       time_start: '15:25'
       time_end: '15:45'
-    - name: Q+F Talk 33
+    - name: Q+F Talk 30
       time_start: '15:45'
       time_end: '16:10'
-    - name: Closing
+    - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
+      show_time: true
+    - name: Q+F Talk 31
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: Q+F Talk 32
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: Q+F Talk 33
+      time_start: '17:15'
+      time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
       show_time: true
     - name: Football
       time_start: '19:00'
@@ -598,28 +584,28 @@ days:
       show_time: true
   - name: Room C
     talks:
-    - name: FMICS Talk 24
+    - name: FMICS Talk 21
       time_start: '09:00'
       time_end: '09:30'
       show_time: true
-    - name: FMICS Talk 25
+    - name: FMICS Talk 22
       time_start: '09:30'
       time_end: '10:00'
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: FMICS Talk 26
+    - name: FMICS Talk 23
       time_start: '10:30'
       time_end: '10:55'
       show_time: true
-    - name: FMICS Talk 27
+    - name: FMICS Talk 24
       time_start: '10:55'
       time_end: '11:15'
-    - name: FMICS Talk 28
+    - name: FMICS Talk 25
       time_start: '11:15'
       time_end: '11:40'
-    - name: FMICS Talk 29
+    - name: FMICS Talk 26
       time_start: '11:40'
       time_end: '12:00'
     - name: Lunch
@@ -635,19 +621,33 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: FMICS Talk 30
+    - name: FMICS Talk 27
       time_start: '15:00'
       time_end: '15:25'
       show_time: true
-    - name: FMICS Talk 31
+    - name: FMICS Talk 28
       time_start: '15:25'
       time_end: '15:45'
-    - name: FMICS Talk 32
+    - name: FMICS Talk 29
       time_start: '15:45'
       time_end: '16:10'
-    - name: Closing
+    - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
+      show_time: true
+    - name: FMICS Talk 30
+      time_start: '16:30'
+      time_end: '16:55'
+      show_time: true
+    - name: FMICS Talk 31
+      time_start: '16:55'
+      time_end: '17:15'
+    - name: FMICS Talk 32
+      time_start: '17:15'
+      time_end: '17:40'
+    - name: Closing
+      time_start: '17:40'
+      time_end: '18:00'
       show_time: true
     - name: Football
       time_start: '19:00'

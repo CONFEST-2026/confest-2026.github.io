@@ -1,5 +1,5 @@
 ---
-name: "FMICS Talk 27"
+name: "FMICS Talk 24"
 categories:
   - FMICS
 hide: false

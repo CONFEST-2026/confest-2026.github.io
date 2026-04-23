@@ -1,5 +1,5 @@
 ---
-name: "Q+F Talk 24"
+name: "Q+F Talk 21"
 categories:
   - Q+F
 hide: false
