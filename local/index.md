@@ -54,11 +54,11 @@ herobackground: "#8aabbf"
 
         <ul>
           <li>
-            <strong>Liverpool John Lennon Airport</strong><br>
+            <strong>Liverpool John Lennon Airport (LPL)</strong><br>
             Regular European flights, connected by bus to the city.
           </li>
           <li>
-            <strong>Manchester Airport</strong><br>
+            <strong>Manchester Airport (MAN)</strong><br>
             Major international hub with connections across Europe,
             North America, and Asia.
           </li>
@@ -69,6 +69,13 @@ herobackground: "#8aabbf"
           <ul>
             <li>~1h 20m by train (<a href="https://www.nationalrail.co.uk/journey-planner/">National Rail</a>)</li>
             <li>~1h by coach (<a href="https://www.nationalexpress.com/en">National Express</a>)</li>
+            <li>~45 mins by taxi (<a href="https://www.deltataxis.net">Delta Taxis</a>)
+                <details>
+                <summary>pickup info</summary>
+                Arriving at Terminal 2, head to the ground floor of T2 West Multi-Storey Car Park in front of the terminal building.
+                </details>
+          </li>
+
           </ul>
         </div>
 
@@ -100,18 +107,13 @@ herobackground: "#8aabbf"
 		  <h5>Taxis</h5>
 
 		  <p>
-		    Ride-hailing services such as Uber are widely available in Liverpool.
+		    Ride-hailing services such as Uber are widely available in and around Liverpool.
 		  </p>
 
 		  <div class="highlight">
 		    <strong>Typical fares:</strong>
 		    <ul>
 		      <li>Manchester Airport → £55–£75
-          <details>
-          <summary>Click for pickup info</summary>
-          Arriving at Terminal 2, head to the ground floor of T2 West Multi-Storey Car Park in front of the terminal building.
-          </details>
-
           </li>
 		      <li>Liverpool John Lennon Airport → £15–£25</li>
 		    </ul>
