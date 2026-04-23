@@ -68,12 +68,9 @@ herobackground: "#8aabbf"
           Manchester Airport → Liverpool:
           <ul>
             <li>~1h 20m by train (<a href="https://www.nationalrail.co.uk/journey-planner/">National Rail</a>)</li>
-            <li>~1h by coach (<a href="https://www.nationalexpress.com/en">National Express</a>)</li>
-            <li>~45 mins by taxi (<a href="https://www.deltataxis.net">Delta Taxis</a>)
-                <details>
-                <summary>pickup info</summary>
-                Arriving at Terminal 2, head to the ground floor of T2 West Multi-Storey Car Park in front of the terminal building.
-                </details>
+            <li>~1h by coach (<a href="https://www.nationalexpress.com/en">National Express</a>, pick up/stop at University of Liverpool / Brownlow Hill)</li>
+            <li>~45 mins by taxi (See Taxis section)
+                
           </li>
 
           </ul>
@@ -109,11 +106,18 @@ herobackground: "#8aabbf"
 		  <p>
 		    Ride-hailing services such as Uber are widely available in and around Liverpool.
 		  </p>
+      <p>
+      <a href="https://www.deltataxis.net">Delta Taxis</a> is a local taxi operator offering fixed price travel from Manchester Airport.
+      </p>
 
 		  <div class="highlight">
 		    <strong>Typical fares:</strong>
 		    <ul>
 		      <li>Manchester Airport → £55–£75
+                <details>
+                <summary>pickup info</summary>
+                Arriving at Terminal 2, head to the ground floor of T2 West Multi-Storey Car Park in front of the terminal building.
+                </details>
           </li>
 		      <li>Liverpool John Lennon Airport → £15–£25</li>
 		    </ul>
