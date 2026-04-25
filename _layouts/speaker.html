@@ -83,7 +83,7 @@
     {% endfor %}
   {% endfor %}
 
-  {% if active_speaker %}
+  {% if active_speaker and False %}
     <h5 class="mt-4 mb-0">{{ site.data.lang[site.conference.lang].speaker.talks | default: "Talks at this conference" }}:</h5>
 
     <table class="list-program">
