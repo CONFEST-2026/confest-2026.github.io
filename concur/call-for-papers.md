@@ -1,9 +1,10 @@
 ---
+title: Call for Papers
 layout: default
 subnav: concur
 ---
 
-# Call for Papers
+# {{page.title}}
 
 The International Conference on Concurrency Theory (CONCUR) brings together researchers, developers, and students in order to advance the theory of concurrency and promote its applications.
 CONCUR solicits high quality papers reporting research results and/or experience related to semantics, logics, verification and analysis of concurrent systems.

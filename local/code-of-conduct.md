@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Location
+title: Code of Conduct at CONFEST 2026
 subnav: local
 ---
 
 
-## Code of Conduct at CONFEST 2026
+# {{page.title}}
 
 <section class="section">
 

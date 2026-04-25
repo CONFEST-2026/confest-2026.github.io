@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location
+title: Social Activities
 subnav: local
 ---
 <style>

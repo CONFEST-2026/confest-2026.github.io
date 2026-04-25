@@ -1,11 +1,12 @@
 ---
+title: "CONCUR 2026"
 layout: default
 subnav: concur
 heroimage: /assets/images/liverpoolpetri-white-crop.png
 herocontain: True
 ---
 
-# CONCUR 2026
+# {{page.title}}
 
 
 <section class="section">

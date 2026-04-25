@@ -1,9 +1,10 @@
 ---
+title: Past Editions
 layout: default
 subnav: concur
 ---
 
-# Past Editions
+# {{page.title}}
 
 CONCUR 2026 in Liverpool will be the 37th International Conference on Concurrency Theory.
 The full list of previous edition is below.

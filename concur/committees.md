@@ -1,4 +1,5 @@
 ---
+title: Committee
 layout: default
 subnav: concur
 ---

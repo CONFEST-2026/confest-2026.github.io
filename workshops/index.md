@@ -1,4 +1,5 @@
 ---
+title: Workshops
 layout: default
 subnav: workshops
 ---

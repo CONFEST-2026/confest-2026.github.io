@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location
+title: Reaching Liverpool
 subnav: local
 heroimage: /assets/images/mapeurope.png
 herofullheight: True
