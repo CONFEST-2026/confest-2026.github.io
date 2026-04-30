@@ -152,15 +152,15 @@ herobackground: white
       <h3>On-campus accommodation</h3>
 
       <p>
-        We offer a limited number of rooms in the 
+        We are happy to offer on campus rooms in the 
         <a href="https://www.liverpool.ac.uk/accommodation/find-accommodation/crown-place/">Crown Place student halls</a>
-located next to the venue.
+located right next to the venue.
       </p>
 
       <div class="highlight">
         <ul>
           <li>Single en-suite rooms</li>
-          <li>Breakfast included (nearby restaurant)</li>
+          <li>Breakfast included (Waterhouse Café, Victoria Gallery and Museum)</li>
           <li>Access to shared kitchen facilities</li>
         </ul>
       </div>
