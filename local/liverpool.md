@@ -159,14 +159,15 @@ located right next to the venue.
 
       <div class="highlight">
         <ul>
+          <li><strong>£66.00</strong> per night</li>
           <li>Single en-suite rooms</li>
-          <li>Breakfast included (Waterhouse Café, Victoria Gallery and Museum)</li>
+          <li>Breakfast included (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum)</li>
           <li>Access to shared kitchen facilities</li>
         </ul>
       </div>
 
-      <p>
-        Further details on pricing and booking will follow shortly.
+      <p class="text-right">
+        <a href="https://payments.liv.ac.uk/conferences-and-events/residential-sport-commercial-services/conference-office/confest-accommodation" class="btn btn-secondary">Book here</a>
       </p>
       </div>
 
@@ -187,7 +188,7 @@ located right next to the venue.
 - <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
     4*, adjacent to campus, 4 minute walk
   <details class="conference-code">
-  <summary>Conference Discount Code Available</summary>
+  <summary>Conference Discount Code Available <span class="small">(click for more)</span></summary>
   <p>
   We have agreed rates with Novotel Liverpool Paddington Village: Standard King rooms for single-occupancy with Bed & Breakfast at the following rates.
   <br>
