@@ -144,7 +144,12 @@ herobackground: white
       <div class="card-content">
         <h3>Central Teaching Hub</h3>
         <p>
-          All talks (conferences and workshops), lunches and coffee breaks will take place in the Central Teaching Hub.
+          Hosts:
+          <ul>
+            <li>All talks  (conferences and workshops)</li>
+            <li>Lunches</li>
+            <li>Coffee breaks</li>
+          </ul>
         </p>
         <p>
           Map links: 
@@ -167,7 +172,7 @@ herobackground: white
       <div class="card-content">
         <h3>Spaces at the Spine</h3>
         <p>
-          Reception will take place on the top floor of the Spine building with panoramic views over the city.
+          Hosts: <a href="/local/social#welcome">Welcome reception (Tuesday)</a>
         </p>
         <p>
           Map links: 
@@ -189,9 +194,19 @@ herobackground: white
   <div class="card">
     <div class="card-inner">
       <div class="card-content">
-        <h3>Mersey Ferry</h3>
+        <h3>Mersey Ferry Terminal</h3>
+        <p>
+          Hosts: <a href="/local/social#cruise">Dinner and Cruise (Thursday)</a>
+        </p>
         <p>
           Boarding instructions for the Social Cruise will be made available closer to the event.
+        </p>
+        <p>
+          Map links: 
+          <ul>
+           <li> <a href="https://maps.app.goo.gl/EXgMTqe4QBXJC6dv7">Google</a> </li>
+           <li> <a href="https://w3w.co/voted.loved.shell">///voted.loved.shell</a></li>
+         </ul>
         </p>
       </div>
       <div class="card-image">
@@ -206,12 +221,44 @@ herobackground: white
   <div class="card card--reverse">
     <div class="card-inner">
       <div class="card-content">
+        <h3>Sport Centre</h3>
+        <p>
+          Hosts: <a href="/local/social#football">Football (Friday)</a>
+        </p>
+        <p>
+          Map links: 
+          <ul>
+           <li> <a href="https://maps.app.goo.gl/EpgdKanYLMNdeJR8A">Google</a> </li>
+           <li> <a href="https://w3w.co/nests.data.relay">///nests.data.relay</a></li>
+         </ul>
+        </p>
+      </div>
+      <div class="card-image">
+        <img src="/assets/images/SportCentre.jpg" alt="Sport Centre">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="card ">
+    <div class="card-inner">
+      <div class="card-content">
         <h3>On Campus Accommodation</h3>
         <p>
           Crown place accommodation is directly adjacent to the talks venue.
         </p>
         <p>
           For more information see <a href="/local/accommodation">our accommodation page</a>.
+        </p>
+        <p>
+          Map links: 
+          <ul>
+           <li> <a href="https://maps.app.goo.gl/fubm6JiuvtEB8gmt8">Google</a> </li>
+           <li> <a href="https://w3w.co/neat.flute.cars">///neat.flute.cars</a></li>
+         </ul>
         </p>
       </div>
       <div class="card-image">
