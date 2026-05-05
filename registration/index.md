@@ -7,40 +7,54 @@ title: Registration
 ## Registration
 
 
-Registration will be available from this page shortly.
-
-<table border="1" class="table">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Early (Up to 31 July 2026)</th>
-      <th>Late (From 1 August 2026)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Full Ticket Regular <br><span class="small">(Conferences and Workshops)</span></td>
-      <td>TBA</td>
-      <td>TBA</td>
-    </tr>
-    <tr>
-      <td>Workshop Only</td>
-      <td>TBA</td>
-      <td>TBA</td>
-    </tr>
-  </tbody>
-</table>
-
-In case the fees would be a barrier to your participation, please see the funding support below.
-
-#### What's included?
- - The Full Ticket includes access to all conferences and workshops throughout the week, lunch and coffee/snacks, and all social events. 
- - Workshop Only covers attendance, lunch and coffee/snacks for the workshops on Saturday only. Participants are free to switch between workshops.
+Ticket Options
 
 
-#### Registration Deadline
+<section class="section">
 
-Participants are strongly encouraged to register before the early registration deadline on 31 July 2026. Registration will remain open until after the event at a higher price.
+  <h2>Getting around</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Full Ticket Early Registration</h3>
+      <p>
+        <span class="price">£600</span><br>
+        <span class="availableuntil">Available until: Until 31 July 2026</span>
+      </p>
+      <p>
+        All access pass, including all Conferences, Workshops and Social Activities
+      </p>
+      <div class="divider"></div>
+      <p>
+        Second Social Cruise add-on: <span class="price">£75</span><br>
+        <span class="small">For additional guests, first ticket already included</span>
+      </p>
+    </div>
+    <div class="card">
+      <h3>Full Ticket Late Registration</h3>
+      <p>
+      <span class="price">£700</span><br>
+      <span class="availableuntil">Available from: 1 August 2026</span>
+      </p>
+      <p>
+        Includes all conferences and workshops. 
+        Access to social activities provided on best effort basis but cannot be fully guaranteed with late tickets.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Workshop Only Registration</h3>
+      <p>
+        <span class="price">£75</span><br>
+        No late registration charge
+       </p>
+      <p>
+        Covers attendance, lunch and coffee/snacks for the workshops on Saturday only. Participants are free to switch between workshops.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
 
 ## Funding support
