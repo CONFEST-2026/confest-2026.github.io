@@ -1,6 +1,4 @@
 submenu:
-  - name: Registration
-    relative_url: /registration
   - name: Reaching Liverpool
     relative_url: /local
   - name: Accommodation
@@ -11,3 +9,5 @@ submenu:
     relative_url: /local/social
   - name: Code of Conduct
     relative_url: /local/code-of-conduct
+  - name: Registration
+    relative_url: /registration
