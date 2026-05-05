@@ -86,6 +86,8 @@
                   >
               {%- else %}
                 {%- assign link_styleclass = "nav-link" -%}
+
+
                 {%- include partials/get_link.html %}
                 {{ link_tag }}
               {%- endif %}
@@ -100,8 +102,12 @@
             </li>
 
           {%- else %}
+
             <li class="nav-item {% if page.url contains link.relative_url %}active{% endif %}">
               {%- assign link_styleclass = "nav-link" -%}
+               {%- if link.special %}
+              {%- assign link_styleclass = "nav-link special" -%}
+              {%- endif %}  
               {%- include partials/get_link.html -%}
               {{ link_tag }}
                 {{ link.name }}

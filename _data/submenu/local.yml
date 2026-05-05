@@ -1,8 +1,10 @@
 submenu:
   - name: Reaching Liverpool
     relative_url: /local
-  - name: In Liverpool
-    relative_url: /local/liverpool
+  - name: Accommodation
+    relative_url: /local/accommodation
+  - name: Venues
+    relative_url: /local/venues
   - name: Social Activities
     relative_url: /local/social
   - name: Code of Conduct

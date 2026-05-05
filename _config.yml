@@ -9,7 +9,8 @@ url: "https://confest-2026.github.io/" # the base hostname & protocol for your s
 
 plugins:
   - jekyll-email-protect
-
+  - jekyll-redirect-from
+  
 # Build settings
 markdown: kramdown
 sass:
@@ -96,9 +97,10 @@ conference:
       - name: Local Info
         relative_url: /local/
 
-      # - name: Registration
-      #   relative_url: /registration/
-      #   visible: false
+      - name: Registration
+        relative_url: /registration/
+        visible: false
+        special: true
 
       
         # later becomes a submenu with links to the location, program, talks, speakers, chat, etc.

@@ -3,4 +3,4 @@
 source "https://rubygems.org"
 gemspec
 gem "jekyll-email-protect"
-
+gem 'jekyll-redirect-from'

@@ -47,7 +47,7 @@
       {%- if speaker.hide -%}
         {{ speaker.first_name }} {{ speaker.last_name }}
       {%- else -%}
-        <a class="text-reset" href="{{ speaker.url | prepend: site.baseurl }}">
+        <a class="text-reset" href="{{ speaker.url | prepend: site.baseurl }}" >
           {{ speaker.first_name }} {{ speaker.last_name }}
         </a>
       {%- endif -%}
