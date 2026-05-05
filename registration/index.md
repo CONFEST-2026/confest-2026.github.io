@@ -25,7 +25,7 @@ subnav: local
       </ul>
       <div class="divider"></div>
       <p>
-        Second Social Cruise add-on: <span class="price">£75</span><br>
+        Additional Social Cruise Ticket add-on: <span class="price">£75</span><br>
         <span class="small">For additional guests, one ticket already included.</span>
       </p>
     </div>

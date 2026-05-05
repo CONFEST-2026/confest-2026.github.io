@@ -167,7 +167,7 @@ herobackground: white
       <div class="card-content">
         <h3>Spaces at the Spine</h3>
         <p>
-          Reception will take place in Spine building.
+          Reception will take place on the top floor of the Spine building with panoramic views over the city.
         </p>
         <p>
           Map links: 
