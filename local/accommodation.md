@@ -35,7 +35,7 @@ located right next to the venue.
         <ul>
           <li><strong>£66.00</strong> per night</li>
           <li>Single en-suite rooms</li>
-          <li>Breakfast included (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum)</li>
+          <li>Breakfast included, 7.30am - 9am (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum)</li>
           <li>Access to shared kitchen facilities</li>
         </ul>
       </div>

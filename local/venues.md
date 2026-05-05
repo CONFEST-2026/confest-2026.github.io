@@ -75,6 +75,7 @@ herobackground: white
   addBuilding(-2.96301, 53.40499, "Talks", 'red', 's');
   addBuilding(-2.960834, 53.40700, "Hotel", 'blue', 'n');
   addBuilding(-2.964978,53.405762, "Pub","blue",'s');
+  addBuilding(-2.966220,53.40399, "Football","red",'s');
   addBuilding(-2.969002,53.404861,"Cathedral","green","s");
   addBuilding(-2.97313, 53.39743,"Cathedral","green","s");
   addBuilding(-2.97768,53.40759,"Liverpool Lime Street \n(Main station)","green","s");

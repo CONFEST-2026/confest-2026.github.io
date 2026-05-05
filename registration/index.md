@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Registration
+subnav: local
 ---
 
 
@@ -17,9 +18,11 @@ title: Registration
         <span class="price">£600</span><br>
         <span class="availableuntil">Available until: 31 July 2026</span>
       </p>
-      <p>
-        All access pass, including all conferences, workshops and <a href="/local/social">social activities</a>, lunch and coffee breaks between 1-5 September 2026.
-      </p>
+      <ul>
+        <li>Access to all conferences and workshops, 1-5 September 2026</li>
+        <li>Lunch and coffee breaks included</li>
+        <li><a href="/local/social">Social activities</a> included</li>
+      </ul>
       <div class="divider"></div>
       <p>
         Second Social Cruise add-on: <span class="price">£75</span><br>
@@ -32,11 +35,12 @@ title: Registration
       <span class="price">£700</span><br>
       <span class="availableuntil">Available from: 1 August 2026</span>
       </p>
-      <p>
-        Includes access to all conferences and workshops, lunch and coffee breaks between 1-5 September 2026. 
-      </p><p>
-        Access to social activities provided on best effort basis but cannot be fully guaranteed with late tickets. Additional social cruise add-on not available.
-      </p>
+      <ul>
+        <li>Access to all conferences and workshops, 1-5 September 2026</li>
+        <li>Lunch and coffee breaks included</li>
+        <li>Social activities are subject to availability and cannot be guaranteed</li>
+        <li>Additional social cruise add-on not available</li>
+      </ul>
     </div>
     <div class="card">
       <h3>Workshop Only Registration</h3>
@@ -44,9 +48,10 @@ title: Registration
         <span class="price">£75</span><br>
         No late registration charge
        </p>
-      <p>
-        Covers attendance, lunch and coffee breaks for all workshops on Saturday 5 September only.
-      </p>
+       <ul>
+        <li>Access to all workshops, 5 September 2026</li>
+        <li>Lunch and coffee breaks included</li>
+      </ul>
     </div>
 
   </div>

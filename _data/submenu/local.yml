@@ -1,4 +1,6 @@
 submenu:
+  - name: Registration
+    relative_url: /registration
   - name: Reaching Liverpool
     relative_url: /local
   - name: Accommodation
