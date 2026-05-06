@@ -182,8 +182,8 @@ herobackground: white
          </ul>
         </p>
       </div>
-      <div class="card-image">
-        <img src="/assets/images/LiverpoolSpineView.jpg" alt="Spaces at the Spine">
+      <div class="card-image" style="min-width: 30%;">
+        <img src="/assets/images/spineoutside.png" alt="Spaces at the Spine">
       </div>
     </div>
   </div>
