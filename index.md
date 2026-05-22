@@ -16,7 +16,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 **[CONCUR 2026](https://confest-2026.github.io/concur), the 37th International Conference on *Concurrency Theory***
 
-**[FMICS 2026](https://confest-2026.github.io/fmics), the 31th International Conference on *Formal Methods for Industrial Critical Systems***
+**[FMICS 2026](https://confest-2026.github.io/fmics), the 31st International Conference on *Formal Methods for Industrial Critical Systems***
 
 **[QEST+FORMATS 2026](https://www.qest-formats.org/), the joint International Conference on *Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems***
 
