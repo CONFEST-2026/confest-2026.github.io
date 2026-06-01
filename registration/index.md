@@ -80,5 +80,4 @@ The funding takes the form of fee waivers and/or possibly travel support.
 
 Students and Early career researchers making use of these funds are encouraged to participate in [YR-Concur](/workshops/yr-concur/).
 
-Those interested in applying for these funds should send an email to [confest2026@liverpool.ac.uk](mailto:confest2026@liverpool.ac.uk) before **1 July 2026**, notifications will be provided by **5 July 2026**.
-
+Those interested in applying for these funds should send an email to [confest2026@liverpool.ac.uk](mailto:confest2026@liverpool.ac.uk) before **1 July 2026**, indicating their motivation to attend and estimated costs. PhD students should also include a letter of recommendation from their supervisor. Notifications will be provided by **5 July 2026**.
