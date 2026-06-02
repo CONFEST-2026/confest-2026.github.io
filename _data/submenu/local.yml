@@ -3,6 +3,8 @@ submenu:
     relative_url: /local
   - name: Accommodation
     relative_url: /local/accommodation
+  - name: Practical Info
+    relative_url: /local/practical-info
   - name: Venues
     relative_url: /local/venues
   - name: Social Activities

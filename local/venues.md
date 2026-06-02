@@ -90,51 +90,6 @@ herobackground: white
 
 <section class="section">
 
-  <h2>Getting around</h2>
-
-  <div class="grid">
-
-    <!-- Walk -->
-    <div class="card">
-      <h3>Walking</h3>
-      <p>
-        The University of Liverpool campus (Central Teaching Hub) is within easy walking distance
-        of the city centre, Lime Street Station, and many nearby hotels.
-    A walk from the conference venue to the ferry terminal for the dinner on Thursday will not take more than 30 mins.
-      </p>
-    </div>
-
-    <!-- Buses -->
-    <div class="card">
-      <h3>Buses</h3>
-      <p>
-        Local buses connect the city and campus. All buses accept contactless payment
-        when boarding.
-      </p>
-
-      <div class="highlight">
-        Flat fare: <strong>£2 per journey</strong>
-      </div>
-    </div>
-
-    <!-- Bolt -->
-    <div class="card">
-      <h3>Bike & e-scooter</h3>
-      <p>
-        Bolt bikes and e-scooters are available across the city and provide a quick way
-        to travel short distances between the centre and campus.
-      </p>
-      <p>
-      <a href="https://bolt.eu/en/cities/liverpool/">Bolt in Liverpool</a>
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="section">
-
   <h2>Main Venues</h2>
 
 
@@ -270,4 +225,3 @@ herobackground: white
 
 
 </section>
-
