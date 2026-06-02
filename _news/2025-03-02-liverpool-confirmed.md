@@ -1,4 +1,4 @@
 ---
 ---
 
-Liverpool confirmed as host of CONFEST'26
+Liverpool will host of CONFEST'26
