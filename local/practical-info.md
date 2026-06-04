@@ -45,24 +45,19 @@ subnav: local
 <section class="section">
   <h2>Childcare</h2>
 
-  <div class="grid">
-    <div class="card">
-      <p>
-        We have a wonderful nursery on campus, only 300m from the main venue.
-      </p>
-      <p>
-        <strong><a href="https://www.kidsinbloom.co.uk/kib-university-of-liverpool">Kids in Bloom</a></strong> is located at the University of Liverpool and offers childcare facilities for conference attendees, upon request and subject to availability.
-        Please contact them directly.
-      </p>
-    </div>
+  <div class="card">
+    <p>
+      We have a wonderful nursery on campus, only 300m from the main venue!<br>
+      <strong><a href="https://www.kidsinbloom.co.uk/kib-university-of-liverpool">Kids in Bloom</a></strong> is located at the University of Liverpool and offers short-term childcare upon request and subject to availability.
+      Please contact them directly.
+    </p>
   </div>
 </section>
 
 <section class="section">
   <h2>Accessibility</h2>
 
-  <div class="grid">
-    <div class="card">
+  <div class="card">
       <p>
         The University of Liverpool is committed to ensuring our campus is accessible to all visitors.
       </p>
@@ -83,6 +78,5 @@ subnav: local
       <p>
         If you have specific accessibility requirements, please contact <a href="mailto:confest2026@liverpool.ac.uk">confest2026@liverpool.ac.uk</a>.
       </p>
-    </div>
   </div>
 </section>

@@ -131,29 +131,18 @@ herobackground: "#8aabbf"
     </div>
   </div>
 
-  <div class="divider"></div>
-  <div class="section">
-  	<div class="card">
-  	<h3>Entering the UK</h3>
-  	<p>
-  	You can check whether or not you need a visa to enter the UK on the <a href="https://www.gov.uk/check-uk-visa">UK Government website</a>.
-    </p>
-    <p>
-    An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <a href="https://www.gov.uk/eta/apply">https://www.gov.uk/eta/apply</a>.
-    </p>
-    <p>
-      Those requiring an invitation letter for a visa (not ETA) should contact <a href="mailto:confest2026@liverpool.ac.uk">confest2026@liverpool.ac.uk</a> after registering. Include your full name, passport number, date of birth and travel dates.
-    </p>
-  	</div>
-  </div>
+---
 
-  <div class="divider"></div>
-  <div class="section">
-  	<div class="card">
-  	<h3>Looking for where to stay?</h3>
-  	<p>
-  	See our <a href="/local/liverpool">guide for Liverpool</a>.</p>
-  	</div>
-  </div>
 
+  <div class="section">
+  	<div class="card" markdown=1>
+### Visa
+
+You can check if you need a visa to enter the UK on the [UK Government website](https://www.gov.uk/check-uk-visa).  
+An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <https://www.gov.uk/eta/apply>.
+
+Those requiring an invitation letter for a visa (not ETA) should contact [confest2026@liverpool.ac.uk](mailto:confest2026@liverpool.ac.uk) after registering. Include your full name, passport number, date of birth and travel dates.
+</div>
+
+</div>
 
