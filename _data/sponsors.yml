@@ -2,14 +2,10 @@
   abbreviation: EPSRC
   url: https://www.ukri.org/councils/epsrc/
   logo: epsrc.png
-- name: University of Liverpool
-  abbreviation: UoL
-  url: https://www.liverpool.ac.uk/computer-science-and-informatics/
-  logo: uol.png
-- name: Springer
-  abbreviation: Springer
-  url: https://www.springer.com/
-  logo: springer.svg
+- name: Formal Methods Europe
+  abbreviation: FME
+  url: https://www.fmeurope.org/
+  logo: fme.png
 # - name: European Research Consortium for Informatics and Mathematics
 #   abbreviation: ERCIM
 #   url: https://www.ercim.eu/
@@ -18,7 +14,11 @@
   abbreviation: RS
   url: https://royalsociety.org/
   logo: royal-society.png
-- name: Formal Methods Europe
-  abbreviation: FME
-  url: https://www.fmeurope.org/
-  logo: fme.png
+- name: Springer
+  abbreviation: Springer
+  url: https://www.springer.com/
+  logo: springer.svg
+- name: University of Liverpool
+  abbreviation: UoL
+  url: https://www.liverpool.ac.uk/computer-science-and-informatics/
+  logo: uol.png
