@@ -61,16 +61,17 @@ subnav: local
 
 
 - By registering you accept the CONFEST [Code of Conduct](/local/code-of-conduct).
-- Authors of accepted papers complete registration by the early registration deadline (31 July 2026).
+- Authors of accepted papers complete registration by the early registration deadline, 31 July 2026.
 - To help estimate the carbon impact of CONFEST, you will be asked your main mode of travel to/from CONFEST.
 - Choice of conference and workshop on the form are indicative to help with planning, you may swap between any conference/workshop that your ticket covers.
 - On campus accommodation is also available at £66/night, booked separately, see our <a href="/local/accommodation">accommodation options</a>.
-- There are no student rates, instead we have funding support, see below.
+- There are no student rates. See funding support below.
 
 
-In order to book please proceed to registration here:<br>
+In order to book please proceed to registration here:
+<p class="text-center">
         <a href="https://payments.liv.ac.uk/conferences-and-events/events-at-liverpool/computer-science" class="btn btn-secondary">Start CONFEST registration</a>
-
+</p>
 ---
 
 ## Travel Funding support
