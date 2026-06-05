@@ -61,15 +61,14 @@ subnav: local
 
 - By registering you accept the CONFEST [Code of Conduct](/local/code-of-conduct).
 - To help estimate the carbon impact of CONFEST, you will be asked your main mode of travel to/from CONFEST.
-- On campus accommodation is also available at <span class="price">£66</span>/night, booked separately, see our <a href="/local/accommodation">accommodation options</a>.
+- Choice of conference and workshop on the form are indicative to help with planning, you may swap between any conference/workshop that your ticket covers.
+- On campus accommodation is also available at £66/night, booked separately, see our <a href="/local/accommodation">accommodation options</a>.
 - There are no student rates, instead we have funding support, see below.
 
-<strong>Registration will open shortly.</strong>
 
-{% comment %} 
-In order to book please proceed to registration here:
-        <a href="https://payments.liv.ac.uk/conferences-and-events/residential-sport-commercial-services/conference-office/confest-accommodation" class="btn btn-secondary">Start CONFEST registration</a>
-{% endcomment %}
+In order to book please proceed to registration here:<br>
+        <a href="https://payments.liv.ac.uk/conferences-and-events/events-at-liverpool/computer-science" class="btn btn-secondary">Start CONFEST registration</a>
+
 ---
 
 ## Travel Funding support
