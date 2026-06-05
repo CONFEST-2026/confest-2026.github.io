@@ -5,9 +5,7 @@
     {% if sponsor.abbreviation == 'FME' %}
       {% include sponsor-fme.html %}
     {% else %}
-      <a href="{{ sponsor.url }}">
-        <img src="{{ "/assets/images/" | relative_url }}{{ sponsor.logo }}" style="padding:15px" width="200px" alt="{{ sponsor.abbreviation }} logo">
-      </a>
+      <a href="{{ sponsor.url }}"><img src="{{ "/assets/images/" | relative_url }}{{ sponsor.logo }}" style="padding:15px" width="200px" alt="{{ sponsor.abbreviation }} logo"></a>
     {% endif %}
   {% endfor %}
       </p>
