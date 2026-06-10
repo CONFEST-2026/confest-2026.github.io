@@ -1,0 +1,7 @@
+submenu:
+  - name: Day by Day
+    relative_url: /program/
+  - name: Room by Room
+    relative_url: /room-program/
+  - name: Conference by Conference 
+    relative_url: /conference-program/

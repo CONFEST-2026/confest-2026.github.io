@@ -1,0 +1,197 @@
+{%- assign room_name = include.room_name -%}
+{%- assign section_start_total_min = include.section_start_total_min | plus: 0 -%}
+{%- assign section_end_total_min = include.section_end_total_min | plus: 0 -%}
+{%- assign show_header = include.show_header -%}
+{%- unless show_header == false or show_header == 'false' -%}
+  {%- assign show_header = true -%}
+{%- else -%}
+  {%- assign show_header = false -%}
+{%- endunless -%}
+
+{%- assign nbr_day_cols = 0 -%}
+{%- for d in site.data.program.days -%}
+  {%- for r in d.rooms -%}
+    {%- if r.name == room_name -%}
+      {%- assign nbr_day_cols = nbr_day_cols | plus: 1 -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- assign fixed_width_px = nbr_day_cols | minus: 1 | times: 15 | plus: 85 -%}
+{%- assign day_col_width = 'calc((100% - ' | append: fixed_width_px | append: 'px) / ' | append: nbr_day_cols | append: ')' -%}
+{%- assign room_hash = room_name | downcase | replace: ' ', '-' -%}
+
+{%- if show_header -%}
+  <div class="sticky-top syncscroll overflow-hidden" name="sync-room-{{ room_hash }}">
+    <table class="table program-table mb-0 w-100">
+      <colgroup>
+        <col style="width: 70px; min-width: 70px;">
+        <col style="width: 15px; min-width: 15px;">
+        {%- assign day_col_count = 0 -%}
+        {%- for d in site.data.program.days -%}
+          {%- for r in d.rooms -%}
+            {%- if r.name == room_name -%}
+              {%- assign day_col_count = day_col_count | plus: 1 -%}
+              <col style="width: {{ day_col_width }}; min-width: {{ day_col_width }};">
+              {%- if day_col_count < nbr_day_cols -%}
+                <col style="width: 15px; min-width: 15px;">
+              {%- endif -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col" class="col-title text-right"><span class="invisible">I0</span></th>
+          <th class="col-space p-0" scope="col"></th>
+          {%- assign day_col_count = 0 -%}
+          {%- for d in site.data.program.days -%}
+            {%- assign day_has_room = false -%}
+            {%- for r in d.rooms -%}
+              {%- if r.name == room_name -%}
+                {%- assign day_has_room = true -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if day_has_room -%}
+              {%- assign day_col_count = day_col_count | plus: 1 -%}
+              {%- include partials/get_day_hash.html -%}
+              {%- if day_col_count > 1 -%}
+                <th class="col-space p-0" scope="col"></th>
+              {%- endif -%}
+              <th scope="col" class="text-center" style="width: {{ day_col_width }}; min-width: {{ day_col_width }};">
+                <a class="text-reset" href="{{ site.conference.program.url | prepend: site.baseurl }}/#{{ day_hash }}">{{ day_name }}</a>
+              </th>
+            {%- endif -%}
+          {%- endfor -%}
+        </tr>
+      </thead>
+    </table>
+  </div>
+{%- endif -%}
+
+<div class="syncscroll overflow-y-hidden" name="sync-room-{{ room_hash }}">
+  <table class="table program-table w-100">
+    <colgroup>
+      <col style="width: 70px; min-width: 70px;">
+      <col style="width: 15px; min-width: 15px;">
+      {%- assign day_col_count = 0 -%}
+      {%- for d in site.data.program.days -%}
+        {%- for r in d.rooms -%}
+          {%- if r.name == room_name -%}
+            {%- assign day_col_count = day_col_count | plus: 1 -%}
+            <col style="width: {{ day_col_width }}; min-width: {{ day_col_width }};">
+            {%- if day_col_count < nbr_day_cols -%}
+              <col style="width: 15px; min-width: 15px;">
+            {%- endif -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </colgroup>
+    <tbody>
+      {%- assign day_duration_min = section_end_total_min | minus: section_start_total_min -%}
+      {%- assign nbr_steps = day_duration_min | divided_by: site.conference.program.time_steps -%}
+      {%- assign z-index-max = 999 -%}
+
+      {%- for i in (1..nbr_steps) -%}
+        {%- assign current_total_min = i | minus: 1 | times: site.conference.program.time_steps | plus: section_start_total_min -%}
+        {%- assign current_hour = current_total_min | divided_by: 60 | floor -%}
+        {%- assign current_min = current_total_min | modulo: 60 -%}
+        {%- if current_min < 10 -%}
+          {%- assign current_time = current_hour | append: ':0' | append: current_min -%}
+        {%- else -%}
+          {%- assign current_time = current_hour | append: ':' | append: current_min -%}
+        {%- endif -%}
+        {%- if current_hour < 10 -%}
+          {%- assign current_time_padded = '0' | append: current_time -%}
+        {%- else -%}
+          {%- assign current_time_padded = current_time -%}
+        {%- endif -%}
+
+        {%- assign show_time_label = false -%}
+        {%- for d in site.data.program.days -%}
+          {%- for r in d.rooms -%}
+            {%- if r.name == room_name -%}
+              {%- for t in r.talks -%}
+                {%- if t.show_time and t.time_start == current_time_padded -%}
+                  {%- assign show_time_label = true -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if show_time_label -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+
+        <tr>
+          {%- if show_time_label -%}
+            <th scope="row" class="col-title text-right" style="z-index: {{ z-index-max }}">{{ current_time }}</th>
+          {%- else -%}
+            <th scope="row" class="col-title" style="z-index: {{ z-index-max }}"></th>
+          {%- endif -%}
+          <td class="col-space p-0"></td>
+
+          {%- assign day_col_count = 0 -%}
+          {%- for d in site.data.program.days -%}
+            {%- assign this_day_room = false -%}
+            {%- for r in d.rooms -%}
+              {%- if r.name == room_name -%}
+                {%- assign this_day_room = r -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- if this_day_room -%}
+              {%- assign day_col_count = day_col_count | plus: 1 -%}
+              {%- if day_col_count > 1 -%}
+                <td class="col-space p-0"></td>
+              {%- endif -%}
+
+              {%- assign active_talk = false -%}
+              {%- for t in this_day_room.talks -%}
+                {%- assign talk = site.talks | where: 'name', t.name | first -%}
+                {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
+                {%- assign entry_start_min = t.time_start | split: ':' | last | plus: 0 -%}
+                {%- assign entry_end_hour = t.time_end | split: ':' | first | plus: 0 -%}
+                {%- assign entry_end_min = t.time_end | split: ':' | last | plus: 0 -%}
+                {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+                {%- assign entry_end_total = entry_end_hour | times: 60 | plus: entry_end_min -%}
+
+                {%- if entry_start_total == current_total_min -%}
+                  {%- assign talk_nbr_steps = entry_end_total | minus: entry_start_total | divided_by: site.conference.program.time_steps -%}
+                  {%- include partials/get_main_category.html -%}
+                  <td rowspan="{{ talk_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}; width: {{ day_col_width }}; min-width: {{ day_col_width }};">
+                    {%- assign live_button_styleclass = "mb-2" -%}
+                    {%- include partials/show_live_button.html -%}
+                    <p class="mb-2">{%- include partials/show_talk.html -%}</p>
+                    {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
+                      <p class="font-weight-light mb-2">{%- include partials/list_speakers.html -%}</p>
+                      {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
+                        <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Invited</span></p>
+                      {%- else -%}
+                        <p class="mb-1">{%- include partials/list_sub_categories.html -%}</p>
+                      {%- endif -%}
+                    {%- endunless -%}
+                  </td>
+                  {%- assign active_talk = true -%}
+                  {%- break -%}
+                {%- elsif entry_start_total < current_total_min and entry_end_total > current_total_min -%}
+                  {%- assign active_talk = true -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+
+              {%- unless active_talk -%}
+                <td class="p-0" style="width: {{ day_col_width }}; min-width: {{ day_col_width }};"></td>
+              {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+</div>

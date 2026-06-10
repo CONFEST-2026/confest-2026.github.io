@@ -1,6 +1,6 @@
 ---
 name: Room C
-hide: true
+hide: false
 ---
 
 A different way description on how to find this room

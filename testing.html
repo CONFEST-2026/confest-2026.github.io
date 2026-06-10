@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Conference Schedule — Compact 4-line view</title>
+  <style>
+    .overallschedule{
+          table-layout: fixed;
+          width: 500px;
+    }
+    .overallschedule thead {
+      font-style: italic;
+    }
+    .overallschedule .actual {
+      background: orange;
+      border: solid 1px black;
+      border-radius: 3px;
+      padding: 3px;
+    }
+    .overallschedule .concur {
+      background: blue;
+    }
+    .overallschedule .qestformats{
+      background: red;
+    }
+    .overallschedule .fmics {
+      background: yellow;
+    }
+  </style>
+</head>
+Further details can be found on the <a style="border: solid 3px rgb(83,128,163); padding: 5px;font-size:large" href="https://www.qest-formats.org/">QEST+FORMATS website →</a>.
+
+<table class="overallschedule">
+<thead>
+<tr>
+  <td>Tuesday</td>
+  <td>Wednesday</td>
+  <td>Thursday</td>
+  <td>Friday</td>
+  <td>Saturday</td>
+  
+</tr>  
+</thead>
+<tbody>
+<tr>
+  <td colspan="4" class="actual concur">CONCUR</td>
+  <td rowspan="4" class="actual">Workshops</td>
+  
+</tr>    
+<tr>
+  <td></td>
+  <td colspan="3" class="actual qestformats">QEST+FORMATS</td>
+</tr>    
+<tr>
+  <td></td>
+  <td colspan="3" class="actual fmics">FMICS</td>
+</tr>    
+<tr>
+  <td  class="actual">Evening Reception</td>
+  <td colspan="2"></td>
+  <td  class="actual">Social Activity</td>
+</tr>
+</tbody>  
+</table>

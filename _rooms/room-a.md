@@ -1,6 +1,6 @@
 ---
 name: Room A
-hide: true
+hide: false
 ---
 
 A short way description on how to find the room

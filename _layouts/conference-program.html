@@ -1,0 +1,123 @@
+{% include partials/header.html %}
+
+  <h1 class="display-5 mb-2 text-break">
+    {%- if page.title -%}
+      {{- page.title -}}
+    {%- else -%}
+      Program by Conference
+    {%- endif -%}
+  </h1>
+
+  {{ content }}
+
+  {%- assign nbr_conf_tabs = 0 -%}
+  {%- for main_cat in site.conference.talks.main_categories -%}
+    {%- assign is_meta = false -%}
+    {%- if main_cat.name == 'Invited' or main_cat.name == 'Joint' or main_cat.name == 'Schedule' or main_cat.name == 'Social' or main_cat.name == 'Test of Time' -%}
+      {%- assign is_meta = true -%}
+    {%- endif -%}
+    {%- unless is_meta -%}
+      {%- assign nbr_conf_tabs = nbr_conf_tabs | plus: 1 -%}
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- if nbr_conf_tabs > 1 -%}
+    <ul class="nav justify-content-center mb-3 btn-group" id="conf-list" role="tablist">
+      {%- assign tab_index = 0 -%}
+      {%- for main_cat in site.conference.talks.main_categories -%}
+        {%- assign is_meta = false -%}
+        {%- if main_cat.name == 'Invited' or main_cat.name == 'Joint' or main_cat.name == 'Schedule' or main_cat.name == 'Social' or main_cat.name == 'Test of Time' -%}
+          {%- assign is_meta = true -%}
+        {%- endif -%}
+        {%- unless is_meta -%}
+          {%- assign tab_index = tab_index | plus: 1 -%}
+          {%- assign conf_hash = main_cat.name | downcase | replace: ' ', '-' | replace: '+', 'plus' | replace: '/', '-' -%}
+          <li class="nav-item" role="presentation">
+            <a class="nav-link btn btn-outline-secondary {%- if tab_index == 1 %} active{% endif %}"
+               id="tab-{{ conf_hash }}"
+               data-toggle="tab"
+               href="#{{ conf_hash }}"
+               role="tab"
+               aria-controls="{{ conf_hash }}"
+               aria-selected="{% if tab_index == 1 %}true{% else %}false{% endif %}">
+              {{- main_cat.name -}}
+            </a>
+          </li>
+        {%- endunless -%}
+      {%- endfor -%}
+    </ul>
+    <div class="tab-content" id="conf-content">
+  {%- endif -%}
+
+  {%- assign tab_index = 0 -%}
+  {%- for main_cat in site.conference.talks.main_categories -%}
+    {%- assign is_meta = false -%}
+    {%- if main_cat.name == 'Invited' or main_cat.name == 'Joint' or main_cat.name == 'Schedule' or main_cat.name == 'Social' or main_cat.name == 'Test of Time' -%}
+      {%- assign is_meta = true -%}
+    {%- endif -%}
+    {%- unless is_meta -%}
+      {%- assign tab_index = tab_index | plus: 1 -%}
+      {%- assign conf_hash = main_cat.name | downcase | replace: ' ', '-' | replace: '+', 'plus' | replace: '/', '-' -%}
+
+      {%- if nbr_conf_tabs > 1 -%}
+        <div class="tab-pane {%- if tab_index == 1 %} active{% endif %}" id="{{ conf_hash }}" role="tabpanel" aria-labelledby="tab-{{ conf_hash }}">
+      {%- endif -%}
+
+      {%- assign conf_start_total_min = 9999 -%}
+      {%- assign conf_end_total_min = 0 -%}
+      {%- for d in site.data.program.days -%}
+        {%- assign day_has_conf = false -%}
+        {%- for room_schedule in d.rooms -%}
+          {%- for t in room_schedule.talks -%}
+            {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
+            {%- if t_talk.categories contains main_cat.name -%}
+              {%- assign day_has_conf = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if day_has_conf -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+
+        {%- if day_has_conf -%}
+          {%- for room_schedule in d.rooms -%}
+            {%- assign room_has_conf = false -%}
+            {%- for t in room_schedule.talks -%}
+              {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
+              {%- if t_talk.categories contains main_cat.name -%}
+                {%- assign room_has_conf = true -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if room_has_conf -%}
+              {%- assign first_t = room_schedule.talks | first -%}
+              {%- assign last_t = room_schedule.talks | last -%}
+              {%- assign first_hour = first_t.time_start | split: ':' | first | plus: 0 -%}
+              {%- assign first_min = first_t.time_start | split: ':' | last | plus: 0 -%}
+              {%- assign first_total = first_hour | times: 60 | plus: first_min -%}
+              {%- assign last_hour = last_t.time_end | split: ':' | first | plus: 0 -%}
+              {%- assign last_min = last_t.time_end | split: ':' | last | plus: 0 -%}
+              {%- assign last_total = last_hour | times: 60 | plus: last_min -%}
+              {%- if first_total < conf_start_total_min -%}
+                {%- assign conf_start_total_min = first_total -%}
+              {%- endif -%}
+              {%- if last_total > conf_end_total_min -%}
+                {%- assign conf_end_total_min = last_total -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- include partials/render_conference_section.html conf_name=main_cat.name section_start_total_min=conf_start_total_min section_end_total_min=conf_end_total_min show_header=true -%}
+
+      {%- if nbr_conf_tabs > 1 -%}
+        </div>
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- if nbr_conf_tabs > 1 -%}
+    </div>
+  {%- endif -%}
+
+{% include partials/footer.html %}

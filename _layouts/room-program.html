@@ -1,0 +1,90 @@
+{% include partials/header.html %}
+
+  <h1 class="display-5 mb-2 text-break">
+    {%- if page.title -%}
+      {{- page.title -}}
+    {%- else -%}
+      Room Schedule
+    {%- endif -%}
+  </h1>
+
+  {{ content }}
+
+  {%- assign nbr_visible_rooms = 0 -%}
+  {%- for room in site.rooms -%}
+    {%- unless room.hide -%}
+      {%- assign nbr_visible_rooms = nbr_visible_rooms | plus: 1 -%}
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- if nbr_visible_rooms > 1 -%}
+    <ul class="nav justify-content-center mb-3 btn-group" id="room-list" role="tablist">
+      {%- assign tab_index = 0 -%}
+      {%- for room in site.rooms -%}
+        {%- unless room.hide -%}
+          {%- assign tab_index = tab_index | plus: 1 -%}
+          {%- assign room_hash = room.name | downcase | replace: ' ', '-' -%}
+          <li class="nav-item" role="presentation">
+            <a class="nav-link btn btn-outline-secondary {%- if tab_index == 1 %} active{% endif %}"
+               id="tab-{{ room_hash }}"
+               data-toggle="tab"
+               href="#{{ room_hash }}"
+               role="tab"
+               aria-controls="{{ room_hash }}"
+               aria-selected="{% if tab_index == 1 %}true{% else %}false{% endif %}">
+              {{- room.name -}}
+            </a>
+          </li>
+        {%- endunless -%}
+      {%- endfor -%}
+    </ul>
+    <div class="tab-content" id="room-content">
+  {%- endif -%}
+
+  {%- assign tab_index = 0 -%}
+  {%- for room in site.rooms -%}
+    {%- unless room.hide -%}
+      {%- assign tab_index = tab_index | plus: 1 -%}
+      {%- assign room_hash = room.name | downcase | replace: ' ', '-' -%}
+
+      {%- if nbr_visible_rooms > 1 -%}
+        <div class="tab-pane {%- if tab_index == 1 %} active{% endif %}" id="{{ room_hash }}" role="tabpanel" aria-labelledby="tab-{{ room_hash }}">
+      {%- endif -%}
+
+      {%- assign room_start_total_min = 9999 -%}
+      {%- assign room_end_total_min = 0 -%}
+      {%- for d in site.data.program.days -%}
+        {%- for r in d.rooms -%}
+          {%- if r.name == room.name -%}
+            {%- assign first_talk = r.talks | first -%}
+            {%- assign last_talk = r.talks | last -%}
+            {%- assign first_hour = first_talk.time_start | split: ':' | first | plus: 0 -%}
+            {%- assign first_min = first_talk.time_start | split: ':' | last | plus: 0 -%}
+            {%- assign first_total = first_hour | times: 60 | plus: first_min -%}
+            {%- assign last_hour = last_talk.time_end | split: ':' | first | plus: 0 -%}
+            {%- assign last_min = last_talk.time_end | split: ':' | last | plus: 0 -%}
+            {%- assign last_total = last_hour | times: 60 | plus: last_min -%}
+            {%- if first_total < room_start_total_min -%}
+              {%- assign room_start_total_min = first_total -%}
+            {%- endif -%}
+            {%- if last_total > room_end_total_min -%}
+              {%- assign room_end_total_min = last_total -%}
+            {%- endif -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+
+      {%- include partials/render_room_section.html room_name=room.name section_start_total_min=room_start_total_min section_end_total_min=room_end_total_min show_header=true -%}
+
+      {%- if nbr_visible_rooms > 1 -%}
+        </div>
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- if nbr_visible_rooms > 1 -%}
+    </div>
+  {%- endif -%}
+
+{% include partials/footer.html %}

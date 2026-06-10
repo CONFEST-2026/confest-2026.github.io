@@ -86,6 +86,10 @@ days:
   rooms:
   - name: Room A
     talks:
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
     - name: Joint Invited Talk 1
       time_start: '09:00'
       time_end: '10:00'
@@ -280,6 +284,10 @@ days:
   rooms:
   - name: Room A
     talks:
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
     - name: Joint Invited Talk 2
       time_start: '09:00'
       time_end: '10:00'
@@ -441,6 +449,10 @@ days:
   rooms:
   - name: Room A
     talks:
+    - name: Registration & Coffee
+      time_start: '08:30'
+      time_end: '09:00'
+      show_time: true
     - name: CONCUR Talk 31
       time_start: '09:00'
       time_end: '09:30'
