@@ -1,3 +1,7 @@
+# - name: Amazon Automated reasoning group
+#   abbreviation: Amazon
+#   url: https://www.amazon.science/research-areas/automated-reasoning
+#   logo: amazonscience.png
 - name: Engineering and Physical Sciences Research Council
   abbreviation: EPSRC
   url: https://www.ukri.org/councils/epsrc/
