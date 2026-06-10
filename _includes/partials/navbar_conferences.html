@@ -1,0 +1,16 @@
+<ul class="nav nav-pills d-print-none mb-3">
+  {%- for main_cat in site.conference.talks.main_categories -%}
+    {%- assign is_meta = false -%}
+    {%- if main_cat.name == 'Invited' or main_cat.name == 'Joint' or main_cat.name == 'Schedule' or main_cat.name == 'Social' or main_cat.name == 'Test of Time' -%}
+      {%- assign is_meta = true -%}
+    {%- endif -%}
+    {%- unless is_meta -%}
+      {%- assign conf_hash = main_cat.name | downcase | replace: ' ', '-' | replace: '+', 'plus' | replace: '/', '-' -%}
+      <li class="nav-item">
+        <a class="nav-link {%- if page.conf_name == main_cat.name %} active{%- endif %}" href="{{ '/conference-program/' | append: conf_hash | append: '/' | prepend: site.baseurl }}">
+          {{- main_cat.name -}}
+        </a>
+      </li>
+    {%- endunless -%}
+  {%- endfor -%}
+</ul>

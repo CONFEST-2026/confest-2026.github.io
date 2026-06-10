@@ -1,5 +1,3 @@
 ---
-layout: conference-program
-title: Program by Conference
-subnav: program
+redirect_to: /conference-program/concur/
 ---
