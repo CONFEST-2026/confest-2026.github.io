@@ -4,4 +4,4 @@ submenu:
   # - name: By Room
   #   relative_url: /room-program/
   - name: By Conference
-    relative_url: /conference-program/
+    relative_url: /conference-program/concur

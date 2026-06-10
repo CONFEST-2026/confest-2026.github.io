@@ -5,7 +5,7 @@
       {%- assign is_meta = true -%}
     {%- endif -%}
     {%- unless is_meta -%}
-      {%- assign conf_hash = main_cat.name | downcase | replace: ' ', '-' | replace: '+', 'plus' | replace: '/', '-' -%}
+      {%- assign conf_hash = main_cat.name | downcase | replace: ' ', '-' | replace: '+', '-' | replace: '/', '-' -%}
       <li class="nav-item">
         <a class="nav-link {%- if page.conf_name == main_cat.name %} active{%- endif %}" href="{{ '/conference-program/' | append: conf_hash | append: '/' | prepend: site.baseurl }}">
           {{- main_cat.name -}}

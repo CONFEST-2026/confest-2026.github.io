@@ -1,7 +1,7 @@
 ---
 layout: single-conference
-title: Q+F Program
+title: QEST+FORMATS Program
 conf_name: Q+F
 subnav: program
-permalink: /conference-program/qplusf/
+permalink: /conference-program/q-f/
 ---
