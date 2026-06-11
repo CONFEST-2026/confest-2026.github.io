@@ -6,14 +6,14 @@
   abbreviation: EPSRC
   url: https://www.ukri.org/councils/epsrc/
   logo: epsrc.png
-- name: Formal Methods Europe
-  abbreviation: FME
-  url: https://www.fmeurope.org/
-  logo: fme.png
 - name: European Research Consortium for Informatics and Mathematics
   abbreviation: ERCIM
   url: https://www.ercim.eu/
   logo: ercim.png
+- name: Formal Methods Europe
+  abbreviation: FME
+  url: https://www.fmeurope.org/
+  logo: fme.png
 - name: The Royal Society
   abbreviation: RS
   url: https://royalsociety.org/
