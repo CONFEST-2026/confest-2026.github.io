@@ -47,7 +47,8 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 </tr>    
 <tr>
   <td></td>
-  <td colspan="3" class="actual fmics">FMICS</td>
+  <td></td>
+  <td colspan="2" class="actual fmics">FMICS</td>
 </tr>    
 <tr>
   <td  class="actual events">Evening Reception</td>
