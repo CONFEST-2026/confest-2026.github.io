@@ -57,6 +57,17 @@ herobackground: "#8aabbf"
             <strong>Liverpool John Lennon Airport (LPL)</strong><br>
             Regular European flights, connected by bus to the city.
           </li>
+          </ul>
+
+        <div class="highlight">
+          Liverpool Airport → Liverpool:
+          <ul>
+            <li>~30-40 mins Airport Bus 500</li>
+            <li>~40-50 mins Local Bus 82A or 86A</li>
+            <li>~15-20 mins by taxi (See Taxis section)</li>
+          </ul>
+        </div>
+          <ul>
           <li>
             <strong>Manchester Airport (MAN)</strong><br>
             Major international hub with connections across Europe,
@@ -69,10 +80,7 @@ herobackground: "#8aabbf"
           <ul>
             <li>~1h 20m by train (<a href="https://www.nationalrail.co.uk/journey-planner/">National Rail</a>)</li>
             <li>~1h by coach (<a href="https://www.nationalexpress.com/en">National Express</a>, pick up/stop at University of Liverpool / Brownlow Hill)</li>
-            <li>~45 mins by taxi (See Taxis section)
-                
-          </li>
-
+            <li>~45 mins by taxi (See Taxis section)</li>
           </ul>
         </div>
 
@@ -95,7 +103,7 @@ herobackground: "#8aabbf"
         </p>
 
         <p>
-          The closest option is <strong>Paddington Village car park</strong>.
+          <a href="https://www.liverpool.ac.uk/about/visit-us/car-parking/">University Visitor Car Parks</a> are very limited. The closest off-campus option is <strong>Paddington Village car park</strong>.
         </p>
 
         <div class="divider"></div>
@@ -111,7 +119,7 @@ herobackground: "#8aabbf"
       </p>
 
 		  <div class="highlight">
-		    <strong>Typical fares:</strong>
+		    <strong>Typical Uber fares:</strong>
 		    <ul>
 		      <li>Manchester Airport → £55–£75
                 <details>

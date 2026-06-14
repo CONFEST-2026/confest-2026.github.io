@@ -37,6 +37,7 @@ located right next to the venue.
           <li>Single en-suite rooms</li>
           <li>Breakfast included, 7.30am - 9am (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum)</li>
           <li>Access to shared kitchen facilities</li>
+          <li class="availableuntil">Bookings close on Monday 3rd August 2026</li>
         </ul>
       </div>
 
