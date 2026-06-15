@@ -1,0 +1,80 @@
+#,Authors,Title
+0065,"Enzo Erlich, Jérémy Ledent and Krzysztof Ziemiański","Algebraic Characterization of FO-definable Languages of
+Higher-Dimensional Automata"
+0209,"Sarvin Bahmani, Soumyajit Paul, Sven Schewe, Shadi Tasdighi
+Kalat and Ashutosh Trivedi",Asymmetrically-Discounted Stochastic Games
+0516,"Ali Asadi, Krishnendu Chatterjee and Pavol Kebis","PAC Learning in Turn-Based Stochastic Games with
+Reachability Objectives: A Decentralized Private Approach
+via Expected Conditional Distance"
+0795,"Takashi Nagatomi, Musashi Katsura, Naoki Kobayashi, Yusuke
+Matsushita and Ken Sakayori","Prophecy-Based Automated Verification of Message-Passing
+Programs"
+0944,Nicola Cotumaccio,Wheeler Bisimulations
+1060,"Jurriaan Rot, Todd Schmid and Jana Wagemaker",GKAT with Hoare Hypotheses
+1079,"Mathias Berry, Ismaël Jecker and Pierre-Cyrille Héam",Decomposition of Automata recognizing Ideals
+1170,"Robin Jourde, Henning Urbat, Sergey Goncharov, Stelios
+Tsampas and Jonas Forster",Compositionality in Coalgebraic Trace Semantics
+1253,Jessica Newman and Benjamin Plummer,Positional Properties in Temporal Logic
+1728,"Jonas Forster, Lutz Schröder, Paul Wild, Barbara König and
+Pedro Nora",Threshold-Based Behavioural Distances
+1781,Giovanna Kobus Conrado and Andreas Pavlogiannis,An MSO Framework for Weak-Memory Verification and Robustness
+1929,"Hannes Schulze, Lutz Schröder and Üsame Cengiz",Graded Semantics of Nominal Systems
+2057,"Iwan Quémerais, Guilhème Jaber, Ken Sakayori and Davide
+Sangiorgi","Concurrent Visibility: higher-order concurrency with
+first-order store"
+2089,"Weijun Chen, Yuxi Fu and Yangluo Zheng","Improving Reachability in Vector Addition Systems through
+Pumpability"
+2493,"Nathalie Bertrand, Maëlle Gautrin and Julie Parreaux","Reaching as Cheap as Possible in 1-clock Robust Weighted
+Timed Games"
+2759,Filippo Bonchi and Cipriano Junior Cioffo,Completeness for Probabilistic Boolean Tapes
+2855,Andrea Esposito and Marco Bernardo,"Revisiting True Concurrency Bisimilarities: On the Role of
+Backward Ready Multisets and Why They Are Not Enough for
+HPB and HHPB"
+2866,"Romain Delpy, Anca Muscholl and Grégoire Sutre",On parameterized verification over tree topologies
+3805,Ugo Dal Lago and Zeinab Galal,Coinductive reasoning for parametrized functors and monads
+3917,Ofer Leshkowitz and Orna Kupferman,Classification under uncertainty
+4345,"Christel Baier, Sascha Klüppelholz and Timm Spork","Probabilistic Model Checking via Families of Deterministic
+and Unambiguous Finite Automata"
+4631,"Nathalie Bertrand, Patricia Bouyer, Luc Lapointe and Corto
+Mascle",WinPop: Making populations win together
+4790,"Nathalie Bertrand, Pranav Ghorpade and Sasha Rubin","Parameterized Verification of Asynchronous Round-Based
+Distributed Algorithms via Reduction to Finite-Counter
+Systems"
+5940,"Luke Cheeseman, Elias Castegren, Tobias Wrigstad, Sophia
+Drossopoulou and Matthew Parkinson","when Behaviours Have to Happen: An Axiomatic Model of
+Causality in Behaviour-Oriented Concurrency"
+6511,"Ondrej Alexaj, Vojtěch Havlena, Ondřej Lengál, Yong Li and
+Nicolas Mazzocchi",Complementing Emerson-Lei Elevator Automata
+6575,"Lukas Mulder, Damien Pous and Jana Wagemaker",Continuous Algebras with Hypotheses
+6776,"Shaull Almagor, Michaël Cadilhac and Asaf Shoham",A Factorization Theorem for Forest Algebras
+6977,Mayuko Kori and Kazuki Watanabe,"From Coalgebraic Determinization to Belief Construction for
+Partial Observability"
+7190,"Filip Cano, Thomas Henzinger, Konstantin Kueffner and Ege
+Saraç",Monitoring Discounted Sum Properties
+7229,"Philipp Czerner, Javier Esparza, Vincent Fischer, Roland
+Guttenberg, Julian Pins and Simon Reilich","Monadic Presburger Predicates have Robust Population
+Protocols"
+7595,Raphaël Berthon and Stéphane Le Roux,"Two 1-to-2-Player Lifts on Positional Determinacy: with
+Colored Edges or Vertices"
+8097,Richard Mayr and Mohan Sai Teja Dantam,"Mean-Payoff-Parity and Lifting Strategies from MDPs to
+2-Player Stochastic Games"
+8271,"Ali Asadi, Thomas A. Henzinger, Ehsan Kafshdar Goharshady,
+Pavol Kebis and Kaushik Mallik","Generalized Bidding Games: Where Bidding and Stochastic
+Games Meet"
+8353,"Syyeda Zainab Fatmi, Stefan Kiefer, David Parker and Franck
+van Breugel",On the Continuity of the Probabilistic Bisimilarity Distance
+8657,Marnix Suilen and Guillermo Perez,"On the Complexity of Robust Markov Decision Processes and
+Bisimulation Metrics"
+8689,"Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski",Reachability in Fixed-Dimensional Continuous VASS
+8755,"Ivan Lanese, Claudio Antares Mezzina, Iain Phillips, Irek
+Ulidowski and Shoji Yuen",On the Encodability of Reversible Process Calculi
+8810,Pranshu Gaba and Shibashis Guha,"Sure-almost-sure and Sure-limit-sure Window Mean Payoff in
+Markov Decision Processes"
+8985,Eduardo Costa Martins and Tim Willemse,Minimal and Canonical Quotients for Simulation Equivalences
+9035,"Shaull Almagor, Ismaël Jecker, Filip Mazowiecki, Łukasz
+Orlikowski, David Purser and Henry Sinclair-Banks","Representing One Letter Weighted Automata Over the Tropical
+Semiring"
+9211,"Serge Haddad, Engel Lefaucheux and Stefan Schwoon",Active Diagnosis with Costs and Rewards
+9309,"Étienne André, Sarah Dépernet and Engel Lefaucheux",Buffered control for opacity in timed automata
+9881,"Safa Zouari, Rob van Glabbeek and Krzysztof Ziemianski","Bisimulations and Modal Logics for Higher Dimensional
+Automata"
