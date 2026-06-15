@@ -5,5 +5,7 @@ submenu:
     relative_url: /concur/committees
   - name: Call for papers
     relative_url: /concur/call-for-papers
+  - name: Accepted Papers
+    relative_url: /concur/accepted-papers
   - name: Past Editions
     relative_url: /concur/past-editions
