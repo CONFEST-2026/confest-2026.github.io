@@ -11,9 +11,9 @@ subnav: local
     <div class="card">
       <h3>Walking</h3>
       <p>
-        The University of Liverpool campus within easy walking distance
+        The University of Liverpool campus is within easy walking distance
         of the city centre, Lime Street Station, and many nearby hotels. A walk from the conference
-        venue to the ferry terminal for the dinner on Thursday will not take more than 30 minutes.
+        venue to the ferry terminal for the dinner on Thursday will take around 30 minutes.
       </p>
     </div>
 
