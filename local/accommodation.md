@@ -18,7 +18,7 @@ subnav: local
     <div class="card-inner">
       
       <div class="card-image">
-        <img src="/assets/images/crownplace.jpg" alt="Reception view">
+        <img src="/assets/images/crownplace.webp" alt="Reception view">
       </div>
 
       <div class="card-content">

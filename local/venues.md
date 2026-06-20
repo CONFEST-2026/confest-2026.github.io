@@ -115,7 +115,7 @@ herobackground: white
         </p>
       </div>
       <div class="card-image">
-        <img src="/assets/images/cth.jpg" alt="Central Teaching Hub">
+        <img src="/assets/images/cth.webp" alt="Central Teaching Hub">
       </div>
     </div>
   </div>
@@ -138,7 +138,7 @@ herobackground: white
         </p>
       </div>
       <div class="card-image" style="min-width: 30%;">
-        <img src="/assets/images/spineoutside.png" alt="Spaces at the Spine">
+        <img src="/assets/images/spineoutside.webp" alt="Spaces at the Spine">
       </div>
     </div>
   </div>
@@ -165,7 +165,7 @@ herobackground: white
         </p>
       </div>
       <div class="card-image">
-        <img src="/assets/images/DazzleFerry.jpg" alt="Mersey Ferry">
+        <img src="/assets/images/DazzleFerry.webp" alt="Mersey Ferry">
       </div>
     </div>
   </div>
@@ -189,7 +189,7 @@ herobackground: white
         </p>
       </div>
       <div class="card-image">
-        <img src="/assets/images/SportCentre.jpg" alt="Sport Centre">
+        <img src="/assets/images/SportCentre.webp" alt="Sport Centre">
       </div>
     </div>
   </div>
@@ -217,7 +217,7 @@ herobackground: white
         </p>
       </div>
       <div class="card-image">
-        <img src="/assets/images/crownplace.jpg" alt="Crown Place">
+        <img src="/assets/images/crownplace.webp" alt="Crown Place">
       </div>
     </div>
   </div>

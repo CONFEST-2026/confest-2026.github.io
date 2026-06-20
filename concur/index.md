@@ -2,7 +2,7 @@
 title: "CONCUR 2026"
 layout: default
 subnav: concur
-heroimage: /assets/images/liverpoolpetri-white-crop.png
+heroimage: /assets/images/liverpoolpetri-white-crop.webp
 herocontain: True
 ---
 
