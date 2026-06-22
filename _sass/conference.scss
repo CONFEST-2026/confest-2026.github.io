@@ -421,6 +421,161 @@ main.container img {
   width: 100%;
 }
 
+// Past editions
+.past-editions__timeline {
+  --past-editions-year-col: clamp(6.5rem, 12vw, 8.5rem);
+  --past-editions-line-color: rgba(58, 95, 128, 0.28);
+  --past-editions-marker-size: 1rem;
+  --past-editions-line-x: var(--past-editions-year-col);
+
+  position: relative;
+  width: min(100%, 58rem);
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.45rem;
+    bottom: 0.45rem;
+    left: var(--past-editions-line-x);
+    transform: translateX(-50%);
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(to bottom, rgba(58, 95, 128, 0.14), var(--past-editions-line-color), rgba(58, 95, 128, 0.14));
+  }
+}
+
+.past-editions__item {
+  display: grid;
+  grid-template-areas: 'year details';
+  grid-template-columns: var(--past-editions-year-col) 1fr;
+  gap: 0.1rem 1.15rem;
+  align-items: start;
+  position: relative;
+  padding: 0.6rem 0;
+}
+
+.past-editions__year {
+  grid-area: year;
+  align-self: start;
+  font-variant-numeric: tabular-nums;
+  color: $primary;
+  text-align: right;
+  padding-right: 1.75rem;
+}
+
+.past-editions__marker {
+  position: absolute;
+  left: var(--past-editions-line-x);
+  top: 1rem;
+  width: var(--past-editions-marker-size);
+  height: var(--past-editions-marker-size);
+  transform: translate(-50%, 0%);
+  z-index: 1;
+}
+
+.past-editions__marker::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: $cream-bg;
+  border: 3px solid $mid-blue;
+  box-shadow: 0 0 0 4px rgba($mid-blue, 0.08);
+}
+
+.past-editions__details {
+  grid-area: details;
+}
+
+.past-editions__location {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: $body-color;
+  text-decoration: none;
+  padding-left: 1.75rem;
+
+  &:hover,
+  &:focus {
+    color: $body-color;
+    text-decoration: none;
+  }
+}
+
+.past-editions__location-text {
+  color: $body-color;
+}
+
+.past-editions__online {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  color: $mid-blue;
+  font-size: 0.8rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+@media (max-width: 575.98px) {
+  .past-editions__timeline {
+    --past-editions-marker-col: 1.2rem;
+    --past-editions-line-x: calc(var(--past-editions-marker-col) / 2);
+  }
+
+  .past-editions__timeline::before {
+    top: 0.55rem;
+    bottom: 0.55rem;
+  }
+
+  .past-editions__item {
+    grid-template-areas:
+      'marker year'
+      'marker details';
+    grid-template-columns: var(--past-editions-marker-col) minmax(0, 1fr);
+    align-items: start;
+    gap: 0.05rem 0.55rem;
+    padding: 0.4rem 0;
+  }
+
+  .past-editions__year {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+    align-self: center;
+  }
+
+  .past-editions__location {
+    justify-self: start;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .past-editions__details {
+    padding-left: 0;
+  }
+
+  .past-editions__marker {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    grid-area: marker;
+    justify-self: center;
+    align-self: center;
+    grid-row: 1 / span 2;
+  }
+
+  .past-editions__location-text {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+}
+
 //   Program per Room
 .list-program {
   border: 0 none white;

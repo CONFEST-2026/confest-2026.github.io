@@ -1,0 +1,21 @@
+<li class="past-editions__item">
+  <div class="past-editions__year">{{ include.edition.year }}</div>
+  <div class="past-editions__marker" aria-hidden="true"></div>
+  <div class="past-editions__details">
+    {% if include.edition.url %}
+      <a class="past-editions__location" href="{{ include.edition.url }}">
+        <span class="past-editions__location-text">{{ include.edition.city }}, {{ include.edition.country }}</span>
+        {% if include.edition.online %}
+          <span class="past-editions__online">(Online)</span>
+        {% endif %}
+      </a>
+    {% else %}
+      <div class="past-editions__location">
+        <span class="past-editions__location-text">{{ include.edition.city }}, {{ include.edition.country }}</span>
+        {% if include.edition.online %}
+          <span class="past-editions__online">Online</span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</li>
