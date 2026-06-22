@@ -89,7 +89,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ##### Organisation
 
-CONFEST 2026 is organised by the School of Computer Science and Informatics at the University of Liverpool.
+CONFEST 2026 is organised by the [School of Computer Science and Informatics][CSI] at the University of Liverpool.
 
 [Daniel Hausmann](https://www.csc.liv.ac.uk/~hausmann/) (publicity, [CONFEST Advocate](/local/code-of-conduct))  
 [David Purser](https://www.davidpurser.net) (co-chair)  
@@ -108,3 +108,4 @@ CONFEST 2026 is supported by
 
 {% include sponsors.html %}
 
+[CSI]: https://www.liverpool.ac.uk/computer-science-and-informatics/
