@@ -28,6 +28,7 @@ jobs:
           git clone --depth=1 https://github.com/CONFEST-2026/fmics.git temp-fmics
           rm -rf fmics
           mkdir -p fmics
+          mv temp-fmics/_data/* _data/
           cp -r temp-fmics/* fmics/
           rm -rf temp-fmics
           mv fmics/submenu.yml _data/submenu/fmics.yml
@@ -44,6 +45,7 @@ jobs:
       - name: Clone yr-concur repo into subdirectory
         run: |
           git clone --depth=1 https://github.com/CONFEST-2026/yr-concur.git temp-yr-concur
+
           rm -rf workshops/yr-concur
           mkdir -p workshops/yr-concur
           cp -r temp-yr-concur/* workshops/yr-concur/
