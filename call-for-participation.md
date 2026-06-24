@@ -45,7 +45,6 @@ The workshops Express/SOS, SNR, and YR-Concur are still accepting submissions:
 ### Workshops
 
 - EXPRESS/SOS 2026: 33rd International Workshop on Expressiveness in Concurrency and 23rd Workshop on Structural Operational Semantics
-- RADICAL 2026: 5th International Workshop on Recent Advances in Concurrency and Logic
 - SNR 2026: Workshop on Symbolic and Numerical Reasoning about games
 - TRENDS 2026: 14th IFIP WG 1.8 Workshop on Trends in Concurrency Theory
 - YR-Concur 2026: 12th Young Researchers Workshop on Concurrency Theory

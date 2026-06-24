@@ -609,44 +609,6 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: Radical Workshop Session 1
-      time_start: '09:00'
-      time_end: '10:00'
-      show_time: true
-    - name: Coffee Break
-      time_start: '10:00'
-      time_end: '10:30'
-      show_time: true
-    - name: Radical Workshop Session 2
-      time_start: '10:30'
-      time_end: '12:00'
-      show_time: true
-    - name: Lunch
-      time_start: '12:00'
-      time_end: '13:30'
-      show_time: true
-    - name: Radical Workshop Session 3
-      time_start: '13:30'
-      time_end: '14:30'
-      show_time: true
-    - name: Coffee Break
-      time_start: '14:30'
-      time_end: '15:00'
-      show_time: true
-    - name: Radical Workshop Session 4
-      time_start: '15:00'
-      time_end: '16:30'
-      show_time: true
-    - name: Closing
-      time_start: '16:30'
-      time_end: '16:50'
-      show_time: true
-  - name: Room C
-    talks:
-    - name: Registration & Coffee
-      time_start: '08:30'
-      time_end: '09:00'
-      show_time: true
     - name: SNR Workshop Session 1
       time_start: '09:00'
       time_end: '10:00'
@@ -679,7 +641,7 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: Room D
+  - name: Room C
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -717,7 +679,7 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: Room E
+  - name: Room D
     talks:
     - name: Registration & Coffee
       time_start: '08:30'

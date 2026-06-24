@@ -185,8 +185,6 @@ conference:
         color: warning
       - name: Express/SOS
         color: primary
-      - name: Radical
-        color: danger
       - name: SNR
         color: warning
       - name: Trends
