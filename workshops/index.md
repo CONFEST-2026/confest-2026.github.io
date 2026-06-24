@@ -20,15 +20,6 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
   </div>
 
   <div class="workshop-box card">
-    <div class="workshop-title"><a target="_blank" href="https://sites.google.com/site/radicalconcur/">Radical</a></div>
-    <div class="highlight">
-      Organisers:<br>
-      <a target="_blank" href="https://groupoid.moe/" >Dan Frumin</a><br>
-      <a target="_blank" href="https://valvestate.github.io/" >Muhammad Najib</a>
-    </div>
-  </div>
-
-  <div class="workshop-box card">
     <div class="workshop-title"><a href="/workshops/snr">SNR</a></div>
     <div class="highlight">
       Organisers:<br>

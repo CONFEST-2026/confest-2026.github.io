@@ -3,8 +3,6 @@ submenu:
     relative_url: /workshops/
   - name: Express/SOS
     absolute_url: https://expresssos.github.io/conf/2026
-  - name: Radical
-    absolute_url: https://sites.google.com/site/radicalconcur
   - name: SNR
     relative_url: /workshops/snr
   - name: Trends
