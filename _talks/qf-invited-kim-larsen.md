@@ -1,5 +1,5 @@
 ---
-name: "Q+F Invited Talk 1"
+name: "Q+F Opening and Invited Talk 1"
 speakers:
   - Kim G. Larsen
 categories:
