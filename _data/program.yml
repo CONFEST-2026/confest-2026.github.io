@@ -17,61 +17,51 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Talk 1
+    - name: CONCUR Session 1
       time_start: '10:30'
-      time_end: '10:55'
-      show_time: true
-    - name: CONCUR Talk 2
-      time_start: '10:55'
-      time_end: '11:15'
-    - name: CONCUR Talk 3
-      time_start: '11:15'
-      time_end: '11:40'
-    - name: CONCUR Talk 4
-      time_start: '11:40'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 1
+      - name: CONCUR Talk 2
+      - name: CONCUR Talk 3
+      - name: CONCUR Talk 4
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Talk 5
+    - name: CONCUR Session 2
       time_start: '13:30'
-      time_end: '13:55'
-      show_time: true
-    - name: CONCUR Talk 6
-      time_start: '13:55'
-      time_end: '14:15'
-    - name: CONCUR Talk 7
-      time_start: '14:15'
       time_end: '14:40'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 5
+      - name: CONCUR Talk 6
+      - name: CONCUR Talk 7
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: CONCUR Talk 8
+    - name: CONCUR Session 3
       time_start: '15:00'
-      time_end: '15:25'
-      show_time: true
-    - name: CONCUR Talk 9
-      time_start: '15:25'
-      time_end: '15:45'
-    - name: CONCUR Talk 10
-      time_start: '15:45'
       time_end: '16:10'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 8
+      - name: CONCUR Talk 9
+      - name: CONCUR Talk 10
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: CONCUR Talk 11
+    - name: CONCUR Session 4
       time_start: '16:30'
-      time_end: '16:55'
-      show_time: true
-    - name: CONCUR Talk 12
-      time_start: '16:55'
-      time_end: '17:15'
-    - name: CONCUR Talk 13
-      time_start: '17:15'
       time_end: '17:40'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 11
+      - name: CONCUR Talk 12
+      - name: CONCUR Talk 13
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
@@ -90,72 +80,62 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: CONCUR Talk 41
+    - name: CONCUR Session 5
       time_start: '9:00'
-      time_end: '9:25'
-      show_time: true
-    - name: CONCUR Talk 42
-      time_start: '9:25'
-      time_end: '9:55'
-    - name: CONCUR Talk 43
-      time_start: '9:55'
       time_end: '10:10'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 41
+      - name: CONCUR Talk 42
+      - name: CONCUR Talk 43
     - name: Coffee Break
       time_start: '10:10'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Talk 14
+    - name: CONCUR Session 6
       time_start: '10:30'
-      time_end: '10:55'
-      show_time: true
-    - name: CONCUR Talk 15
-      time_start: '10:55'
-      time_end: '11:15'
-    - name: CONCUR Talk 16
-      time_start: '11:15'
-      time_end: '11:40'
-    - name: CONCUR Talk 17
-      time_start: '11:40'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 14
+      - name: CONCUR Talk 15
+      - name: CONCUR Talk 16
+      - name: CONCUR Talk 17
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Talk 18
+    - name: CONCUR Session 7
       time_start: '13:30'
-      time_end: '13:55'
-      show_time: true
-    - name: CONCUR Talk 19
-      time_start: '13:55'
-      time_end: '14:15'
-    - name: CONCUR Talk 20
-      time_start: '14:15'
       time_end: '14:40'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 18
+      - name: CONCUR Talk 19
+      - name: CONCUR Talk 20
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: A New Type System for Deadlock-Free Processes
+    - name: CONCUR Test of Time Session
       time_start: '15:00'
-      time_end: '15:35'
-      show_time: true
-    - name: Strategy Logic
-      time_start: '15:35'
       time_end: '16:10'
+      show_time: true
+      talks:
+      - name: A New Type System for Deadlock-Free Processes
+      - name: Strategy Logic
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: CONCUR Talk 21
+    - name: CONCUR Session 8
       time_start: '16:30'
-      time_end: '16:55'
-      show_time: true
-    - name: CONCUR Talk 22
-      time_start: '16:55'
-      time_end: '17:15'
-    - name: CONCUR Talk 23
-      time_start: '17:15'
       time_end: '17:40'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 21
+      - name: CONCUR Talk 22
+      - name: CONCUR Talk 23
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
@@ -174,48 +154,47 @@ days:
       time_start: '10:10'
       time_end: '10:30'
       show_time: true
-    - name: Q+F Talk 1
+    - name: Q+F Session 1
       time_start: '10:30'
-      time_end: '11:00'
-      show_time: true
-    - name: Q+F Talk 2
-      time_start: '11:00'
-      time_end: '11:30'
-    - name: Q+F Talk 3
-      time_start: '11:30'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: Q+F Talk 1
+      - name: Q+F Talk 2
+      - name: Q+F Talk 3
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Q+F Talk 4
+    - name: Q+F Session 2
       time_start: '13:30'
-      time_end: '14:00'
-    - name: Q+F Talk 5
-      time_start: '14:00'
       time_end: '14:30'
       show_time: true
+      talks:
+      - name: Q+F Talk 4
+      - name: Q+F Talk 5
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Q+F Talk 6
+    - name: Q+F Session 3
       time_start: '15:00'
-      time_end: '15:30'
-    - name: Q+F Talk 7
-      time_start: '15:30'
       time_end: '16:00'
+      show_time: true
+      talks:
+      - name: Q+F Talk 6
+      - name: Q+F Talk 7
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: Q+F Talk 8
+    - name: Q+F Session 4
       time_start: '16:30'
-      time_end: '17:00'
-      show_time: true
-    - name: Q+F Talk 9
-      time_start: '17:00'
       time_end: '17:30'
+      show_time: true
+      talks:
+      - name: Q+F Talk 8
+      - name: Q+F Talk 9
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
@@ -238,33 +217,27 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Talk 24
+    - name: CONCUR Session 9
       time_start: '10:30'
-      time_end: '10:55'
-      show_time: true
-    - name: CONCUR Talk 25
-      time_start: '10:55'
-      time_end: '11:15'
-    - name: CONCUR Talk 26
-      time_start: '11:15'
-      time_end: '11:40'
-    - name: CONCUR Talk 27
-      time_start: '11:40'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 24
+      - name: CONCUR Talk 25
+      - name: CONCUR Talk 26
+      - name: CONCUR Talk 27
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Talk 28
+    - name: CONCUR Session 10
       time_start: '13:30'
-      time_end: '13:55'
-      show_time: true
-    - name: CONCUR Talk 29
-      time_start: '13:55'
-      time_end: '14:15'
-    - name: CONCUR Talk 30
-      time_start: '14:15'
       time_end: '14:40'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 28
+      - name: CONCUR Talk 29
+      - name: CONCUR Talk 30
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -291,38 +264,36 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Q+F Talk 10
+    - name: Q+F Session 5
       time_start: '10:30'
-      time_end: '11:00'
-      show_time: true
-    - name: Q+F Talk 11
-      time_start: '11:00'
-      time_end: '11:30'
-    - name: Q+F Talk 12
-      time_start: '11:30'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: Q+F Talk 10
+      - name: Q+F Talk 11
+      - name: Q+F Talk 12
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Q+F Talk 14
+    - name: Q+F Session 6
       time_start: '13:30'
-      time_end: '14:00'
-      show_time: true
-    - name: Q+F Talk 15
-      time_start: '14:00'
       time_end: '14:30'
+      show_time: true
+      talks:
+      - name: Q+F Talk 14
+      - name: Q+F Talk 15
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Q+F Talk 16
+    - name: Q+F Session 7
       time_start: '15:00'
-      time_end: '15:30'
-      show_time: true
-    - name: Q+F Talk 17
-      time_start: '15:30'
       time_end: '16:00'
+      show_time: true
+      talks:
+      - name: Q+F Talk 16
+      - name: Q+F Talk 17
     - name: Closing
       time_start: '16:10'
       time_end: '16:30'
@@ -341,16 +312,14 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: FMICS Talk 1
+    - name: FMICS Session 1
       time_start: '10:30'
-      time_end: '11:00'
-      show_time: true
-    - name: FMICS Talk 2
-      time_start: '11:00'
-      time_end: '11:30'
-    - name: FMICS Talk 3
-      time_start: '11:30'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: FMICS Talk 1
+      - name: FMICS Talk 2
+      - name: FMICS Talk 3
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
@@ -363,13 +332,13 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: FMICS Talk 4
+    - name: FMICS Session 2
       time_start: '15:00'
-      time_end: '15:30'
-      show_time: true
-    - name: FMICS Talk 5
-      time_start: '15:30'
       time_end: '16:00'
+      show_time: true
+      talks:
+      - name: FMICS Talk 4
+      - name: FMICS Talk 5
     - name: Closing
       time_start: '16:10'
       time_end: '16:30'
@@ -396,47 +365,39 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Talk 31
+    - name: CONCUR Session 11
       time_start: '10:30'
-      time_end: '10:55'
-      show_time: true
-    - name: CONCUR Talk 32
-      time_start: '10:55'
-      time_end: '11:15'
-    - name: CONCUR Talk 33
-      time_start: '11:15'
-      time_end: '11:40'
-    - name: CONCUR Talk 34
-      time_start: '11:40'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 31
+      - name: CONCUR Talk 32
+      - name: CONCUR Talk 33
+      - name: CONCUR Talk 34
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Talk 35
+    - name: CONCUR Session 12
       time_start: '13:30'
-      time_end: '13:55'
-      show_time: true
-    - name: CONCUR Talk 36
-      time_start: '13:55'
-      time_end: '14:15'
-    - name: CONCUR Talk 37
-      time_start: '14:15'
       time_end: '14:40'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 35
+      - name: CONCUR Talk 36
+      - name: CONCUR Talk 37
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: CONCUR Talk 38
+    - name: CONCUR Session 13
       time_start: '15:00'
-      time_end: '15:25'
-      show_time: true
-    - name: CONCUR Talk 39
-      time_start: '15:25'
-      time_end: '15:50'
-    - name: CONCUR Talk 40
-      time_start: '15:50'
       time_end: '16:10'
+      show_time: true
+      talks:
+      - name: CONCUR Talk 38
+      - name: CONCUR Talk 39
+      - name: CONCUR Talk 40
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
@@ -455,7 +416,6 @@ days:
       show_time: true
   - name: Room B
     talks:
-
     - name: Registration & Coffee
       time_start: '08:30'
       time_end: '09:00'
@@ -464,27 +424,25 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Q+F Talk 18
+    - name: Q+F Session 8
       time_start: '10:30'
-      time_end: '11:00'
-      show_time: true
-    - name: Q+F Talk 19
-      time_start: '11:00'
-      time_end: '11:30'
-    - name: Q+F Talk 20
-      time_start: '11:30'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: Q+F Talk 18
+      - name: Q+F Talk 19
+      - name: Q+F Talk 20
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Q+F Talk 21
+    - name: Q+F Session 9
       time_start: '13:30'
-      time_end: '14:00'
-      show_time: true
-    - name: Q+F Talk 22
-      time_start: '14:00'
       time_end: '14:30'
+      show_time: true
+      talks:
+      - name: Q+F Talk 21
+      - name: Q+F Talk 22
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -497,13 +455,13 @@ days:
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: Q+F Talk 23
+    - name: Q+F Session 10
       time_start: '16:30'
-      time_end: '17:00'
-      show_time: true
-    - name: Q+F Talk 24
-      time_start: '17:00'
       time_end: '17:30'
+      show_time: true
+      talks:
+      - name: Q+F Talk 23
+      - name: Q+F Talk 24
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
@@ -522,22 +480,19 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: FMICS Talk 6
+    - name: FMICS Session 3
       time_start: '10:30'
-      time_end: '11:00'
-      show_time: true
-    - name: FMICS Talk 7
-      time_start: '11:00'
-      time_end: '11:30'
-    - name: FMICS Talk 8
-      time_start: '11:30'
       time_end: '12:00'
+      show_time: true
+      talks:
+      - name: FMICS Talk 6
+      - name: FMICS Talk 7
+      - name: FMICS Talk 8
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Application of Formal Methods to Design and Verification of Autonomous
-        Space Systems
+    - name: Application of Formal Methods to Design and Verification of Autonomous Space Systems
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
@@ -545,18 +500,17 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: FMICS Talk 9
+    - name: FMICS Session 4
       time_start: '15:00'
-      time_end: '15:30'
-      show_time: true
-    - name: FMICS Talk 10
-      time_start: '15:30'
       time_end: '16:00'
+      show_time: true
+      talks:
+      - name: FMICS Talk 9
+      - name: FMICS Talk 10
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    
     - name: Football
       time_start: '18:00'
       time_end: '20:00'

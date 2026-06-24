@@ -73,6 +73,15 @@
             {%- if t_talk.categories contains main_cat.name -%}
               {%- assign day_has_conf = true -%}
               {%- break -%}
+            {%- elsif t.talks -%}
+              {%- for sub_t in t.talks -%}
+                {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+                {%- if sub_check.categories contains main_cat.name -%}
+                  {%- assign day_has_conf = true -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if day_has_conf -%}{%- break -%}{%- endif -%}
             {%- endif -%}
           {%- endfor -%}
           {%- if day_has_conf -%}{%- break -%}{%- endif -%}
@@ -86,6 +95,15 @@
               {%- if t_talk.categories contains main_cat.name -%}
                 {%- assign room_has_conf = true -%}
                 {%- break -%}
+              {%- elsif t.talks -%}
+                {%- for sub_t in t.talks -%}
+                  {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+                  {%- if sub_check.categories contains main_cat.name -%}
+                    {%- assign room_has_conf = true -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- if room_has_conf -%}{%- break -%}{%- endif -%}
               {%- endif -%}
             {%- endfor -%}
             {%- if room_has_conf -%}

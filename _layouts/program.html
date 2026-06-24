@@ -104,6 +104,15 @@
               {%- if talk.categories contains main_cat.name -%}
                 {%- assign include_legend_cat = true -%}
                 {%- break -%}
+              {%- elsif entry.talks -%}
+                {%- for sub_t in entry.talks -%}
+                  {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+                  {%- if sub_check.categories contains main_cat.name -%}
+                    {%- assign include_legend_cat = true -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- if include_legend_cat -%}{%- break -%}{%- endif -%}
               {%- endif -%}
             {%- endfor -%}
             {%- if include_legend_cat -%}

@@ -33,40 +33,93 @@
       {%- include partials/get_day_hash.html -%}
       {%- for r in d.rooms -%}
         {%- for t in r.talks -%}
+          {%- assign schedule_match = false -%}
           {%- if talk.name == t.name -%}
-
-            {%- if site.conference.live -%}
-              {%- include partials/get_talk_timestamp.html -%}
-              <span class="live-hide" data-start="{{ timestamp_start }}" data-end="{{ timestamp_end }}">
+            {%- assign schedule_match = true -%}
+          {%- elsif t.talks -%}
+            {%- for sub_t in t.talks -%}
+              {%- if talk.name == sub_t.name -%}
+                {%- assign schedule_match = true -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+          {%- if schedule_match -%}
+            {%- assign in_session = false -%}
+            {%- if t.talks -%}
+              {%- for sub_t in t.talks -%}
+                {%- if talk.name == sub_t.name -%}
+                  {%- assign in_session = true -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
             {%- endif -%}
 
             {%- include partials/get_time_pronoun.html -%}
             {%- include partials/get_talk_time.html -%}
-            <span class="d-none d-sm-inline">
-              {{- time_pronoun -}}
-            </span> {% include partials/show_talk_time.html -%}
-
-            {%- if site.conference.live -%}
-              </span>
-              {%- include partials/show_live_button.html -%}
-            {%- endif -%}
-
             {%- assign room = site.rooms | where: 'name', r.name | first -%}
-            <span class="d-none d-sm-inline ml-1">
-              {{- site.data.lang[site.conference.lang].pronoun.in | default: "in" -}}
-            </span> {% include partials/show_room.html -%}
 
-            <span class="d-none d-sm-inline ml-1">
-              {{- site.data.lang[site.conference.lang].pronoun.for | default: "for" -}}
-            </span> {% include partials/show_talk_duration.html -%}
+            {%- if in_session -%}
+              {%- assign session_talks = t.talks -%}
+              {%- assign session_name = t.name -%}
+              <span class="d-none d-sm-inline">
+                {{- site.data.lang[site.conference.lang].pronoun.in | default: "in" -}}
+              </span> {%- include partials/show_room.html -%}
+              <span class="ml-1">in session <strong>{{ t.name }}</strong></span>
+              <span class="d-none d-sm-inline text-muted">
+                ({{ time_pronoun }}, {%- include partials/show_talk_time.html -%}, {%- include partials/show_talk_duration.html -%})
+              </span>
+            {%- else -%}
 
-          {% endif %}
+              {%- if site.conference.live -%}
+                {%- include partials/get_talk_timestamp.html -%}
+                <span class="live-hide" data-start="{{ timestamp_start }}" data-end="{{ timestamp_end }}">
+              {%- endif -%}
+
+              <span class="d-none d-sm-inline">
+                {{- time_pronoun -}}
+              </span> {% include partials/show_talk_time.html -%}
+
+              {%- if site.conference.live -%}
+                </span>
+                {%- include partials/show_live_button.html -%}
+              {%- endif -%}
+
+              <span class="d-none d-sm-inline ml-1">
+                {{- site.data.lang[site.conference.lang].pronoun.in | default: "in" -}}
+              </span> {% include partials/show_room.html -%}
+
+              <span class="d-none d-sm-inline ml-1">
+                {{- site.data.lang[site.conference.lang].pronoun.for | default: "for" -}}
+              </span> {% include partials/show_talk_duration.html -%}
+
+            {%- endif -%}
+          {%- endif -%}
         {% endfor %}
       {% endfor %}
     {% endfor %}
   </div>
 
   {{ content }}
+
+  {%- if session_talks.size > 1 -%}
+    <h6 class="mt-3 mb-2">Other talks in {{ session_name }}</h6>
+    <ul class="list-unstyled mb-3">
+      {%- for sub_t in session_talks -%}
+        {%- unless sub_t.name == talk.name -%}
+          {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
+          <li class="mb-1 ml-2">
+            {%- if sub_obj and sub_obj.hide != true -%}
+              <a class="text-reset" href="{{ sub_obj.url | prepend: site.baseurl }}">{{ sub_t.name }}</a>
+            {%- else -%}
+              {{ sub_t.name }}
+            {%- endif -%}
+          </li>
+        {%- endunless -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
 
   {% include partials/get_link_types.html %}
 
