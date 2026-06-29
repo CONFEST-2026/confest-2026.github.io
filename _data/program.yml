@@ -166,13 +166,10 @@ days:
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Q+F Session 2
+    - name: Supporting Older Adults Living Independently
       time_start: '13:30'
-      time_end: '14:30'
+      time_end: '14:40'
       show_time: true
-      talks:
-      - name: Q+F Talk 4
-      - name: Q+F Talk 5
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -390,22 +387,22 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: CONCUR Session 13
+    - name: CONCUR Invited Talk 3
       time_start: '15:00'
       time_end: '16:10'
+      show_time: true
+    - name: Coffee Break
+      time_start: '16:10'
+      time_end: '16:30'
+      show_time: true
+    - name: CONCUR Session 13
+      time_start: '16:30'
+      time_end: '17:30'
       show_time: true
       talks:
       - name: CONCUR Talk 38
       - name: CONCUR Talk 39
       - name: CONCUR Talk 40
-    - name: Coffee Break
-      time_start: '16:10'
-      time_end: '16:30'
-      show_time: true
-    - name: CONCUR Invited Talk 3
-      time_start: '16:30'
-      time_end: '17:30'
-      show_time: true
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
@@ -447,10 +444,13 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Supporting Older Adults Living Independently
+    - name: Q+F Session 2
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
+      talks:
+      - name: Q+F Talk 4
+      - name: Q+F Talk 5
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'

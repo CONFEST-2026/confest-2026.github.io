@@ -184,7 +184,7 @@ conference:
       - name: FMICS
         color: warning
       - name: Express/SOS
-        color: primary
+        color: social
       - name: SNR
         color: warning
       - name: Trends

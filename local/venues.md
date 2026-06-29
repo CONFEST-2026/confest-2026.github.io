@@ -165,7 +165,7 @@ herobackground: white
         </p>
       </div>
       <div class="card-image">
-        <img src="/assets/images/DazzleFerry.webp" alt="Mersey Ferry">
+        <img src="/assets/images/DazzleFerry.jpg" alt="Mersey Ferry">
       </div>
     </div>
   </div>
