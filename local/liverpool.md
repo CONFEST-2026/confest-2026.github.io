@@ -1,4 +1,4 @@
 ---
-title: My amazing post
+title: Liverpool
 redirect_to: /local/accommodation
 ---
