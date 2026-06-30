@@ -12,5 +12,37 @@ hide: false
 ---
 
  
-Probabilistic programs and stochastic models have become a central paradigm for describing systems operating under uncertainty, ranging from randomised algorithms and Bayesian inference to cyberphysical systems. Their formal analysis, however, remains highly challenging due to the interplay among probabilistic behaviour, nondeterminism, and potentially unbounded computations. In recent years, martingale-based reasoning and moment-based and recurrence-equation approaches have emerged as powerful techniques for the automated verification of probabilistic loops [4, 13]. We present a line of work [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] on the automated reasoning about probabilistic programs through moment-based analysis, recurrence solving, and asymptotic reasoning. A key observation is that, for the class of Prob-Solvable loops, it is always possible to characterise higher-order statistical moments via systems of linear recurrence equations admitting computable closed forms [4, 6]. This feature enables the systematic derivation of quantitative properties such as expected values, variances, and probabilistic termination guarantees. We first introduce the class of probabilistic (potentially infinite) loops that we call Prob-Solvable. For every loop in this class we can compute, analytically and without sampling, the exact higher-order statistical moments as closed-form expressions of the number of iterations. Moreover, we develop a faithful encoding of several families of Bayesian networks (BNs) into Prob-Solvable loops. In particular, BNs can be represented as probabilistic loops with polynomial assignments over random variables, enabling automated reasoning about exact inference, filtering, sensitivity analysis, and sampling-based procedures through invariant generation and closed-form recurrence solving [5, 15]. The proposed framework supports discrete, Gaussian, conditional linear Gaussian, and dynamic BNs, extending probabilistic program analysis to a broad family of probabilistic graphical models. Beyond Prob-Solvable loops, we also characterise a hierarchy of solvable and unsolvable probabilistic loop classes and extend moment-based analysis to loops with non-polynomial assignments [1, 2, 7, 8]. These works widen the applicability of symbolic techniques beyond the original polynomial setting. The resulting algorithms are implemented in tools such as Mora [6] and Polar [12]. While Mora focuses on the automatic generation of moment-based invariants only for probabilistic loops with polynomial assignments, Polar provides a more general algebraic framework for exact symbolic analysis of probabilistic loops and related stochastic models [12]. We further investigate the inverse problem of synthesising probabilistic loops from prescribed moment sequences, thereby complementing analysis with program construction techniques [14]. We then turn to verifying probabilistic termination properties. In this setting, martingale-based proof rules provide sufficient conditions for establishing almost-sure termination (AST), positive almost-sure termination (PAST), as well as non-termination properties. The key challenge lies in automating these proof obligations. To overcome this, we introduce Amber, a fully automated framework for proving and refuting the probabilistic termination of polynomial loops [9, 10, 11]. Amber blends martingale reasoning with asymptotic bounds obtained from recurrence equations and handles symbolic constants as well as standard probability distributions. A common thread running through these papers is the reduction of probabilistic reasoning to symbolic algebraic reasoning. By expressing expected values and higher-order moments of stochastic updates as systems of recurrence equations, automated techniques can be applied for solving recurrences, generating invariants, and performing asymptotic analysis. This combination of probability theory, formal methods, and symbolic computation yields exact or asymptotically tight properties of stochastic systems and offers a viable pathway to automate quantitative verification tasks that would otherwise be intractable.
- 
+
+Probabilistic programs can be use to model  systems that must cope with
+uncertainty — randomised algorithms, Bayesian inference pipelines, and
+cyber‑physical systems. Their formal verification is difficult because
+probabilistic choices, nondeterminism and potentially unbounded loops interact
+in complex ways. Our work tackles this difficulty by turning stochastic
+reasoning into symbolic algebra that can be solved automatically.
+
+We introduce Prob‑Solvable loops, a large class of (possibly infinite)
+probabilistic loops whose statistical moments can always be expressed as
+closed‑form solutions of linear recurrence equations. This property lets us
+compute exact expectations, variances and higher‑order moments analytically—no
+sampling required. By encoding discrete, Gaussian, conditional linear‑Gaussian
+and dynamic Bayesian networks as polynomial probabilistic loops, the same
+machinery yields automated exact inference, filtering, sensitivity analysis and
+sampling procedures.
+
+Beyond the polynomial setting we delineate a hierarchy of solvable versus
+unsolvable probabilistic loops and extend moment‑based techniques to loops with
+non‑polynomial updates. These extensions broaden the reach of symbolic analysis
+to many stochastic programs that fall outside the original scope.
+
+The theoretical methods are implemented in two fully automated tools. POLAR
+provides a general algebraic framework for exact symbolic analysis of a wide
+range of stochastic models, and AMBER combines martingale reasoning with
+asymptotic bounds from recurrences to prove or refute probabilistic termination
+(almost‑sure, positive almost‑sure and non‑termination) of polynomial loops.
+
+The unifying idea is simple: express expected values and higher‑order moments
+as systems of recurrence equations, then apply automated algebraic solvers to
+obtain exact or asymptotically tight quantitative properties. This blend of
+probability theory, formal methods and symbolic computation makes the
+verification of uncertain systems practical and scalable, delivering precise
+guarantees that would otherwise be out of reach.
