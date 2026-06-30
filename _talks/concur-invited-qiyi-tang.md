@@ -1,5 +1,5 @@
 ---
-name: CONCUR Invited Talk 1
+name: Word Automata with Limited Nondeterminism
 speakers:
   - Qiyi Tang
 categories:
@@ -8,7 +8,7 @@ categories:
 hide: false
 ---
 
-#  Word Automata with Limited Nondeterminism
+
 
 We survey word automata with limited nondeterminism, a family of models lying
 between deterministic and fully nondeterministic automata. While determinism
