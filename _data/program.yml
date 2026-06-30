@@ -9,7 +9,7 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: CONCUR Invited Talk 1
+    - name: Word Automata with Limited Nondeterminism
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
