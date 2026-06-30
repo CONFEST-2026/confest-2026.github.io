@@ -314,14 +314,14 @@ days:
       time_end: '12:00'
       show_time: true
       talks:
-      - name: FMICS Talk 1
-      - name: FMICS Talk 2
-      - name: FMICS Talk 3
+      - name: "Industrial Adoption of Formal Methods: An Industry Perspective on the Transition to SPARK for Security Critical Firmware Development"
+      - name: A Formally Verified N-Dimensional Safety Shield for Autonomous Systems
+      - name: Deductive Verification of a Patricia Trie with Creusot
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Reducing Time to Market through Formal Methods
+    - name: Application of Formal Methods to Design and Verification of Autonomous Space Systems
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
@@ -334,8 +334,8 @@ days:
       time_end: '16:00'
       show_time: true
       talks:
-      - name: FMICS Talk 4
-      - name: FMICS Talk 5
+      - name: Reasoning about concurrent loops and recursion with rely-guarantee rules
+      - name: "Consistency proofs for axiomatic extensions: translating VerCors's Axiomatic Data Types into Isabelle"
     - name: Closing
       time_start: '16:10'
       time_end: '16:30'
@@ -485,14 +485,14 @@ days:
       time_end: '12:00'
       show_time: true
       talks:
-      - name: FMICS Talk 6
-      - name: FMICS Talk 7
-      - name: FMICS Talk 8
+      - name: "Exploiting the Layout of a Railway Interlocking System for Path Reliability Evaluation"
+      - name: "Lazy Three-Way Model Merging in Cinco Cloud: A Lattice-Theoretic Approach"
+      - name: Domain-Specific 3D Visualization of Formal Models
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Application of Formal Methods to Design and Verification of Autonomous Space Systems
+    - name: Reducing Time to Market through Formal Methods
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
@@ -500,13 +500,10 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: FMICS Session 4
+    - name: Panel Session discussing the Industrial use of Formal Methods
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
-      talks:
-      - name: FMICS Talk 9
-      - name: FMICS Talk 10
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'

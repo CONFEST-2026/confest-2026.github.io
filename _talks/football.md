@@ -2,5 +2,6 @@
 name: "Football"
 categories:
   - Social
-hide: true
+hide: false
+redirect_to: /local/social
 ---
