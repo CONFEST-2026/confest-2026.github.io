@@ -206,7 +206,7 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: Joint Invited Talk 1
+    - name: Reasoning About Probabilistic Loops, Moment by Moment
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
