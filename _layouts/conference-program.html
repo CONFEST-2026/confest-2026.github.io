@@ -21,7 +21,7 @@
     {%- endunless -%}
   {%- endfor -%}
 
-  {%- if nbr_conf_tabs > 1 -%}
+  {%- if nbr_conf_tabs > 1 -%}  
     <ul class="nav justify-content-center mb-3 btn-group" id="conf-list" role="tablist">
       {%- assign tab_index = 0 -%}
       {%- for main_cat in site.conference.talks.main_categories -%}

@@ -3,5 +3,17 @@ submenu:
     relative_url: /program/
   # - name: By Room
   #   relative_url: /room-program/
-  - name: By Conference
-    relative_url: /conference-program
+  - name: CONCUR
+    relative_url: /program/concur
+  - name: QEST+FORMATS
+    relative_url: /program/q-f
+  - name: FMICS
+    relative_url: /program/fmics
+  - name: EXPRESS/SOS
+    relative_url: /program/express-sos
+  - name: SNR
+    relative_url: /program/snr
+  - name: TRENDS
+    relative_url: /program/trends
+  - name: YR-CONCUR
+    relative_url: /program/yr-concur

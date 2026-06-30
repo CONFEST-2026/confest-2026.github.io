@@ -19,7 +19,9 @@
           {%- if link.menu %}
           {%- elsif link.live -%}
           {%- else %}
-          {% if page.url contains link.relative_url %}
+          {% assign link_len = link.relative_url | size %}
+          {% assign url_start = page.url | slice: 0, link_len %}
+          {% if url_start == link.relative_url %}
             <li class="nav-item active d-none d-sm-block">
               {%- assign link_styleclass = "nav-link" -%}
               {%- include partials/get_link.html -%}
@@ -102,8 +104,11 @@
             </li>
 
           {%- else %}
+            {% assign link_len = link.relative_url | size %}
+            {% assign url_start = page.url | slice: 0, link_len %}
 
-            <li class="nav-item {% if page.url contains link.relative_url %}active{% endif %}">
+
+            <li class="nav-item {% if url_start == link.relative_url %}active{% endif %}">
               {%- assign link_styleclass = "nav-link" -%}
                {%- if link.special %}
               {%- assign link_styleclass = "nav-link special" -%}
