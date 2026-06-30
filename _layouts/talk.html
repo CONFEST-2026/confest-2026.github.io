@@ -103,8 +103,8 @@
   {{ content }}
 
   {%- if session_talks.size > 1 -%}
-    <h6 class="mt-3 mb-2">Other talks in {{ session_name }}</h6>
-    <ul class="list-unstyled mb-3">
+    <h6 class="mt-3 mb-2">Other talks in {{ session_name }}:</h6>
+    <ul class=" mb-3">
       {%- for sub_t in session_talks -%}
         {%- unless sub_t.name == talk.name -%}
           {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
@@ -170,6 +170,17 @@
     <a href="{{ site.conference.program.url | prepend: site.baseurl }}" class="btn btn-light">
       <i class="far fa-calendar-alt"></i>&nbsp;{{ site.data.lang[site.conference.lang].program.title | default: "Program" }}
     </a>
+
+    {% if main_cat == 'FMICS' or main_cat == 'Q+F' %}
+      {% assign ending = main_cat %}
+    {% else %}
+      {% assign ending = "CONCUR" %}
+    {% endif %}
+    <a href="/conference-program/{{ending | replace: "+", "-" | downcase}}" class="btn btn-light">
+      <i class="far fa-calendar-alt"></i>&nbsp; {{ending}} Program
+    </a>
+
+
   </p>
 
   {%- include partials/footer.html -%}
