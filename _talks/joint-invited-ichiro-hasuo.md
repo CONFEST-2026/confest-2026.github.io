@@ -1,5 +1,5 @@
 ---
-name: "Joint Invited Talk 2"
+name: "A Coalgebraic Dijkstra Algorithm"
 speakers:
   - Ichiro Hasuo
 categories:
@@ -11,8 +11,6 @@ categories:
 
 hide: false
 ---
-
-# A Coalgebraic Dijkstra Algorithm
 
 The Dijkstra algorithm is a classical method for solving the shortest path
 problem on weighted graphs. There are several variations of the Dijkstra
