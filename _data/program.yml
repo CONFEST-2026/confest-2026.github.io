@@ -354,7 +354,7 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: A Coalgebraic Dijkstra Algorithm
+    - name: Category Theory for Fast Model Checking Algorithms
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
