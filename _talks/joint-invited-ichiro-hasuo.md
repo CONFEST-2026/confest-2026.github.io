@@ -1,5 +1,5 @@
 ---
-name: "A Coalgebraic Dijkstra Algorithm"
+name: "Category Theory for Fast Model Checking Algorithms"
 speakers:
   - Ichiro Hasuo
 categories:
@@ -12,16 +12,13 @@ categories:
 hide: false
 ---
 
-The Dijkstra algorithm is a classical method for solving the shortest path
-problem on weighted graphs. There are several variations of the Dijkstra
-algorithm, including algorithms for the widest path problem and for two-player
-games. In this paper, we introduce the coalgebraic shortest path problem (CSPP),
-a unifying framework for a broad class of optimization problems on
-state-transition systems. This framework encompasses not only the aforementioned
-problems but also new ones such as the shortest binary tree problem. We further
-present a coalgebraic Dijkstra algorithm for solving the CSPP efficiently under
-a suitable condition. Our condition is necessary and sufficient for the
-algorithm to return correct solutions, thereby providing a precise criterion for
-when Dijkstra-style acceleration is possible. We also show that the proposed
-algorithm achieves asymptotic complexity comparable to that of the classical
-Dijkstra algorithm.
+Category theory has seen several "killer applications" in computer science,
+such as those in functional programming, coalgebraic process theory, and
+quantum computation. In this talk, I will showcase another application that I
+believe is big: in *model checking*. I will first give an overview of basic
+categorical structures in model checking, where the use of category theory is
+motivated as a natural generalization of lattice theory. I will then exhibit
+some recent work of ours where category theory gives us fast model checking
+algorithms. It does so via the general axiomatization of structures that enable
+fast algorithms, and via the identification of "boundary conditions" in the
+search for efficient heuristics. 
