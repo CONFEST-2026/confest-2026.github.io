@@ -52,6 +52,10 @@ subnav: local
         <li>Access to all workshops, 5 September 2026</li>
         <li>Lunch and coffee breaks included</li>
       </ul>
+      <div class="divider"></div>
+      <p>
+        Workshops are already included in the full ticket – no need to purchase both.
+      </p>
     </div>
 
   </div>
