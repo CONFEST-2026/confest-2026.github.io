@@ -1,7 +1,9 @@
 {%- assign main_cat = talk.categories | first | default: '' -%}
 {%- assign main_cat_color = 'secondary' -%}
 
-{%- if talk.categories contains 'Invited' -%}
+{%- if talk.categories contains 'Joint' -%}
+  {%- assign main_cat = 'Joint' -%}
+{%- else if talk.categories contains 'Invited' -%}
   {%- assign main_cat = 'Invited' -%}
 {%- else -%}
   {%- for configured_main_cat in site.conference.talks.main_categories -%}

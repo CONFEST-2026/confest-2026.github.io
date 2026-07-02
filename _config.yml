@@ -173,9 +173,9 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: Invited
-        color: success
       - name: Joint
+        color: success
+      - name: Invited
         color: success
       - name: CONCUR
         color: info

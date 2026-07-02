@@ -3,8 +3,8 @@ name: "Reasoning About Probabilistic Loops, Moment by Moment"
 speakers:
   - Ezio Bartocci
 categories:
-  - Invited
   - Joint
+  - Invited
   - CONCUR
   - FMICS
   - Q+F

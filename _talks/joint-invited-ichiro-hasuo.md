@@ -3,8 +3,8 @@ name: "Category Theory for Fast Model Checking Algorithms"
 speakers:
   - Ichiro Hasuo
 categories:
-  - Invited
   - Joint
+  - Invited
   - CONCUR
   - FMICS
   - Q+F
