@@ -182,7 +182,7 @@ conference:
       - name: Q+F
         color: danger
       - name: FMICS
-        color: warning
+        color: purple
       - name: Express/SOS
         color: social
       - name: SNR

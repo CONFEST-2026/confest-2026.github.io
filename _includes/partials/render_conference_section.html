@@ -8,6 +8,8 @@
   {%- assign show_header = false -%}
 {%- endunless -%}
 
+{%- assign used_legend_cats = '' -%}
+
 {%- assign nbr_conf_day_cols = 0 -%}
 {%- for d in site.data.program.days -%}
   {%- assign day_has_conf = false -%}
@@ -288,23 +290,28 @@
                     {%- if entry_matches and entry_start_total == current_total_min -%}
                       {%- assign talk_nbr_steps = entry_end_total | minus: entry_start_total | divided_by: site.conference.program.time_steps -%}
                       {%- assign talk_color = 'secondary' -%}
+                      {%- assign talk_legend_name = '' -%}
                       {%- if t.talks -%}
                         {%- assign first_sub_t = t.talks | first -%}
                         {%- assign first_sub_obj = site.talks | where: 'name', first_sub_t.name | first -%}
                         {%- for color_cat in site.conference.talks.main_categories -%}
                           {%- if first_sub_obj.categories contains color_cat.name -%}
                             {%- assign talk_color = color_cat.color -%}
+                            {%- assign talk_legend_name = color_cat.name -%}
                             {%- break -%}
                           {%- endif -%}
                         {%- endfor -%}
                       {%- elsif talk.categories contains 'Invited' -%}
                         {%- for color_cat in site.conference.talks.main_categories -%}
-                          {%- if color_cat.name == 'Invited' -%}{%- assign talk_color = color_cat.color -%}{%- break -%}{%- endif -%}
+                          {%- if color_cat.name == 'Invited' -%}{%- assign talk_color = color_cat.color -%}{%- assign talk_legend_name = color_cat.name -%}{%- break -%}{%- endif -%}
                         {%- endfor -%}
                       {%- else -%}
                         {%- for color_cat in site.conference.talks.main_categories -%}
-                          {%- if talk.categories contains color_cat.name -%}{%- assign talk_color = color_cat.color -%}{%- break -%}{%- endif -%}
+                          {%- if talk.categories contains color_cat.name -%}{%- assign talk_color = color_cat.color -%}{%- assign talk_legend_name = color_cat.name -%}{%- break -%}{%- endif -%}
                         {%- endfor -%}
+                      {%- endif -%}
+                      {%- if talk_legend_name != '' and talk_legend_name != 'Schedule' and talk_legend_name != 'Joint' and talk_legend_name != 'Test of Time' -%}
+                        {%- assign used_legend_cats = used_legend_cats | append: talk_legend_name | append: '||' -%}
                       {%- endif -%}
                       {%- include partials/get_main_category.html -%}
                       {%- if t.talks -%}
@@ -366,3 +373,19 @@
     </tbody>
   </table>
 </div>
+
+{%- if site.conference.talks.main_categories -%}
+  {%- assign shown_legend = false -%}
+  {%- for legend_cat in site.conference.talks.main_categories -%}
+    {%- assign legend_marker = legend_cat.name | append: '||' -%}
+    {%- if used_legend_cats contains legend_marker -%}
+      {%- unless shown_legend -%}
+        <h5 class="mt-4">{{ site.data.lang[site.conference.lang].program.legend | default: "Caption" }}</h5>
+        {%- assign shown_legend = true -%}
+      {%- endunless -%}
+      <div class="d-block d-sm-inline-block m-1 p-1 pl-2 pr-2 border-soft-{{ legend_cat.color }} bg-soft-{{ legend_cat.color }} font-weight-normal">
+        {{- legend_cat.name -}}
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
