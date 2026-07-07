@@ -111,11 +111,13 @@ herobackground: "#8aabbf"
 		  
 		  <h5>Taxis</h5>
 
-		  <p>
-		    Ride-hailing services such as Uber are widely available in and around Liverpool.
-		  </p>
+		  
       <p>
       <a href="https://www.deltataxis.net">Delta Taxis</a> is a local taxi operator offering fixed price travel from Manchester Airport (pre-booking required).
+      </p>
+      
+      <p>
+        Ride-hailing services such as Uber are widely available in and around Liverpool.
       </p>
 
 		  <div class="highlight">
