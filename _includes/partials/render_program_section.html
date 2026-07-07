@@ -301,7 +301,7 @@
                         <div style="display: flex; flex-direction: column; flex: 1; gap: 3px; min-height: 0;">
                           {%- for sub_t in t.talks -%}
                             {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
-                            <div style="flex: 1; background: rgba(255,255,255,0.35); border-radius: 3px; padding: 2px 5px; min-height: 0; overflow: hidden; display: flex; align-items: center;">
+                            <div style="flex: 1; background: rgba(255,255,255,0.35); border-radius: 3px; padding: 2px 5px; min-height: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: center;">
                               <span class="small" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                                 {%- if sub_obj and sub_obj.hide != true -%}
                                   <a class="text-reset" href="{{ sub_obj.url | prepend: site.baseurl }}">{{- sub_t.name -}}</a>
@@ -309,6 +309,10 @@
                                   {{- sub_t.name -}}
                                 {%- endif -%}
                               </span>
+                              {%- if sub_obj -%}
+                                {%- assign talk = sub_obj -%}
+                                <span class="small font-weight-light" style="display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">{%- include partials/list_speakers.html -%}</span>
+                              {%- endif -%}
                             </div>
                           {%- endfor -%}
                         </div>
