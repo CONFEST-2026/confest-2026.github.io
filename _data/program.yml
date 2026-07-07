@@ -146,8 +146,12 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: Q+F Opening and Invited Talk 1
+    - name: QEST+FORMATS Opening
       time_start: '9:00'
+      time_end: '09:10'
+      show_time: true
+    - name: Monitoring of Timed and Quantitative Systems
+      time_start: '09:10'
       time_end: '10:10'
       show_time: true
     - name: Coffee Break
