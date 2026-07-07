@@ -174,9 +174,9 @@
 
     {% if talk.categories contains 'CONCUR' %}
       {% assign ending = "CONCUR" %}
-    {% else if talk.categories contains 'FMICS' %}
+    {% elsif talk.categories contains 'FMICS' %}
       {% assign ending = "FMICS" %}
-    {% else if talk.categories contains 'Q+F' %}
+    {% elsif talk.categories contains 'Q+F' %}
       {% assign ending = "Q+F" %}
     {% else %}
       {% assign ending = "CONCUR" %}

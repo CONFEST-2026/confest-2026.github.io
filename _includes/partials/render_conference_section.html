@@ -335,7 +335,7 @@
                           {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
                             <p class="font-weight-light mb-2">{%- include partials/list_speakers.html -%}</p>
                             {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
-                              <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Invited</span></p>
+                              <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span></p>
                             {%- else -%}
                               <p class="mb-1">{%- include partials/list_sub_categories.html -%}</p>
                             {%- endif -%}
