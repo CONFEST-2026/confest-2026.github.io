@@ -178,13 +178,13 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Q+F Session 3
+    - name: Parametric Games and Automata
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
       talks:
-      - name: Q+F Talk 6
-      - name: Q+F Talk 7
+      - name: State-Space Abstractions for Parametric Timed Games
+      - name: Verification of parametric Markov Automata under time-bounded reachability
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
