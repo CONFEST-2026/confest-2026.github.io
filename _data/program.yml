@@ -464,9 +464,9 @@ days:
       time_end: '17:30'
       show_time: true
       talks:
-      - name: MightyPPL: Towards model checking MTL
-      - name: LF-mc: An Efficient Verifier for Lingua Franca
-      - name: StochasticBarrier.jl: A Toolbox for Stochastic Barrier Function Synthesis
+      - name: "MightyPPL: Towards model checking MTL"
+      - name: "LF-mc: An Efficient Verifier for Lingua Franca"
+      - name: "StochasticBarrier.jl: A Toolbox for Stochastic Barrier Function Synthesis"
     - name: Closing
       time_start: '17:30'
       time_end: '17:50'
