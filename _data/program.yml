@@ -277,24 +277,24 @@ days:
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Q+F Session 6
+    - name: Probabilistic and Temporal Logic Semantics
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
       talks:
-      - name: Q+F Talk 14
-      - name: Q+F Talk 15
+      - name: Exact Evaluation of Probabilistic Programs with Cylindrical Algebraic Decomposition
+      - name: Algebraic Robust Semantics for Signal Temporal Logic with Graph Operators
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Q+F Session 7
+    - name: Continuous and Hybrid Systems
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
       talks:
-      - name: Q+F Talk 16
-      - name: Q+F Talk 17
+      - name: Scalable Reachability Analysis of Linear Continuous Systems with Property-Driven Time-Step Adaptation
+      - name: Stability Checking of Markov Jump Linear Systems via Probabilistic Temporal Logic
     - name: Closing
       time_start: '16:10'
       time_end: '16:30'
