@@ -1,5 +1,5 @@
 ---
-name: "Wasserstein error bounds for aggregations ofcontinuous-time Markov chains"
+name: "Wasserstein error bounds for aggregations of continuous-time Markov chains"
 speakers:
   - Fabian Michel 
 categories:
