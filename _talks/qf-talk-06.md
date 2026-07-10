@@ -1,5 +1,8 @@
 ---
-name: "Q+F Talk 6"
+name: "Learning Alternating Real-Time Automata"
+speakers:
+  - Kazuki Kinoshita
+  - Masaki Waga
 categories:
   - Q+F
 hide: false
