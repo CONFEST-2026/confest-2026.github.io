@@ -265,14 +265,14 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Q+F Session 5
+    - name: Stochastic Model Checking
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
       talks:
-      - name: Q+F Talk 10
-      - name: Q+F Talk 11
-      - name: Q+F Talk 12
+      - name: Multi-Objective Statistical Model Checking using Lightweight Strategy Sampling
+      - name: Effective Stochastic Automata Model Checking by Interval Abstraction
+      - name: Collective Decision-Making Under Timing Constraints
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
