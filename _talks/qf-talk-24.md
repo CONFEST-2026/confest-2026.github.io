@@ -1,5 +1,5 @@
 ---
-name: "StochasticBarrier.jl: A Toolbox for StochasticBarrier Function Synthesis"
+name: "StochasticBarrier.jl: A Toolbox for Stochastic Barrier Function Synthesis"
 speakers:
   - Rayan Mazouz
   - Frederik Mathiesen
