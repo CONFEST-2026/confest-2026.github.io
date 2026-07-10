@@ -425,47 +425,47 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Dependability and Security Analysis
+    - name: Q+F Session 8
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
       talks:
-      - name: Facing the Core: State-Space Compression of Dynamic Fault Trees via PH-Distributions
-      - name: Adaptive Importance Sampling for Static Fault Trees with Two-State Markovian Components
-      - name: The Cost of Repetition: A Compositional Scalability Model for Attack Trees
+      - name: Q+F Talk 18
+      - name: Q+F Talk 19
+      - name: Q+F Talk 20
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Queueing and Performance Models
+    - name: Q+F Session 9
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
       talks:
-      - name: Stationary Analysis of Finite-Capacity M/M/1 Fork-Join Queues
-      - name: The Component Queues Method for Quasi-Birth-Death Process Fitting and Analysis
+      - name: Q+F Talk 21
+      - name: Q+F Talk 22
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Timed Automata and Languages
+    - name: Q+F Session 2
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
       talks:
-      - name: Weighing Timed Regular Languages: The Final Step
-      - name: Witnesses and Counterexamples for Timed Bisimulation
+      - name: Q+F Talk 4
+      - name: Q+F Talk 5
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: Verification Tools
+    - name:  Q+F Session 10
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
       talks:
-      - name: MightyPPL: Towards model checking MTL
-      - name: LF-mc: An Efficient Verifier for Lingua Franca
+      - name: Q+F Talk 23
+      - name: Q+F Talk 24
           - name: Closing
       time_start: '17:30'
       time_end: '17:50'
