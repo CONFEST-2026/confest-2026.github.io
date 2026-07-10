@@ -163,8 +163,8 @@ days:
       time_end: '12:00'
       show_time: true
       talks:
-      - name: Stationary and Transient Bounds for NearlyLumpable or Uncertain Markov Chains
-      - name: Wasserstein error bounds for aggregations ofcontinuous-time Markov chains
+      - name: Stationary and Transient Bounds for Nearly Lumpable or Uncertain Markov Chains
+      - name: Wasserstein error bounds for aggregations of continuous-time Markov chains
       - name: Robust Parameter Learning for Uncertain MDPs
     - name: Lunch
       time_start: '12:00'
