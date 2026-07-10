@@ -150,7 +150,7 @@ days:
       time_start: '9:00'
       time_end: '09:10'
       show_time: true
-    - name: Monitoring of Timed and Quantitative Systems
+    - name: Q+F Session 01: Monitoring of Timed and Quantitative Systems
       time_start: '09:10'
       time_end: '10:10'
       show_time: true
