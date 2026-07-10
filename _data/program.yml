@@ -459,14 +459,14 @@ days:
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name:  Q+F Session 10
+    - name: Q+F Session 10
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
       talks:
       - name: Q+F Talk 23
       - name: Q+F Talk 24
-          - name: Closing
+    - name: Closing
       time_start: '17:30'
       time_end: '17:50'
       show_time: true
