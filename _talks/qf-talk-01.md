@@ -1,5 +1,5 @@
 ---
-name: "Stationary and Transient Bounds for NearlyLumpable or Uncertain Markov Chains"
+name: "Stationary and Transient Bounds for Nearly Lumpable or Uncertain Markov Chains"
 speakers:
   - Peter Buchholz 
 categories:
