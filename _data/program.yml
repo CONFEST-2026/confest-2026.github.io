@@ -189,13 +189,13 @@ days:
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: Q+F Session 4
+    - name: Learning and Quantum Systems
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
       talks:
-      - name: Q+F Talk 8
-      - name: Q+F Talk 9
+      - name: Learning Alternating Real-Time Automata
+      - name: Faster algorithm for achieving minimal-size quantum decision diagrams
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
