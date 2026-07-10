@@ -425,7 +425,7 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Q+F Session 8
+    - name: Dependability and Security Analysis
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
