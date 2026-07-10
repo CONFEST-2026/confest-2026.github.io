@@ -425,14 +425,14 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Dependability and Security Analysis
+    - name: Q+F Session 8
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
       talks:
-      - name: Facing the Core: State-Space Compression of Dynamic Fault Trees via PH-Distributions
-      - name: Adaptive Importance Sampling for Static Fault Trees with Two-State Markovian Components
-      - name: The Cost of Repetition: A Compositional Scalability Model for Attack Trees
+      - name: Q+F Talk 18
+      - name: Q+F Talk 19
+      - name: Q+F Talk 20
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
