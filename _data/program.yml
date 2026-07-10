@@ -430,9 +430,9 @@ days:
       time_end: '12:00'
       show_time: true
       talks:
-      - name: Q+F Talk 18
-      - name: Q+F Talk 19
-      - name: Q+F Talk 20
+      - name: "Facing the Core: State-Space Compression of Dynamic Fault Trees via PH-Distributions"
+      - name: Adaptive Importance Sampling for Static Fault Trees with Two-State Markovian Components
+      - name: "The Cost of Repetition: A Compositional Scalability Model for Attack Trees"
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
@@ -442,8 +442,8 @@ days:
       time_end: '14:30'
       show_time: true
       talks:
-      - name: Q+F Talk 21
-      - name: Q+F Talk 22
+      - name: Stationary Analysis of Finite-Capacity M/M/1 Fork-Join Queues
+      - name: The Component Queues Method for Quasi-Birth-Death Process Fitting and Analysis
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
