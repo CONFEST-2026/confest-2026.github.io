@@ -67,7 +67,7 @@
               </span> {%- include partials/show_room.html -%}
               <span class="ml-1">in session <strong>{{ t.name }}</strong></span>
               <span class="d-none d-sm-inline text-muted">
-                ({{ time_pronoun }}, {%- include partials/show_talk_time.html -%}, {%- include partials/show_talk_duration.html -%})
+                ({{ time_pronoun }}, {%- include partials/show_talk_time.html -%}, {{ session_talks.size }} talks over {{ talk_duration_min }} min)
               </span>
             {%- else -%}
 
