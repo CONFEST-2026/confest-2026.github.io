@@ -6,4 +6,3 @@ subnav: program
 permalink: /program/concur/
 ---
 
-Concur will take place in Room A.
