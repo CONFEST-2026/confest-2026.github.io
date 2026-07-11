@@ -12,7 +12,7 @@ subnav: local
   <h2>Ticket Options</h2>
 
   <div class="grid">
-    <div class="card">
+    <div class="card{% comment %} card--closed{% endcomment %}">
       <h3>Full Ticket Early Registration</h3>
       <p>
         <span class="price">£600</span><br>
