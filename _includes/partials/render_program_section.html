@@ -29,13 +29,17 @@
           <th class="col-space p-0" scope="col"></th>
           {%- for r in d.rooms -%}
             {%- assign room = site.rooms | where: 'name', r.name | first %}
+            {%- assign room_label = r.conference | default: room.name -%}
             <th scope="col" class="text-center" style="width: {{ room_col_width }}; min-width: {{ room_col_width }};">
               {%- if room.hide or site.conference.location.hide -%}
-                {{- room.name -}}
+                {{- room_label -}}
               {%- else -%}
                 <a class="text-reset" href="{{ room.url | prepend: site.baseurl }}">
-                  {{- room.name -}}
+                  {{- room_label -}}
                 </a>
+              {%- endif -%}
+              {%- if r.conference -%}
+                <br><span class="small text-muted font-weight-normal">({{ room.name }})</span>
               {%- endif -%}
             </th>
             {%- unless forloop.last %}

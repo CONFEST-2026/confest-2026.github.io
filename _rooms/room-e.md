@@ -1,6 +1,6 @@
 ---
-name: Room E
-hide: true
+name: G-FLEX
+hide: false
 ---
 
-A short way description on how to find the room
+The G-FLEX can be found on the ground floor, beside the coffee.

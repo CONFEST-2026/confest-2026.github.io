@@ -4,6 +4,7 @@ days:
   date: 2026-09-01
   rooms:
   - name: Room A
+    conference: CONCUR
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -75,6 +76,7 @@ days:
   date: 2026-09-02
   rooms:
   - name: Room A
+    conference: CONCUR
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -141,6 +143,7 @@ days:
       time_end: '18:00'
       show_time: true
   - name: Room B
+    conference: QEST+FORMATS
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -205,6 +208,7 @@ days:
   date: 2026-09-03
   rooms:
   - name: Room A
+    conference: CONCUR
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -256,6 +260,7 @@ days:
       time_end: '21:00'
       show_time: true
   - name: Room B
+    conference: QEST+FORMATS
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -303,7 +308,8 @@ days:
       time_start: '19:00'
       time_end: '21:00'
       show_time: true
-  - name: Room C
+  - name: Room D
+    conference: FMICS
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -353,6 +359,7 @@ days:
   date: 2026-09-04
   rooms:
   - name: Room A
+    conference: CONCUR
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -416,6 +423,7 @@ days:
       time_end: '20:00'
       show_time: true
   - name: Room B
+    conference: QEST+FORMATS
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -475,7 +483,8 @@ days:
       time_start: '18:00'
       time_end: '20:00'
       show_time: true
-  - name: Room C
+  - name: Room D
+    conference: FMICS
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -521,7 +530,8 @@ days:
   abbr: Sat
   date: 2026-09-05
   rooms:
-  - name: Room A
+  - name: Room B
+    conference: EXPRESS/SOS
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -559,7 +569,8 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: Room B
+  - name: Room C
+    conference: SNR
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -597,7 +608,8 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: Room C
+  - name: Room D
+    conference: Trends
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
@@ -635,7 +647,8 @@ days:
       time_start: '16:30'
       time_end: '16:50'
       show_time: true
-  - name: Room D
+  - name: G-FLEX
+    conference: YR-CONCUR
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
