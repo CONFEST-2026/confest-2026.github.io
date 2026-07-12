@@ -361,6 +361,29 @@
 
 <div class="d-md-none">
   {%- for r in d.rooms -%}
+    {%- assign room_conf_category = '' -%}
+    {%- for main_cat in site.conference.talks.main_categories -%}
+      {%- unless main_cat.name == 'Joint' or main_cat.name == 'Invited' or main_cat.name == 'Schedule' or main_cat.name == 'Social' or main_cat.name == 'Test of Time' -%}
+        {%- for t in r.talks -%}
+          {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
+          {%- if t_talk.categories contains main_cat.name -%}
+            {%- assign room_conf_category = main_cat.name -%}
+            {%- break -%}
+          {%- elsif t.talks -%}
+            {%- for sub_t in t.talks -%}
+              {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+              {%- if sub_check.categories contains main_cat.name -%}
+                {%- assign room_conf_category = main_cat.name -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if room_conf_category != '' -%}{%- break -%}{%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endunless -%}
+      {%- if room_conf_category != '' -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+
     {%- assign room_has_entries = false -%}
     {%- for t in r.talks -%}
       {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
@@ -371,6 +394,26 @@
         {%- break -%}
       {%- endif -%}
     {%- endfor -%}
+
+    {%- unless room_has_entries -%}
+      {%- if nbr_rooms > 1 -%}
+        {%- for o in d.rooms -%}
+          {%- unless o.name == r.name -%}
+            {%- for t2 in o.talks -%}
+              {%- assign talk2 = site.talks | where: 'name', t2.name | first -%}
+              {%- assign entry_start_hour = t2.time_start | split: ':' | first | plus: 0 -%}
+              {%- assign entry_start_min = t2.time_start | split: ':' | last | plus: 0 -%}
+              {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+              {%- if talk2.categories contains 'Joint' and talk2.categories contains room_conf_category and entry_start_total >= section_start_total_min and entry_start_total < section_end_total_min -%}
+                {%- assign room_has_entries = true -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endunless -%}
+          {%- if room_has_entries -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endunless -%}
 
     {%- if room_has_entries -%}
       {%- assign room = site.rooms | where: 'name', r.name | first %}
@@ -391,13 +434,69 @@
           <col>
         </colgroup>
         <tbody>
-          {%- for t in r.talks -%}
-            {%- assign talk = site.talks | where: 'name', t.name | first -%}
-            {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
-            {%- assign entry_start_min = t.time_start | split: ':' | last | plus: 0 -%}
-            {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+          {%- for i in (1..nbr_steps) -%}
+            {%- assign current_total_min = i | minus: 1 | times: site.conference.program.time_steps | plus: section_start_total_min -%}
 
-            {%- if entry_start_total >= section_start_total_min and entry_start_total < section_end_total_min -%}
+            {%- assign active_entry = false -%}
+            {%- assign active_room_override = '' -%}
+
+            {%- for t in r.talks -%}
+              {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
+              {%- assign entry_start_min = t.time_start | split: ':' | last | plus: 0 -%}
+              {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+              {%- if entry_start_total == current_total_min -%}
+                {%- assign active_entry = t -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- unless active_entry -%}
+              {%- if nbr_rooms > 1 -%}
+                {%- for o in d.rooms -%}
+                  {%- unless o.name == r.name -%}
+                    {%- for t2 in o.talks -%}
+                      {%- assign talk2 = site.talks | where: 'name', t2.name | first -%}
+                      {%- assign entry_start_hour = t2.time_start | split: ':' | first | plus: 0 -%}
+                      {%- assign entry_start_min = t2.time_start | split: ':' | last | plus: 0 -%}
+                      {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+                      {%- if talk2.categories contains 'Joint' and talk2.categories contains room_conf_category and entry_start_total == current_total_min -%}
+                        {%- assign entry_end_hour = t2.time_end | split: ':' | first | plus: 0 -%}
+                        {%- assign entry_end_min = t2.time_end | split: ':' | last | plus: 0 -%}
+                        {%- assign entry_end_total = entry_end_hour | times: 60 | plus: entry_end_min -%}
+
+                        {%- assign r_has_overlap = false -%}
+                        {%- for t3 in r.talks -%}
+                          {%- assign t3_start_hour = t3.time_start | split: ':' | first | plus: 0 -%}
+                          {%- assign t3_start_min = t3.time_start | split: ':' | last | plus: 0 -%}
+                          {%- assign t3_end_hour = t3.time_end | split: ':' | first | plus: 0 -%}
+                          {%- assign t3_end_min = t3.time_end | split: ':' | last | plus: 0 -%}
+                          {%- assign t3_start_total = t3_start_hour | times: 60 | plus: t3_start_min -%}
+                          {%- assign t3_end_total = t3_end_hour | times: 60 | plus: t3_end_min -%}
+                          {%- if t3_start_total < entry_end_total and t3_end_total > entry_start_total -%}
+                            {%- assign r_has_overlap = true -%}
+                            {%- break -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+
+                        {%- unless r_has_overlap -%}
+                          {%- assign active_entry = t2 -%}
+                          {%- assign active_room_override = t2.room_override | default: o.name -%}
+                          {%- break -%}
+                        {%- endunless -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endunless -%}
+                  {%- if active_entry -%}{%- break -%}{%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+            {%- endunless -%}
+
+            {%- if active_entry -%}
+              {%- assign t = active_entry -%}
+              {%- assign talk = site.talks | where: 'name', t.name | first -%}
+              {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
+              {%- assign entry_start_min = t.time_start | split: ':' | last | plus: 0 -%}
+
               {%- if entry_start_min < 10 -%}
                 {%- assign entry_start_label = entry_start_hour | append: ':0' | append: entry_start_min -%}
               {%- else -%}
@@ -443,7 +542,10 @@
                       {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
                         <p class="font-weight-light mb-2">{%- include partials/list_speakers.html -%}</p>
                         {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
-                          {%- assign entry_room_name = t.room_override | default: r.name -%}
+                          {%- assign entry_room_name = active_room_override -%}
+                          {%- if entry_room_name == '' -%}
+                            {%- assign entry_room_name = t.room_override | default: r.name -%}
+                          {%- endif -%}
                           <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span> <span class="small text-muted">{{ entry_room_name }}</span></p>
                         {%- else -%}
                           <p class="mb-1">{%- include partials/list_sub_categories.html -%}</p>
