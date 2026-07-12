@@ -218,6 +218,7 @@ days:
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
+      room_override: Room A
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'
@@ -369,6 +370,7 @@ days:
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
+      room_override: Room A
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'

@@ -189,7 +189,7 @@
 
                 {%- if shared_joint_active -%}
                   {%- assign shared_joint_name = joint_entry.name -%}
-                  {%- assign shared_joint_room_name = joint_room.name -%}
+                  {%- assign shared_joint_room_name = joint_entry.room_override | default: joint_room.name -%}
                   {%- assign shared_joint_time_start = joint_entry.time_start -%}
                   {%- assign shared_joint_time_end = joint_entry.time_end -%}
                   {%- assign shared_joint_start_total_min = entry_start_total_min -%}
@@ -259,7 +259,7 @@
                 {%- include partials/show_live_button.html -%}
                 <p class="mb-2">{%- include partials/show_talk.html %}</p>
                 <p class="font-weight-light mb-2">{%- include partials/list_speakers.html %}</p>
-                <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span></p>
+                <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span> <span class="small text-muted">{{ shared_joint_room_name }}</span></p>
               </td>
             {%- endif -%}
           {%- else -%}
@@ -443,7 +443,8 @@
                       {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
                         <p class="font-weight-light mb-2">{%- include partials/list_speakers.html -%}</p>
                         {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
-                          <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span></p>
+                          {%- assign entry_room_name = t.room_override | default: r.name -%}
+                          <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span> <span class="small text-muted">{{ entry_room_name }}</span></p>
                         {%- else -%}
                           <p class="mb-1">{%- include partials/list_sub_categories.html -%}</p>
                         {%- endif -%}
