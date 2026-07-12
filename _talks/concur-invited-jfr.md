@@ -1,5 +1,5 @@
 ---
-name: "CONCUR Invited Talk 2"
+name: "An Introduction to Multi-Environment Markov Decision Processes"
 speakers:
   - Jean-François Raskin
 categories:
@@ -7,8 +7,6 @@ categories:
   - Invited
 hide: false
 ---
-
-# An Introduction to Multi-Environment Markov Decision Processes
 
 Markov Decision Processes (MDPs) are the standard model for decision-making
 under stochastic uncertainty. With full observability, reachability, safety and

@@ -10,6 +10,7 @@
   {%- assign show_header = false -%}
 {%- endunless -%}
 
+<div class="d-none d-md-block">
 {%- if show_header -%}
   <div class="sticky-top syncscroll overflow-hidden" name="sync-table">
     <table class="table program-table mb-0 w-100">
@@ -355,4 +356,106 @@
       {%- endfor %}
     </tbody>
   </table>
+</div>
+</div>
+
+<div class="d-md-none">
+  {%- for r in d.rooms -%}
+    {%- assign room_has_entries = false -%}
+    {%- for t in r.talks -%}
+      {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
+      {%- assign entry_start_min = t.time_start | split: ':' | last | plus: 0 -%}
+      {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+      {%- if entry_start_total >= section_start_total_min and entry_start_total < section_end_total_min -%}
+        {%- assign room_has_entries = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if room_has_entries -%}
+      {%- assign room = site.rooms | where: 'name', r.name | first %}
+      {%- assign room_label = r.conference | default: room.name -%}
+      <h5 class="mt-4 mb-2">
+        {%- if room.hide or site.conference.location.hide -%}
+          {{- room_label -}}
+        {%- else -%}
+          <a class="text-reset" href="{{ room.url | prepend: site.baseurl }}">{{- room_label -}}</a>
+        {%- endif -%}
+        {%- if r.conference -%}
+          <span class="small text-muted font-weight-normal"> ({{ room.name }})</span>
+        {%- endif -%}
+      </h5>
+      <table class="table program-table w-100 mb-3">
+        <colgroup>
+          <col style="width: 70px; min-width: 70px;">
+          <col>
+        </colgroup>
+        <tbody>
+          {%- for t in r.talks -%}
+            {%- assign talk = site.talks | where: 'name', t.name | first -%}
+            {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
+            {%- assign entry_start_min = t.time_start | split: ':' | last | plus: 0 -%}
+            {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+
+            {%- if entry_start_total >= section_start_total_min and entry_start_total < section_end_total_min -%}
+              {%- if entry_start_min < 10 -%}
+                {%- assign entry_start_label = entry_start_hour | append: ':0' | append: entry_start_min -%}
+              {%- else -%}
+                {%- assign entry_start_label = entry_start_hour | append: ':' | append: entry_start_min -%}
+              {%- endif -%}
+
+              {%- if t.talks -%}
+                {%- assign first_sub_t = t.talks | first -%}
+                {%- assign talk = site.talks | where: 'name', first_sub_t.name | first -%}
+              {%- endif -%}
+              {%- include partials/get_main_category.html -%}
+
+              <tr>
+                <th scope="row" class="col-title text-right align-top pt-2">
+                  {%- if t.show_time -%}{{ entry_start_label }}{%- endif -%}
+                </th>
+                <td class="align-top p-1">
+                  <div class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden mb-0 p-2">
+                    {%- if t.talks -%}
+                      <p class="mb-1 font-weight-bold small">{{ t.name }}</p>
+                      <div class="d-flex flex-column" style="gap: 5px;">
+                        {%- for sub_t in t.talks -%}
+                          {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
+                          <div style="background: rgba(255,255,255,0.35); border-radius: 3px; padding: 4px 6px;">
+                            <div class="small">
+                              {%- if sub_obj and sub_obj.hide != true -%}
+                                <a class="text-reset" href="{{ sub_obj.url | prepend: site.baseurl }}">{{- sub_t.name -}}</a>
+                              {%- else -%}
+                                {{- sub_t.name -}}
+                              {%- endif -%}
+                            </div>
+                            {%- if sub_obj -%}
+                              {%- assign talk = sub_obj -%}
+                              <div class="small font-weight-light">{%- include partials/list_speakers.html -%}</div>
+                            {%- endif -%}
+                          </div>
+                        {%- endfor -%}
+                      </div>
+                    {%- else -%}
+                      {%- assign live_button_styleclass = "mb-2" -%}
+                      {%- include partials/show_live_button.html -%}
+                      <p class="mb-2">{%- include partials/show_talk.html -%}</p>
+                      {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
+                        <p class="font-weight-light mb-2">{%- include partials/list_speakers.html -%}</p>
+                        {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
+                          <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span></p>
+                        {%- else -%}
+                          <p class="mb-1">{%- include partials/list_sub_categories.html -%}</p>
+                        {%- endif -%}
+                      {%- endunless -%}
+                    {%- endif -%}
+                  </div>
+                </td>
+              </tr>
+            {%- endif -%}
+          {%- endfor -%}
+        </tbody>
+      </table>
+    {%- endif -%}
+  {%- endfor -%}
 </div>
