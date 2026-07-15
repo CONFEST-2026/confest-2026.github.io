@@ -76,6 +76,9 @@ In order to book please proceed to registration here:
 <p class="text-center">
         <a href="https://payments.liv.ac.uk/conferences-and-events/events-at-liverpool/computer-science" class="btn btn-secondary">Start CONFEST registration</a>
 </p>
+
+Registration enquiries should be sent to [confest2026@liverpool.ac.uk](mailto:confest2026@liverpool.ac.uk).
+
 ---
 
 ## Travel Funding support
