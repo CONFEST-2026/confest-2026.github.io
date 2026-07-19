@@ -18,51 +18,68 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Session 1
+    - name: CONCUR Session 1&nbsp;&nbsp;-&nbsp;&nbsp;Stochastic Games & MDPs I
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
       talks:
-      - name: CONCUR Talk 1
-      - name: CONCUR Talk 2
-      - name: CONCUR Talk 3
-      - name: CONCUR Talk 4
+      - name: Asymmetrically-Discounted Stochastic Games
+        authors: "Sarvin Bahmani, Soumyajit Paul, Sven Schewe, Shadi Tasdighi Kalat and Ashutosh Trivedi"
+      - name: Probabilistic Model Checking via Families of Deterministic and Unambiguous Finite Automata
+        authors: "Christel Baier, Sascha Klüppelholz and Timm Spork"
+      - name: "Positional Determinacy with Colored Vertices: a 1-to-2-Player Lift"
+        authors: "Raphaël Berthon and Stéphane Le Roux"
+      - name: Mean-Payoff-Parity and Lifting Strategies from MDPs to 2-Player Stochastic Games
+        authors: "Richard Mayr and Mohan Sai Teja Dantam"
+
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Session 2
+    - name: CONCUR Session 2&nbsp;&nbsp;-&nbsp;&nbsp;Stochastic Games & MDPs II
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
       talks:
-      - name: CONCUR Talk 5
-      - name: CONCUR Talk 6
-      - name: CONCUR Talk 7
+      - name: "Generalized Bidding Games: Where Bidding and Stochastic Games Meet"
+        authors: "Ali Asadi, Thomas A. Henzinger, Ehsan Kafshdar Goharshady, Pavol Kebis and Kaushik Mallik"
+      - name: Sure-almost-sure and Sure-limit-sure Window Mean Payoff in Markov Decision Processes
+        authors: "Pranshu Gaba and Shibashis Guha"
+      - name: "PAC Learning in Turn-Based Stochastic Games with Reachability Objectives: A Decentralized Private Approach via Expected Conditional Distance"
+        authors: "Ali Asadi, Krishnendu Chatterjee and Pavol Kebis"
+
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: CONCUR Session 3
+    - name: CONCUR Session 3&nbsp;&nbsp;-&nbsp;&nbsp;Behavioural Metrics
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
       talks:
-      - name: CONCUR Talk 8
-      - name: CONCUR Talk 9
-      - name: CONCUR Talk 10
+      - name: Threshold-Based Behavioural Distances
+        authors: "Jonas Forster, Lutz Schröder, Paul Wild, Barbara König and Pedro Nora"
+      - name: On the Continuity of the Probabilistic Bisimilarity Distance
+        authors: "Syyeda Zainab Fatmi, Stefan Kiefer, David Parker and Franck van Breugel"
+      - name: On the Complexity of Robust Markov Decision Processes and Bisimulation Metrics
+        authors: "Marnix Suilen and Guillermo Perez"
+
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: CONCUR Session 4
+    - name: CONCUR Session 4&nbsp;&nbsp;-&nbsp;&nbsp;(Bi)Simulations
       time_start: '16:30'
       time_end: '17:40'
       show_time: true
       talks:
-      - name: CONCUR Talk 11
-      - name: CONCUR Talk 12
-      - name: CONCUR Talk 13
+      - name: "Revisiting True Concurrency Bisimilarities: On the Role of Backward Ready Multisets and Why They Are Not Enough for HPB and HHPB"
+        authors: "Andrea Esposito and Marco Bernardo"
+      - name: Wheeler Bisimulations
+        authors: "Nicola Cotumaccio"
+      - name: Minimal and Canonical Quotients for Simulation Equivalences
+        authors: "Eduardo Costa Martins and Tim Willemse"
+
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
@@ -82,39 +99,52 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: CONCUR Session 5
+    - name: CONCUR Session 5&nbsp;&nbsp;-&nbsp;&nbsp;Vector Addidtion Systems
       time_start: '9:00'
       time_end: '10:10'
       show_time: true
       talks:
-      - name: CONCUR Talk 14
-      - name: CONCUR Talk 15
-      - name: CONCUR Talk 16
+      - name: Monadic Presburger Predicates have Robust Population Protocols
+        authors: "Philipp Czerner, Javier Esparza, Vincent Fischer, Roland Guttenberg, Julian Pins and Simon Reilich"
+      - name: Reachability in Fixed-Dimensional Continuous VASS
+        authors: "Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski"
+      - name: Improving Reachability in Vector Addition Systems through Pumpability
+        authors: "Weijun Chen, Yuxi Fu and Yangluo Zheng"
+
     - name: Coffee Break
       time_start: '10:10'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Session 6
+    - name: CONCUR Session 6&nbsp;&nbsp;-&nbsp;&nbsp;Concurrency and Verification
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
       talks:
-      - name: CONCUR Talk 17
-      - name: CONCUR Talk 18
-      - name: CONCUR Talk 19
-      - name: CONCUR Talk 20
+      - name: Prophecy-Based Automated Verification of Message-Passing Programs
+        authors: "Takashi Nagatomi, Musashi Katsura, Naoki Kobayashi, Yusuke Matsushita and Ken Sakayori"
+      - name: An MSO Framework for Weak-Memory Verification and Robustness
+        authors: "Giovanna Kobus Conrado and Andreas Pavlogiannis"
+      - name: "when Behaviours Have to Happen: An Axiomatic Model of Causality in Behaviour-Oriented Concurrency"
+        authors: "Luke Cheeseman, Elias Castegren, Tobias Wrigstad, Sophia Drossopoulou and Matthew Parkinson"
+      - name: On the Encodability of Reversible Process Calculi
+        authors: "Ivan Lanese, Claudio Antares Mezzina, Iain Phillips, Irek Ulidowski and Shoji Yuen"
+
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Session 7
+    - name: CONCUR Session 7&nbsp;&nbsp;-&nbsp;&nbsp;Timed Systems
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
       talks:
-      - name: CONCUR Talk 21
-      - name: CONCUR Talk 22
-      - name: CONCUR Talk 23
+      - name: Reaching as Cheap as Possible in 1-clock Robust Weighted Timed Games
+        authors: "Nathalie Bertrand, Maëlle Gautrin and Julie Parreaux"
+      - name: Buffered control for opacity in timed automata
+        authors: "Étienne André, Sarah Dépernet and Engel Lefaucheux"
+      - name: Positional Properties in Temporal Logic
+        authors: "Jessica Newman and Benjamin Plummer"
+
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -130,14 +160,18 @@ days:
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: CONCUR Session 8
+    - name: CONCUR Session 8&nbsp;&nbsp;-&nbsp;&nbsp;Higher Dimensional Automata and Semantics
       time_start: '16:30'
       time_end: '17:40'
       show_time: true
       talks:
-      - name: CONCUR Talk 24
-      - name: CONCUR Talk 25
-      - name: CONCUR Talk 26
+      - name: Bisimulations and Modal Logics for Higher Dimensional Automata
+        authors: "Safa Zouari, Rob van Glabbeek and Krzysztof Ziemianski"
+      - name: Algebraic Characterization of FO-definable Languages of Higher-Dimensional Automata
+        authors: "Enzo Erlich, Jérémy Ledent and Krzysztof Ziemiański"
+      - name: "Concurrent Visibility: higher-order concurrency with first-order store"
+        authors: "Iwan Quémerais, Guilhème Jaber, Ken Sakayori and Davide Sangiorgi"
+
     - name: Closing
       time_start: '17:40'
       time_end: '18:00'
@@ -223,27 +257,36 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Session 9
+    - name: CONCUR Session 9&nbsp;&nbsp;-&nbsp;&nbsp;Algebraic Methods
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
       talks:
-      - name: CONCUR Talk 27
-      - name: CONCUR Talk 28
-      - name: CONCUR Talk 29
-      - name: CONCUR Talk 30
+      - name: Compositionality in Coalgebraic Trace Semantics
+        authors: "Robin Jourde, Henning Urbat, Sergey Goncharov, Stelios Tsampas and Jonas Forster"
+      - name: GKAT with Hoare Hypotheses
+        authors: "Jurriaan Rot, Todd Schmid and Jana Wagemaker"
+      - name: Continuous Algebras with Hypotheses
+        authors: "Lukas Mulder, Damien Pous and Jana Wagemaker"
+      - name: Coinductive reasoning for parametrized functors and monads
+        authors: "Ugo Dal Lago and Zeinab Galal"
+
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Session 10
+    - name: CONCUR Session 10&nbsp;&nbsp;-&nbsp;&nbsp;Parameterised Verification
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
       talks:
-      - name: CONCUR Talk 31
-      - name: CONCUR Talk 32
-      - name: CONCUR Talk 33
+      - name: "WinPop: Making populations win together"
+        authors: "Nathalie Bertrand, Patricia Bouyer, Luc Lapointe and Corto Mascle"
+      - name: Parameterized Verification of Asynchronous Round-Based Distributed Algorithms via Reduction to Finite-Counter Systems
+        authors: "Nathalie Bertrand, Pranav Ghorpade and Sasha Rubin"
+      - name: On parameterized verification over tree topologies
+        authors: "Romain Delpy, Anca Muscholl and Grégoire Sutre"
+
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -375,27 +418,36 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Session 11
+    - name: CONCUR Session 11&nbsp;&nbsp;-&nbsp;&nbsp;Quantitative Verification and Automata
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
       talks:
-      - name: CONCUR Talk 34
-      - name: CONCUR Talk 35
-      - name: CONCUR Talk 36
-      - name: CONCUR Talk 37
+      - name: Monitoring Discounted Sum Properties
+        authors: "Filip Cano, Thomas Henzinger, Konstantin Kueffner and Ege Saraç"
+      - name: Completeness for Probabilistic Boolean Tapes
+        authors: "Filippo Bonchi and Cipriano Junior Cioffo"
+      - name: Graded Semantics of Nominal Systems
+        authors: "Hannes Schulze, Lutz Schröder and Üsame Cengiz"
+      - name: Complementing Emerson-Lei Elevator Automata
+        authors: "Ondrej Alexaj, Vojtěch Havlena, Ondřej Lengál, Yong Li and Nicolas Mazzocchi"
+
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Session 12
+    - name: CONCUR Session 12&nbsp;&nbsp;-&nbsp;&nbsp;Decompositions and Weighted Automata
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
       talks:
-      - name: CONCUR Talk 38
-      - name: CONCUR Talk 39
-      - name: CONCUR Talk 40
+      - name: Decomposition of Automata recognizing Ideals
+        authors: "Mathias Berry, Ismaël Jecker and Pierre-Cyrille Héam"
+      - name: A Factorization Theorem for Forest Algebras
+        authors: "Shaull Almagor, Michaël Cadilhac and Asaf Shoham"
+      - name: Representing One Letter Weighted Automata Over the Tropical Semiring
+        authors: "Shaull Almagor, Ismaël Jecker, Filip Mazowiecki, Łukasz Orlikowski, David Purser and Henry Sinclair-Banks"
+
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -408,14 +460,18 @@ days:
       time_start: '16:10'
       time_end: '16:30'
       show_time: true
-    - name: CONCUR Session 13
+    - name: CONCUR Session 13&nbsp;&nbsp;-&nbsp;&nbsp;Partial Observation
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
       talks:
-      - name: CONCUR Talk 41
-      - name: CONCUR Talk 42
-      - name: CONCUR Talk 43
+      - name: Active Diagnosis with Costs and Rewards
+        authors: "Serge Haddad, Engel Lefaucheux and Stefan Schwoon"
+      - name: Classification under uncertainty
+        authors: "Ofer Leshkowitz and Orna Kupferman"
+      - name: From Coalgebraic Determinization to Belief Construction for Partial Observability
+        authors: "Mayuko Kori and Kazuki Watanabe"
+
     - name: Closing
       time_start: '17:30'
       time_end: '17:50'
