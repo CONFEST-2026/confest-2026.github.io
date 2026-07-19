@@ -429,8 +429,8 @@ days:
         authors: "Filippo Bonchi and Cipriano Junior Cioffo"
       - name: Graded Semantics of Nominal Systems
         authors: "Hannes Schulze, Lutz Schröder and Üsame Cengiz"
-      - name: Complementing Emerson-Lei Elevator Automata
-        authors: "Ondrej Alexaj, Vojtěch Havlena, Ondřej Lengál, Yong Li and Nicolas Mazzocchi"
+      - name: Representing One Letter Weighted Automata Over the Tropical Semiring
+        authors: "Shaull Almagor, Ismaël Jecker, Filip Mazowiecki, Łukasz Orlikowski, David Purser and Henry Sinclair-Banks"
 
     - name: Lunch
       time_start: '12:00'
@@ -445,8 +445,8 @@ days:
         authors: "Mathias Berry, Ismaël Jecker and Pierre-Cyrille Héam"
       - name: A Factorization Theorem for Forest Algebras
         authors: "Shaull Almagor, Michaël Cadilhac and Asaf Shoham"
-      - name: Representing One Letter Weighted Automata Over the Tropical Semiring
-        authors: "Shaull Almagor, Ismaël Jecker, Filip Mazowiecki, Łukasz Orlikowski, David Purser and Henry Sinclair-Banks"
+      - name: Complementing Emerson-Lei Elevator Automata
+        authors: "Ondrej Alexaj, Vojtěch Havlena, Ondřej Lengál, Yong Li and Nicolas Mazzocchi"
 
     - name: Coffee Break
       time_start: '14:40'
