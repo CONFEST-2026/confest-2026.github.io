@@ -101,7 +101,7 @@ days:
       show_time: true
     - name: CONCUR Session 5&nbsp;&nbsp;-&nbsp;&nbsp;Vector Addition Systems
       time_start: '9:00'
-      time_end: '10:00'
+      time_end: '10:10'
       show_time: true
       talks:
       - name: Reachability in Fixed-Dimensional Continuous VASS
@@ -112,7 +112,7 @@ days:
         authors: "Weijun Chen, Yuxi Fu and Yangluo Zheng"
 
     - name: Coffee Break
-      time_start: '10:00'
+      time_start: '10:10'
       time_end: '10:30'
       show_time: true
     - name: CONCUR Session 6&nbsp;&nbsp;-&nbsp;&nbsp;Concurrency and Verification
