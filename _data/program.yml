@@ -104,10 +104,10 @@ days:
       time_end: '10:10'
       show_time: true
       talks:
-      - name: Monadic Presburger Predicates have Robust Population Protocols
-        authors: "Philipp Czerner, Javier Esparza, Vincent Fischer, Roland Guttenberg, Julian Pins and Simon Reilich"
       - name: Reachability in Fixed-Dimensional Continuous VASS
         authors: "Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski"
+      - name: Monadic Presburger Predicates have Robust Population Protocols
+        authors: "Philipp Czerner, Javier Esparza, Vincent Fischer, Roland Guttenberg, Julian Pins and Simon Reilich"
       - name: Improving Reachability in Vector Addition Systems through Pumpability
         authors: "Weijun Chen, Yuxi Fu and Yangluo Zheng"
 
