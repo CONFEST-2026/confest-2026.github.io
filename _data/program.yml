@@ -99,7 +99,7 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: CONCUR Session 5&nbsp;&nbsp;-&nbsp;&nbsp;Vector Addidtion Systems
+    - name: CONCUR Session 5&nbsp;&nbsp;-&nbsp;&nbsp;Vector Addition Systems
       time_start: '9:00'
       time_end: '10:10'
       show_time: true
@@ -133,7 +133,7 @@ days:
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Session 7&nbsp;&nbsp;-&nbsp;&nbsp;Timed Systems
+    - name: CONCUR Session 7&nbsp;&nbsp;-&nbsp;&nbsp;Time
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
@@ -418,7 +418,7 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: CONCUR Session 11&nbsp;&nbsp;-&nbsp;&nbsp;Quantitative Verification and Automata
+    - name: CONCUR Session 11&nbsp;&nbsp;-&nbsp;&nbsp;Quantitative Verification
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
@@ -436,7 +436,7 @@ days:
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: CONCUR Session 12&nbsp;&nbsp;-&nbsp;&nbsp;Decompositions and Weighted Automata
+    - name: CONCUR Session 12&nbsp;&nbsp;-&nbsp;&nbsp;Automata and Decompositions
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
