@@ -96,7 +96,8 @@ conference:
         # submenus specified in _data/submenu/workshops.yml
       - name: Local Info
         relative_url: /local/
-
+      - name: Program
+        relative_url: /program/
       - name: Registration
         relative_url: /registration/
         visible: false
