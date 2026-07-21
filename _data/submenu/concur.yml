@@ -9,3 +9,5 @@ submenu:
     relative_url: /concur/accepted-papers
   - name: Past Editions
     relative_url: /concur/past-editions
+  - name: Program
+    relative_url: /program/concur
