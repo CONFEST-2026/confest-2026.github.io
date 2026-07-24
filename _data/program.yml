@@ -80,10 +80,6 @@ days:
       - name: Minimal and Canonical Quotients for Simulation Equivalences
         authors: "Eduardo Costa Martins and Tim Willemse"
 
-    - name: Closing
-      time_start: '17:40'
-      time_end: '18:00'
-      show_time: true
     - name: Reception
       time_start: '18:00'
       time_end: '20:00'
@@ -172,10 +168,6 @@ days:
       - name: "Concurrent Visibility: higher-order concurrency with first-order store"
         authors: "Iwan Quémerais, Guilhème Jaber, Ken Sakayori and Davide Sangiorgi"
 
-    - name: Closing
-      time_start: '17:40'
-      time_end: '18:00'
-      show_time: true
   - name: Room B
     conference: QEST+FORMATS
     talks:
@@ -233,10 +225,6 @@ days:
       talks:
       - name: Learning Alternating Real-Time Automata
       - name: Faster algorithm for achieving minimal-size quantum decision diagrams
-    - name: Closing
-      time_start: '17:40'
-      time_end: '18:00'
-      show_time: true
 - name: Thursday
   abbr: Thu
   date: 2026-09-03
@@ -295,10 +283,6 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
-    - name: Closing
-      time_start: '16:10'
-      time_end: '16:30'
-      show_time: true
     - name: Boat Tour / Dinner (Time TBC)
       time_start: '19:00'
       time_end: '21:00'
@@ -344,10 +328,6 @@ days:
       talks:
       - name: Scalable Reachability Analysis of Linear Continuous Systems with Property-Driven Time-Step Adaptation
       - name: Stability Checking of Markov Jump Linear Systems via Probabilistic Temporal Logic
-    - name: Closing
-      time_start: '16:10'
-      time_end: '16:30'
-      show_time: true
     - name: Boat Tour / Dinner (Time TBC)
       time_start: '19:00'
       time_end: '21:00'
@@ -390,10 +370,6 @@ days:
       talks:
       - name: Reasoning about concurrent loops and recursion with rely-guarantee rules
       - name: "Consistency proofs for axiomatic extensions: translating VerCors's Axiomatic Data Types into Isabelle"
-    - name: Closing
-      time_start: '16:10'
-      time_end: '16:30'
-      show_time: true
     - name: Boat Tour / Dinner (Time TBC)
       time_start: '19:00'
       time_end: '21:00'
@@ -472,10 +448,6 @@ days:
       - name: From Coalgebraic Determinization to Belief Construction for Partial Observability
         authors: "Mayuko Kori and Kazuki Watanabe"
 
-    - name: Closing
-      time_start: '17:30'
-      time_end: '17:50'
-      show_time: true
     - name: Football
       time_start: '18:00'
       time_end: '20:00'
@@ -533,10 +505,6 @@ days:
       - name: "MightyPPL: Towards model checking MTL"
       - name: "LF-mc: An Efficient Verifier for Lingua Franca"
       - name: "StochasticBarrier.jl: A Toolbox for Stochastic Barrier Function Synthesis"
-    - name: Closing
-      time_start: '17:30'
-      time_end: '17:50'
-      show_time: true
     - name: Football
       time_start: '18:00'
       time_end: '20:00'
@@ -623,10 +591,6 @@ days:
       time_start: '15:00'
       time_end: '16:30'
       show_time: true
-    - name: Closing
-      time_start: '16:30'
-      time_end: '16:50'
-      show_time: true
   - name: Room C
     conference: SNR
     talks:
@@ -661,10 +625,6 @@ days:
     - name: SNR Workshop Session 4
       time_start: '15:00'
       time_end: '16:30'
-      show_time: true
-    - name: Closing
-      time_start: '16:30'
-      time_end: '16:50'
       show_time: true
   - name: Room D
     conference: Trends
@@ -701,10 +661,6 @@ days:
       time_start: '15:00'
       time_end: '16:30'
       show_time: true
-    - name: Closing
-      time_start: '16:30'
-      time_end: '16:50'
-      show_time: true
   - name: G-FLEX
     conference: YR-CONCUR
     talks:
@@ -739,8 +695,4 @@ days:
     - name: YR-CONCUR Workshop Session 4
       time_start: '15:00'
       time_end: '16:30'
-      show_time: true
-    - name: Closing
-      time_start: '16:30'
-      time_end: '16:50'
       show_time: true
