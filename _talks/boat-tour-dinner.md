@@ -1,5 +1,5 @@
 ---
-name: "Boat Tour / Dinner (Time TBC)"
+name: "Boat Tour / Dinner (Boarding at 7:15pm)"
 categories:
   - Social
 hide: false

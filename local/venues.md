@@ -101,7 +101,7 @@ herobackground: white
         <p>
           Hosts:
           <ul>
-            <li>All talks  (conferences and workshops)</li>
+            <li><a href="/program/">All talks</a>  (conferences and workshops)</li>
             <li>Lunches</li>
             <li>Coffee breaks</li>
           </ul>
@@ -154,7 +154,7 @@ herobackground: white
           Hosts: <a href="/local/social#cruise">Dinner and Cruise (Thursday)</a>
         </p>
         <p>
-          Boarding instructions for the Social Cruise will be made available closer to the event.
+          Boarding instructions can be found on the <a href="/local/social">social activities</a> page.
         </p>
         <p>
           Map links: 
@@ -201,9 +201,9 @@ herobackground: white
   <div class="card ">
     <div class="card-inner">
       <div class="card-content">
-        <h3>On Campus Accommodation</h3>
+        <h3>On-Campus Accommodation</h3>
         <p>
-          Crown place accommodation is directly adjacent to the talks venue.
+          Crown place student halls are directly adjacent to the talks venue.
         </p>
         <p>
           For more information see <a href="/local/accommodation">our accommodation page</a>.
