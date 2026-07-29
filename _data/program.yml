@@ -283,7 +283,7 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
-    - name: Boat Tour / Dinner (Time TBC)
+    - name: Boat Tour / Dinner (Boarding at 7:15pm)
       time_start: '19:00'
       time_end: '21:00'
       show_time: true
@@ -328,7 +328,7 @@ days:
       talks:
       - name: Scalable Reachability Analysis of Linear Continuous Systems with Property-Driven Time-Step Adaptation
       - name: Stability Checking of Markov Jump Linear Systems via Probabilistic Temporal Logic
-    - name: Boat Tour / Dinner (Time TBC)
+    - name: Boat Tour / Dinner (Boarding at 7:15pm)
       time_start: '19:00'
       time_end: '21:00'
       show_time: true
@@ -370,7 +370,7 @@ days:
       talks:
       - name: Reasoning about concurrent loops and recursion with rely-guarantee rules
       - name: "Consistency proofs for axiomatic extensions: translating VerCors's Axiomatic Data Types into Isabelle"
-    - name: Boat Tour / Dinner (Time TBC)
+    - name: Boat Tour / Dinner (Boarding at 7:15pm)
       time_start: '19:00'
       time_end: '21:00'
       show_time: true
