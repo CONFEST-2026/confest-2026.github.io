@@ -16,7 +16,7 @@ subnav: local
       <h3>Full Ticket Early Registration</h3>
       <p>
         <span class="price">£600</span><br>
-        <span class="availableuntil">Available until: 31 July 2026</span>
+        <span class="availableuntil">Available until: 31 July 2026<br><span style="font-size: x-small;">Update: kept open until midnight Sunday UK Time</span></span>
       </p>
       <ul>
         <li>Access to all conferences and workshops, 1-5 September 2026</li>
@@ -38,8 +38,15 @@ subnav: local
       <ul>
         <li>Access to all conferences and workshops, 1-5 September 2026</li>
         <li>Lunch and coffee breaks included</li>
-        <li>Social activities are subject to availability and cannot be guaranteed</li>
         <li>Additional social cruise add-on not available</li>
+      </ul>
+      Until August 10:
+      <ul>
+        <li>Social activities included</li>
+      </ul>
+      After August 10:
+      <ul>
+        <li>Social activities cannot be guaranteed</li>
       </ul>
     </div>
     <div class="card">
