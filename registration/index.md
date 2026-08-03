@@ -16,7 +16,7 @@ subnav: local
       <h3>Full Ticket Early Registration</h3>
       <p>
         <span class="price">£600</span><br>
-        <span class="availableuntil">Available until: 31 July 2026<br><span style="font-size: x-small;">Update: kept open until midnight Sunday UK Time</span></span>
+        <span class="availableuntil">Available until: 31 July 2026</span>
       </p>
       <ul>
         <li>Access to all conferences and workshops, 1-5 September 2026</li>
