@@ -16,19 +16,16 @@ subnav: local
         venue to the ferry terminal for the dinner on Thursday will take around 30 minutes.
       </p>
     </div>
-
     <div class="card">
       <h3>Buses</h3>
       <p>
         Local buses connect the city and campus. All buses accept contactless payment
         when boarding.
       </p>
-
       <div class="highlight">
         Flat fare: <strong>£2 per journey</strong>
       </div>
     </div>
-
     <div class="card">
       <h3>Bike & e-scooter</h3>
       <p>
@@ -39,6 +36,51 @@ subnav: local
         <a href="https://bolt.eu/en/cities/liverpool/">Bolt in Liverpool</a>
       </p>
     </div>
+  </div>
+<p>
+  For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
+</p>
+</section>
+
+
+
+<section class="section">
+  <h2>Luggage Storage</h2>
+
+  <div class="card">
+    <p>
+      The main venue (Central Teaching Hub) has free lockers which can be used to store luggage if travelling directly to/from the venue up to cabin size trolley bags. Larger items left at owners risk. 
+    </p>
+  </div>
+</section>
+
+
+<section class="section">
+  <h2>WiFi</h2>
+
+  <div class="card">
+    <p>
+      All campus venues are equipped with Eduroam. Guest wifi logins will also be available at the registration desk in case you do not have Eduroam.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Crown Place Accommodation Information</h2>
+
+  <div class="card">
+    <p>
+      If you have booked <a href="/local/accommodation">on-campus accommodation</a> please note:
+    </p>
+    <ul>
+      <li>
+        Your bedroom is a single en-suite bedroom. Bed linen and towels are provided in bedrooms. Tea/coffee facilities, iron and ironing boards will be located in communal lounge areas located on each corridor. Hairdryers can be requested at reception.
+      </li>
+      <li>The full address is: Crown Place Residences, 200 Brownlow Hill, Liverpool, L3 5UE</li>
+      <li>Check in time from 4.00pm, collect your keys from the Reception at the accommodation. A luggage room will be available for early arrivals</li>
+      <li>Check out time is 9.30am. A Luggage room will be available.</li>
+    </ul>
+    <span class="text-muted">On-campus accommodation booking is closed, please check our <a href="/local/accommodation">accommodation page</a> for nearby hotels.</span>
   </div>
 </section>
 
