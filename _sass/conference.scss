@@ -949,7 +949,7 @@ a.email{
       z-index: 2;
       pointer-events: none;
       background:
-        linear-gradient(to bottom right, transparent calc(50% - 3px), rgba(90,90,90,0.35) calc(50% - 3px), rgba(90,90,90,0.35) calc(50% + 3px), transparent calc(50% + 3px)),
+        linear-gradient(to bottom right, transparent calc(50% - 3px), rgba(90,90,90,0.1) calc(50% - 3px), rgba(90,90,90,0.1) calc(50% + 3px), transparent calc(50% + 3px)),
     }
   }
 

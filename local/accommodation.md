@@ -37,12 +37,14 @@ located right next to the venue.
           <li>Single en-suite rooms</li>
           <li>Breakfast included, 7.30am - 9am (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum)</li>
           <li>Access to shared kitchen facilities</li>
-          <li class="availableuntil">Bookings close on Monday 3rd August 2026 at 5pm UK Time</li>
+          <li class="availableuntil">Bookings <strong>closed</strong> on Monday 3rd August 2026 at 5pm UK Time</li>
         </ul>
       </div>
 
-      <p class="text-right">
+      <p class="text-right">{% comment %}
         <a href="https://payments.liv.ac.uk/conferences-and-events/residential-sport-commercial-services/conference-office/confest-accommodation" class="btn btn-secondary">Book here</a>
+        {% endcomment %}
+        <span class="text-muted">Sorry on-campus accommodation booking is now closed.</span>
       </p>
       </div>
 
