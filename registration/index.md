@@ -12,7 +12,7 @@ subnav: local
   <h2>Ticket Options</h2>
 
   <div class="grid">
-    <div class="card{% comment %} card--closed{% endcomment %}">
+    <div class="card card--closed">
       <h3>Full Ticket Early Registration</h3>
       <p>
         <span class="price">£600</span><br>
@@ -28,6 +28,8 @@ subnav: local
         Additional Social Cruise Ticket add-on: <span class="price">£75</span><br>
         <span class="small">For additional guests, one ticket already included.</span>
       </p>
+      <div class="divider"></div>
+      <span class="text-muted">Sorry early registration is now closed.</span>
     </div>
     <div class="card">
       <h3>Full Ticket Late Registration</h3>
