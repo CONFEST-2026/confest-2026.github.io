@@ -14,6 +14,7 @@ days:
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
+      session_chair: 'Patrick Totzke'
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'
@@ -22,6 +23,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: 'Patrick Totzke'
       talks:
       - name: Asymmetrically-Discounted Stochastic Games
         authors: "Sarvin Bahmani, Soumyajit Paul, Sven Schewe, Shadi Tasdighi Kalat and Ashutosh Trivedi"
@@ -40,6 +42,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
+      session_chair: ''
       talks:
       - name: "Generalized Bidding Games: Where Bidding and Stochastic Games Meet"
         authors: "Ali Asadi, Thomas A. Henzinger, Ehsan Kafshdar Goharshady, Pavol Kebis and Kaushik Mallik"
@@ -56,6 +59,7 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
+      session_chair: ''
       talks:
       - name: Threshold-Based Behavioural Distances
         authors: "Jonas Forster, Lutz Schröder, Paul Wild, Barbara König and Pedro Nora"
@@ -72,6 +76,7 @@ days:
       time_start: '16:30'
       time_end: '17:40'
       show_time: true
+      session_chair: 'Rob van Glabbeek'
       talks:
       - name: "Revisiting True Concurrency Bisimilarities: On the Role of Backward Ready Multisets and Why They Are Not Enough for HPB and HHPB"
         authors: "Andrea Esposito and Marco Bernardo"
@@ -99,6 +104,7 @@ days:
       time_start: '09:00'
       time_end: '10:10'
       show_time: true
+      session_chair: ''
       talks:
       - name: Reachability in Fixed-Dimensional Continuous VASS
         authors: "Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski"
@@ -115,6 +121,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: Prophecy-Based Automated Verification of Message-Passing Programs
         authors: "Takashi Nagatomi, Musashi Katsura, Naoki Kobayashi, Yusuke Matsushita and Ken Sakayori"
@@ -133,6 +140,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
+      session_chair: ''
       talks:
       - name: Reaching as Cheap as Possible in 1-clock Robust Weighted Timed Games
         authors: "Nathalie Bertrand, Maëlle Gautrin and Julie Parreaux"
@@ -149,6 +157,7 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
+      session_chair: 'Wan Fokkink'
       talks:
       - name: A New Type System for Deadlock-Free Processes
       - name: Strategy Logic
@@ -160,6 +169,7 @@ days:
       time_start: '16:30'
       time_end: '17:40'
       show_time: true
+      session_chair: ''
       talks:
       - name: Bisimulations and Modal Logics for Higher Dimensional Automata
         authors: "Safa Zouari, Rob van Glabbeek and Krzysztof Ziemianski"
@@ -179,10 +189,12 @@ days:
       time_start: '09:00'
       time_end: '09:10'
       show_time: true
+      session_chair: ''
     - name: Monitoring of Timed and Quantitative Systems
       time_start: '09:10'
       time_end: '10:10'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '10:10'
       time_end: '10:30'
@@ -191,6 +203,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: Stationary and Transient Bounds for Nearly Lumpable or Uncertain Markov Chains
       - name: Wasserstein error bounds for aggregations of continuous-time Markov chains
@@ -203,6 +216,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -211,6 +225,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: State-Space Abstractions for Parametric Timed Games
       - name: Verification of parametric Markov Automata under time-bounded reachability
@@ -222,6 +237,7 @@ days:
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
+      session_chair: ''
       talks:
       - name: Learning Alternating Real-Time Automata
       - name: Faster algorithm for achieving minimal-size quantum decision diagrams
@@ -240,6 +256,7 @@ days:
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
+      session_chair: ''
       room_override: Room A
     - name: Coffee Break
       time_start: '10:00'
@@ -249,6 +266,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: Compositionality in Coalgebraic Trace Semantics
         authors: "Robin Jourde, Henning Urbat, Sergey Goncharov, Stelios Tsampas and Jonas Forster"
@@ -267,6 +285,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
+      session_chair: ''
       talks:
       - name: "WinPop: Making populations win together"
         authors: "Nathalie Bertrand, Patricia Bouyer, Luc Lapointe and Corto Mascle"
@@ -283,6 +302,7 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
+      session_chair: ''
     - name: Boat Tour / Dinner (Boarding at 7:15pm)
       time_start: '19:00'
       time_end: '21:00'
@@ -302,6 +322,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: Multi-Objective Statistical Model Checking using Lightweight Strategy Sampling
       - name: Effective Stochastic Automata Model Checking by Interval Abstraction
@@ -314,6 +335,7 @@ days:
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
+      session_chair: ''
       talks:
       - name: Exact Evaluation of Probabilistic Programs with Cylindrical Algebraic Decomposition
       - name: Algebraic Robust Semantics for Signal Temporal Logic with Graph Operators
@@ -325,6 +347,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: Scalable Reachability Analysis of Linear Continuous Systems with Property-Driven Time-Step Adaptation
       - name: Stability Checking of Markov Jump Linear Systems via Probabilistic Temporal Logic
@@ -347,6 +370,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: "Industrial Adoption of Formal Methods: An Industry Perspective on the Transition to SPARK for Security Critical Firmware Development"
       - name: A Formally Verified N-Dimensional Safety Shield for Autonomous Systems
@@ -359,6 +383,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -367,6 +392,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: Reasoning about concurrent loops and recursion with rely-guarantee rules
       - name: "Consistency proofs for axiomatic extensions: translating VerCors's Axiomatic Data Types into Isabelle"
@@ -389,6 +415,7 @@ days:
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
+      session_chair: 'Ana Sokolova'
       room_override: Room A
     - name: Coffee Break
       time_start: '10:00'
@@ -398,6 +425,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: Monitoring Discounted Sum Properties
         authors: "Filip Cano, Thomas Henzinger, Konstantin Kueffner and Ege Saraç"
@@ -416,6 +444,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
+      session_chair: 'Anca Mussholl'
       talks:
       - name: Decomposition of Automata recognizing Ideals
         authors: "Mathias Berry, Ismaël Jecker and Pierre-Cyrille Héam"
@@ -432,6 +461,7 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
@@ -440,6 +470,7 @@ days:
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
+      session_chair: ''
       talks:
       - name: Active Diagnosis with Costs and Rewards
         authors: "Serge Haddad, Engel Lefaucheux and Stefan Schwoon"
@@ -466,6 +497,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: '' # Anca
       talks:
       - name: "Facing the Core: State-Space Compression of Dynamic Fault Trees via PH-Distributions"
       - name: Adaptive Importance Sampling for Static Fault Trees with Two-State Markovian Components
@@ -478,6 +510,7 @@ days:
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
+      session_chair: ''
       talks:
       - name: Stationary Analysis of Finite-Capacity M/M/1 Fork-Join Queues
       - name: The Component Queues Method for Quasi-Birth-Death Process Fitting and Analysis
@@ -489,6 +522,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: "Weighing Timed Regular Languages: The Final Step"
       - name: Witnesses and Counterexamples for Timed Bisimulation
@@ -500,6 +534,7 @@ days:
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
+      session_chair: ''
       talks:
       - name: "MightyPPL: Towards model checking MTL"
       - name: "LF-mc: An Efficient Verifier for Lingua Franca"
@@ -523,6 +558,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
       talks:
       - name: "Exploiting the Layout of a Railway Interlocking System for Path Reliability Evaluation"
       - name: "Lazy Three-Way Model Merging in Cinco Cloud: A Lattice-Theoretic Approach"
@@ -535,6 +571,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -543,6 +580,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'

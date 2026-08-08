@@ -305,6 +305,9 @@
                     <td rowspan="{{ talk_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden p-0" style="z-index: {{ z-index-max | minus: i }}; width: {{ room_col_width }}; min-width: {{ room_col_width }}; position: relative;">
                       <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; padding: 0.4rem 0.5rem;">
                         <p class="mb-1 font-weight-bold small" style="flex-shrink: 0;">{{ t.name }}</p>
+                        {%- if t.session_chair and t.session_chair != '' -%}
+                          <p class="mb-1 small" style="flex-shrink: 0;">Session chair: {{ t.session_chair }}</p>
+                        {%- endif -%}
                         <div style="display: flex; flex-direction: column; flex: 1; gap: 3px; min-height: 0;">
                           {%- for sub_t in t.talks -%}
                             {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
@@ -331,6 +334,9 @@
                       {%- assign live_button_styleclass = "mb-2" %}
                       {%- include partials/show_live_button.html %}
                       <p class="mb-2">{%- include partials/show_talk.html %}</p>
+                      {%- if t.session_chair and t.session_chair != '' -%}
+                        <p class="mb-2 small">Session chair: {{ t.session_chair }}</p>
+                      {%- endif -%}
                       {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
                         <p class="font-weight-light mb-2">{%- include partials/list_speakers.html %}</p>
                         {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
@@ -519,6 +525,9 @@
                   <div class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden mb-0 p-2">
                     {%- if t.talks -%}
                       <p class="mb-1 font-weight-bold small">{{ t.name }}</p>
+                      {%- if t.session_chair and t.session_chair != '' -%}
+                        <p class="mb-1 small">Session chair: {{ t.session_chair }}</p>
+                      {%- endif -%}
                       <div class="d-flex flex-column" style="gap: 5px;">
                         {%- for sub_t in t.talks -%}
                           {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
@@ -541,6 +550,9 @@
                       {%- assign live_button_styleclass = "mb-2" -%}
                       {%- include partials/show_live_button.html -%}
                       <p class="mb-2">{%- include partials/show_talk.html -%}</p>
+                      {%- if t.session_chair and t.session_chair != '' -%}
+                        <p class="mb-2 small">Session chair: {{ t.session_chair }}</p>
+                      {%- endif -%}
                       {%- unless talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
                         <p class="font-weight-light mb-2">{%- include partials/list_speakers.html -%}</p>
                         {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
