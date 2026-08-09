@@ -23,7 +23,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: 'Patrick Totzke'
+      session_chair: ''
       talks:
       - name: Asymmetrically-Discounted Stochastic Games
         authors: "Sarvin Bahmani, Soumyajit Paul, Sven Schewe, Shadi Tasdighi Kalat and Ashutosh Trivedi"
@@ -121,7 +121,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Jérémy Ledent'
       talks:
       - name: Prophecy-Based Automated Verification of Message-Passing Programs
         authors: "Takashi Nagatomi, Musashi Katsura, Naoki Kobayashi, Yusuke Matsushita and Ken Sakayori"
@@ -256,7 +256,7 @@ days:
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Max Tschaikowski'
       room_override: Room A
     - name: Coffee Break
       time_start: '10:00'
@@ -266,7 +266,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Lutz Schröder'
       talks:
       - name: Compositionality in Coalgebraic Trace Semantics
         authors: "Robin Jourde, Henning Urbat, Sergey Goncharov, Stelios Tsampas and Jonas Forster"
@@ -444,7 +444,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
-      session_chair: 'Anca Mussholl'
+      session_chair: 'Anca Muscholl'
       talks:
       - name: Decomposition of Automata recognizing Ideals
         authors: "Mathias Berry, Ismaël Jecker and Pierre-Cyrille Héam"
@@ -522,7 +522,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Lutz Schröder'
       talks:
       - name: "Weighing Timed Regular Languages: The Final Step"
       - name: Witnesses and Counterexamples for Timed Bisimulation
