@@ -38,7 +38,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 <tbody>
 <tr>
   <td colspan="4" class="actual concur">CONCUR</td>
-  <td rowspan="4" class="actual workshops">Workshops</td>
+  <td rowspan="4" class="actual workshops"><span class="workshops-label"><span>Work</span><span>shops</span></span></td>
   
 </tr>    
 <tr>

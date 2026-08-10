@@ -792,7 +792,7 @@ a.email{
 
 .overallschedule{
   table-layout: fixed;
-  width: 500px;
+  width: 75%;
   max-width: 100%;
   border-collapse: revert;
   margin:auto
@@ -807,21 +807,25 @@ a.email{
   padding: 5px;
 }
 .overallschedule .concur {
-  background: $mid-blue;
+  background: $maratime-blue;
   color: white;
 }
 .overallschedule .qestformats{
-  background: $maratime-blue;
+  background: $mid-blue;
   color: white;
 }
 .overallschedule .fmics {
   background: $sky-blue;
 }
 .overallschedule .workshops {
-  background: $sub-orange;
+  background: $primary-yellow;
+  text-align: center;
 }
 .overallschedule .events {
   background: $sea-green;
+}
+.overallschedule .workshops-label span {
+  display: inline;
 }
 .overallschedule .weekday .full {
   display: none;
@@ -829,6 +833,11 @@ a.email{
 @media (min-width: 601px) {
   .overallschedule .weekday .abbr { display: none; }
   .overallschedule .weekday .full { display: inline; }
+}
+@media (max-width: 991px) {
+  .overallschedule .workshops-label span {
+    display: block;
+  }
 }
 
 
