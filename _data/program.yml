@@ -511,7 +511,6 @@ days:
       time_end: '14:30'
       show_time: true
       session_chair: ''
-      session_chair: 'Sergey Goncharov'
       talks:
       - name: Stationary Analysis of Finite-Capacity M/M/1 Fork-Join Queues
       - name: The Component Queues Method for Quasi-Birth-Death Process Fitting and Analysis
