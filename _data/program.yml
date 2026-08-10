@@ -474,10 +474,10 @@ days:
       talks:
       - name: Active Diagnosis with Costs and Rewards
         authors: "Serge Haddad, Engel Lefaucheux and Stefan Schwoon"
-      - name: Classification under uncertainty
-        authors: "Ofer Leshkowitz and Orna Kupferman"
       - name: From Coalgebraic Determinization to Belief Construction for Partial Observability
         authors: "Mayuko Kori and Kazuki Watanabe"
+      - name: Classification under uncertainty
+        authors: "Ofer Leshkowitz and Orna Kupferman"
     - name: Football
       time_start: '18:00'
       time_end: '20:00'
