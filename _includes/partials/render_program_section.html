@@ -111,6 +111,7 @@
         {%- assign shared_joint_room_name = '' -%}
         {%- assign shared_joint_time_start = '' -%}
         {%- assign shared_joint_time_end = '' -%}
+        {%- assign shared_joint_session_chair = '' -%}
         {%- assign shared_joint_start_total_min = 0 -%}
         {%- assign shared_joint_end_total_min = 0 -%}
         {%- assign shared_joint_nbr_steps = 0 -%}
@@ -192,6 +193,7 @@
                   {%- assign shared_joint_room_name = joint_entry.room_override | default: joint_room.name -%}
                   {%- assign shared_joint_time_start = joint_entry.time_start -%}
                   {%- assign shared_joint_time_end = joint_entry.time_end -%}
+                  {%- assign shared_joint_session_chair = joint_entry.session_chair -%}
                   {%- assign shared_joint_start_total_min = entry_start_total_min -%}
                   {%- assign shared_joint_end_total_min = entry_end_total_min -%}
                   {%- assign shared_joint_nbr_steps = entry_end_total_min | minus: entry_start_total_min | divided_by: site.conference.program.time_steps -%}
@@ -260,6 +262,9 @@
                 {%- assign live_button_styleclass = "mb-2" -%}
                 {%- include partials/show_live_button.html -%}
                 <p class="mb-2">{%- include partials/show_talk.html %}</p>
+                {%- if shared_joint_session_chair and shared_joint_session_chair != '' -%}
+                  <p class="mb-2 small">Session chair: {{ shared_joint_session_chair }}</p>
+                {%- endif -%}
                 <p class="font-weight-light mb-2">{%- include partials/list_speakers.html %}</p>
                 <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Joint</span> <span class="small text-muted">{{ shared_joint_room_name }}</span></p>
               </td>
