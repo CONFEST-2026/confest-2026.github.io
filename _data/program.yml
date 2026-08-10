@@ -302,7 +302,7 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
-      session_chair: ''
+      session_chair: 'Patrick Totzke'
     - name: Boat Tour / Dinner (Boarding at 7:15pm)
       time_start: '19:00'
       time_end: '21:00'
@@ -461,7 +461,7 @@ days:
       time_start: '15:00'
       time_end: '16:10'
       show_time: true
-      session_chair: 'Sven Schewe'
+      session_chair: 'Ana Sokolova'
     - name: Coffee Break
       time_start: '16:10'
       time_end: '16:30'
