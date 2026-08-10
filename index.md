@@ -8,21 +8,19 @@ heroimage: /assets/images/liverpool-front-white.webp
 
 CONFEST brings together researchers, developers, and students in computer science, in order to advance the theory of concurrency, the study of stochastic and timed systems, and the application of formal methods to industrial systems. 
 
-This umbrella event consists of three main conferences [CONCUR](concur), [FMICS](fmics) and [QEST+FORMATS](https://www.qest-formats.org/), and affiliated workshops.
+This umbrella event consists of three main conferences and affiliated workshops.
 The 2026 edition will take place on the main campus of the University of Liverpool, on **September 1-5, 2026**.  
 
 ---
 ### Main Conferences
 
-**[CONCUR 2026](https://confest-2026.github.io/concur), the 37th International Conference on *Concurrency Theory***
-
-**[FMICS 2026](https://confest-2026.github.io/fmics), the 31st International Conference on *Formal Methods for Industrial Critical Systems***
-
-**[QEST+FORMATS 2026](https://www.qest-formats.org/), the joint International Conference on *Quantitative Evaluation of SysTems and on Formal Modeling and Analysis of Timed Systems***
+- **[CONCUR 2026](https://confest-2026.github.io/concur)**, the 37th International Conference on *Concurrency Theory*
+- **[FMICS 2026](https://confest-2026.github.io/fmics)**, the 31st International Conference on *Formal Methods for Industrial Critical Systems*
+- **[QEST+FORMATS 2026](https://www.qest-formats.org/)**, the joint International Conference on *Quantitative Evaluation of SysTems* and on *Formal Modeling and Analysis of Timed Systems*
 
 ---
 
-##### Schedule
+### Schedule
 
 
 <table class="overallschedule" >
@@ -61,7 +59,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ---
 
-##### Invited Speakers
+### Invited Speakers
 
 {% assign speakers = site.speakers | where: "invited", true | sort_natural: 'last_name' %}
 
@@ -87,7 +85,7 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 
 ---
 
-##### Organisation
+### Organisation
 
 CONFEST 2026 is organised by the [School of Computer Science and Informatics][CSI] at the University of Liverpool.
 
@@ -98,7 +96,7 @@ CONFEST 2026 is organised by the [School of Computer Science and Informatics][CS
 
 ---
 
-##### News
+### News
 
 {% include news.html %}
 
