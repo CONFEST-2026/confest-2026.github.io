@@ -9,7 +9,7 @@ submenu:
     relative_url: /program/q-f
   - name: FMICS
     relative_url: /program/fmics
-  - name: EXPRESS/SOS
+  - name: Express/SOS
     relative_url: /program/express-sos
   - name: SNR
     relative_url: /program/snr
