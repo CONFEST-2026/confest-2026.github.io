@@ -5,6 +5,6 @@ speakers:
   - Dan Frumin
   - Jorge A. Pérez
 categories:
-  - Express/SOS
+  - EXPRESS/SOS
 hide: false
 ---
