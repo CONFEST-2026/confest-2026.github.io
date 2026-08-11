@@ -1,6 +1,6 @@
 ---
 name: G-FLEX
-hide: false
+hide: true
 ---
 
 The G-FLEX can be found on the ground floor, beside the coffee.

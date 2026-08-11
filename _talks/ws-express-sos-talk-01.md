@@ -4,6 +4,5 @@ speakers:
   - Nobuko Yoshida
 categories:
   - Express/SOS
-  - Invited
 hide: false
 ---
