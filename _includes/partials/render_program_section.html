@@ -4,6 +4,12 @@
 {%- assign section_start_total_min = include.section_start_total_min | plus: 0 -%}
 {%- assign section_end_total_min = include.section_end_total_min | plus: 0 -%}
 {%- assign show_header = include.show_header -%}
+{%- assign show_end_time_label = include.show_end_time_label -%}
+{%- if show_end_time_label == true or show_end_time_label == 'true' -%}
+  {%- assign show_end_time_label = true -%}
+{%- else -%}
+  {%- assign show_end_time_label = false -%}
+{%- endif -%}
 {%- unless show_header == false or show_header == 'false' -%}
   {%- assign show_header = true -%}
 {%- else -%}
@@ -68,6 +74,9 @@
     <tbody>
       {%- assign day_duration_min = section_end_total_min | minus: section_start_total_min -%}
       {%- assign nbr_steps = day_duration_min | divided_by: site.conference.program.time_steps -%}
+      {%- if show_end_time_label -%}
+        {%- assign nbr_steps = nbr_steps | plus: 1 -%}
+      {%- endif -%}
       {%- assign z-index-max = 999 -%}
 
       {%- for i in (1..nbr_steps) -%}
@@ -85,6 +94,7 @@
         {%- else -%}
           {%- assign current_time_padded = current_time -%}
         {%- endif -%}
+        {%- assign time_label = current_time -%}
 
         {%- assign show_time_label = false -%}
         {%- for schedule_room in d.rooms -%}
@@ -98,6 +108,16 @@
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
+        {%- if show_end_time_label and current_total_min == section_end_total_min -%}
+          {%- assign show_time_label = true -%}
+          {%- assign end_hour = section_end_total_min | divided_by: 60 | floor -%}
+          {%- assign end_min = section_end_total_min | modulo: 60 -%}
+          {%- if end_min < 10 -%}
+            {%- assign time_label = end_hour | append: ':0' | append: end_min -%}
+          {%- else -%}
+            {%- assign time_label = end_hour | append: ':' | append: end_min -%}
+          {%- endif -%}
+        {%- endif -%}
 
         {%- assign shared_schedule_active = false -%}
         {%- assign shared_schedule_starts_now = false -%}
@@ -236,7 +256,7 @@
         <tr>
           {%- if show_time_label -%}
             <th scope="row" class="col-title text-right" style="z-index: {{ z-index-max }}">
-              {{- current_time -}}
+              {{- time_label -}}
             </th>
           {%- else -%}
             <th scope="row" class="col-title" style="z-index: {{ z-index-max }}"></th>

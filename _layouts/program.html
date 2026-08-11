@@ -87,7 +87,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    {%- include partials/render_program_section.html day=d room_col_width=room_col_width section_start_total_min=full_day_start_total_min section_end_total_min=daytime_end_total_min show_header=true -%}
+    {%- include partials/render_program_section.html day=d room_col_width=room_col_width section_start_total_min=full_day_start_total_min section_end_total_min=daytime_end_total_min show_header=true show_end_time_label=true -%}
 
     {%- if evening_start_total_min != '' and evening_start_total_min < full_day_end_total_min -%}
       {%- include partials/render_program_section.html day=d room_col_width=room_col_width section_start_total_min=evening_start_total_min section_end_total_min=full_day_end_total_min show_header=false -%}
