@@ -104,7 +104,7 @@ days:
       time_start: '09:00'
       time_end: '10:10'
       show_time: true
-      session_chair: ''
+      session_chair: 'Shaull Almagor'
       talks:
       - name: Reachability in Fixed-Dimensional Continuous VASS
         authors: "Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski"
