@@ -611,7 +611,7 @@ days:
       show_time: true
     - name: Express/SOS Workshop Session 1
       time_start: '10:30'
-      time_end: '12:00'
+      time_end: '12:10'
       show_time: true
       session_chair: ''
       talks:
@@ -624,7 +624,7 @@ days:
       - name: Weighted barbed congruence
         authors: "Iwan Quémerais"
     - name: Lunch
-      time_start: '12:00'
+      time_start: '12:10'
       time_end: '13:30'
       show_time: true
     - name: Structural Operational Semantics for String Diagrammatic Languages
