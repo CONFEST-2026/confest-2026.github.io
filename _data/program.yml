@@ -594,7 +594,7 @@ days:
   date: 2026-09-05
   rooms:
   - name: Room B
-    conference: EXPRESS/SOS
+    conference: Express/SOS
     talks:
     - name: Registration & Coffee
       time_start: '08:30'
