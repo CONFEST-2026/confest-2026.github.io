@@ -1,5 +1,5 @@
 ---
-name: "	Deadlock-Free Parallel Regions for Projected Workflows"
+name: "Deadlock-Free Parallel Regions for Projected Workflows"
 speakers:
   - Benedikt Bollig
 categories:
