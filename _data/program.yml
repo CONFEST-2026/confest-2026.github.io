@@ -600,13 +600,11 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: Express/SOS Invited Talk 1
+    - name: Expressiveness, Separation and Complexity Results on Multiparty Session Types
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
       session_chair: ''
-      talks:
-      - name: Expressiveness, Separation and Complexity Results on Multiparty Session Types
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'
@@ -629,13 +627,11 @@ days:
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Express/SOS Invited Talk 2
+    - name: Structural Operational Semantics for String Diagrammatic Languages
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
       session_chair: ''
-      talks:
-      - name: Structural Operational Semantics for String Diagrammatic Languages
     - name: Coffee Break
       time_start: '14:30'
       time_end: '15:00'
