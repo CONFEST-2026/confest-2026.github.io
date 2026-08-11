@@ -179,10 +179,18 @@
       {% assign ending = "FMICS" %}
     {% elsif talk.categories contains 'Q+F' %}
       {% assign ending = "Q+F" %}
+    {% elsif talk.categories contains 'EXPRESS/SOS' %}
+      {% assign ending = "EXPRESS/SOS" %}
+    {% elsif talk.categories contains 'Trends' %}
+      {% assign ending = "Trends" %}
+    {% elsif talk.categories contains 'SNR' %}
+      {% assign ending = "SNR" %}
+    {% elsif talk.categories contains 'YR-Concur' %}
+      {% assign ending = "YR-Concur" %}
     {% else %}
       {% assign ending = "CONCUR" %}
     {% endif %}
-    <a href="/program/{{ending | replace: "+", "-" | downcase}}" class="btn btn-light">
+    <a href="/program/{{ending | replace: "+", "-" | replace: "/", "-" | downcase}}" class="btn btn-light">
       <i class="far fa-calendar-alt"></i>&nbsp; {{ending}} Program
     </a>
 
