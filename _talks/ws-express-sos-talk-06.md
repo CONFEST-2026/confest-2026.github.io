@@ -4,6 +4,5 @@ speakers:
   - Fabio Zanasi
 categories:
   - Express/SOS
-  - Invited
 hide: false
 ---
