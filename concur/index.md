@@ -33,7 +33,7 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 ---
 
 <section markdown=1>
-##### CONCUR Invited Speakers
+### CONCUR Invited Speakers
 
 {% assign speakers_concur = site.speakers | where: "conference", "CONCUR" %}
 {% assign speakers_all = site.speakers | where: "conference", "all" %}
@@ -70,7 +70,7 @@ The 2026 edition will be co-located with QEST+FORMATS, FMICS and a number of wor
 ---
 
 
-##### Test-of-time Awards
+### Test-of-time Awards
 
 This year, **two** papers will receive the CONCUR Test-of-Time Award:
 

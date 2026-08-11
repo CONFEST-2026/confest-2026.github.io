@@ -9,7 +9,7 @@ subnav: concur
 The International Conference on Concurrency Theory (CONCUR) brings together researchers, developers, and students in order to advance the theory of concurrency and promote its applications.
 CONCUR solicits high quality papers reporting research results and/or experience related to semantics, logics, verification and analysis of concurrent systems.
 
-## Important dates
+### Important dates
 
 - Abstracts: 20 April, 2026 (AoE)
 - Submissions: 27 April, 2026 (AoE)
@@ -19,7 +19,7 @@ CONCUR solicits high quality papers reporting research results and/or experience
 - Conference: 1 -- 4 September, 2026
 - Workshops: 5 September, 2026
 
-## Topics
+### Topics
 
 Submissions are solicited in the theory and practice of concurrent systems. The
 principal topics include (but are not limited to):
@@ -53,7 +53,7 @@ communication, shared and transactional memory, resource management and
 awareness, compilers and tools for concurrent programming, programming models
 such as component-based, object- and service-oriented.
 
-## Paper submission
+### Paper submission
 
 - All papers must be original, unpublished, and not submitted for publication elsewhere.
 - Each paper will undergo a thorough review process.
@@ -64,18 +64,18 @@ such as component-based, object- and service-oriented.
 - An appendix may provide additional material and proofs, but should not be expected to be scrutinized by the reviewers and will not be published in the proceedings.
 - PC members are allowed to submit. However, if it gets to a final vote on the last papers to be accepted, then PC-coauthored papers cannot be selected.
 
-## Special Issue
+### Special Issue
 
 A special issue dedicated to selected papers from CONCUR'2026 will appear in
 Logical Methods in Computer Science.
 
-## Awards
+### Awards
 
 There will be a CONCUR Test-of-Time award, Best Paper award, and Best Student Paper award in 2026.
 The winners will be announced at the conference.
 
 
-## Invited Speakers
+### Invited Speakers
 
 - [Jade Alglave](http://www0.cs.ucl.ac.uk/staff/j.alglave/), University College London / Arm, UK
 - [Ezio Bartocci](https://informatics.tuwien.ac.at/people/ezio-bartocci), TU Wien, Austria (Shared CONFEST Keynote)
@@ -83,12 +83,12 @@ The winners will be announced at the conference.
 - [Jean-François Raskin](https://verif.ulb.ac.be/jfr/), Université Libre de Bruxelles, Belgium
 - [Qiyi Tang](https://sites.google.com/view/qiyitang/), University of Liverpool, UK
 
-## Program Committee Chairs
+### Program Committee Chairs
 
 - [Ana Sokolova](https://www.cs.uni-salzburg.at/~anas/), University of Salzburg, Austria
 - [Patrick Totzke](https://cgi.csc.liv.ac.uk/~patrick), University of Liverpool, UK
 
-## Program Committee
+### Program Committee
 
 - [Parosh Abdulla](https://user.it.uu.se/~parosha/), Uppsala University, Sweden
 - [Giorgio Bacci](https://homes.cs.aau.dk/~grbacci/), Aalborg University, Denmark
@@ -128,7 +128,7 @@ The winners will be announced at the conference.
 - [Nisansala Yatapanage](https://yatapanage.com), Australian National University, Australia
 - [Florian Zuleger](https://forsyte.at/people/zuleger), TU Wien, Austria
 
-## Steering Committee
+### Steering Committee
 
 - [Luca Aceto](https://staff.ru.is/luca/), Reykjavik University, Iceland
 - [Christel Baier](https://wwwtcs.inf.tu-dresden.de/~baier/), TU Dresden, Germany
