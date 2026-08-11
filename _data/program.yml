@@ -600,34 +600,56 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: Express/SOS Workshop Session 1
+    - name: Expressiveness, Separation and Complexity Results on Multiparty Session Types
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: Express/SOS Workshop Session 2
+    - name: Express/SOS Workshop Session 1
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: ''
+      talks:
+      - name: On the Expressiveness of Asynchronous Processes with Nested Session Types
+        authors: "Sjors Wortelboer, Dan Frumin and Jorge A. Pérez"
+      - name: The MAY-preorder for timed systems with asynchronous communication
+        authors: "Giovanni Bernardi, Maryline Zhang and Pedro Ribeiro"
+      - name:	Encoding call-by-push-value in the pi-calculus
+        authors: "Hans Hüttel, Nikolaj Kristensen, Benjamin Bennetzen and Peter Steffensen"
+      - name: Weighted barbed congruence
+        authors: "Iwan Quémerais"
     - name: Lunch
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: Express/SOS Workshop Session 3
+    - name: Structural Operational Semantics for String Diagrammatic Languages
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
+      session_chair: ''
     - name: Coffee Break
       time_start: '14:30'
       time_end: '15:00'
       show_time: true
-    - name: Express/SOS Workshop Session 4
+    - name: Express/SOS Workshop Session 2
       time_start: '15:00'
       time_end: '16:30'
       show_time: true
+      session_chair: ''
+      talks:
+      - name:	The Theory of Sequential Value Passing
+        authors: "Eduardo Costa Martins"
+      - name: Deadlock-Free Parallel Regions for Projected Workflows
+        authors: "Benedikt Bollig"
+      - name:	A Formal Comparison of Controllability Definitions for Deterministic and Nondeterministic Automata
+        authors: "Jeroen Keiren and Michel Reniers"
+      - name: Discounted-Sum Automata - Reductions between the Universality Problems
+        authors: "Udi Boker"
   - name: Room C
     conference: SNR
     talks:
