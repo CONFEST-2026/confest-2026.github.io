@@ -3,7 +3,6 @@ name: "Expressiveness, Separation and Complexity Results on Multiparty Session T
 speakers:
   - Nobuko Yoshida
 categories:
-categories:
   - Express/SOS
   - Invited
 hide: false
