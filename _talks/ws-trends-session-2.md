@@ -5,5 +5,5 @@ speakers:
 categories:
   - Trends
   - Invited
-hide: false
+hide: true
 ---
