@@ -29,6 +29,8 @@ subnav: local
         We are happy to offer on campus rooms in the 
         <a href="https://www.liverpool.ac.uk/accommodation/find-accommodation/crown-place/">Crown Place student halls</a>
 located right next to the venue.
+
+        <span style="color: red;">(Sorry on-campus accommodation booking is now closed.)</span>
       </p>
 
       <div class="highlight">
@@ -37,15 +39,14 @@ located right next to the venue.
           <li>Single en-suite rooms</li>
           <li>Breakfast included, 7.30am - 9am (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum)</li>
           <li>Access to shared kitchen facilities</li>
-          <li class="availableuntil">Bookings <strong>closed</strong> on Monday 3rd August 2026 at 5pm UK Time</li>
+          <li>
+            Your bedroom is a single en-suite bedroom. Bed linen and towels are provided in bedrooms. Tea/coffee facilities, iron and ironing boards will be located in communal lounge areas located on each corridor. Hairdryers can be requested at reception.
+          </li>
+          <li>The full address is: Crown Place Residences, 200 Brownlow Hill, Liverpool, L3 5UE</li>
+          <li>Check-in time is from 4.00pm. Collect your keys from Reception at the accommodation. A luggage room will be available for early arrivals.</li>
+          <li>Check-out time is 9.30am. A luggage room will be available.</li>
         </ul>
       </div>
-
-      <p class="text-right">{% comment %}
-        <a href="https://payments.liv.ac.uk/conferences-and-events/residential-sport-commercial-services/conference-office/confest-accommodation" class="btn btn-secondary">Book here</a>
-        {% endcomment %}
-        <span class="text-muted">Sorry on-campus accommodation booking is now closed.</span>
-      </p>
       </div>
 
 
@@ -65,7 +66,7 @@ located right next to the venue.
 - <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
     4*, adjacent to campus, 4 minute walk
   <details class="conference-code">
-  <summary>Conference Discount Code Available <span class="small">(click for more)</span></summary>
+  <summary>Conference Discount Code Available here></summary>
   <p>
   We have agreed rates with Novotel Liverpool Paddington Village: Standard King rooms for single-occupancy with Bed & Breakfast at the following rates.
   <br>
@@ -137,4 +138,3 @@ located right next to the venue.
 
   </div>
 </section>
-
