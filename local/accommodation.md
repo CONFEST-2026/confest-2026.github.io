@@ -66,7 +66,7 @@ located right next to the venue.
 - <a href="https://all.accor.com/hotel/B737/index.en.shtml">Novotel Liverpool Paddington Village</a> <br>
     4*, adjacent to campus, 4 minute walk
   <details class="conference-code">
-  <summary>Conference Discount Code Available here></summary>
+  <summary>Conference Discount Code Available here <span class="small">(click to expand)</span></summary>
   <p>
   We have agreed rates with Novotel Liverpool Paddington Village: Standard King rooms for single-occupancy with Bed & Breakfast at the following rates.
   <br>
