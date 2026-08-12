@@ -9,7 +9,7 @@ hide: false
 ---
 
 Consider a fixed number of disjoint regular languages
-$L_1,\ldots,L_k \subseteq \Sigma^*$. A {\em classifier\/}
+$L_1,\ldots,L_k \subseteq \Sigma^*$. A *classifier*
 for $L_1,\ldots,L_k$ is a transducer that receives each
 moment $t$ in time an input letter $\sigma_t \in \Sigma$
 and outputs an index in $\{1,\ldots,k\}$ such that if the
@@ -28,13 +28,13 @@ of signals. There, the complexity of classification stems
 not only from the languages but also from the presence of
 uncertainty, namely when the valuation to some of the
 signals may not be known.
-We introduce and study {\em classification under
-uncertainty}, where the input words may be partially
+We introduce and study *classification under
+uncertainty*, where the input words may be partially
 observed.
-We consider three sources for uncertainty: (1) {\em Given}:
+We consider three sources for uncertainty: (1) *Given*:
 the input to the problem specifies which signals may be
-sensed after each behavior. (2) {\em Privacy}: the input
+sensed after each behavior. (2) *Privacy*: the input
 includes a list of secret behaviors, and the classifier
 should restrict sensing so that secrets are not revealed.
-(3) {\em Budget}: Sensing of signals incurs a cost, which
+(3) *Budget*: Sensing of signals incurs a cost, which
 the classifier should minimize.

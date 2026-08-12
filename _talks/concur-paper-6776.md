@@ -15,7 +15,7 @@ decompositions of words with respect to morphisms into
 finite semigroups.
 
 We develop an analogue of Simon's theorem for
-\emph{forests} in the setting of forest algebras. In
+*forests* in the setting of forest algebras. In
 contrast with words, this presents a basic difficulty:
 recursively factoring a forest requires keeping track of
 where each subforest ``fits''. This difficulty ripples

@@ -16,7 +16,7 @@ analyzing strategic decision making. In turn-based games,
 two players move a token along the edges of the graph, and
 the right to move the token is determined by the current
 vertex. In traditional bidding games---referred to as
-\textit{pure} bidding games---the right to move the token
+*pure* bidding games---the right to move the token
 is determined at each step through bidding; here we
 consider Richman bidding, where the winning player of a bid
 pays the losing player. The winner is decided based on a
@@ -24,7 +24,7 @@ temporal or quantitative specification evaluated over the
 resulting infinite play.
 
 In this work, we combine turn-based games and pure bidding
-games into \textit{generalized} bidding games, with
+games into *generalized* bidding games, with
 player-1 vertices, player-2 vertices, and bidding vertices.
 This natural and simple generalization of bidding games has
 far-reaching consequences. First, we show that, as a model,
@@ -44,7 +44,7 @@ discounted-sum) specifications. From a computational
 perspective, we establish that generalized bidding games
 with parity and mean-payoff specifications retain the best
 known upper bounds for turn-based games and pure bidding
-games, namely NP$\,\cap\,$coNP.
+games, namely $\mathrm{NP}\cap\mathrm{coNP}$.
 
 Finally, we study a repair problem that asks whether
 bidding vertices can be assigned ``owners'' so as to bring

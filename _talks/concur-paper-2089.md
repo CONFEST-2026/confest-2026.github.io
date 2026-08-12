@@ -18,9 +18,9 @@ control. Results on VASS naturally carry over to VAS, but
 no straightforward improvement is available. In this paper,
 we investigate the reachability problem in VAS in fixed
 dimensions. Based on a pumpability analysis of VAS that
-refines Rackoff's extraction for VASS, we obtain an F_{d-2}
-upper bound for the d-dimensional VAS reachability problem,
-improving the F_d upper bound inherited from the
+refines Rackoff's extraction for VASS, we obtain an
+$F_{d-2}$ upper bound for the $d$-dimensional VAS reachability
+problem, improving the $F_d$ upper bound inherited from the
 d-dimensional VASS reachability problem. Low-dimensional
 VASes are also considered. In particular, we establish a
 PSPACE upper bound for reachability in 4-dimensional VAS

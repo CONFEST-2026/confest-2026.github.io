@@ -12,7 +12,7 @@ hide: false
 ---
 
 A key requirement on any well-behaved process language is
-its \emph{compositionality}: behavioural equivalence of
+its *compositionality*: behavioural equivalence of
 processes should be respected by the constructors of the
 language. Turi and Plotkin's abstract GSOS provides an
 elegant bialgebraic framework for modelling rule formats

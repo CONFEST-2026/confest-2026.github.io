@@ -14,6 +14,6 @@ probabilistic programming. In this paper, we present a
 complete set of axioms for their semantics in terms of
 Markov kernels.
 Our approach is based on two intermediate results:
-completeness for \emph{partial} Boolean circuits and
+completeness for *partial* Boolean circuits and
 completeness for probabilistic Boolean tapes, a
 diagrammatic language for rig categories.

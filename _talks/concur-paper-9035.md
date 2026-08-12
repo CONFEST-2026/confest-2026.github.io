@@ -30,6 +30,7 @@ that determinisation, and even register minimisation (which
 generalises determinisation), is coNP-complete. We complete
 the paper with observations that the boundedness problem is
 also coNP-complete. Lastly, we provide evidence that all of
-these problems are not FPT (by proving coW_1-hardness) when
+these problems are not FPT (by proving
+$\mathrm{coW}_1$-hardness) when
 parametrised by the number of deterministic automata in the
 union.

@@ -19,8 +19,9 @@ algorithm is known for computing such decompositions. In
 this paper, we focus on automata that recognize ideals,
 that is, languages at level 1/2 in the Straubing–Thérien
 hierarchy. Equivalently, these are the languages
-expressible as a finite union of languages of the form A*
-a_1 A* ... A* a_n A* where A is an alphabet and a_i are
+expressible as a finite union of languages of the form
+$A^*a_1A^*\cdots A^*a_nA^*$ where $A$ is an alphabet and
+$a_i$ are
 letters of A. We show that the two problems of deciding
 whether such a language can be decomposed into an
 intersection or a union of smaller automata are decidable

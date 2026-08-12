@@ -17,7 +17,7 @@ alleviate the pervasive computational hardness of
 register-based models in a tradeoff between expressiveness
 and computational tractability. For instance, regular
 nondeterministic nominal automata (RNNAs) correspond, under
-their \emph{local freshness} semantics, to a form of lossy
+their *local freshness* semantics, to a form of lossy
 register automata. Unlike the full register automaton
 model, RNNAs allow for inclusion checking in elementary
 complexity (parametrized PSpace); similarly, trace
