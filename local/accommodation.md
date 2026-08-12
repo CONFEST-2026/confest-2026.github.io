@@ -28,9 +28,9 @@ subnav: local
       <p>
         We are happy to offer on campus rooms in the 
         <a href="https://www.liverpool.ac.uk/accommodation/find-accommodation/crown-place/">Crown Place student halls</a>
-located right next to the venue.
-
-        <span style="color: red;">(Sorry on-campus accommodation booking is now closed.)</span>
+located right next to the venue. <br> 
+        
+        <span style="color: red;">Sorry on-campus accommodation booking <strong>closed</strong> on Monday 3rd August.</span>
       </p>
 
       <div class="highlight">
