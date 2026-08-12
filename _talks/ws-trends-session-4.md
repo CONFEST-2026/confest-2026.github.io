@@ -1,6 +1,9 @@
 ---
-name: "Trends Workshop Session 4"
+name: "Abstract Operational Reasoning"
+speakers:
+  - Henning Urbat
 categories:
   - Trends
-hide: true
+  - Invited
+hide: false
 ---

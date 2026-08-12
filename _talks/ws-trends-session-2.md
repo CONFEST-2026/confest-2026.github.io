@@ -1,6 +1,9 @@
 ---
-name: "Trends Workshop Session 2"
+name: "TBD"
+speakers:
+  - Tatjana Petrov
 categories:
   - Trends
-hide: true
+  - Invited
+hide: false
 ---

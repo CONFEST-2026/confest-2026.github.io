@@ -1,6 +1,9 @@
 ---
-name: "Trends Workshop Session 3"
+name: "Book presentation: Models of Computation based on Automata: Formal Languages and Communicating Processes"
+speakers:
+  - Jos Baeten
 categories:
   - Trends
-hide: true
+  - Invited
+hide: false
 ---
