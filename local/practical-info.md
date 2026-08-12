@@ -148,7 +148,7 @@ subnav: local
       </p>
     </div>
     <div class="card">
-      <h3>Outside</h3>
+      <h3>Off campus</h3>
       <p>
         Restaurants are spread across the city centre, but a few streets have particular concentrations:
       </p>
