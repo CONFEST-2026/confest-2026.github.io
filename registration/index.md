@@ -41,14 +41,7 @@ subnav: local
         <li>Access to all conferences and workshops, 1-5 September 2026</li>
         <li>Lunch and coffee breaks included</li>
         <li>Additional social cruise add-on not available</li>
-      </ul>
-      Until August 10:
-      <ul>
-        <li>Social activities included</li>
-      </ul>
-      After August 10:
-      <ul>
-        <li>Social activities cannot be guaranteed</li>
+        <li>Social activities are likely to be included but cannot be guaranteed</li>
       </ul>
     </div>
     <div class="card">
