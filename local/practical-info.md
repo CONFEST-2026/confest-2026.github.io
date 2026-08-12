@@ -66,6 +66,25 @@ subnav: local
 </section>
 
 <section class="section">
+  <h2>Crown Place Accommodation Information</h2>
+
+  <div class="card">
+    <p>
+      If you have booked <a href="/local/accommodation">on-campus accommodation</a> please note:
+    </p>
+    <ul>
+      <li>
+        Your bedroom is a single en-suite bedroom. Bed linen and towels are provided in bedrooms. Tea/coffee facilities, iron and ironing boards will be located in communal lounge areas located on each corridor. Hairdryers can be requested at reception.
+      </li>
+      <li>The full address is: Crown Place Residences, 200 Brownlow Hill, Liverpool, L3 5UE</li>
+      <li>Check in time from 4.00pm, collect your keys from the Reception at the accommodation. A luggage room will be available for early arrivals</li>
+      <li>Check out time is 9.30am. A Luggage room will be available.</li>
+    </ul>
+    <span class="text-muted">On-campus accommodation booking is closed, please check our <a href="/local/accommodation">accommodation page</a> for nearby hotels.</span>
+  </div>
+</section>
+
+<section class="section">
   <h2>Childcare</h2>
 
   <div class="card">

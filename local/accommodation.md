@@ -39,12 +39,6 @@ located right next to the venue. <br>
           <li>Single en-suite rooms</li>
           <li>Breakfast included, 7.30am - 9am (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum)</li>
           <li>Access to shared kitchen facilities</li>
-          <li>
-            Your bedroom is a single en-suite bedroom. Bed linen and towels are provided in bedrooms. Tea/coffee facilities, iron and ironing boards will be located in communal lounge areas located on each corridor. Hairdryers can be requested at reception.
-          </li>
-          <li>The full address is: Crown Place Residences, 200 Brownlow Hill, Liverpool, L3 5UE</li>
-          <li>Check-in time is from 4.00pm. Collect your keys from Reception at the accommodation. A luggage room will be available for early arrivals.</li>
-          <li>Check-out time is 9.30am. A luggage room will be available.</li>
         </ul>
       </div>
       </div>
