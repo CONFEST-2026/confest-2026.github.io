@@ -2,6 +2,8 @@
 layout: default
 title: Practical Info
 subnav: local
+
+# Note I'm trying to make this into a one stop shop for participants to send to them a few days before the event. So it may repeat content elsewhere (in brief) or point to it.
 ---
 
 <section class="section">
@@ -37,33 +39,73 @@ subnav: local
       </p>
     </div>
   </div>
-<p>
-  For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
-</p>
+  <div class="grid mt-4">
+    <div class="card">
+      <h3>Reaching Liverpool</h3>
+      <p>
+        For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Venues</h3>
+      <p>
+        The main venue and registration desk is the <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8">Central Teaching Hub</a>. For full information on finding the right buildings, please see <a href="/local/venues">venues</a>.
+      </p>
+    </div>
+  </div>
+
 </section>
 
 
 
+  <h2>At the Venue</h2>
 <section class="section">
+<div class="grid">
+  <div class="card">
+
   <h2>Luggage Storage</h2>
-
-  <div class="card">
     <p>
-      The main venue (Central Teaching Hub) has free lockers which can be used to store luggage if travelling directly to/from the venue up to cabin size trolley bags. Larger items left at owners risk. 
+      The main venue (Central Teaching Hub) has free lockers which can be used to store luggage if travelling directly to/from the venue up to cabin size trolley bags. Larger items left at owners' risk. 
     </p>
   </div>
-</section>
-
-
-<section class="section">
+  <div class="card">
   <h2>WiFi</h2>
-
-  <div class="card">
     <p>
-      All campus venues are equipped with Eduroam. Guest wifi logins will also be available at the registration desk in case you do not have Eduroam.
+      Eduroam is available in all campus venues. Guest wifi logins will also be available at the registration desk in case you do not have Eduroam.
     </p>
   </div>
+
+  <div class="card">
+  <h2>What's on?</h2>
+    <p>
+      See the full <a href="/program">conference program</a> and <a href="/local/social">social activities</a>.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Plugs</h3>
+    <p>
+      UK plugs are three pin Type G, 230V.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Emergencies</h3>
+    <ul>
+      <li>999 Police, Fire, Ambulance </li>
+      <li>0151 794 2222  campus support emergency </li>
+      <li>0151 794 3252  campus support non-emergency</li>
+      <li>111 for non-urgent medical advice</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Contact the organisers</h3>
+    <p>
+      <a href="mailto:confest2026@liverpool.ac.uk">confest2026@liverpool.ac.uk</a>
+    </p>
+  </div>
+</div>
 </section>
+
+
 
 <section class="section">
   <h2>Crown Place Accommodation Information</h2>
@@ -81,6 +123,71 @@ subnav: local
       <li>Check out time is 9.30am. A Luggage room will be available.</li>
     </ul>
     <span class="text-muted">On-campus accommodation booking is closed, please check our <a href="/local/accommodation">accommodation page</a> for nearby hotels.</span>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <h2>Food</h2>
+
+ <div class="grid">
+    <div class="card">
+      <h3>At the conference</h3>
+      <p>
+        <strong>Breakfast</strong> is included for those staying in Crown Place accommodation 7.30am - 9am (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum). 
+        <br>
+        Light refreshments are also available for all at the venue from 8:30am each day.
+      </p>
+      <p>
+        <strong>Lunch</strong> The conference includes lunch every day your ticket covers.
+      </p>
+      <p>
+        <strong>Dinner</strong> A <i>light</i> dinner is included at the reception (Tuesday) and a full dinner is included at the social dinner cruise (Thursday).
+      </p>
+    </div>
+    <div class="card">
+      <h3>Outside</h3>
+      <p>
+        Restaurants are spread across the city centre, but a few streets have particular concentrations:
+      </p>
+      <div class="highlight">
+        <ul>
+          <li>
+            Hope Street — adjacent to campus, between the two cathedrals. 
+          </li>
+          <li>
+            Bold Street — independent cafés and restaurants, roughly ten minutes' walk from the venue
+          </li>
+          <li>
+            Royal Albert Dock — on the waterfront, about 25-30 minutes' walk
+          </li>
+          <li>
+            London Road — closer to campus, with a number of good value Middle Eastern and Asian restaurants
+          </li>
+          <li>
+            Chinatown — Berry Street/Nelson Street, just past Bold Street
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <h2>Code of Conduct</h2>
+
+  <div class="card">
+    <p>
+      Participants are reminded that they must conform to the <a href="/local/code-of-conduct">CONFEST code of conduct</a>. 
+    </p>
+    <p>
+      Participants may approach the CONFEST Advocate Daniel Hausmann
+(hausmann(at)liverpool.ac.uk) for confidential advice and support if they encounter any issue.
+    </p>
   </div>
 </section>
 
@@ -103,7 +210,6 @@ subnav: local
       <p>
         The University of Liverpool is committed to ensuring our campus is accessible to all visitors.
       </p>
-
       <div class="highlight">
         <ul>
           <li>
@@ -116,7 +222,6 @@ subnav: local
           </li>
         </ul>
       </div>
-
       <p>
         If you have specific accessibility requirements, please contact <a href="mailto:confest2026@liverpool.ac.uk">confest2026@liverpool.ac.uk</a>.
       </p>
