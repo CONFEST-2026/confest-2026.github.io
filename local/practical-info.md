@@ -54,6 +54,12 @@ subnav: local
         The main venue and registration desk is the <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8">Central Teaching Hub</a>. For full information on finding the right buildings, please see <a href="/local/venues">venues</a>.
       </p>
     </div>
+    <div class="card" markdown=1>
+### Visa & ETA
+You may need a visa (check on the [UK Government website](https://www.gov.uk/check-uk-visa)).
+
+An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <https://www.gov.uk/eta/apply>.
+</div>
   </div>
 
 </section>
@@ -76,7 +82,15 @@ subnav: local
       Eduroam is available in all campus venues. Guest wifi logins will also be available at the registration desk in case you do not have Eduroam.
     </p>
   </div>
-
+  <div class="card">
+    <h3>Slides</h3>
+    <p>
+      If you're speaking at CONFEST we'll collect slides in advance. Please check your email for instructions.
+    </p>
+    <p>
+      Screens are 16:9. PDF Preferred. PPTX, URLs also acceptable.
+    </p>
+  </div>
   <div class="card">
   <h3>What's on?</h3>
     <p>
@@ -121,6 +135,7 @@ subnav: local
       <li><strong>(+44) 151 794 3252</strong> campus support non-emergency</li>
     </ul>
   </div>
+
   <div class="card">
     <h4>Contact the organisers</h4>
     <p>
@@ -180,7 +195,7 @@ subnav: local
       <div class="highlight">
         <ul>
           <li>
-            Hope Street — adjacent to campus, between the two cathedrals. 
+            Hope Street — adjacent to campus, between the two cathedrals 
           </li>
           <li>
             Bold Street — independent cafés and restaurants, roughly ten minutes' walk from the venue
