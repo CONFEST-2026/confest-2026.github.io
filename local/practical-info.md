@@ -71,19 +71,19 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
 <div class="grid">
   <div class="card">
 
-  <h3>Luggage Storage</h3>
+  <h4>Luggage Storage</h4>
     <p>
       The main venue (Central Teaching Hub) has free lockers which can be used to store luggage if travelling directly to/from the venue up to cabin size trolley bags. Larger items left at owners' risk. 
     </p>
   </div>
   <div class="card">
-  <h3>WiFi</h3>
+  <h4>WiFi</h4>
     <p>
       Eduroam is available in all campus venues. Guest wifi logins will also be available at the registration desk in case you do not have Eduroam.
     </p>
   </div>
   <div class="card">
-    <h3>Slides</h3>
+    <h4>Slides</h4>
     <p>
       If you're speaking at CONFEST we'll collect slides in advance. Please check your email for instructions.
     </p>
@@ -92,7 +92,7 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     </p>
   </div>
   <div class="card">
-  <h3>What's on?</h3>
+  <h4>What's on?</h4>
     <p>
       See the full <a href="/program">conference program</a> and <a href="/local/social">social activities</a>.
     </p>
@@ -105,27 +105,6 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     </p>
   </div>
   -->
-  <div class="card">
-    <h4>Accessibility</h4>
-    <p>
-      The University of Liverpool is committed to ensuring our campus is accessible to all visitors.
-    </p>
-    <div class="highlight">
-      <ul>
-        <li>
-          <a href="https://www.liverpool.ac.uk/hr/diversityandequality/campusdisabilityaccess/">Campus Disability Access Support</a><br>
-          General accessibility information and support services
-        </li>
-        <li>
-          <a href="https://www.accessable.co.uk/university-of-liverpool/access-guides/central-teaching-hub#ED00C990-15C4-0D48-8C59-380CDD51A9D9">Central Teaching Hub Accessibility Guide</a><br>
-          Detailed accessibility information for the main conference venue
-        </li>
-      </ul>
-    </div>
-    <p>
-      If you have specific accessibility requirements, please get in touch with the organisers.
-    </p>
-  </div>
   <div class="card">
     <h4>Emergencies</h4>
     <ul>
@@ -145,8 +124,6 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
 </div>
 </section>
 
-
-
 <section class="section">
   <h3>Crown Place Accommodation Information</h3>
 
@@ -164,11 +141,6 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     </ul>
     <span class="text-muted">On-campus accommodation booking is closed, please check our <a href="/local/accommodation">accommodation page</a> for nearby hotels.</span>
   </div>
-</section>
-
-
-
-
 <section class="section">
   <h3>Food</h3>
 
@@ -216,7 +188,6 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
   </div>
 </section>
 
-
 <section class="section">
   <h3>Code of Conduct</h3>
 
@@ -236,6 +207,31 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
       We have a wonderful nursery on campus, only 300m from the main venue!<br>
       <strong><a href="https://www.kidsinbloom.co.uk/kib-university-of-liverpool">Kids in Bloom</a></strong> is located at the University of Liverpool and offers short-term childcare upon request and subject to availability.
       Please contact them directly.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h3>Accessibility</h3>
+
+  <div class="card">
+    <p>
+      The University of Liverpool is committed to ensuring our campus is accessible to all visitors.
+    </p>
+    <div class="highlight">
+      <ul>
+        <li>
+          <a href="https://www.liverpool.ac.uk/hr/diversityandequality/campusdisabilityaccess/">Campus Disability Access Support</a><br>
+          General accessibility information and support services
+        </li>
+        <li>
+          <a href="https://www.accessable.co.uk/university-of-liverpool/access-guides/central-teaching-hub#ED00C990-15C4-0D48-8C59-380CDD51A9D9">Central Teaching Hub Accessibility Guide</a><br>
+          Detailed accessibility information for the main conference venue
+        </li>
+      </ul>
+    </div>
+    <p>
+      If you have specific accessibility requirements, please get in touch with the organisers.
     </p>
   </div>
 </section>
