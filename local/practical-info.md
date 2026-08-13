@@ -193,7 +193,7 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
 
   <div class="card">
     <p>
-      Participants are reminded that they must conform to the <a href="/local/code-of-conduct">CONFEST code of conduct</a> thoughout the event.</br>
+      Participants are reminded that they must conform to the <a href="/local/code-of-conduct">CONFEST code of conduct</a> thoughout the event.<br/>
       You can aproach the CONFEST Advocate <a href="https://www.csc.liv.ac.uk/~hausmann/">Daniel Hausmann</a> for confidential advice and support if you encounter any issue.
     </p>
   </div>
