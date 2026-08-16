@@ -53,7 +53,9 @@ Confest 2026 will host the following workshops on Saturday 5 September 2026:
 
 ### Registration for Workshops
 
-Registration for workshops will be managed through the central CONFEST registration.
+Registration for workshops is managed through the [central CONFEST registration](/registration/). 
+
+Workshops are included in the Full Ticket or a Workshops only ticket is available for £75.
 
 ### Workshop chair
 
