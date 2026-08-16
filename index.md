@@ -35,23 +35,23 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 </thead>
 <tbody>
 <tr>
-  <td colspan="4" class="actual concur">CONCUR</td>
-  <td rowspan="4" class="actual workshops"><span class="workshops-label"><span>Work</span><span>shops</span></span></td>
+  <td colspan="4" class="actual concur"><a href="/program/concur/">CONCUR</a></td>
+  <td rowspan="4" class="actual workshops"><span class="workshops-label"><a href="/program/#sat"><span>Work</span><span>shops</span></a></span></td>
   
 </tr>    
 <tr>
   <td></td>
-  <td colspan="3" class="actual qestformats">QEST+FORMATS</td>
+  <td colspan="3" class="actual qestformats"><a href="/program/q-f/">QEST+FORMATS</a></td>
 </tr>    
 <tr>
   <td></td>
   <td></td>
-  <td colspan="2" class="actual fmics">FMICS</td>
+  <td colspan="2" class="actual fmics"><a href="/program/fmics/">FMICS</a></td>
 </tr>    
 <tr>
-  <td  class="actual events">Evening Reception</td>
+  <td  class="actual events"><a href="/local/social">Evening Reception</a></td>
   <td></td>
-  <td  class="actual events">Social Activity</td>
+  <td  class="actual events"><a href="/local/social">Social Activity</a></td>
   <td></td>
 </tr>
 </tbody>  

@@ -795,7 +795,11 @@ a.email{
   width: 855px;
   max-width: 100%;
   border-collapse: revert;
-  margin:auto
+  margin:auto;
+
+  a {
+    color:black;
+  }
 }
 .overallschedule thead {
   font-style: italic;
@@ -809,10 +813,16 @@ a.email{
 .overallschedule .concur {
   background: $maratime-blue;
   color: white;
+  a {
+    color:white;
+  }
 }
 .overallschedule .qestformats{
   background: $mid-blue;
   color: white;
+    a {
+    color:white;
+  }
 }
 .overallschedule .fmics {
   background: $sky-blue;
