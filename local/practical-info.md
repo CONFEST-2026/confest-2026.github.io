@@ -13,6 +13,26 @@ subnav: local
 
   <div class="grid">
     <div class="card">
+      <h4>Reaching Liverpool</h4>
+      <p>
+        For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
+      </p>
+    </div>
+    <div class="card">
+      <h4>Venues</h4>
+      <p>
+        The main venue and registration desk is the <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8">Central Teaching Hub</a>. For full information on finding the right buildings, please see <a href="/local/venues">venues</a>.
+      </p>
+    </div>
+    <div class="card" markdown=1>
+### Visa & ETA
+You may need a visa (check on the [UK Government website](https://www.gov.uk/check-uk-visa)).
+
+An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <https://www.gov.uk/eta/apply>.
+</div>
+  </div>
+  <div class="grid mt-4">
+    <div class="card">
       <h4>Walking</h4>
       <p>
         The University of Liverpool campus is within easy walking distance
@@ -40,26 +60,6 @@ subnav: local
         <a href="https://bolt.eu/en/cities/liverpool/">Bolt in Liverpool</a>
       </p>
     </div>
-  </div>
-  <div class="grid mt-4">
-    <div class="card">
-      <h4>Reaching Liverpool</h4>
-      <p>
-        For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
-      </p>
-    </div>
-    <div class="card">
-      <h4>Venues</h4>
-      <p>
-        The main venue and registration desk is the <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8">Central Teaching Hub</a>. For full information on finding the right buildings, please see <a href="/local/venues">venues</a>.
-      </p>
-    </div>
-    <div class="card" markdown=1>
-### Visa & ETA
-You may need a visa (check on the [UK Government website](https://www.gov.uk/check-uk-visa)).
-
-An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <https://www.gov.uk/eta/apply>.
-</div>
   </div>
 
 </section>
@@ -162,7 +162,7 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     <div class="card">
       <h4>Off campus</h4>
       <p>
-        Restaurants are spread across the city centre, but a few streets have particular concentrations:
+        Restaurants are spread across the city centre, but a few streets have particular concentrations: (see also Points of Interest below)
       </p>
       <div class="highlight">
         <ul>
@@ -187,6 +187,17 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     </div>
   </div>
 </section>
+
+
+<section class="section">
+  <h3>Point of Interest</h3>
+
+  <div class="card" style="padding:0;">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJbTjcJHfE&ehbc=2E312F&noprof=1" style="width:100%;border: none; border-radius: .05rem;" height="600"></iframe>
+  </div>
+</section>
+
+
 
 <section class="section">
   <h3>Code of Conduct</h3>
