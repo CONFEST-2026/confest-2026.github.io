@@ -42,7 +42,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
-      session_chair: ''
+      session_chair: 'Nathalie Bertrand'
       talks:
       - name: "Generalized Bidding Games: Where Bidding and Stochastic Games Meet"
         authors: "Ali Asadi, Thomas A. Henzinger, Ehsan Kafshdar Goharshady, Pavol Kebis and Kaushik Mallik"
