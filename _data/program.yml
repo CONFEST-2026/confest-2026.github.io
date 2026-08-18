@@ -140,7 +140,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
-      session_chair: ''
+      session_chair: 'Tom Henzinger'
       talks:
       - name: Reaching as Cheap as Possible in 1-clock Robust Weighted Timed Games
         authors: "Nathalie Bertrand, Maëlle Gautrin and Julie Parreaux"
