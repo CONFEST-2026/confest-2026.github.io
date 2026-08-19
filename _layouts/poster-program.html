@@ -385,6 +385,7 @@ html, body {
 {%- endcomment -%}
 {%- assign boundary_str = '' -%}
 {%- assign span_str = ',' -%}
+{%- assign tick_str = ',' -%}
 {%- for d in site.data.program.days -%}
   {%- assign day_has_conf = false -%}
   {%- for room_schedule in d.rooms -%}
@@ -436,6 +437,14 @@ html, body {
                     {%- unless talk.categories contains 'Social' -%}
                       {%- assign boundary_str = boundary_str | append: t.time_start | append: ',' | append: t.time_end | append: ',' -%}
                       {%- assign span_str = span_str | append: t.time_start | append: '>' | append: t.time_end | append: ',' -%}
+                      {%- comment -%}
+                        Only these times get a label on the axis.  Coffee breaks
+                        carry their own time in the cell instead, which keeps the
+                        column down to the talks, lunch and registration.
+                      {%- endcomment -%}
+                      {%- unless t.name contains 'Coffee Break' -%}
+                        {%- assign tick_str = tick_str | append: t.time_start | append: ',' -%}
+                      {%- endunless -%}
                     {%- endunless -%}
                     {%- assign cell_rendered = true -%}
                     {%- break -%}
@@ -528,12 +537,16 @@ html, body {
   <div id="grid" style="grid-template-columns: max-content repeat({{ nbr_day_cols }}, minmax(0, 1fr)); grid-template-rows: max-content{{ row_defs }} max-content;">
 
     {%- comment -%}
-      The shared time axis.  The very last line - the time the talks finish - is
-      not labelled: nothing starts there.
+      The shared time axis.  Only lines where a talk, lunch or registration
+      starts are labelled: the last line (nothing starts when the talks finish)
+      and the coffee breaks are left off, the latter carrying their own time.
     {%- endcomment -%}
     {%- for b in boundaries -%}
       {%- unless forloop.last -%}
-        <div class="tick" style="grid-row: {{ forloop.index | plus: 1 }} / {{ forloop.index | plus: 2 }};">{{ b }}</div>
+        {%- assign tick_key = ',' | append: b | append: ',' -%}
+        {%- if tick_str contains tick_key -%}
+          <div class="tick" style="grid-row: {{ forloop.index | plus: 1 }} / {{ forloop.index | plus: 2 }};">{{ b }}</div>
+        {%- endif -%}
       {%- endunless -%}
     {%- endfor -%}
 
@@ -661,10 +674,13 @@ html, body {
                   {%- unless t.talks -%}
                     {%- if talk.categories contains 'Schedule' -%}{%- assign is_break = true -%}{%- endif -%}
                   {%- endunless -%}
+                  {%- comment -%} coffee breaks are off the axis, so they say their own time {%- endcomment -%}
+                  {%- assign shows_own_time = is_social -%}
+                  {%- if t.name contains 'Coffee Break' -%}{%- assign shows_own_time = true -%}{%- endif -%}
 
                   <div class="slot c-{{ talk_color }}{% if is_break or is_social %} compact{% endif %}{% if is_social %} social{% endif %}"
                        style="grid-column: {{ day_col }}; grid-row: {{ row_start }} / {{ row_end }};">
-                    {%- if is_social -%}<span class="tlocal">{{ t.time_start }}</span>{%- endif -%}
+                    {%- if shows_own_time -%}<span class="tlocal">{{ t.time_start }}</span>{%- endif -%}
                     <div class="stitle">{{ t.name }}</div>
 
                     {%- if t.talks -%}
