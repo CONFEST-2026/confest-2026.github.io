@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec *)",
+      "Bash(/usr/bin/grep -i \"error\\\\|liquid\")",
+      "Bash(/usr/bin/head -5)",
+      "Bash(/usr/bin/python3 -)"
+    ]
+  }
+}

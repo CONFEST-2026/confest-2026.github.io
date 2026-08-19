@@ -7,7 +7,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:300,400,600,700&display=swap" />
 <style>
 /* ------------------------------------------------------------------ *
- * Poster version of the conference program.                          *
+ * Poster version of the conference program, for printing and hanging *
+ * on a wall.                                                         *
+ *                                                                    *
+ * The days share one time axis: every start/end time in the program  *
+ * becomes a grid line, so anything happening at the same time lines  *
+ * up across the days and two sessions with the same start and end    *
+ * come out the same size.  Row heights follow their content, not     *
+ * their duration, so a 90 minute lunch is still a single strip.      *
+ *                                                                    *
  * Self-contained: no site stylesheet, no navbar, no footer.          *
  * Palette mirrors _sass/conference.scss (Bootstrap alert levels).    *
  * ------------------------------------------------------------------ */
@@ -118,17 +126,26 @@ html, body {
 }
 .poster-head .meta strong { font-weight: 600; color: var(--deep-blue); }
 
-/* --- day columns ------------------------------------------------------ */
-#grid {
+/* --- the aligned grid ------------------------------------------------- *
+ * Column 1 is the shared time axis, then one column per day.  Row 1 is
+ * the day headers, then one row per interval between two consecutive
+ * times in the program.  Column gaps only: the vertical separation comes
+ * from the slots' own margin, so that empty intervals cost nothing.      */
+#gridwrap {
   flex: 1 1 auto;
   min-height: 0;
-  display: grid;
-  grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr));
-  gap: 4mm;
-  align-items: start;
+  overflow: hidden;
 }
-.day { min-width: 0; }
+/* The grid is sized by its rows, not by the space available: that is what the
+   auto-fit script measures to choose the text size. */
+#grid {
+  display: grid;
+  column-gap: 4mm;
+  row-gap: 0;
+}
 .day-head {
+  grid-row: 1;
+  flex-wrap: wrap;
   background: var(--deep-blue);
   color: var(--yellow);
   padding: 1.4mm 2.5mm;
@@ -138,32 +155,44 @@ html, body {
   align-items: baseline;
   justify-content: space-between;
   gap: 2mm;
+  min-width: 0;
 }
 .day-head .dname { font-size: 1.45em; font-weight: 700; line-height: 1.1; }
 .day-head .ddate { font-size: .95em; font-weight: 300; color: #fff; opacity: .85; white-space: nowrap; }
 
+/* time axis */
+.tick {
+  grid-column: 1;
+  justify-self: end;
+  align-self: start;
+  font-size: .95em;
+  font-weight: 600;
+  color: var(--mid-blue);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  line-height: 1.1;
+  padding-right: .8mm;
+}
+
 /* --- slots ------------------------------------------------------------ */
 .slot {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
   background: var(--bg);
   color: var(--fg);
   border-left: 1.2mm solid var(--st);
   border-radius: .8mm;
-  padding: 1.4mm 2mm;
-  margin-bottom: 1.6mm;
+  padding: 1.2mm 2mm;
+  margin-bottom: 1.4mm;
   overflow-wrap: break-word;
   word-break: normal;
   hyphens: auto;
 }
-.slot .time {
-  font-size: .92em;
-  font-weight: 600;
-  opacity: .75;
-  font-variant-numeric: tabular-nums;
-}
 .slot .stitle {
+  flex: 0 0 auto;
   font-weight: 700;
   font-size: 1.06em;
-  margin-top: .1em;
 }
 .slot .speakers {
   font-weight: 300;
@@ -181,30 +210,50 @@ html, body {
   margin-right: 1mm;
 }
 
-/* grouped sessions: one box per paper, all names fully visible */
-.subs { margin-top: 1mm; }
+/* grouped sessions: one box per paper, all names fully visible.  The boxes
+   share whatever height is left in the session block, so they fill it out. */
+.subs {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 1mm;
+  display: flex;
+  flex-direction: column;
+  gap: 1mm;
+}
 .sub {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #ffffff8c;
   border-radius: .6mm;
   padding: .9mm 1.4mm;
-  margin-top: 1mm;
 }
 .sub .t { font-size: .97em; }
 .sub .a { font-size: .88em; font-weight: 300; opacity: .85; margin-top: .05em; }
 
-/* breaks / meals: compact single strip - this is what removes the big
-   empty gaps of the time-proportional web layout */
+/* breaks / meals: a single strip, however long they actually last */
 .slot.compact {
-  display: flex;
-  align-items: baseline;
-  gap: 2mm;
+  flex-direction: row;
+  align-items: center;
   padding: .7mm 2mm;
 }
-.slot.compact .time { flex: 0 0 auto; }
+/* the title has to be shrinkable here, or a long name runs out of the strip */
 .slot.compact .stitle {
+  flex: 1 1 auto;
+  min-width: 0;
   font-weight: 600;
   font-size: 1em;
-  margin-top: 0;
+}
+
+/* social events: off the time axis, so they carry their own time */
+.slot.social { margin-top: 1.6mm; }
+.slot .tlocal {
+  flex: 0 0 auto;
+  margin-right: 2mm;
+  font-weight: 600;
+  opacity: .75;
+  font-variant-numeric: tabular-nums;
 }
 
 /* --- legend ----------------------------------------------------------- */
@@ -326,6 +375,119 @@ html, body {
 {%- assign nbr_steps = conf_end_total_min | minus: conf_start_total_min | divided_by: site.conference.program.time_steps -%}
 {%- assign used_legend_cats = '' -%}
 
+{%- comment -%}
+  ---- pass 1: collect the grid lines --------------------------------------
+  Every start and end time of an entry that this conference shows becomes a
+  horizontal grid line.  The entries are picked with exactly the same rule as
+  the rendering pass below (first match across the day's rooms, walking the
+  time steps), so a room that loses a clash cannot contribute a stray line.
+  Times are zero padded in program.yml, so a plain sort puts them in order.
+{%- endcomment -%}
+{%- assign boundary_str = '' -%}
+{%- assign span_str = ',' -%}
+{%- for d in site.data.program.days -%}
+  {%- assign day_has_conf = false -%}
+  {%- for room_schedule in d.rooms -%}
+    {%- for t in room_schedule.talks -%}
+      {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
+      {%- if t_talk.categories contains conf_name -%}
+        {%- assign day_has_conf = true -%}
+        {%- break -%}
+      {%- elsif t.talks -%}
+        {%- for sub_t in t.talks -%}
+          {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+          {%- if sub_check.categories contains conf_name -%}
+            {%- assign day_has_conf = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if day_has_conf -%}{%- break -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if day_has_conf -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+
+  {%- if day_has_conf -%}
+    {%- include partials/get_conf_room.html -%}
+    {%- for i in (1..nbr_steps) -%}
+      {%- assign current_total_min = i | minus: 1 | times: site.conference.program.time_steps | plus: conf_start_total_min -%}
+      {%- assign cell_rendered = false -%}
+      {%- for room_pass in (1..2) -%}
+        {%- unless cell_rendered -%}
+          {%- for room_schedule in d.rooms -%}
+            {%- include partials/get_use_room.html -%}
+            {%- if use_room -%}
+              {%- unless cell_rendered -%}
+                {%- for t in room_schedule.talks -%}
+                  {%- assign talk = site.talks | where: 'name', t.name | first -%}
+                  {%- assign entry_start_hour = t.time_start | split: ':' | first | plus: 0 -%}
+                  {%- assign entry_start_min = t.time_start | split: ':' | last | plus: 0 -%}
+                  {%- assign entry_end_hour = t.time_end | split: ':' | first | plus: 0 -%}
+                  {%- assign entry_end_min = t.time_end | split: ':' | last | plus: 0 -%}
+                  {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
+                  {%- assign entry_end_total = entry_end_hour | times: 60 | plus: entry_end_min -%}
+                  {%- include partials/get_entry_matches.html -%}
+
+                  {%- if entry_matches and entry_start_total == current_total_min -%}
+                    {%- comment -%}
+                      Social events do not get grid lines: they are pulled out of
+                      the time axis and lined up at the foot of the columns.
+                    {%- endcomment -%}
+                    {%- unless talk.categories contains 'Social' -%}
+                      {%- assign boundary_str = boundary_str | append: t.time_start | append: ',' | append: t.time_end | append: ',' -%}
+                      {%- assign span_str = span_str | append: t.time_start | append: '>' | append: t.time_end | append: ',' -%}
+                    {%- endunless -%}
+                    {%- assign cell_rendered = true -%}
+                    {%- break -%}
+                  {%- elsif entry_matches and entry_start_total < current_total_min and entry_end_total > current_total_min -%}
+                    {%- assign cell_rendered = true -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign boundaries = boundary_str | split: ',' | uniq | sort -%}
+{%- assign nbr_bands = boundaries | size | minus: 1 -%}
+
+{%- comment -%}
+  Row sizes.  A band that some entry both starts and ends in is sized by its
+  content, as usual.  A short band that everything merely passes through - such
+  as 10:00 to 10:10, which exists only because Wednesday's morning session runs
+  ten minutes long - is capped at roughly the height of its own label, so a
+  session crossing it puts its height into the band it really belongs to.
+  Without this the Wednesday session inflates that sliver, which drags the
+  10:00 coffee breaks (and with them the invited talks opposite) badly out of
+  proportion with the 10:10 one.  Long pass-through bands are left alone: they
+  are real gaps in the day, not artefacts.
+{%- endcomment -%}
+{%- assign short_band_min = 20 -%}
+{%- assign row_defs = '' -%}
+{%- for b in boundaries -%}
+  {%- unless forloop.last -%}
+    {%- assign b_next = boundaries[forloop.index] -%}
+    {%- assign b_hour = b | split: ':' | first | plus: 0 -%}
+    {%- assign b_min = b | split: ':' | last | plus: 0 -%}
+    {%- assign b_tot = b_hour | times: 60 | plus: b_min -%}
+    {%- assign n_hour = b_next | split: ':' | first | plus: 0 -%}
+    {%- assign n_min = b_next | split: ':' | last | plus: 0 -%}
+    {%- assign n_tot = n_hour | times: 60 | plus: n_min -%}
+    {%- assign band_len = n_tot | minus: b_tot -%}
+    {%- assign span_key = ',' | append: b | append: '>' | append: b_next | append: ',' -%}
+    {%- if span_str contains span_key or band_len >= short_band_min -%}
+      {%- assign row_defs = row_defs | append: ' auto' -%}
+    {%- else -%}
+      {%- assign row_defs = row_defs | append: ' minmax(min-content, 1.2em)' -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+
 <div class="toolbar">
   <label for="paper">Paper</label>
   <select id="paper">
@@ -339,7 +501,7 @@ html, body {
     <option value="420,297">A3 landscape</option>
   </select>
   <button id="print-btn" type="button">Print / save PDF</button>
-  <span class="hint">Text size is fitted to the sheet automatically. Print with margins set to "None" and background graphics on.</span>
+  <span class="hint">Times line up across the days. Text size is fitted to the sheet automatically; print with margins set to "None" and background graphics on.</span>
 </div>
 
 <div id="scaler">
@@ -356,83 +518,78 @@ html, body {
     </div>
   </header>
 
-  <div id="grid" style="--cols: {{ nbr_day_cols }};">
-  {%- for d in site.data.program.days -%}
+  <div id="gridwrap">
+  {%- comment -%}
+    Rows: the day headers, then one row per interval between two consecutive
+    times, then a closing row holding the last time of the day and the social
+    events (which are aligned with each other rather than with the axis).
+  {%- endcomment -%}
+  {%- assign social_row = boundaries | size | plus: 1 -%}
+  <div id="grid" style="grid-template-columns: max-content repeat({{ nbr_day_cols }}, minmax(0, 1fr)); grid-template-rows: max-content{{ row_defs }} max-content;">
 
-    {%- comment -%} day belongs to this conference? {%- endcomment -%}
-    {%- assign day_has_conf = false -%}
-    {%- for room_schedule in d.rooms -%}
-      {%- for t in room_schedule.talks -%}
-        {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
-        {%- if t_talk.categories contains conf_name -%}
-          {%- assign day_has_conf = true -%}
-          {%- break -%}
-        {%- elsif t.talks -%}
-          {%- for sub_t in t.talks -%}
-            {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
-            {%- if sub_check.categories contains conf_name -%}
-              {%- assign day_has_conf = true -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endfor -%}
-          {%- if day_has_conf -%}{%- break -%}{%- endif -%}
-        {%- endif -%}
-      {%- endfor -%}
-      {%- if day_has_conf -%}{%- break -%}{%- endif -%}
+    {%- comment -%}
+      The shared time axis.  The very last line - the time the talks finish - is
+      not labelled: nothing starts there.
+    {%- endcomment -%}
+    {%- for b in boundaries -%}
+      {%- unless forloop.last -%}
+        <div class="tick" style="grid-row: {{ forloop.index | plus: 1 }} / {{ forloop.index | plus: 2 }};">{{ b }}</div>
+      {%- endunless -%}
     {%- endfor -%}
 
-    {%- if day_has_conf -%}
-      {%- comment -%}
-        Main room of this conference on this day.  Joint talks are ignored here,
-        otherwise every conference would end up pointing at the joint room.
-      {%- endcomment -%}
-      {%- assign conf_room_name = '' -%}
+    {%- assign day_col = 1 -%}
+    {%- for d in site.data.program.days -%}
+
+      {%- comment -%} day belongs to this conference? {%- endcomment -%}
+      {%- assign day_has_conf = false -%}
       {%- for room_schedule in d.rooms -%}
-        {%- assign room_has_conf = false -%}
         {%- for t in room_schedule.talks -%}
           {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
-          {%- assign t_room_match = false -%}
-          {%- unless t_talk.categories contains 'Joint' -%}
-            {%- if t_talk.categories contains conf_name -%}
-              {%- assign t_room_match = true -%}
-            {%- endif -%}
-          {%- endunless -%}
-          {%- if t_room_match -%}
-            {%- assign room_has_conf = true -%}
+          {%- if t_talk.categories contains conf_name -%}
+            {%- assign day_has_conf = true -%}
             {%- break -%}
           {%- elsif t.talks -%}
             {%- for sub_t in t.talks -%}
               {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
               {%- if sub_check.categories contains conf_name -%}
-                {%- assign room_has_conf = true -%}
+                {%- assign day_has_conf = true -%}
                 {%- break -%}
               {%- endif -%}
             {%- endfor -%}
-            {%- if room_has_conf -%}{%- break -%}{%- endif -%}
+            {%- if day_has_conf -%}{%- break -%}{%- endif -%}
           {%- endif -%}
         {%- endfor -%}
-        {%- if room_has_conf and conf_room_name == '' -%}
-          {%- assign conf_room_name = room_schedule.name -%}
-        {%- endif -%}
+        {%- if day_has_conf -%}{%- break -%}{%- endif -%}
       {%- endfor -%}
 
-      <div class="day">
-        <div class="day-head">
+      {%- if day_has_conf -%}
+        {%- assign day_col = day_col | plus: 1 -%}
+
+        {%- include partials/get_conf_room.html -%}
+
+        <div class="day-head" style="grid-column: {{ day_col }};">
           <span class="dname">{{ d.name }}</span>
           <span class="ddate">{{ d.date | date: "%-d %b" }}{% if conf_room_name != '' %} &middot; {{ conf_room_name }}{% endif %}</span>
         </div>
 
         {%- comment -%}
-          Same selection logic as partials/render_conference_section.html: walk the
-          time steps and keep the first matching entry across the day's rooms.  The
-          entries are then simply stacked, so their height follows their content
-          instead of their duration.
+          ---- pass 2: place the entries --------------------------------------
+          Same selection logic as partials/render_conference_section.html, but
+          each entry is placed between the grid lines of its own start and end
+          time instead of being given a height proportional to its duration.
+          Social events go into the closing row instead, one below the other if
+          a day has more than one, and carry their own time.
         {%- endcomment -%}
+        {%- assign social_seen = 0 -%}
         {%- for i in (1..nbr_steps) -%}
           {%- assign current_total_min = i | minus: 1 | times: site.conference.program.time_steps | plus: conf_start_total_min -%}
           {%- assign cell_rendered = false -%}
 
+          {%- for room_pass in (1..2) -%}
+          {%- unless cell_rendered -%}
           {%- for room_schedule in d.rooms -%}
+            {%- include partials/get_use_room.html -%}
+            {%- if use_room -%}
             {%- unless cell_rendered -%}
               {%- for t in room_schedule.talks -%}
                 {%- assign talk = site.talks | where: 'name', t.name | first -%}
@@ -442,20 +599,28 @@ html, body {
                 {%- assign entry_end_min = t.time_end | split: ':' | last | plus: 0 -%}
                 {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
                 {%- assign entry_end_total = entry_end_hour | times: 60 | plus: entry_end_min -%}
-                {%- assign entry_matches = false -%}
-                {%- if talk.categories contains conf_name or talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
-                  {%- assign entry_matches = true -%}
-                {%- elsif t.talks -%}
-                  {%- for sub_t in t.talks -%}
-                    {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
-                    {%- if sub_check.categories contains conf_name -%}
-                      {%- assign entry_matches = true -%}
-                      {%- break -%}
-                    {%- endif -%}
-                  {%- endfor -%}
-                {%- endif -%}
+                {%- include partials/get_entry_matches.html -%}
 
                 {%- if entry_matches and entry_start_total == current_total_min -%}
+
+                  {%- comment -%}
+                    Which grid lines does this entry sit between?  Social events
+                    have no lines of their own and go into the closing row.
+                  {%- endcomment -%}
+                  {%- assign is_social = false -%}
+                  {%- if talk.categories contains 'Social' -%}{%- assign is_social = true -%}{%- endif -%}
+                  {%- if is_social -%}
+                    {%- assign row_start = social_row | plus: social_seen -%}
+                    {%- assign row_end = row_start | plus: 1 -%}
+                    {%- assign social_seen = social_seen | plus: 1 -%}
+                  {%- else -%}
+                    {%- assign row_start = 0 -%}
+                    {%- assign row_end = 0 -%}
+                    {%- for b in boundaries -%}
+                      {%- if b == t.time_start -%}{%- assign row_start = forloop.index | plus: 1 -%}{%- endif -%}
+                      {%- if b == t.time_end -%}{%- assign row_end = forloop.index | plus: 1 -%}{%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
 
                   {%- comment -%} colour, exactly as on the web program {%- endcomment -%}
                   {%- assign talk_color = 'secondary' -%}
@@ -497,8 +662,9 @@ html, body {
                     {%- if talk.categories contains 'Schedule' -%}{%- assign is_break = true -%}{%- endif -%}
                   {%- endunless -%}
 
-                  <div class="slot c-{{ talk_color }}{% if is_break %} compact{% endif %}">
-                    <div class="time">{{ t.time_start }}&ndash;{{ t.time_end }}</div>
+                  <div class="slot c-{{ talk_color }}{% if is_break or is_social %} compact{% endif %}{% if is_social %} social{% endif %}"
+                       style="grid-column: {{ day_col }}; grid-row: {{ row_start }} / {{ row_end }};">
+                    {%- if is_social -%}<span class="tlocal">{{ t.time_start }}</span>{%- endif -%}
                     <div class="stitle">{{ t.name }}</div>
 
                     {%- if t.talks -%}
@@ -548,11 +714,14 @@ html, body {
                 {%- endif -%}
               {%- endfor -%}
             {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- endunless -%}
           {%- endfor -%}
         {%- endfor -%}
-      </div>
-    {%- endif -%}
-  {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
   </div>
 
   <div class="legend">
@@ -568,10 +737,8 @@ html, body {
       and point at the production URL.  Regenerate with, e.g.:
         qrencode -t SVG -m 4 -s 8 -l M -o assets/images/qr/program-concur.svg \
                  https://confest-2026.github.io/program/concur/
-    {%- endcomment -%}
-    {%- comment -%}
-      Printed next to the QR code, so it is the same host the code encodes rather
-      than site.url (which is localhost in a development build).
+      The printed host is a literal rather than site.url, which is localhost in
+      a development build and would then disagree with the code beside it.
     {%- endcomment -%}
     {%- assign site_host = 'confest-2026.github.io' -%}
     <div class="qr">
@@ -592,19 +759,20 @@ html, body {
 (function () {
   var sheet  = document.getElementById('sheet');
   var grid   = document.getElementById('grid');
+  var wrap   = document.getElementById('gridwrap');
   var scaler = document.getElementById('scaler');
   var paper  = document.getElementById('paper');
   var pageStyle = document.getElementById('page-style');
 
   function mmToPx(mm) { return mm * 96 / 25.4; }
 
-  /* Fit the text size so the tallest day column just fills the sheet. */
+  /* Fit the text size so the program just fills the sheet. */
   function autoFit() {
     var lo = 1.0, hi = 14.0, best = lo;
     for (var n = 0; n < 24; n++) {
       var mid = (lo + hi) / 2;
       sheet.style.setProperty('--fs', mid.toFixed(3) + 'mm');
-      if (grid.scrollHeight <= grid.clientHeight + 1) {
+      if (grid.offsetHeight <= wrap.clientHeight + 1) {
         best = mid;
         lo = mid;
       } else {

@@ -214,11 +214,11 @@ days:
       show_time: true
     - name: Supporting Older Adults Living Independently
       time_start: '13:30'
-      time_end: '14:40'
+      time_end: '14:30'
       show_time: true
       session_chair: ''
     - name: Coffee Break
-      time_start: '14:40'
+      time_start: '14:30'
       time_end: '15:00'
       show_time: true
     - name: Q+F Session 2 - Parametric Games and Automata
@@ -230,7 +230,7 @@ days:
       - name: State-Space Abstractions for Parametric Timed Games
       - name: Verification of parametric Markov Automata under time-bounded reachability
     - name: Coffee Break
-      time_start: '16:10'
+      time_start: '16:00'
       time_end: '16:30'
       show_time: true
     - name: Q+F Session 3 - Learning and Quantum Systems
@@ -300,12 +300,12 @@ days:
       show_time: true
     - name: An Introduction to Multi-Environment Markov Decision Processes
       time_start: '15:00'
-      time_end: '16:10'
+      time_end: '16:00'
       show_time: true
       session_chair: 'Patrick Totzke'
-    - name: Boat Tour / Dinner (Boarding at 7:15pm)
+    - name: Social Dinner & Cruise (Boarding at 7:15pm)
       time_start: '19:00'
-      time_end: '21:00'
+      time_end: '22:00'
       show_time: true
   - name: Room B
     conference: QEST+FORMATS
@@ -340,7 +340,7 @@ days:
       - name: Exact Evaluation of Probabilistic Programs with Cylindrical Algebraic Decomposition
       - name: Algebraic Robust Semantics for Signal Temporal Logic with Graph Operators
     - name: Coffee Break
-      time_start: '14:40'
+      time_start: '14:30'
       time_end: '15:00'
       show_time: true
     - name:  Q+F Session 6 - Continuous and Hybrid Systems
@@ -351,9 +351,9 @@ days:
       talks:
       - name: Scalable Reachability Analysis of Linear Continuous Systems with Property-Driven Time-Step Adaptation
       - name: Stability Checking of Markov Jump Linear Systems via Probabilistic Temporal Logic
-    - name: Boat Tour / Dinner (Boarding at 7:15pm)
+    - name: Social Dinner & Cruise (Boarding at 7:15pm)
       time_start: '19:00'
-      time_end: '21:00'
+      time_end: '22:00'
       show_time: true
   - name: Room D
     conference: FMICS
@@ -396,9 +396,9 @@ days:
       talks:
       - name: Reasoning about concurrent loops and recursion with rely-guarantee rules
       - name: "Consistency proofs for axiomatic extensions: translating VerCors's Axiomatic Data Types into Isabelle"
-    - name: Boat Tour / Dinner (Boarding at 7:15pm)
+    - name: Social Dinner & Cruise (Boarding at 7:15pm)
       time_start: '19:00'
-      time_end: '21:00'
+      time_end: '22:00'
       show_time: true
 - name: Friday
   abbr: Fri
@@ -459,11 +459,11 @@ days:
       show_time: true
     - name: On the role of prose in specifications
       time_start: '15:00'
-      time_end: '16:10'
+      time_end: '16:00'
       show_time: true
       session_chair: 'Ana Sokolova'
     - name: Coffee Break
-      time_start: '16:10'
+      time_start: '16:00'
       time_end: '16:30'
       show_time: true
     - name: CONCUR Session 13 - Partial Observation
@@ -515,7 +515,7 @@ days:
       - name: Stationary Analysis of Finite-Capacity M/M/1 Fork-Join Queues
       - name: The Component Queues Method for Quasi-Birth-Death Process Fitting and Analysis
     - name: Coffee Break
-      time_start: '14:40'
+      time_start: '14:30'
       time_end: '15:00'
       show_time: true
     - name:  Q+F Session 9 - Timed Automata and Languages
@@ -527,7 +527,7 @@ days:
       - name: "Weighing Timed Regular Languages: The Final Step"
       - name: Witnesses and Counterexamples for Timed Bisimulation
     - name: Coffee Break
-      time_start: '16:10'
+      time_start: '16:00'
       time_end: '16:30'
       show_time: true
     - name:   Q+F Session 10 - Verification Tools
@@ -581,10 +581,6 @@ days:
       time_end: '16:00'
       show_time: true
       session_chair: ''
-    - name: Coffee Break
-      time_start: '16:10'
-      time_end: '16:30'
-      show_time: true
     - name: Football
       time_start: '18:00'
       time_end: '20:00'

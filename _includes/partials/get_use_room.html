@@ -1,0 +1,20 @@
+{%- comment -%}
+  Rooms are looked at in two passes, so that the conference's own room always
+  wins a clash: pass 1 is its own room, pass 2 is every other room (which is
+  where its joint sessions are listed).
+
+  In:  room_pass, room_schedule, conf_room_name
+  Out: use_room
+
+  Used by the poster layouts only.
+{%- endcomment -%}
+{%- assign use_room = false -%}
+{%- if room_pass == 1 -%}
+  {%- if room_schedule.name == conf_room_name -%}
+    {%- assign use_room = true -%}
+  {%- endif -%}
+{%- else -%}
+  {%- unless room_schedule.name == conf_room_name -%}
+    {%- assign use_room = true -%}
+  {%- endunless -%}
+{%- endif -%}

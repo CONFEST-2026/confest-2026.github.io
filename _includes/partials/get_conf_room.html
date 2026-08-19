@@ -1,0 +1,38 @@
+{%- comment -%}
+  Which room this conference occupies on day `d`.  Joint talks are ignored,
+  otherwise every conference would end up pointing at the joint room.
+
+  In:  d, conf_name
+  Out: conf_room_name  ('' if the conference has no room of its own that day)
+
+  Used by the poster layouts only.
+{%- endcomment -%}
+{%- assign conf_room_name = '' -%}
+{%- for room_schedule in d.rooms -%}
+  {%- assign room_has_conf = false -%}
+  {%- for t in room_schedule.talks -%}
+    {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
+    {%- assign t_room_match = false -%}
+    {%- unless t_talk.categories contains 'Joint' -%}
+      {%- if t_talk.categories contains conf_name -%}
+        {%- assign t_room_match = true -%}
+      {%- endif -%}
+    {%- endunless -%}
+    {%- if t_room_match -%}
+      {%- assign room_has_conf = true -%}
+      {%- break -%}
+    {%- elsif t.talks -%}
+      {%- for sub_t in t.talks -%}
+        {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+        {%- if sub_check.categories contains conf_name -%}
+          {%- assign room_has_conf = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if room_has_conf -%}{%- break -%}{%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if room_has_conf and conf_room_name == '' -%}
+    {%- assign conf_room_name = room_schedule.name -%}
+  {%- endif -%}
+{%- endfor -%}
