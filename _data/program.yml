@@ -696,7 +696,7 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: "From Individual Interactions to Collective Dynamics — and Back: Why Timing Matters"
+    - name: "From Individual Interactions to Collective Dynamics and Back: Why Timing Matters"
       time_start: '10:30'
       time_end: '11:30'
       show_time: true
