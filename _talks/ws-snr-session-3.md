@@ -1,6 +1,8 @@
 ---
-name: "SNR Workshop Session 3"
+name: "Randomised Decision Making: Expressiveness and Complexity"
+speakers:
+  - James Main
 categories:
   - SNR
-hide: true
+hide: false
 ---
