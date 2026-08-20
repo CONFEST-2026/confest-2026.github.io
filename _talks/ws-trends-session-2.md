@@ -5,7 +5,7 @@ speakers:
 categories:
   - Trends
   - Invited
-hide: true
+hide: false
 ---
 
 Collective systems—from biochemical regulatory networks to animal groups, robotic swarms, and artificial multi-agent systems—are fascinating because relatively simple, local interaction rules can give rise to rich, robust, and adaptive collective behaviour. Understanding how microscopic interaction mechanisms shape collective dynamics can reveal design principles in natural systems and guide the construction of engineered ones. Conversely, collective observations may provide clues about the individual mechanisms that generated them. This gives rise to two complementary problems: how can we predict collective dynamics from microscopic interactions, and how much can we infer about individual mechanisms from partial observations of the collective?
