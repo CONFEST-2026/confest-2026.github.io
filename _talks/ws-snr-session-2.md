@@ -1,6 +1,8 @@
 ---
-name: "SNR Workshop Session 2"
+name: "Active Learning for the Synthesis of POMDP Policies"
+speakers:
+  - Prince Mathew
 categories:
   - SNR
-hide: true
+hide: false
 ---
