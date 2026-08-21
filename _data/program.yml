@@ -764,7 +764,7 @@ days:
       time_start: '12:00'
       time_end: '13:30'
       show_time: true
-    - name: YR-CONCUR Workshop Session 1
+    - name: YR-CONCUR Workshop Session 2
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
@@ -779,7 +779,7 @@ days:
       time_start: '14:30'
       time_end: '15:00'
       show_time: true
-    - name: YR-CONCUR Workshop Session 2
+    - name: YR-CONCUR Workshop Session 3
       time_start: '15:00'
       time_end: '16:30'
       show_time: true
