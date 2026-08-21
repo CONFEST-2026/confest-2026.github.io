@@ -781,7 +781,7 @@ days:
       show_time: true
     - name: YR-CONCUR Workshop Session 3
       time_start: '15:00'
-      time_end: '16:30'
+      time_end: '16:00'
       show_time: true
       talks:
       - name:	Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions
