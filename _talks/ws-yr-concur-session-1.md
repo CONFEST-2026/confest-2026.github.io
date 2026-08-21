@@ -1,6 +1,8 @@
 ---
-name: "YR-CONCUR Workshop Session 1"
+name: "Invited Talk, Title TBD"
+speakers:
+  - K. S. Thejaswini
 categories:
   - YR-CONCUR
-hide: true
+hide: false
 ---
