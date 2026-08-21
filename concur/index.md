@@ -79,6 +79,25 @@ This year, **two** papers will receive the CONCUR Test-of-Time Award:
 
 Congratulations to all authors!
 
-<div class="divider"></div>
+
+---
+
+### Best Paper Award
+
+The following papers are nominated for the CONCUR 2026 Best Paper Award.  
+The winner will be announced at the social reception on Tuesday evening.
+
+- *Robin Jourde, Henning Urbat, Sergey Goncharov, Stelios Tsampas and Jonas Forster*, Compositionality in Coalgebraic Trace Semantics
+- *Jonas Forster, Lutz Schröder, Paul Wild, Barbara König and Pedro Nora*, Threshold-Based Behavioural Distances
+- *Nathalie Bertrand, Patricia Bouyer, Luc Lapointe and Corto Mascle*, WinPop: Making populations win together
+- *Syyeda Zainab Fatmi, Stefan Kiefer, David Parker and Franck van Breugel*, On the Continuity of the Probabilistic Bisimilarity Distance
+- *Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski*, Reachability in Fixed-Dimensional Continuous VASS
+
+
+This list is ordered by paper ID and the result of a condorcet voting among the PC.
+The full anonymised voting data will be made available after the event.
+
+
+---
 
 For questions please contact the PC chairs via <mailto:concur2026@easychair.org>.
