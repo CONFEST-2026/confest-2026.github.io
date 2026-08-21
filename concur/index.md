@@ -77,7 +77,9 @@ This year, **two** papers will receive the CONCUR Test-of-Time Award:
 - *Krishnendu Chatterjee, Thomas A. Henzinger, Nir Piterman*, [Strategy Logic, CONCUR'07](https://doi.org/10.1007/978-3-540-74407-8_5)
 
 
+See [here][Int1] and [here][Int2] for interviews of the winners.  
 Congratulations to all authors!
+
 
 
 ---
@@ -101,3 +103,9 @@ The full anonymised voting data will be made available after the event.
 ---
 
 For questions please contact the PC chairs via <mailto:concur2026@easychair.org>.
+
+
+
+
+[Int1]: https://processalgebra.blogspot.com/2026/05/interview-with-naoki-kobayashi-concur.html
+[Int2]: https://processalgebra.blogspot.com/2026/08/interview-with-krishnendu-chatterjee.html
