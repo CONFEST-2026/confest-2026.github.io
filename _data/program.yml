@@ -189,12 +189,12 @@ days:
       time_start: '09:00'
       time_end: '09:10'
       show_time: true
-      session_chair: ''
+      session_chair: 'Mingshuai Chen & Max Tschaikowski'
     - name: Monitoring of Timed and Quantitative Systems
       time_start: '09:10'
       time_end: '10:10'
       show_time: true
-      session_chair: ''
+      session_chair: 'Mingshuai Chen'
     - name: Coffee Break
       time_start: '10:10'
       time_end: '10:30'
@@ -203,7 +203,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Martin Fränzle'
       talks:
       - name: Stationary and Transient Bounds for Nearly Lumpable or Uncertain Markov Chains
       - name: Wasserstein error bounds for aggregations of continuous-time Markov chains
@@ -216,7 +216,7 @@ days:
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
-      session_chair: ''
+      session_chair: 'Andrea Vandin'
     - name: Coffee Break
       time_start: '14:30'
       time_end: '15:00'
@@ -225,7 +225,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Masaki Waga'
       talks:
       - name: State-Space Abstractions for Parametric Timed Games
       - name: Verification of parametric Markov Automata under time-bounded reachability
@@ -237,7 +237,7 @@ days:
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
-      session_chair: ''
+      session_chair: 'Kim G. Larsen'
       talks:
       - name: Learning Alternating Real-Time Automata
       - name: Faster algorithm for achieving minimal-size quantum decision diagrams
@@ -322,7 +322,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Peter Buchholz'
       talks:
       - name: Multi-Objective Statistical Model Checking using Lightweight Strategy Sampling
       - name: Effective Stochastic Automata Model Checking by Interval Abstraction
@@ -335,7 +335,7 @@ days:
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
-      session_chair: ''
+      session_chair: 'Jane Hillston'
       talks:
       - name: Exact Evaluation of Probabilistic Programs with Cylindrical Algebraic Decomposition
       - name: Algebraic Robust Semantics for Signal Temporal Logic with Graph Operators
@@ -347,7 +347,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Tatjana Petrov'
       talks:
       - name: Scalable Reachability Analysis of Linear Continuous Systems with Property-Driven Time-Step Adaptation
       - name: Stability Checking of Markov Jump Linear Systems via Probabilistic Temporal Logic
@@ -497,7 +497,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: '' # Anca
+      session_chair: 'Arnd Hartmanns'
       talks:
       - name: "Facing the Core: State-Space Compression of Dynamic Fault Trees via PH-Distributions"
       - name: Adaptive Importance Sampling for Static Fault Trees with Two-State Markovian Components
@@ -510,7 +510,7 @@ days:
       time_start: '13:30'
       time_end: '14:30'
       show_time: true
-      session_chair: ''
+      session_chair: 'Enrico Vicario'
       talks:
       - name: Stationary Analysis of Finite-Capacity M/M/1 Fork-Join Queues
       - name: The Component Queues Method for Quasi-Birth-Death Process Fitting and Analysis
@@ -522,7 +522,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Marco Bernardo'
       talks:
       - name: "Weighing Timed Regular Languages: The Final Step"
       - name: Witnesses and Counterexamples for Timed Bisimulation
@@ -534,7 +534,7 @@ days:
       time_start: '16:30'
       time_end: '17:30'
       show_time: true
-      session_chair: ''
+      session_chair: 'Eugene Asarin'
       talks:
       - name: "MightyPPL: Towards model checking MTL"
       - name: "LF-mc: An Efficient Verifier for Lingua Franca"
