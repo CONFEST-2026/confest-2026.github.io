@@ -758,7 +758,7 @@ days:
         authors: "Mona Alluwaym, Sven Schewe and James C. A. Main"
       - name: Opacity Problems in Timed Automata
         authors: "Sarah Dépernet"
-      - name: Designing and Verifying a Post-Quantum Protocol using
+      - name: Designing and Verifying a Post-Quantum Protocol using ProVerif
         authors: "Robert-William Evans and Florian Kammueller"
     - name: Lunch
       time_start: '12:00'
@@ -784,9 +784,9 @@ days:
       time_end: '16:30'
       show_time: true
       talks:
-      - name:	Parallel Abstract Interpretation for Polynomial Programs
+      - name:	Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions
         authors: "Harshit Jitendra Motwani"
-      - name: Sure-almost-sure and Sure-limit-sure Mean Payoff in Markov
+      - name: Sure-almost-sure and Sure-limit-sure Mean Payoff in Markov Decision Processes
         authors: "Raphaël Berthon, Pranshu Gaba, Vaani Goenka, Shibashis Guha and Chandralekha P"
-      - name: "ATCAL: a model of information manipulation by concurrent"
+      - name: "ATCAL: a model of information manipulation by concurrent announcements"
         authors: "Louwe B. Kuijer and Klara Rawska-Furman"
