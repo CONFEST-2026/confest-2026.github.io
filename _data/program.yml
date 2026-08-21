@@ -738,7 +738,7 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: Invited Talk K. S. Thejaswini, Title TBD
+    - name: Invited Talk, Title TBD
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
@@ -788,5 +788,5 @@ days:
         authors: "Harshit Jitendra Motwani"
       - name: Sure-almost-sure and Sure-limit-sure Mean Payoff in Markov
         authors: "Raphaël Berthon, Pranshu Gaba, Vaani Goenka, Shibashis Guha and Chandralekha P"
-      - name: ATCAL: a model of information manipulation by concurrent
+      - name: "ATCAL: a model of information manipulation by concurrent"
         authors: "Louwe B. Kuijer and Klara Rawska-Furman"
