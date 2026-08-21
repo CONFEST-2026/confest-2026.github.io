@@ -2,7 +2,7 @@
 name: "Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions"
 speakers:
   - Harshit Jitendra Motwani
-  categories:
+categories:
   - YR-CONCUR
 hide: false
 ---
