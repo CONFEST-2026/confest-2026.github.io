@@ -747,46 +747,48 @@ days:
       time_start: '10:00'
       time_end: '10:30'
       show_time: true
-    - name: YR-CONCUR Workshop Session 1
+    - name: YR-CONCUR Session 1 - Verification
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
+      session_chair: 'K. S. Thejaswini'
+      talks:
+      - name: Opacity Problems in Timed Automata
+        authors: "Sarah Dépernet"
+      - name: Designing and Verifying a Post-Quantum Protocol using ProVerif
+        authors: "Robert-William Evans and Florian Kammueller"
+      - name:	Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions
+        authors: "Harshit Jitendra Motwani"
+      - name: Supporting Phased Atomicity in the OpenCL Memory Model
+        authors: "Haining Tong and Keijo Heljanko"
+    - name: Lunch
+      time_start: '12:00'
+      time_end: '13:30'
+      show_time: true
+    - name: YR-CONCUR Session 2 - Games
+      time_start: '13:30'
+      time_end: '14:30'
+      show_time: true
+      session_chair: 'Sarvin Bahmani'
       talks:
       - name:	Forward-Responsibility in Petri Nets
         authors: "Caroline Lemke and Heike Wehrheim"
       - name: Simple Nash Equilibria for Qualitative Multiplayer Games
         authors: "Mona Alluwaym, Sven Schewe and James C. A. Main"
-      - name: Opacity Problems in Timed Automata
-        authors: "Sarah Dépernet"
-      - name: Designing and Verifying a Post-Quantum Protocol using ProVerif
-        authors: "Robert-William Evans and Florian Kammueller"
-    - name: Lunch
-      time_start: '12:00'
-      time_end: '13:30'
+      - name: Sure-almost-sure and Sure-limit-sure Mean Payoff in Markov Decision Processes
+        authors: "Raphaël Berthon, Pranshu Gaba, Vaani Goenka, Shibashis Guha and Chandralekha P"
+    - name: Coffee Break
+      time_start: '14:30'
+      time_end: '15:00'
       show_time: true
-    - name: YR-CONCUR Workshop Session 2
-      time_start: '13:30'
-      time_end: '14:30'
+    - name: YR-CONCUR Session 3 - Logic
+      time_start: '15:00'
+      time_end: '16:00'
       show_time: true
       talks:
       - name:	Duality for Horn Disjunctive Linear Relations
         authors: "Om Swostik Mishra and Christoph Haase"
       - name: Categorical Message Passing Language (CaMPL)
         authors: "Priyaa Varshinee Srinivasan, Alexanna Little Berg and Daniel K. Hashimoto"
-      - name: Supporting Phased Atomicity in the OpenCL Memory Model
-        authors: "Haining Tong and Keijo Heljanko"
-    - name: Coffee Break
-      time_start: '14:30'
-      time_end: '15:00'
-      show_time: true
-    - name: YR-CONCUR Workshop Session 3
-      time_start: '15:00'
-      time_end: '16:00'
-      show_time: true
-      talks:
-      - name:	Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions
-        authors: "Harshit Jitendra Motwani"
-      - name: Sure-almost-sure and Sure-limit-sure Mean Payoff in Markov Decision Processes
-        authors: "Raphaël Berthon, Pranshu Gaba, Vaani Goenka, Shibashis Guha and Chandralekha P"
       - name: "ATCAL: a model of information manipulation by concurrent announcements"
         authors: "Louwe B. Kuijer and Klara Rawska-Furman"
