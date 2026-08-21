@@ -4,7 +4,6 @@ speakers:
   - Rob van Glabbeek
 categories:
   - Trends
-  - Invited
 hide: false
 ---
 

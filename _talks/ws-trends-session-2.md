@@ -4,7 +4,6 @@ speakers:
   - Tatjana Petrov
 categories:
   - Trends
-  - Invited
 hide: false
 ---
 

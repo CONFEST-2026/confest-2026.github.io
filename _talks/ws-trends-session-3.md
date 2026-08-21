@@ -4,7 +4,6 @@ speakers:
   - Jos Baeten
 categories:
   - Trends
-  - Invited
 hide: false
 ---
 
