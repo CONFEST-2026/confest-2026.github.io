@@ -738,7 +738,7 @@ days:
       time_start: '08:30'
       time_end: '09:00'
       show_time: true
-    - name: Invited Talk, Title TBD
+    - name: Whose dice is it anyway?
       time_start: '09:00'
       time_end: '10:00'
       show_time: true
