@@ -1,7 +1,7 @@
 ---
 title: CONFEST 2026 - University of Liverpool - September 1-5, 2026
 layout: default
-heroimage: /assets/images/liverpool-front-white.webp
+heroimage: /assets/images/banner-sun.webp
 ---
 
 # CONFEST 2026
