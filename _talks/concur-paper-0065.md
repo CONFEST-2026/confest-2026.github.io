@@ -7,6 +7,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.32
 ---
 
 Higher-dimensional automata (HDA) are a model of

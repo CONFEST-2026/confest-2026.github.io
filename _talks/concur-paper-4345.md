@@ -7,6 +7,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.15
 ---
 
 Families of deterministic finite automata (FDFA) have been

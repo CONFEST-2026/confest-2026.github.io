@@ -9,6 +9,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.8
 ---
 
 Büchi elevator automata naturally appear in several areas

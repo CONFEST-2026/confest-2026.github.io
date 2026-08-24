@@ -10,6 +10,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.28
 ---
 
 Population protocols are a model of distributed computation

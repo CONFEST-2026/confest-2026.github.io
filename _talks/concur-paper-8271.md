@@ -9,6 +9,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.13
 ---
 
 Two-player games on graphs are a classical framework for

@@ -6,6 +6,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.36
 ---
 
 Given rationals α and β, the sure-almost-sure problem for a

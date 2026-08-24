@@ -5,6 +5,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.27
 ---
 
 Over the years, bisimulations have emerged as a pervasive

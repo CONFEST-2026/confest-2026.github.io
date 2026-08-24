@@ -6,6 +6,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.48
 ---
 
 Robust Markov decision processes (RMDPs) extend standard

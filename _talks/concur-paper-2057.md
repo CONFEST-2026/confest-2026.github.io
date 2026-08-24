@@ -8,6 +8,9 @@ speakers:
 categories:
   - CONCUR
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.4230/LIPIcs.CONCUR.2026.45
 ---
 
 We propose an Operational Game Semantics for a
