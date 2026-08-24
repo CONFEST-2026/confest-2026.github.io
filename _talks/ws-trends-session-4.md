@@ -4,7 +4,6 @@ speakers:
   - Henning Urbat
 categories:
   - Trends
-  - Invited
 hide: false
 ---
 

@@ -163,7 +163,42 @@
       {%- assign nbr_steps = day_duration_min | divided_by: site.conference.program.time_steps -%}
       {%- assign z-index-max = 999 -%}
 
-      {%- for i in (1..nbr_steps) -%}
+      {%- comment -%}
+        Social events are taken out of the time grid on this view and lined up in
+        a single row at the foot, carrying their own times: they start at a
+        different time on each day, so leaving them in place fills the columns
+        with empty rows.  The grid therefore runs only to the end of the last
+        talk or break.  nbr_steps itself is left alone - the mobile list below
+        still shows the socials in place, where they cost nothing.
+      {%- endcomment -%}
+      {%- assign grid_end_total_min = section_start_total_min -%}
+      {%- for d in site.data.program.days -%}
+        {%- include partials/get_conf_room.html -%}
+        {%- for room_pass in (1..2) -%}
+          {%- for room_schedule in d.rooms -%}
+            {%- include partials/get_use_room.html -%}
+            {%- if use_room -%}
+              {%- for t in room_schedule.talks -%}
+                {%- assign talk = site.talks | where: 'name', t.name | first -%}
+                {%- unless talk.categories contains 'Social' -%}
+                  {%- include partials/get_entry_matches.html -%}
+                  {%- if entry_matches -%}
+                    {%- assign entry_end_hour = t.time_end | split: ':' | first | plus: 0 -%}
+                    {%- assign entry_end_min = t.time_end | split: ':' | last | plus: 0 -%}
+                    {%- assign entry_end_total = entry_end_hour | times: 60 | plus: entry_end_min -%}
+                    {%- if entry_end_total > grid_end_total_min -%}
+                      {%- assign grid_end_total_min = entry_end_total -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endunless -%}
+              {%- endfor -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      {%- endfor -%}
+      {%- assign grid_nbr_steps = grid_end_total_min | minus: section_start_total_min | divided_by: site.conference.program.time_steps -%}
+
+      {%- for i in (1..grid_nbr_steps) -%}
         {%- assign current_total_min = i | minus: 1 | times: site.conference.program.time_steps | plus: section_start_total_min -%}
         {%- assign current_hour = current_total_min | divided_by: 60 | floor -%}
         {%- assign current_min = current_total_min | modulo: 60 -%}
@@ -201,22 +236,24 @@
             {%- if day_has_conf -%}{%- break -%}{%- endif -%}
           {%- endfor -%}
           {%- if day_has_conf -%}
+            {%- include partials/get_conf_room.html -%}
             {%- for room_schedule in d.rooms -%}
+              {%- comment -%}
+                Breaks only count from the conference's own room; another room's
+                are at another room's times.  See partials/get_entry_matches.html.
+              {%- endcomment -%}
+              {%- assign room_pass = 2 -%}
+              {%- if room_schedule.name == conf_room_name -%}
+                {%- assign room_pass = 1 -%}
+              {%- endif -%}
               {%- for t in room_schedule.talks -%}
-                {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
-                {%- assign t_matches = false -%}
-                {%- if t_talk.categories contains conf_name or t_talk.categories contains 'Schedule' or t_talk.categories contains 'Social' -%}
-                  {%- assign t_matches = true -%}
-                {%- elsif t.talks -%}
-                  {%- for sub_t in t.talks -%}
-                    {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
-                    {%- if sub_check.categories contains conf_name -%}
-                      {%- assign t_matches = true -%}
-                      {%- break -%}
-                    {%- endif -%}
-                  {%- endfor -%}
+                {%- assign talk = site.talks | where: 'name', t.name | first -%}
+                {%- include partials/get_entry_matches.html -%}
+                {%- comment -%} socials are not on the axis here, so they get no gutter time {%- endcomment -%}
+                {%- if talk.categories contains 'Social' -%}
+                  {%- assign entry_matches = false -%}
                 {%- endif -%}
-                {%- if t_matches and t.show_time and t.time_start == current_time_padded -%}
+                {%- if entry_matches and t.show_time and t.time_start == current_time_padded -%}
                   {%- assign show_time_label = true -%}
                   {%- break -%}
                 {%- endif -%}
@@ -264,8 +301,13 @@
                 <td class="col-space p-0"></td>
               {%- endif -%}
 
+              {%- include partials/get_conf_room.html -%}
               {%- assign cell_rendered = false -%}
+              {%- for room_pass in (1..2) -%}
+              {%- unless cell_rendered -%}
               {%- for room_schedule in d.rooms -%}
+                {%- include partials/get_use_room.html -%}
+                {%- if use_room -%}
                 {%- unless cell_rendered -%}
                   {%- for t in room_schedule.talks -%}
                     {%- assign talk = site.talks | where: 'name', t.name | first -%}
@@ -275,17 +317,10 @@
                     {%- assign entry_end_min = t.time_end | split: ':' | last | plus: 0 -%}
                     {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
                     {%- assign entry_end_total = entry_end_hour | times: 60 | plus: entry_end_min -%}
-                    {%- assign entry_matches = false -%}
-                    {%- if talk.categories contains conf_name or talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
-                      {%- assign entry_matches = true -%}
-                    {%- elsif t.talks -%}
-                      {%- for sub_t in t.talks -%}
-                        {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
-                        {%- if sub_check.categories contains conf_name -%}
-                          {%- assign entry_matches = true -%}
-                          {%- break -%}
-                        {%- endif -%}
-                      {%- endfor -%}
+                    {%- include partials/get_entry_matches.html -%}
+                    {%- comment -%} socials are rendered in their own row below the grid {%- endcomment -%}
+                    {%- if talk.categories contains 'Social' -%}
+                      {%- assign entry_matches = false -%}
                     {%- endif -%}
 
                     {%- if entry_matches and entry_start_total == current_total_min -%}
@@ -369,6 +404,9 @@
                     {%- endif -%}
                   {%- endfor -%}
                 {%- endunless -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- endunless -%}
               {%- endfor -%}
 
               {%- unless cell_rendered -%}
@@ -378,6 +416,100 @@
           {%- endfor -%}
         </tr>
       {%- endfor -%}
+
+      {%- comment -%}
+        ---- the social events row ------------------------------------------
+        One row across all the days, whatever time each of them starts at.
+      {%- endcomment -%}
+      {%- assign any_socials = false -%}
+      {%- for d in site.data.program.days -%}
+        {%- for room_schedule in d.rooms -%}
+          {%- for t in room_schedule.talks -%}
+            {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
+            {%- if t_talk.categories contains 'Social' -%}
+              {%- assign any_socials = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if any_socials -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+        {%- if any_socials -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+
+      {%- if any_socials -%}
+        <tr>
+          <th scope="row" class="col-title" style="z-index: {{ z-index-max }}"></th>
+          <td class="col-space p-0"></td>
+
+          {%- assign day_col_count = 0 -%}
+          {%- for d in site.data.program.days -%}
+            {%- assign day_has_conf = false -%}
+            {%- for room_schedule in d.rooms -%}
+              {%- for t in room_schedule.talks -%}
+                {%- assign t_talk = site.talks | where: 'name', t.name | first -%}
+                {%- if t_talk.categories contains conf_name -%}
+                  {%- assign day_has_conf = true -%}
+                  {%- break -%}
+                {%- elsif t.talks -%}
+                  {%- for sub_t in t.talks -%}
+                    {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+                    {%- if sub_check.categories contains conf_name -%}
+                      {%- assign day_has_conf = true -%}
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  {%- if day_has_conf -%}{%- break -%}{%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if day_has_conf -%}{%- break -%}{%- endif -%}
+            {%- endfor -%}
+
+            {%- if day_has_conf -%}
+              {%- assign day_col_count = day_col_count | plus: 1 -%}
+              {%- if day_col_count > 1 -%}
+                <td class="col-space p-0"></td>
+              {%- endif -%}
+              <td class="align-top p-0 pt-2" style="width: {{ day_col_width }}; min-width: {{ day_col_width }};">
+                {%- include partials/get_conf_room.html -%}
+                {%- assign day_social_done = false -%}
+                {%- for room_pass in (1..2) -%}
+                  {%- unless day_social_done -%}
+                    {%- for room_schedule in d.rooms -%}
+                      {%- include partials/get_use_room.html -%}
+                      {%- if use_room -%}
+                        {%- unless day_social_done -%}
+                          {%- assign room_has_social = false -%}
+                          {%- for t in room_schedule.talks -%}
+                            {%- assign talk = site.talks | where: 'name', t.name | first -%}
+                            {%- if talk.categories contains 'Social' -%}
+                              {%- assign room_has_social = true -%}
+                              {%- include partials/get_main_category.html -%}
+                              {%- if main_cat != '' and main_cat != 'Schedule' and main_cat != 'Joint' and main_cat != 'Test of Time' -%}
+                                {%- assign used_legend_cats = used_legend_cats | append: main_cat | append: '||' -%}
+                              {%- endif -%}
+                              <div class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden mb-2">
+                                <p class="mb-2">
+                                  <span class="badge badge-light font-weight-normal">
+                                    <i class="far fa-clock"></i>&nbsp;{{ t.time_start }}
+                                  </span>
+                                </p>
+                                <p class="mb-0">{%- include partials/show_talk.html -%}</p>
+                              </div>
+                            {%- endif -%}
+                          {%- endfor -%}
+                          {%- if room_has_social -%}
+                            {%- assign day_social_done = true -%}
+                          {%- endif -%}
+                        {%- endunless -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endunless -%}
+                {%- endfor -%}
+              </td>
+            {%- endif -%}
+          {%- endfor -%}
+        </tr>
+      {%- endif -%}
     </tbody>
   </table>
 </div>
@@ -407,7 +539,9 @@
     {%- endfor -%}
 
     {%- if day_has_conf -%}
+      {%- comment -%} get_day_hash.html reads forloop, so keep it before the room lookup {%- endcomment -%}
       {%- include partials/get_day_hash.html -%}
+      {%- include partials/get_conf_room.html -%}
       <h5 class="mt-4 mb-2">
         <a class="text-reset" href="{{ site.conference.program.url | prepend: site.baseurl }}/#{{ day_hash }}">{{ day_name }}</a>
       </h5>
@@ -428,7 +562,11 @@
             {%- endif -%}
 
             {%- assign cell_rendered = false -%}
+            {%- for room_pass in (1..2) -%}
+            {%- unless cell_rendered -%}
             {%- for room_schedule in d.rooms -%}
+              {%- include partials/get_use_room.html -%}
+              {%- if use_room -%}
               {%- unless cell_rendered -%}
                 {%- for t in room_schedule.talks -%}
                   {%- assign talk = site.talks | where: 'name', t.name | first -%}
@@ -438,18 +576,7 @@
                   {%- assign entry_end_min = t.time_end | split: ':' | last | plus: 0 -%}
                   {%- assign entry_start_total = entry_start_hour | times: 60 | plus: entry_start_min -%}
                   {%- assign entry_end_total = entry_end_hour | times: 60 | plus: entry_end_min -%}
-                  {%- assign entry_matches = false -%}
-                  {%- if talk.categories contains conf_name or talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
-                    {%- assign entry_matches = true -%}
-                  {%- elsif t.talks -%}
-                    {%- for sub_t in t.talks -%}
-                      {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
-                      {%- if sub_check.categories contains conf_name -%}
-                        {%- assign entry_matches = true -%}
-                        {%- break -%}
-                      {%- endif -%}
-                    {%- endfor -%}
-                  {%- endif -%}
+                  {%- include partials/get_entry_matches.html -%}
 
                   {%- if entry_matches and entry_start_total == current_total_min -%}
                     {%- if t.talks -%}
@@ -513,6 +640,9 @@
                   {%- endif -%}
                 {%- endfor -%}
               {%- endunless -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- endunless -%}
             {%- endfor -%}
           {%- endfor -%}
         </tbody>

@@ -1,6 +1,6 @@
 ---
-name: "SNR Workshop Session 4"
+name: "Open Problem Session"
 categories:
   - SNR
-hide: true
+hide: false
 ---

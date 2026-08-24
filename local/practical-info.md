@@ -190,7 +190,7 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
 
 
 <section class="section">
-  <h3>Point of Interest</h3>
+  <h3>Points of Interest</h3>
 
   <div class="card" style="padding:0;">
     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJbTjcJHfE&ehbc=2E312F&noprof=1" style="width:100%;border: none; border-radius: .05rem;" height="600"></iframe>

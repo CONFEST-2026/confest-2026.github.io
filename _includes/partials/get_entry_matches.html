@@ -1,0 +1,36 @@
+{%- comment -%}
+  Does this entry belong on this conference's poster?
+
+  In its own room (room_pass 1) the conference's own talks count, and so do the
+  breaks, meals and social events listed there.  In any other room (room_pass 2)
+  only talks that are genuinely this conference's count - its joint sessions.
+  Breaks are deliberately not taken from another room: every room lists its own,
+  at its own times, and picking up a neighbour's is how the posters ended up
+  showing the wrong coffee breaks.
+
+  In:  t, talk, conf_name, room_pass
+  Out: entry_matches
+
+  Used by the poster layouts only.
+{%- endcomment -%}
+{%- assign entry_matches = false -%}
+{%- if talk.categories contains conf_name -%}
+  {%- assign entry_matches = true -%}
+{%- else -%}
+  {%- if room_pass == 1 -%}
+    {%- if talk.categories contains 'Schedule' or talk.categories contains 'Social' -%}
+      {%- assign entry_matches = true -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- unless entry_matches -%}
+    {%- if t.talks -%}
+      {%- for sub_t in t.talks -%}
+        {%- assign sub_check = site.talks | where: 'name', sub_t.name | first -%}
+        {%- if sub_check.categories contains conf_name -%}
+          {%- assign entry_matches = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endif -%}

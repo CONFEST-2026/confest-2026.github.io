@@ -1,6 +1,6 @@
 ---
-name: "YR-CONCUR Workshop Session 2"
+name: "Poster Session"
 categories:
   - YR-CONCUR
-hide: true
+hide: false
 ---
