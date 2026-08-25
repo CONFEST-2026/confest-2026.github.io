@@ -777,7 +777,7 @@ days:
       time_start: '14:30'
       time_end: '15:00'
       show_time: true
-    - name: YR-CONCUR Session 3 - Logic
+    - name: YR-CONCUR Session 3 - Petri Nets + Logic
       time_start: '15:00'
       time_end: '16:30'
       show_time: true
