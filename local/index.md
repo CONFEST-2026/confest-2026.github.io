@@ -2,6 +2,8 @@
 layout: default
 title: Practical Info
 subnav: local
+herobackground: white
+heroiframe: https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJbTjcJHfE&ehbc=2E312F&noprof=1
 
 # Note I'm trying to make this into a one stop shop for participants to send to them a few days before the event. So it may repeat content elsewhere (in brief) or point to it.
 ---
@@ -17,19 +19,10 @@ subnav: local
       <p>
         For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
       </p>
-    </div>
-    <div class="card">
-      <h4>Venues</h4>
       <p>
-        The main venue and registration desk is the <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8">Central Teaching Hub</a>. For full information on finding the right buildings, please see <a href="/local/venues">venues</a>.
+        <strong>Visa/ETA:</strong> You may need a <a href="https://www.gov.uk/check-uk-visa" >visa</a> or an <a href="https://www.gov.uk/eta/apply">Electronic Travel Authorization (ETA)</a> to enter the UK (even if you did not previously need one).
       </p>
     </div>
-    <div class="card" markdown=1>
-### Visa & ETA
-You may need a visa (check on the [UK Government website](https://www.gov.uk/check-uk-visa)).
-
-An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <https://www.gov.uk/eta/apply>.
-</div>
   </div>
   <div class="grid mt-4">
     <div class="card">
@@ -65,6 +58,92 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
 </section>
 
 
+<section class="section collapsed-card-deck">
+
+  <h2>Main Venues</h2>
+ 
+<div class="grid grid-5 ">
+
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/cth.webp" alt="Central Teaching Hub">
+    <div class="card-body">
+      <h5 class="card-title">Central Teaching Hub</h5>
+      <p class="card-text">
+        Hosts:
+        <ul>
+          <li><a href="/program/">All conference and workshop talks</a></li>
+          <li>Lunch and coffee breaks</li>
+        </ul>
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/race.invent.radio" title="what3words: ///race.invent.radio" aria-label="what3words: race invent radio"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/spineoutside.webp" alt="Spaces at the Spine">
+    <div class="card-body">
+      <h5 class="card-title">Spaces at the Spine</h5>
+      <p class="card-text">
+        Hosts: <a href="/local/social#welcome">Welcome reception (Tuesday)</a>
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/sdZkrk16mQULJjDq8" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/spots.charmingly.posts" title="what3words: ///spots.charmingly.posts" aria-label="what3words: spots charmingly posts"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/DazzleFerry.jpg" alt="Mersey Ferry">
+    <div class="card-body">
+      <h5 class="card-title">Mersey Ferry Terminal</h5>
+      <p class="card-text">
+        Hosts: <a href="/local/social#cruise">Dinner and Cruise (Thursday)</a>
+      </p>
+      <p class="card-text">
+        Boarding instructions can be found on the <a href="/local/social">social activities</a> page.
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/EXgMTqe4QBXJC6dv7" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/voted.loved.shell" title="what3words: ///voted.loved.shell" aria-label="what3words: voted loved shell"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/SportCentre.webp" alt="Sport Centre">
+    <div class="card-body">
+      <h5 class="card-title">Sport Centre</h5>
+      <p class="card-text">
+        Hosts: <a href="/local/social#football">Football (Friday)</a>
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/EpgdKanYLMNdeJR8A" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/nests.data.relay" title="what3words: ///nests.data.relay" aria-label="what3words: nests data relay"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/crownplace.webp" alt="Crown Place">
+    <div class="card-body">
+      <h5 class="card-title">On-Campus Accommodation</h5>
+      <p class="card-text">
+        For more information see <a href="/local/accommodation">our accommodation page</a>.
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/fubm6JiuvtEB8gmt8" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/neat.flute.cars" title="what3words: ///neat.flute.cars" aria-label="what3words: neat flute cars"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+</section>
 
   <h3>At the Venues</h3>
 <section class="section">
@@ -128,7 +207,7 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
 
 <section class="section">
   <h3>Crown Place Accommodation Information</h3>
-
+  <div>
   <div class="card">
     <p>
       If you have booked <a href="/local/accommodation">on-campus accommodation</a> please note:
@@ -143,6 +222,8 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     </ul>
     <span class="text-muted">On-campus accommodation booking is closed, please check our <a href="/local/accommodation">accommodation page</a> for nearby hotels.</span>
   </div>
+  </div>
+</section>
 <section class="section">
   <h3>Food</h3>
 
@@ -164,7 +245,7 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     <div class="card">
       <h4>Off campus</h4>
       <p>
-        Restaurants are spread across the city centre, but a few streets have particular concentrations: (see also Points of Interest below)
+        Restaurants are spread across the city centre, but a few streets have particular concentrations: (see the interactive map at the top of this page)
       </p>
       <div class="highlight">
         <ul>
@@ -189,16 +270,6 @@ An Electronic Travel Authorization (ETA) is now required by the UK for visitors 
     </div>
   </div>
 </section>
-
-
-<section class="section">
-  <h3>Points of Interest</h3>
-
-  <div class="card" style="padding:0;">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJbTjcJHfE&ehbc=2E312F&noprof=1" style="width:100%;border: none; border-radius: .05rem;" height="600"></iframe>
-  </div>
-</section>
-
 
 
 <section class="section">

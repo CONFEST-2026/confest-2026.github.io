@@ -47,9 +47,11 @@
       </div>
 
   </header>
-  {% if page.heroimage or page.herobackground %}
+  {% if page.heroimage or page.herobackground or page.heroiframe %}
   <div style="{% if page.heroimage %}background-image: url('{{page.heroimage}}'){% endif %};{% if page.herobackground %} background-color: {{page.herobackground}};{% endif %}" id="heroimage" class="hero {% if page.herocontain %}herocontain{% endif %} {% if page.herofullheight %}herofullheight{% endif %} mb-4">
-
+    {% if page.heroiframe %}
+    <iframe src="{{ page.heroiframe }}" class="hero-iframe" loading="lazy"></iframe>
+    {% endif %}
   </div>
   {%- endif %}
 

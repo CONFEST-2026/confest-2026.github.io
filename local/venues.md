@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Venues
+redirect_to: /local/
 subnav: local
 herobackground: white
 ---
+{% comment %} 
 <div>
 <script src="https://cdn.jsdelivr.net/npm/ol@v10.7.0/dist/ol.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.7.0/ol.css">
@@ -91,137 +93,87 @@ herobackground: white
 <section class="section">
 
   <h2>Main Venues</h2>
+ 
+<div class="card-deck collapsed-card-deck">
 
-
-<div class="section">
   <div class="card">
-    <div class="card-inner">
-      <div class="card-content">
-        <h3>Central Teaching Hub</h3>
-        <p>
-          Hosts:
-          <ul>
-            <li><a href="/program/">All talks</a>  (conferences and workshops)</li>
-            <li>Lunches</li>
-            <li>Coffee breaks</li>
-          </ul>
-        </p>
-        <p>
-          Map links: 
-          <ul>
-           <li> <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8">Google</a> </li>
-           <li> <a href="https://w3w.co/race.invent.radio">///race.invent.radio</a></li>
-         </ul>
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="/assets/images/cth.webp" alt="Central Teaching Hub">
-      </div>
+    <img class="card-img-top" src="/assets/images/cth.webp" alt="Central Teaching Hub">
+    <div class="card-body">
+      <h5 class="card-title">Central Teaching Hub</h5>
+      <p class="card-text">
+        Hosts:
+        <ul>
+          <li><a href="/program/">All conference and workshop talks</a></li>
+          <li>Lunch and coffee breaks</li>
+        </ul>
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/race.invent.radio" title="what3words: ///race.invent.radio" aria-label="what3words: race invent radio"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
     </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="card card--reverse">
-    <div class="card-inner">
-      <div class="card-content">
-        <h3>Spaces at the Spine</h3>
-        <p>
-          Hosts: <a href="/local/social#welcome">Welcome reception (Tuesday)</a>
-        </p>
-        <p>
-          Map links: 
-          <ul>
-           <li> <a href="https://maps.app.goo.gl/sdZkrk16mQULJjDq8">Google</a> </li>
-           <li> <a href="https://w3w.co/spots.charmingly.posts">///spots.charmingly.posts</a></li>
-         </ul>
-        </p>
-      </div>
-      <div class="card-image" style="min-width: 30%;">
-        <img src="/assets/images/spineoutside.webp" alt="Spaces at the Spine">
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="section">
   <div class="card">
-    <div class="card-inner">
-      <div class="card-content">
-        <h3>Mersey Ferry Terminal</h3>
-        <p>
-          Hosts: <a href="/local/social#cruise">Dinner and Cruise (Thursday)</a>
-        </p>
-        <p>
-          Boarding instructions can be found on the <a href="/local/social">social activities</a> page.
-        </p>
-        <p>
-          Map links: 
-          <ul>
-           <li> <a href="https://maps.app.goo.gl/EXgMTqe4QBXJC6dv7">Google</a> </li>
-           <li> <a href="https://w3w.co/voted.loved.shell">///voted.loved.shell</a></li>
-         </ul>
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="/assets/images/DazzleFerry.jpg" alt="Mersey Ferry">
-      </div>
+    <img class="card-img-top" src="/assets/images/spineoutside.webp" alt="Spaces at the Spine">
+    <div class="card-body">
+      <h5 class="card-title">Spaces at the Spine</h5>
+      <p class="card-text">
+        Hosts: <a href="/local/social#welcome">Welcome reception (Tuesday)</a>
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/sdZkrk16mQULJjDq8" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/spots.charmingly.posts" title="what3words: ///spots.charmingly.posts" aria-label="what3words: spots charmingly posts"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
     </div>
   </div>
-</div>
 
-
-<div class="section">
-  <div class="card card--reverse">
-    <div class="card-inner">
-      <div class="card-content">
-        <h3>Sport Centre</h3>
-        <p>
-          Hosts: <a href="/local/social#football">Football (Friday)</a>
-        </p>
-        <p>
-          Map links: 
-          <ul>
-           <li> <a href="https://maps.app.goo.gl/EpgdKanYLMNdeJR8A">Google</a> </li>
-           <li> <a href="https://w3w.co/nests.data.relay">///nests.data.relay</a></li>
-         </ul>
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="/assets/images/SportCentre.webp" alt="Sport Centre">
-      </div>
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/DazzleFerry.jpg" alt="Mersey Ferry">
+    <div class="card-body">
+      <h5 class="card-title">Mersey Ferry Terminal</h5>
+      <p class="card-text">
+        Hosts: <a href="/local/social#cruise">Dinner and Cruise (Thursday)</a>
+      </p>
+      <p class="card-text">
+        Boarding instructions can be found on the <a href="/local/social">social activities</a> page.
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/EXgMTqe4QBXJC6dv7" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/voted.loved.shell" title="what3words: ///voted.loved.shell" aria-label="what3words: voted loved shell"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
     </div>
   </div>
-</div>
 
-
-
-<div class="section">
-  <div class="card ">
-    <div class="card-inner">
-      <div class="card-content">
-        <h3>On-Campus Accommodation</h3>
-        <p>
-          Crown place student halls are directly adjacent to the talks venue.
-        </p>
-        <p>
-          For more information see <a href="/local/accommodation">our accommodation page</a>.
-        </p>
-        <p>
-          Map links: 
-          <ul>
-           <li> <a href="https://maps.app.goo.gl/fubm6JiuvtEB8gmt8">Google</a> </li>
-           <li> <a href="https://w3w.co/neat.flute.cars">///neat.flute.cars</a></li>
-         </ul>
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="/assets/images/crownplace.webp" alt="Crown Place">
-      </div>
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/SportCentre.webp" alt="Sport Centre">
+    <div class="card-body">
+      <h5 class="card-title">Sport Centre</h5>
+      <p class="card-text">
+        Hosts: <a href="/local/social#football">Football (Friday)</a>
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/EpgdKanYLMNdeJR8A" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/nests.data.relay" title="what3words: ///nests.data.relay" aria-label="what3words: nests data relay"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
     </div>
   </div>
-</div>
 
+  <div class="card">
+    <img class="card-img-top" src="/assets/images/crownplace.webp" alt="Crown Place">
+    <div class="card-body">
+      <h5 class="card-title">On-Campus Accommodation</h5>
+      <p class="card-text">
+        For more information see <a href="/local/accommodation">our accommodation page</a>.
+      </p>
+      <p class="card-text venue-links"> Find: 
+        <a href="https://maps.app.goo.gl/fubm6JiuvtEB8gmt8" title="Open in Google Maps" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://w3w.co/neat.flute.cars" title="what3words: ///neat.flute.cars" aria-label="what3words: neat flute cars"><svg class="w3w-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20L10 4M13 20L16 4M19 20L22 4"/></svg></a>
+      </p>
+    </div>
+  </div>
+
+</div>
 
 </section>
+{% endcomment %} 
