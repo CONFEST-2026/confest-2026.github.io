@@ -1,158 +1,251 @@
 ---
 layout: default
-title: Reaching Liverpool
+title: Practical Info
 subnav: local
-heroimage: /assets/images/mapeurope.png
-herofullheight: True
-herobackground: "#8aabbf"
+
+# Note I'm trying to make this into a one stop shop for participants to send to them a few days before the event. So it may repeat content elsewhere (in brief) or point to it.
 ---
 
-  <div class="section">
-    <h2>Travel Options</h2>
+# Practicalities at a glance
 
-    <div class="grid">
+<section class="section">
+  <h3>Getting around</h3>
 
-      <!-- Train -->
-      <div class="card">
-        
-        <h3>Train</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Reaching Liverpool</h4>
+      <p>
+        For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
+      </p>
+    </div>
+    <div class="card">
+      <h4>Venues</h4>
+      <p>
+        The main venue and registration desk is the <a href="https://maps.app.goo.gl/X34H5Lh4uzt5umeE8">Central Teaching Hub</a>. For full information on finding the right buildings, please see <a href="/local/venues">venues</a>.
+      </p>
+    </div>
+    <div class="card" markdown=1>
+### Visa & ETA
+You may need a visa (check on the [UK Government website](https://www.gov.uk/check-uk-visa)).
 
-        <p>
-          Liverpool is well-connected and easy to reach by train
-          from other major cities and airports across the UK.
-        </p>
-
-        <div class="highlight">
-          <strong>Typical journey times:</strong>
-          <ul>
-            <li>Manchester → ~35 minutes</li>
-            <li>Manchester Airport → ~1h 20m</li>
-            <li>Birmingham → under 2 hours</li>
-            <li>London Euston → ~2h 15m</li>
-            <li>Paris / Brussels → just over 2 hours to London</li>
-          </ul>
-        </div>
-
-        <p>
-          Liverpool Lime Street is the main station in the city.
-          Liverpool Central serves the local metro network.
-        </p>
-
-        <p>
-        	<a href="https://www.nationalrail.co.uk/journey-planner/">Plan your journey</a>
-        </p>
+An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <https://www.gov.uk/eta/apply>.
+</div>
+  </div>
+  <div class="grid mt-4">
+    <div class="card">
+      <h4>Walking</h4>
+      <p>
+        The University of Liverpool campus is within easy walking distance
+        of the city centre, Lime Street Station, and many nearby hotels. A walk from the conference
+        venue to the ferry terminal for the dinner on Thursday will take around 30 minutes.
+      </p>
+    </div>
+    <div class="card">
+      <h4>Buses</h4>
+      <p>
+        Local buses connect the city and campus. All buses accept contactless payment
+        when boarding.
+      </p>
+      <div class="highlight">
+        Flat fare: <strong>£2 per journey</strong>
       </div>
+    </div>
+    <div class="card">
+      <h4>Bike & e-scooter</h4>
+      <p>
+        Bolt bikes and e-scooters are available across the city and provide a quick way
+        to travel short distances between the centre and campus.
+      </p>
+      <p>
+        <a href="https://bolt.eu/en/cities/liverpool/">Bolt in Liverpool</a>
+      </p>
+    </div>
+  </div>
 
-      <!-- Airports -->
-      <div class="card">
-        
-        <h3>Plane</h3>
+</section>
 
-        <p>
-          Liverpool is well connected to two international airports within easy reach.
-        </p>
 
+
+  <h3>At the Venues</h3>
+<section class="section">
+<div class="grid">
+  <div class="card">
+
+  <h4>Luggage Storage</h4>
+    <p>
+      The main venue (Central Teaching Hub) has free lockers which can be used to store luggage if travelling directly to/from the venue up to cabin size trolley bags. Larger items left at owners' risk. 
+    </p>
+  </div>
+  <div class="card">
+  <h4>WiFi</h4>
+    <p>
+      Eduroam is available in all campus venues. Guest wifi logins will also be available at the registration desk in case you do not have Eduroam.
+    </p>
+  </div>
+  <div class="card">
+    <h4>Slides</h4>
+    <p>
+      If you're speaking at CONFEST we'll collect slides in advance. Please check your email for instructions.
+    </p>
+    <p>
+      Screens are 16:9. PDF Preferred. PPTX, URLs also acceptable.
+    </p>
+  </div>
+  <div class="card">
+  <h4>What's on?</h4>
+    <p>
+      See the full <a href="/program">conference program</a>.
+    </p>
+    <p>Don't miss the <a href="/local/social#welcome">Reception (Tuesday)</a> and <a href="/local/social#cruise">Social Dinner & Cruise (Thursday)</a>
+    </p>
+  </div>
+  <!--
+  <div class="card">
+    <h4>Plugs</h4>
+    <p>
+      UK plugs are three pin Type G, 230V.
+    </p>
+  </div>
+  -->
+  <div class="card">
+    <h4>Emergencies</h4>
+    <ul>
+      <li><strong>999</strong> Police, Fire, Ambulance</li>
+      <li><strong>111</strong> for non-urgent medical advice</li>
+      <li><strong>(+44) 151 794 2222</strong> campus support emergency</li>
+      <li><strong>(+44) 151 794 3252</strong> campus support non-emergency</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Any questions?</h4>
+    <p>
+      Contact the organisers: <a href="mailto:confest2026@liverpool.ac.uk">confest2026@liverpool.ac.uk</a>
+    </p>
+  </div>
+</div>
+</section>
+
+<section class="section">
+  <h3>Crown Place Accommodation Information</h3>
+
+  <div class="card">
+    <p>
+      If you have booked <a href="/local/accommodation">on-campus accommodation</a> please note:
+    </p>
+    <ul>
+      <li>
+        Your bedroom is a single en-suite bedroom. Bed linen and towels are provided in bedrooms. Tea/coffee facilities, iron and ironing boards will be located in communal lounge areas located on each corridor. Hairdryers can be requested at reception.
+      </li>
+      <li>The full address is: Crown Place Residences, 200 Brownlow Hill, Liverpool, L3 5UE</li>
+      <li>Check in time from 4.00pm, collect your keys from the Reception at the accommodation. A luggage room will be available for early arrivals</li>
+      <li>Check out time is 9.30am. A Luggage room will be available.</li>
+    </ul>
+    <span class="text-muted">On-campus accommodation booking is closed, please check our <a href="/local/accommodation">accommodation page</a> for nearby hotels.</span>
+  </div>
+<section class="section">
+  <h3>Food</h3>
+
+ <div class="grid">
+    <div class="card">
+      <h4>At the conference</h4>
+      <p>
+        <strong>Breakfast</strong> is included for those staying in Crown Place accommodation 7.30am - 9am (<a href="https://vgm.liverpool.ac.uk/your-visit/cafe/">Waterhouse Café</a> in the Victoria Gallery and Museum). 
+        <br>
+        Light refreshments are also available for all at the venue from 8:30am each day.
+      </p>
+      <p>
+        <strong>Lunch</strong> The conference includes lunch every day.
+      </p>
+      <p>
+        <strong>Dinner</strong> A <i>light</i> dinner is included at the reception (Tuesday) and a full dinner is included at the social dinner cruise (Thursday).
+      </p>
+    </div>
+    <div class="card">
+      <h4>Off campus</h4>
+      <p>
+        Restaurants are spread across the city centre, but a few streets have particular concentrations: (see also Points of Interest below)
+      </p>
+      <div class="highlight">
         <ul>
           <li>
-            <strong>Liverpool John Lennon Airport (LPL)</strong><br>
-            Regular European flights, connected by bus to the city.
+            Hope Street — adjacent to campus, between the two cathedrals 
           </li>
-          </ul>
-
-        <div class="highlight">
-          Liverpool Airport → Liverpool:
-          <ul>
-            <li>~30-40 mins Airport Bus 500</li>
-            <li>~40-50 mins Local Bus 82A or 86A</li>
-            <li>~15-20 mins by taxi (See Taxis section)</li>
-          </ul>
-        </div>
-          <ul>
           <li>
-            <strong>Manchester Airport (MAN)</strong><br>
-            Major international hub with connections across Europe,
-            North America, and Asia.
+            Bold Street — independent cafés and restaurants, roughly ten minutes' walk from the venue
+          </li>
+          <li>
+            Royal Albert Dock — on the waterfront, about 25-30 minutes' walk
+          </li>
+          <li>
+            London Road — closer to campus, with a number of good value Middle Eastern and Asian restaurants
+          </li>
+          <li>
+            Chinatown — Berry Street/Nelson Street, just past Bold Street
           </li>
         </ul>
-
-        <div class="highlight">
-          Manchester Airport → Liverpool:
-          <ul>
-            <li>~1h 20m by train (<a href="https://www.nationalrail.co.uk/journey-planner/">National Rail</a>)</li>
-            <li>~1h by coach (<a href="https://www.nationalexpress.com/en">National Express</a>, pick up/stop at University of Liverpool / Brownlow Hill)</li>
-            <li>~45 mins by taxi (See Taxis section)</li>
-          </ul>
-        </div>
-
-        <p>
-          Liverpool can also be reached via Birmingham or London airports,
-          though journeys take longer.
-        </p>
-      </div>
-
-      <!-- Parking -->
-      <div class="card">
-
-        
-        <h3>Automobile</h3>
-
-
-        <h5>Parking</h5>
-        <p>
-          We strongly encourage using public transport wherever possible.
-        </p>
-
-        <p>
-          <a href="https://www.liverpool.ac.uk/about/visit-us/car-parking/">University Visitor Car Parks</a> are very limited. The closest off-campus option is <strong>Paddington Village car park</strong>.
-        </p>
-
-        <div class="divider"></div>
-
-		  
-		  <h5>Taxis</h5>
-
-		  
-      <p>
-      <a href="https://www.deltataxis.net">Delta Taxis</a> is a local taxi operator offering fixed price travel from Manchester Airport (pre-booking required).
-      </p>
-      
-      <p>
-        Ride-hailing services such as Uber are widely available in and around Liverpool.
-      </p>
-
-		  <div class="highlight">
-		    <strong>Typical Uber fares:</strong>
-		    <ul>
-		      <li>Manchester Airport → £55–£75
-                <details>
-                <summary>pickup info</summary>
-                Arriving at Terminal 2, head to the ground floor of T2 West Multi-Storey Car Park in front of the terminal building.
-                </details>
-          </li>
-		      <li>Liverpool John Lennon Airport → £15–£25</li>
-		    </ul>
-		  </div>
-
-		  <p style="font-size: 0.9rem; color: #555;">
-		    Prices may vary depending on time of day and demand.
-		  </p>
       </div>
 
     </div>
   </div>
+</section>
 
----
+
+<section class="section">
+  <h3>Points of Interest</h3>
+
+  <div class="card" style="padding:0;">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJbTjcJHfE&ehbc=2E312F&noprof=1" style="width:100%;border: none; border-radius: .05rem;" height="600"></iframe>
+  </div>
+</section>
 
 
-  <div class="section">
-  	<div class="card" markdown=1>
-### Visa
 
-You can check if you need a visa to enter the UK on the [UK Government website](https://www.gov.uk/check-uk-visa).  
-An Electronic Travel Authorization (ETA) is now required by the UK for visitors previously exempt from visa requirements. Additional information can be found at <https://www.gov.uk/eta/apply>.
+<section class="section">
+  <h3>Code of Conduct</h3>
 
-Those requiring an invitation letter for a visa (not ETA) should contact [confest2026@liverpool.ac.uk](mailto:confest2026@liverpool.ac.uk) after registering. Include your full name, passport number, date of birth and travel dates.
-</div>
+  <div class="card">
+    <p>
+      Participants are reminded that they must conform to the <a href="/local/code-of-conduct">CONFEST code of conduct</a> thoughout the event.<br/>
+      You can aproach the CONFEST Advocate <a href="https://www.csc.liv.ac.uk/~hausmann/">Daniel Hausmann</a> for confidential advice and support if you encounter any issue.
+    </p>
+  </div>
+</section>
 
-</div>
+<section class="section">
+  <h3>Childcare</h3>
+
+  <div class="card">
+    <p>
+      We have a wonderful nursery on campus, only 300m from the main venue!<br>
+      <strong><a href="https://www.kidsinbloom.co.uk/kib-university-of-liverpool">Kids in Bloom</a></strong> is located at the University of Liverpool and offers short-term childcare upon request and subject to availability.
+      Please contact them directly.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h3>Accessibility</h3>
+
+  <div class="card">
+    <p>
+      The University of Liverpool is committed to ensuring our campus is accessible to all visitors.
+    </p>
+    <div class="highlight">
+      <ul>
+        <li>
+          <a href="https://www.liverpool.ac.uk/hr/diversityandequality/campusdisabilityaccess/">Campus Disability Access Support</a><br>
+          General accessibility information and support services
+        </li>
+        <li>
+          <a href="https://www.accessable.co.uk/university-of-liverpool/access-guides/central-teaching-hub#ED00C990-15C4-0D48-8C59-380CDD51A9D9">Central Teaching Hub Accessibility Guide</a><br>
+          Detailed accessibility information for the main conference venue
+        </li>
+      </ul>
+    </div>
+    <p>
+      If you have specific accessibility requirements, please get in touch with the organisers.
+    </p>
+  </div>
+</section>
 
