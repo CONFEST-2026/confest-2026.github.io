@@ -65,6 +65,14 @@ jobs:
             mv workshops/snr/submenu.yml _data/submenu/snr.yml
           fi
 
+      - name: Fetch public statistics data
+        run: |
+          git clone --depth=1 https://github.com/CONFEST-2026/statistics.git temp-statistics
+          mkdir -p _data
+          cp temp-statistics/participants.csv _data/participants.csv
+          cp temp-statistics/travel_origins_map.geojson _data/travel_origins.json
+          rm -rf temp-statistics
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
         with:

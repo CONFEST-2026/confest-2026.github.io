@@ -1,0 +1,175 @@
+.statistics-page {
+  --statistics-border: #{$neutral};
+  --statistics-muted: #555;
+  --statistics-train: #{$secondary};
+  --statistics-plane: #{$danger};
+  --statistics-bus: #{$success};
+  --statistics-concur: #{$primary};
+  --statistics-qf: #{$purple};
+  --statistics-fmics: #{$success};
+  --statistics-workshops: #{$warning};
+
+  .statistics-card {
+    border: 1px solid var(--statistics-border);
+    border-radius: $border-radius;
+    margin: 1rem 0 2rem;
+    padding: 1rem;
+  }
+
+  .statistics-participation,
+  .statistics-origin-layout,
+  .statistics-analysis {
+    > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .statistics-panel {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .statistics-card {
+      flex: 1;
+    }
+  }
+
+  .statistics-vertical-chart {
+    align-items: flex-end;
+    display: flex;
+    gap: .75rem;
+    min-height: 17rem;
+    padding-top: 2rem;
+  }
+
+  .statistics-vertical-bar {
+    align-items: center;
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: flex-end;
+    min-width: 0;
+  }
+
+  .statistics-vertical-bar__value {
+    color: var(--statistics-muted);
+    font-size: .8rem;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+
+  .statistics-vertical-bar__column {
+    background: $primary;
+    border-radius: $border-radius $border-radius 0 0;
+    display: block;
+    height: var(--statistics-bar-height);
+    margin-top: .4rem;
+    max-width: 3rem;
+    min-height: 2px;
+    width: 100%;
+  }
+
+  .statistics-vertical-bar__column--train { background: var(--statistics-train); }
+  .statistics-vertical-bar__column--plane { background: var(--statistics-plane); }
+  .statistics-vertical-bar__column--bus { background: var(--statistics-bus); }
+  .statistics-vertical-bar__column--concur { background: var(--statistics-concur); }
+  .statistics-vertical-bar__column--qf { background: var(--statistics-qf); }
+  .statistics-vertical-bar__column--fmics { background: var(--statistics-fmics); }
+  .statistics-vertical-bar__column--workshops { background: var(--statistics-workshops); }
+
+  .statistics-vertical-bar__label {
+    font-size: .8rem;
+    margin-top: .4rem;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+
+  .statistics-country-list {
+    line-height: 2;
+    margin: 0;
+  }
+
+  .statistics-country-flag {
+    height: 1em;
+    margin-right: .2rem;
+    vertical-align: -.1em;
+    width: auto;
+  }
+
+  .statistics-map {
+    flex: 1;
+    min-height: 420px;
+    width: 100%;
+  }
+
+  .statistics-pie-layout {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .statistics-pie {
+    border-radius: 50%;
+    height: 12rem;
+    position: relative;
+    width: 12rem;
+  }
+
+  .statistics-pie--modes {
+    background: conic-gradient(
+      var(--statistics-train) 0 var(--statistics-train-share),
+      var(--statistics-plane) var(--statistics-train-share) 100%
+    );
+  }
+
+  .statistics-pie--events {
+    background: conic-gradient(
+      var(--statistics-concur) 0 var(--statistics-stop-1),
+      var(--statistics-qf) var(--statistics-stop-1) var(--statistics-stop-2),
+      var(--statistics-fmics) var(--statistics-stop-2) var(--statistics-stop-3),
+      var(--statistics-workshops) var(--statistics-stop-3) 100%
+    );
+  }
+
+  .statistics-pie::after {
+    background: $cream-bg;
+    border-radius: 50%;
+    content: "";
+    inset: 3.5rem;
+    position: absolute;
+  }
+
+  .statistics-key {
+    font-size: .9rem;
+    margin: 1rem 0 0;
+    text-align: center;
+  }
+
+  .statistics-key span + span { margin-left: 1rem; }
+  .statistics-key i {
+    display: inline-block;
+    height: .75rem;
+    margin-right: .25rem;
+    width: .75rem;
+  }
+  .statistics-key__train { background: var(--statistics-train); }
+  .statistics-key__plane { background: var(--statistics-plane); }
+  .statistics-key__concur { background: var(--statistics-concur); }
+  .statistics-key__qf { background: var(--statistics-qf); }
+  .statistics-key__fmics { background: var(--statistics-fmics); }
+  .statistics-key__workshops { background: var(--statistics-workshops); }
+
+  @media (max-width: 991.98px) {
+    .statistics-map { min-height: 420px; }
+  }
+
+  @media (max-width: 575.98px) {
+    .statistics-vertical-chart { gap: .35rem; }
+    .statistics-vertical-bar__label,
+    .statistics-vertical-bar__value { font-size: .7rem; }
+  }
+}
