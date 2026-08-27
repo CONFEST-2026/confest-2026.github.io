@@ -347,7 +347,7 @@
                         {%- endfor -%}
                       {%- endif -%}
                       {%- if talk_legend_name != '' and talk_legend_name != 'Schedule' and talk_legend_name != 'Joint' and talk_legend_name != 'Test of Time' -%}
-                        {%- assign used_legend_cats = used_legend_cats | append: talk_legend_name | append: '||' -%}
+                        {%- assign used_legend_cats = used_legend_cats | append: '||' | append: talk_legend_name | append: '||' -%}
                       {%- endif -%}
                       {%- include partials/get_main_category.html -%}
                       {%- if t.talks -%}
@@ -485,7 +485,7 @@
                               {%- assign room_has_social = true -%}
                               {%- include partials/get_main_category.html -%}
                               {%- if main_cat != '' and main_cat != 'Schedule' and main_cat != 'Joint' and main_cat != 'Test of Time' -%}
-                                {%- assign used_legend_cats = used_legend_cats | append: main_cat | append: '||' -%}
+                                {%- assign used_legend_cats = used_legend_cats | append: '||' | append: main_cat | append: '||' -%}
                               {%- endif -%}
                               <div class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden mb-2">
                                 <p class="mb-2">
@@ -654,7 +654,8 @@
 {%- if site.conference.talks.main_categories -%}
   {%- assign shown_legend = false -%}
   {%- for legend_cat in site.conference.talks.main_categories -%}
-    {%- assign legend_marker = legend_cat.name | append: '||' -%}
+    {%- comment -%} delimited both sides, or CONCUR matches inside YR-CONCUR {%- endcomment -%}
+      {%- assign legend_marker = '||' | append: legend_cat.name | append: '||' -%}
     {%- if used_legend_cats contains legend_marker -%}
       {%- unless shown_legend -%}
         <h5 class="mt-4">{{ site.data.lang[site.conference.lang].program.legend | default: "Caption" }}</h5>

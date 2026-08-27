@@ -667,7 +667,7 @@ html, body {
                     {%- endfor -%}
                   {%- endif -%}
                   {%- if talk_legend_name != '' and talk_legend_name != 'Schedule' and talk_legend_name != 'Joint' and talk_legend_name != 'Test of Time' -%}
-                    {%- assign used_legend_cats = used_legend_cats | append: talk_legend_name | append: '||' -%}
+                    {%- assign used_legend_cats = used_legend_cats | append: '||' | append: talk_legend_name | append: '||' -%}
                   {%- endif -%}
                   {%- include partials/get_main_category.html -%}
 
@@ -744,7 +744,8 @@ html, body {
   <div class="legend">
     <span class="lbl">{{ site.data.lang[site.conference.lang].program.legend | default: "Caption" }}</span>
     {%- for legend_cat in site.conference.talks.main_categories -%}
-      {%- assign legend_marker = legend_cat.name | append: '||' -%}
+      {%- comment -%} delimited both sides, or CONCUR matches inside YR-CONCUR {%- endcomment -%}
+      {%- assign legend_marker = '||' | append: legend_cat.name | append: '||' -%}
       {%- if used_legend_cats contains legend_marker -%}
         <span class="item c-{{ legend_cat.color }}">{{ legend_cat.name }}</span>
       {%- endif -%}

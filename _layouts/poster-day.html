@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="{{ site.conference.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ page.title }} - {{ site.title }}</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:300,400,600,700&display=swap" />
+<style>
+/* ------------------------------------------------------------------ *
+ * Poster version of one day of the program, for printing and hanging on a
+ * wall.  A column per room, so on the workshop day that is a column per
+ * workshop.                                                              
+ *                                                                        
+ * The rooms share one time axis: every start/end time of the day becomes 
+ * a grid line, so anything happening at the same time lines up across the
+ * rooms and two sessions with the same start and end come out the same   
+ * size.  Row heights follow their content, not their duration, so a 90   
+ * minute lunch is still a single strip.                                  
+ *                                                                        
+ * Self-contained: no site stylesheet, no navbar, no footer.              
+ * Palette mirrors _sass/conference.scss (Bootstrap alert levels).        *
+ * ------------------------------------------------------------------ */
+
+
+:root {
+  /* paper (A1 portrait by default, changed by the toolbar) */
+  --sheet-w: 594mm;
+  --sheet-h: 841mm;
+  --pad: 14mm;
+  /* base text size in mm - overwritten by the auto-fit script */
+  --fs: 3.4mm;
+
+  /* brand colours from conference.scss */
+  --deep-blue:   #00205B;
+  --mid-blue:    #3A5F80;
+  --cream:       #FCFCFC;
+  --ink:         #2E2E2E;
+  --yellow:      #F5D547;
+  --red:         #FF3B3B;
+}
+
+/* category colours: --bg / --bd (border) / --fg (text) / --st (stripe) */
+.c-success { --bg:#D5F5EF; --bd:#C4F1E9; --fg:#0D3931; --st:#2ECCB0; }  /* Joint, Invited, Trends */
+.c-info    { --bg:#E8F4FC; --bd:#DFF0FB; --fg:#273843; --st:#8CC8F0; }  /* CONCUR */
+.c-danger  { --bg:#FFEBCC; --bd:#FFE2B8; --fg:#472B00; --st:#FF9900; }  /* Q+F */
+.c-purple  { --bg:#ECDEF4; --bd:#E5D1F0; --fg:#2D1939; --st:#A259CA; }  /* FMICS, YR-CONCUR */
+.c-social  { --bg:#FFD8D8; --bd:#FFC8C8; --fg:#471111; --st:#FF3B3B; }  /* Social, Express/SOS */
+.c-warning { --bg:#FDF7DA; --bd:#FCF3CC; --fg:#453C14; --st:#F5D547; }  /* SNR, Test of Time */
+.c-neutral { --bg:#E6EBF0; --bd:#D6DDE5; --fg:#2E2E2E; --st:#C6D0DA; }  /* Schedule */
+.c-secondary { --bg:#DEE5EB; --bd:#CFD9E1; --fg:#12191F; --st:#3A5F80; }
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #6E7C88;
+  font-family: 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* --- screen-only toolbar --------------------------------------------- */
+.toolbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 14px;
+  background: var(--deep-blue);
+  color: #fff;
+  font-size: 14px;
+}
+.toolbar label { font-weight: 600; }
+.toolbar select, .toolbar button {
+  font: inherit;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid #fff6;
+  background: #fff;
+  color: var(--ink);
+}
+.toolbar button { cursor: pointer; font-weight: 600; }
+.toolbar .hint { opacity: .75; font-weight: 300; }
+
+#scaler { transform-origin: top left; margin-top: 44px; }
+
+/* --- the sheet -------------------------------------------------------- */
+#sheet {
+  width: var(--sheet-w);
+  height: var(--sheet-h);
+  padding: var(--pad);
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: var(--fs);
+  line-height: 1.25;
+}
+
+.poster-head {
+  flex: 0 0 auto;
+  border-bottom: 1.2mm solid var(--deep-blue);
+  padding-bottom: 3mm;
+  margin-bottom: 4mm;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12mm;
+}
+.poster-head .lead { min-width: 0; }
+.poster-head h1 {
+  margin: 0;
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--deep-blue);
+}
+.poster-head .meta {
+  text-align: right;
+  font-size: 1.3em;
+  font-weight: 300;
+  color: var(--mid-blue);
+  white-space: nowrap;
+}
+.poster-head .meta strong { font-weight: 600; color: var(--deep-blue); }
+
+/* --- the aligned grid ------------------------------------------------- *
+ * Column 1 is the shared time axis, then one column per day.  Row 1 is
+ * the day headers, then one row per interval between two consecutive
+ * times in the program.  Column gaps only: the vertical separation comes
+ * from the slots' own margin, so that empty intervals cost nothing.      */
+#gridwrap {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+/* The grid is sized by its rows, not by the space available: that is what the
+   auto-fit script measures to choose the text size. */
+#grid {
+  display: grid;
+  column-gap: 4mm;
+  row-gap: 0;
+}
+.day-head {
+  grid-row: 1;
+  flex-wrap: wrap;
+  background: var(--deep-blue);
+  color: var(--yellow);
+  padding: 1.4mm 2.5mm;
+  border-radius: .8mm;
+  margin-bottom: 2mm;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2mm;
+  min-width: 0;
+}
+.day-head .dname { font-size: 1.45em; font-weight: 700; line-height: 1.1; }
+.day-head .ddate { font-size: .95em; font-weight: 300; color: #fff; opacity: .85; white-space: nowrap; }
+
+/* time axis */
+.tick {
+  grid-column: 1;
+  justify-self: end;
+  align-self: start;
+  font-size: .95em;
+  font-weight: 600;
+  color: var(--mid-blue);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  line-height: 1.1;
+  padding-right: .8mm;
+}
+
+/* --- slots ------------------------------------------------------------ */
+.slot {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--fg);
+  border-left: 1.2mm solid var(--st);
+  border-radius: .8mm;
+  padding: 1.2mm 2mm;
+  margin-bottom: 1.4mm;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+.slot .stitle {
+  flex: 0 0 auto;
+  font-weight: 700;
+  font-size: 1.06em;
+}
+.slot .speakers {
+  font-weight: 300;
+  font-size: .96em;
+  margin-top: .15em;
+}
+.slot .tags { margin-top: .6mm; }
+.tag {
+  display: inline-block;
+  background: #ffffffcc;
+  border-radius: .6mm;
+  padding: 0 1.2mm;
+  font-size: .82em;
+  font-weight: 400;
+  margin-right: 1mm;
+}
+
+/* grouped sessions: one box per paper, all names fully visible.  The boxes
+   share whatever height is left in the session block, so they fill it out. */
+.subs {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 1mm;
+  display: flex;
+  flex-direction: column;
+  gap: 1mm;
+}
+.sub {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff8c;
+  border-radius: .6mm;
+  padding: .9mm 1.4mm;
+}
+.sub .t { font-size: .97em; }
+.sub .a { font-size: .88em; font-weight: 300; opacity: .85; margin-top: .05em; }
+
+/* breaks / meals: a single strip, however long they actually last */
+.slot.compact {
+  flex-direction: row;
+  align-items: center;
+  padding: .7mm 2mm;
+}
+/* the title has to be shrinkable here, or a long name runs out of the strip */
+.slot.compact .stitle {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+/* social events: off the time axis, so they carry their own time */
+.slot.social { margin-top: 1.6mm; }
+.slot .tlocal {
+  flex: 0 0 auto;
+  margin-right: 2mm;
+  font-weight: 600;
+  opacity: .75;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- legend ----------------------------------------------------------- */
+.legend {
+  flex: 0 0 auto;
+  margin-top: 4mm;
+  padding-top: 2.5mm;
+  border-top: .6mm solid var(--mid-blue);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3mm;
+  font-size: 1em;
+}
+.legend .lbl { font-weight: 700; color: var(--mid-blue); }
+.legend .item {
+  background: var(--bg);
+  color: var(--fg);
+  border-left: 1.2mm solid var(--st);
+  border-radius: .8mm;
+  padding: .6mm 2mm;
+}
+/* QR code to this conference's own program page, bottom right */
+.qr {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2.5mm;
+}
+.qr-txt { text-align: right; line-height: 1.3; }
+.qr-lead { font-weight: 600; color: var(--deep-blue); }
+.qr-url { font-weight: 300; color: var(--mid-blue); }
+.qr-img {
+  width: 9.2em;
+  height: 9.2em;
+  display: block;
+  border: .5mm solid #fff;
+}
+
+/* --- print ------------------------------------------------------------ */
+@media print {
+  html, body { background: #fff; }
+  .toolbar { display: none !important; }
+  #scaler { transform: none !important; margin-top: 0; }
+  #sheet { box-shadow: none; }
+}
+</style>
+<style id="page-style">@page { size: 594mm 841mm; margin: 0; }</style>
+</head>
+<body>
+
+{%- comment -%}
+  ---- the day ------------------------------------------------------------
+  Picked by abbr (e.g. Sat) or, failing that, by name.  Every room of that day
+  becomes a column: on the workshop day that is one column per workshop.
+{%- endcomment -%}
+{%- assign day = site.data.program.days | where: 'abbr', page.day_abbr | first -%}
+{%- unless day -%}
+  {%- assign day = site.data.program.days | where: 'name', page.day_name | first -%}
+{%- endunless -%}
+{%- assign rooms = day.rooms -%}
+{%- assign nbr_cols = rooms | size -%}
+{%- assign used_legend_cats = '' -%}
+
+{%- comment -%}
+  ---- pass 1: the grid lines ---------------------------------------------
+  Every start and end time of the day becomes a horizontal grid line.  Social
+  events are left out: they are lined up at the foot instead, carrying their
+  own time, since they start at a different time in each room.  Coffee breaks
+  keep their line but not its label - they say their own time in the cell, so
+  that the axis stays down to the talks, lunch and registration.
+  Times are zero padded in program.yml, so a plain sort puts them in order.
+{%- endcomment -%}
+{%- assign boundary_str = '' -%}
+{%- assign span_str = ',' -%}
+{%- assign tick_str = ',' -%}
+{%- for room_schedule in rooms -%}
+  {%- for t in room_schedule.talks -%}
+    {%- assign talk = site.talks | where: 'name', t.name | first -%}
+    {%- unless talk.categories contains 'Social' -%}
+      {%- assign boundary_str = boundary_str | append: t.time_start | append: ',' | append: t.time_end | append: ',' -%}
+      {%- assign span_str = span_str | append: t.time_start | append: '>' | append: t.time_end | append: ',' -%}
+      {%- unless t.name contains 'Coffee Break' -%}
+        {%- assign tick_str = tick_str | append: t.time_start | append: ',' -%}
+      {%- endunless -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- assign boundaries = boundary_str | split: ',' | uniq | sort -%}
+{%- assign nbr_bands = boundaries | size | minus: 1 -%}
+{%- assign social_row = boundaries | size | plus: 1 -%}
+
+{%- comment -%}
+  Row sizes.  A band that some entry both starts and ends in is sized by its
+  content, as usual.  A short band that everything merely passes through - one
+  that exists only because a single room runs ten minutes long - is capped at
+  about the height of a line, so a session crossing it puts its height into the
+  band it really belongs to instead of inflating the sliver.  Long pass-through
+  bands are left alone: they are real gaps in the day, not artefacts.
+{%- endcomment -%}
+{%- assign short_band_min = 20 -%}
+{%- assign row_defs = '' -%}
+{%- for b in boundaries -%}
+  {%- unless forloop.last -%}
+    {%- assign b_next = boundaries[forloop.index] -%}
+    {%- assign b_hour = b | split: ':' | first | plus: 0 -%}
+    {%- assign b_min = b | split: ':' | last | plus: 0 -%}
+    {%- assign b_tot = b_hour | times: 60 | plus: b_min -%}
+    {%- assign n_hour = b_next | split: ':' | first | plus: 0 -%}
+    {%- assign n_min = b_next | split: ':' | last | plus: 0 -%}
+    {%- assign n_tot = n_hour | times: 60 | plus: n_min -%}
+    {%- assign band_len = n_tot | minus: b_tot -%}
+    {%- assign span_key = ',' | append: b | append: '>' | append: b_next | append: ',' -%}
+    {%- if span_str contains span_key or band_len >= short_band_min -%}
+      {%- assign row_defs = row_defs | append: ' auto' -%}
+    {%- else -%}
+      {%- assign row_defs = row_defs | append: ' minmax(min-content, 1.2em)' -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+<div class="toolbar">
+  <label for="paper">Paper</label>
+  <select id="paper">
+    <option value="841,1189">A0 portrait</option>
+    <option value="1189,841">A0 landscape</option>
+    <option value="594,841" selected>A1 portrait</option>
+    <option value="841,594">A1 landscape</option>
+    <option value="420,594">A2 portrait</option>
+    <option value="594,420">A2 landscape</option>
+    <option value="297,420">A3 portrait</option>
+    <option value="420,297">A3 landscape</option>
+    <option value="1016,571.5">16:9 screen (1080p) landscape</option>
+  </select>
+  <button id="print-btn" type="button">Print / save PDF</button>
+  <span class="hint">Times line up across the rooms. Text size is fitted to the sheet automatically; print with margins set to "None" and background graphics on.</span>
+</div>
+
+<div id="scaler">
+<div id="sheet" style="--sheet-w: 594mm; --sheet-h: 841mm;">
+
+  <header class="poster-head">
+    <div class="lead">
+      <h1>{{ page.poster_title | default: page.title }}</h1>
+    </div>
+    <div class="meta">
+      <strong>{{ day.date | date: "%A %-d %B %Y" }}</strong>
+    </div>
+  </header>
+
+  <div id="gridwrap">
+  <div id="grid" style="grid-template-columns: max-content repeat({{ nbr_cols }}, minmax(0, 1fr)); grid-template-rows: max-content{{ row_defs }} max-content;">
+
+    {%- comment -%}
+      The shared time axis.  Only lines where a talk, lunch or registration
+      starts are labelled: the last line (nothing starts when the day finishes)
+      and the coffee breaks are left off, the latter carrying their own time.
+    {%- endcomment -%}
+    {%- for b in boundaries -%}
+      {%- unless forloop.last -%}
+        {%- assign tick_key = ',' | append: b | append: ',' -%}
+        {%- if tick_str contains tick_key -%}
+          <div class="tick" style="grid-row: {{ forloop.index | plus: 1 }} / {{ forloop.index | plus: 2 }};">{{ b }}</div>
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+
+    {%- for room_schedule in rooms -%}
+      {%- assign room_col = forloop.index | plus: 1 -%}
+
+      <div class="day-head" style="grid-column: {{ room_col }};">
+        <span class="dname">{{ room_schedule.conference | default: room_schedule.name }}</span>
+        {%- if room_schedule.conference -%}
+          <span class="ddate">{{ room_schedule.name }}</span>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%}
+        Each room is its own column, so every one of its entries is placed
+        between the grid lines of its own start and end time.  Social events go
+        to the closing row instead, one below the other if a room has more than
+        one, and carry their own time.
+      {%- endcomment -%}
+      {%- assign social_seen = 0 -%}
+      {%- for t in room_schedule.talks -%}
+        {%- assign talk = site.talks | where: 'name', t.name | first -%}
+
+        {%- assign is_social = false -%}
+        {%- if talk.categories contains 'Social' -%}{%- assign is_social = true -%}{%- endif -%}
+        {%- if is_social -%}
+          {%- assign row_start = social_row | plus: social_seen -%}
+          {%- assign row_end = row_start | plus: 1 -%}
+          {%- assign social_seen = social_seen | plus: 1 -%}
+        {%- else -%}
+          {%- assign row_start = 0 -%}
+          {%- assign row_end = 0 -%}
+          {%- for b in boundaries -%}
+            {%- if b == t.time_start -%}{%- assign row_start = forloop.index | plus: 1 -%}{%- endif -%}
+            {%- if b == t.time_end -%}{%- assign row_end = forloop.index | plus: 1 -%}{%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+
+        {%- comment -%} colour, exactly as on the web program {%- endcomment -%}
+        {%- assign talk_color = 'secondary' -%}
+        {%- assign talk_legend_name = '' -%}
+        {%- if t.talks -%}
+          {%- assign first_sub_t = t.talks | first -%}
+          {%- assign first_sub_obj = site.talks | where: 'name', first_sub_t.name | first -%}
+          {%- for color_cat in site.conference.talks.main_categories -%}
+            {%- if first_sub_obj.categories contains color_cat.name -%}
+              {%- assign talk_color = color_cat.color -%}
+              {%- assign talk_legend_name = color_cat.name -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- elsif talk.categories contains 'Invited' -%}
+          {%- for color_cat in site.conference.talks.main_categories -%}
+            {%- if color_cat.name == 'Invited' -%}
+              {%- assign talk_color = color_cat.color -%}
+              {%- assign talk_legend_name = color_cat.name -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- else -%}
+          {%- for color_cat in site.conference.talks.main_categories -%}
+            {%- if talk.categories contains color_cat.name -%}
+              {%- assign talk_color = color_cat.color -%}
+              {%- assign talk_legend_name = color_cat.name -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+        {%- if talk_legend_name != '' and talk_legend_name != 'Schedule' and talk_legend_name != 'Joint' and talk_legend_name != 'Test of Time' -%}
+          {%- assign used_legend_cats = used_legend_cats | append: '||' | append: talk_legend_name | append: '||' -%}
+        {%- endif -%}
+        {%- include partials/get_main_category.html -%}
+
+        {%- assign is_break = false -%}
+        {%- unless t.talks -%}
+          {%- if talk.categories contains 'Schedule' -%}{%- assign is_break = true -%}{%- endif -%}
+        {%- endunless -%}
+        {%- comment -%} coffee breaks are off the axis, so they say their own time {%- endcomment -%}
+        {%- assign shows_own_time = is_social -%}
+        {%- if t.name contains 'Coffee Break' -%}{%- assign shows_own_time = true -%}{%- endif -%}
+
+        <div class="slot c-{{ talk_color }}{% if is_break or is_social %} compact{% endif %}{% if is_social %} social{% endif %}"
+             style="grid-column: {{ room_col }}; grid-row: {{ row_start }} / {{ row_end }};">
+          {%- if shows_own_time -%}<span class="tlocal">{{ t.time_start }}</span>{%- endif -%}
+          <div class="stitle">{{ t.name }}</div>
+
+          {%- if t.talks -%}
+            <div class="subs">
+              {%- for sub_t in t.talks -%}
+                {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
+                <div class="sub">
+                  <div class="t">{{ sub_t.name }}</div>
+                  {%- if sub_obj.speakers -%}
+                    {%- assign talk = sub_obj -%}
+                    <div class="a">{%- include partials/list_speakers.html text_only=true -%}</div>
+                  {%- elsif sub_t.authors -%}
+                    <div class="a">{{ sub_t.authors }}</div>
+                  {%- endif -%}
+                </div>
+              {%- endfor -%}
+            </div>
+          {%- elsif is_break -%}
+          {%- else -%}
+            {%- unless talk.categories contains 'Social' -%}
+              {%- if talk.speakers -%}
+                <div class="speakers">{%- include partials/list_speakers.html text_only=true -%}</div>
+              {%- endif -%}
+              {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
+                <div class="tags">
+                  {%- assign entry_room_name = t.room_override | default: room_schedule.name -%}
+                  <span class="tag">Joint</span>
+                  {%- unless entry_room_name == room_schedule.name -%}
+                    <span class="tag">{{ entry_room_name }}</span>
+                  {%- endunless -%}
+                </div>
+              {%- endif -%}
+            {%- endunless -%}
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+  </div>
+
+  <div class="legend">
+    <span class="lbl">{{ site.data.lang[site.conference.lang].program.legend | default: "Caption" }}</span>
+    {%- for legend_cat in site.conference.talks.main_categories -%}
+      {%- comment -%} delimited both sides, or CONCUR matches inside YR-CONCUR {%- endcomment -%}
+      {%- assign legend_marker = '||' | append: legend_cat.name | append: '||' -%}
+      {%- if used_legend_cats contains legend_marker -%}
+        <span class="item c-{{ legend_cat.color }}">{{ legend_cat.name }}</span>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- comment -%}
+      QR codes are pre-rendered SVGs in /assets/images/qr/ and point at the
+      production URL.  Regenerate with, e.g.:
+        qrencode -t SVG -m 4 -s 8 -l M -o assets/images/qr/program-day.svg \
+                 https://confest-2026.github.io/program/
+      The printed host is a literal rather than site.url, which is localhost in
+      a development build and would then disagree with the code beside it.
+    {%- endcomment -%}
+    {%- assign site_host = 'confest-2026.github.io' -%}
+    {%- assign qr_file = page.qr_image | default: 'program-day' -%}
+    {%- assign qr_path = page.qr_path | default: '/program' -%}
+    <div class="qr">
+      <div class="qr-txt">
+        <div class="qr-lead">Full program, abstracts &amp; updates</div>
+        <div class="qr-url">{{ site_host }}{{ qr_path }}</div>
+      </div>
+      <img class="qr-img"
+           src="{{ '/assets/images/qr/' | append: qr_file | append: '.svg' | prepend: site.baseurl }}"
+           alt="QR code linking to {{ site_host }}{{ qr_path }}" />
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+(function () {
+  var sheet  = document.getElementById('sheet');
+  var grid   = document.getElementById('grid');
+  var wrap   = document.getElementById('gridwrap');
+  var scaler = document.getElementById('scaler');
+  var paper  = document.getElementById('paper');
+  var pageStyle = document.getElementById('page-style');
+
+  function mmToPx(mm) { return mm * 96 / 25.4; }
+
+  /* Fit the text size so the program just fills the sheet. */
+  function autoFit() {
+    var lo = 1.0, hi = 14.0, best = lo;
+    for (var n = 0; n < 24; n++) {
+      var mid = (lo + hi) / 2;
+      sheet.style.setProperty('--fs', mid.toFixed(3) + 'mm');
+      if (grid.offsetHeight <= wrap.clientHeight + 1) {
+        best = mid;
+        lo = mid;
+      } else {
+        hi = mid;
+      }
+    }
+    sheet.style.setProperty('--fs', best.toFixed(3) + 'mm');
+  }
+
+  function fitToScreen() {
+    var available = document.documentElement.clientWidth - 24;
+    var width = mmToPx(parseFloat(sheet.style.getPropertyValue('--sheet-w')));
+    var scale = Math.min(1, available / width);
+    scaler.style.transform = 'scale(' + scale + ')';
+    scaler.style.height = (mmToPx(parseFloat(sheet.style.getPropertyValue('--sheet-h'))) * scale + 60) + 'px';
+  }
+
+  function applyPaper() {
+    var parts = paper.value.split(',');
+    var w = parts[0], h = parts[1];
+    sheet.style.setProperty('--sheet-w', w + 'mm');
+    sheet.style.setProperty('--sheet-h', h + 'mm');
+    pageStyle.textContent = '@page { size: ' + w + 'mm ' + h + 'mm; margin: 0; }';
+    autoFit();
+    fitToScreen();
+  }
+
+  paper.addEventListener('change', applyPaper);
+  document.getElementById('print-btn').addEventListener('click', function () { window.print(); });
+  window.addEventListener('resize', fitToScreen);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(applyPaper);
+  }
+  applyPaper();
+})();
+</script>
+
+</body>
+</html>
