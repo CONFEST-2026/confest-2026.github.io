@@ -23,7 +23,7 @@ heroiframe: https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJ
         <strong>Visa/ETA:</strong> You may need a <a href="https://www.gov.uk/check-uk-visa" >visa</a> or an <a href="https://www.gov.uk/eta/apply">Electronic Travel Authorization (ETA)</a> to enter the UK (even if you did not previously need one).
       </p>
       <p>
-        Monday is a public holiday in the UK. Transport services will usually operate but on reduce frequency. Major shops are likely to be open, but with slightly reduced hours.
+        Monday is a public holiday in the UK. Transport services will usually operate but with reduced frequency. Major shops are likely to be open, but with slightly reduced hours.
       </p>
     </div>
   </div>
