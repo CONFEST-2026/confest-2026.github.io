@@ -173,7 +173,7 @@ heroiframe: https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJ
   <div class="card">
   <h4>What's on?</h4>
     <p>
-      See the full <a href="/program">conference program</a>.
+      See the full <a href="/program">conference program</a>. Printed programmes will be available.
     </p>
     <p>Don't miss the <a href="/local/social#welcome">Reception (Tuesday)</a> and <a href="/local/social#cruise">Social Dinner & Cruise (Thursday)</a>
     </p>
