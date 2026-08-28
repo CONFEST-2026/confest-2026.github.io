@@ -65,9 +65,15 @@ jobs:
             mv workshops/snr/submenu.yml _data/submenu/snr.yml
           fi
 
+      - name: Checkout public statistics data
+        uses: actions/checkout@v4
+        with:
+          repository: CONFEST-2026/statistics
+          path: temp-statistics
+          persist-credentials: false
+
       - name: Fetch public statistics data
         run: |
-          git clone --depth=1 https://github.com/CONFEST-2026/statistics.git temp-statistics
           mkdir -p _data
           cp temp-statistics/participants.csv _data/participants.csv
           cp temp-statistics/travel_origins_map.geojson _data/travel_origins.json
