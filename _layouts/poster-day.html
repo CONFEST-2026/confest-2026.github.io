@@ -495,10 +495,12 @@ html, body {
         {%- endif -%}
 
         {%- comment -%}
-          Entries listed in more than one room - the joint sessions - are drawn
-          once, spanning that day's columns.
+          Entries every room of the day lists - the joint sessions, and the
+          social events the whole conference goes to - are drawn once, spanning
+          that day's columns.
         {%- endcomment -%}
-        {%- assign joint_done = ',' -%}
+        {%- assign spanning_done = ',' -%}
+        {%- assign social_seen = 0 -%}
 
         {%- for room_schedule in d.rooms -%}
           {%- assign col = col | plus: 1 -%}
@@ -510,25 +512,43 @@ html, body {
             {%- endif -%}
           </div>
 
-          {%- assign social_seen = 0 -%}
           {%- for t in room_schedule.talks -%}
             {%- assign talk = site.talks | where: 'name', t.name | first -%}
 
             {%- assign is_joint = false -%}
             {%- if talk.categories contains 'Joint' -%}{%- assign is_joint = true -%}{%- endif -%}
-            {%- assign joint_key = ',' | append: t.name | append: '@' | append: t.time_start | append: ',' -%}
+            {%- assign is_social = false -%}
+            {%- if talk.categories contains 'Social' -%}{%- assign is_social = true -%}{%- endif -%}
+
+            {%- comment -%}
+              A social event listed in every room of the day belongs to all of
+              them, so it spans the day rather than repeating column by column.
+            {%- endcomment -%}
+            {%- assign spans_day = is_joint -%}
+            {%- if is_social -%}
+              {%- assign rooms_with = 0 -%}
+              {%- for r2 in d.rooms -%}
+                {%- for t2 in r2.talks -%}
+                  {%- if t2.name == t.name and t2.time_start == t.time_start -%}
+                    {%- assign rooms_with = rooms_with | plus: 1 -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endfor -%}
+              {%- if rooms_with == day_nbr_rooms -%}{%- assign spans_day = true -%}{%- endif -%}
+            {%- endif -%}
+
             {%- assign skip_entry = false -%}
-            {%- if is_joint -%}
-              {%- if joint_done contains joint_key -%}
+            {%- if spans_day -%}
+              {%- assign dup_key = ',' | append: t.name | append: '@' | append: t.time_start | append: ',' -%}
+              {%- if spanning_done contains dup_key -%}
                 {%- assign skip_entry = true -%}
               {%- else -%}
-                {%- assign joint_done = joint_done | append: t.name | append: '@' | append: t.time_start | append: ',' -%}
+                {%- assign spanning_done = spanning_done | append: t.name | append: '@' | append: t.time_start | append: ',' -%}
               {%- endif -%}
             {%- endif -%}
 
             {%- unless skip_entry -%}
-              {%- assign is_social = false -%}
-              {%- if talk.categories contains 'Social' -%}{%- assign is_social = true -%}{%- endif -%}
               {%- if is_social -%}
                 {%- assign row_start = social_row | plus: social_seen -%}
                 {%- assign row_end = row_start | plus: 1 -%}
@@ -542,8 +562,8 @@ html, body {
                 {%- endfor -%}
               {%- endif -%}
 
-              {%- comment -%} a joint session spans its day's rooms {%- endcomment -%}
-              {%- if is_joint -%}
+              {%- comment -%} a shared session spans its day's rooms {%- endcomment -%}
+              {%- if spans_day -%}
                 {%- assign col_style = 'grid-column: ' | append: day_first_col | append: ' / span ' | append: day_nbr_rooms -%}
               {%- else -%}
                 {%- assign col_style = 'grid-column: ' | append: col -%}
