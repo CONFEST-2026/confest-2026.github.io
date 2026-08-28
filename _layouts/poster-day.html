@@ -162,6 +162,30 @@ html, body {
 .day-head .dname { font-size: 1.45em; font-weight: 700; line-height: 1.1; }
 .day-head .ddate { font-size: .95em; font-weight: 300; color: #fff; opacity: .85; white-space: nowrap; }
 
+/* a poster covering more than one day gets a second header row: the day spans
+   its own rooms above them */
+.day-super {
+  grid-row: 1;
+  background: var(--deep-blue);
+  color: var(--yellow);
+  padding: 1.2mm 2.5mm;
+  border-radius: .8mm;
+  margin-bottom: 1.2mm;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2mm;
+  min-width: 0;
+}
+.day-super .dname { font-size: 1.45em; font-weight: 700; line-height: 1.1; }
+.day-super .ddate { font-size: .95em; font-weight: 300; color: #fff; opacity: .85; white-space: nowrap; }
+.room-head {
+  background: var(--mid-blue);
+  color: #fff;
+}
+.room-head .dname { font-size: 1.1em; }
+.room-head .ddate { color: #fff; }
+
 /* time axis */
 .tick {
   grid-column: 1;
@@ -308,46 +332,71 @@ html, body {
 <body>
 
 {%- comment -%}
-  ---- the day ------------------------------------------------------------
-  Picked by abbr (e.g. Sat) or, failing that, by name.  Every room of that day
-  becomes a column: on the workshop day that is one column per workshop.
+  ---- the days -----------------------------------------------------------
+  One or more days, picked by abbr: `day_abbr: Sat` for a single day, or
+  `day_abbrs: Tue,Wed` to put several on one sheet.  Every room of every day
+  chosen becomes a column, in program order, so on the workshop day that is a
+  column per workshop.  With more than one day the columns get a second header
+  row, the day spanning its own rooms above them.
 {%- endcomment -%}
-{%- assign day = site.data.program.days | where: 'abbr', page.day_abbr | first -%}
-{%- unless day -%}
-  {%- assign day = site.data.program.days | where: 'name', page.day_name | first -%}
-{%- endunless -%}
-{%- assign rooms = day.rooms -%}
-{%- assign nbr_cols = rooms | size -%}
+{%- if page.day_abbrs -%}
+  {%- assign wanted_days = page.day_abbrs | split: ',' -%}
+{%- else -%}
+  {%- assign wanted_days = page.day_abbr | split: ',' -%}
+{%- endif -%}
+
+{%- assign nbr_cols = 0 -%}
+{%- assign nbr_days = 0 -%}
+{%- assign first_date = '' -%}
+{%- assign last_date = '' -%}
+{%- for d in site.data.program.days -%}
+  {%- if wanted_days contains d.abbr -%}
+    {%- assign nbr_days = nbr_days | plus: 1 -%}
+    {%- assign day_rooms = d.rooms | size -%}
+    {%- assign nbr_cols = nbr_cols | plus: day_rooms -%}
+    {%- if first_date == '' -%}{%- assign first_date = d.date -%}{%- endif -%}
+    {%- assign last_date = d.date -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%} one header row for a single day, two when the days are grouped {%- endcomment -%}
+{%- assign hdr_rows = 1 -%}
+{%- if nbr_days > 1 -%}{%- assign hdr_rows = 2 -%}{%- endif -%}
+
 {%- assign used_legend_cats = '' -%}
 
 {%- comment -%}
   ---- pass 1: the grid lines ---------------------------------------------
-  Every start and end time of the day becomes a horizontal grid line.  Social
-  events are left out: they are lined up at the foot instead, carrying their
-  own time, since they start at a different time in each room.  Coffee breaks
-  keep their line but not its label - they say their own time in the cell, so
-  that the axis stays down to the talks, lunch and registration.
+  Every start and end time becomes a horizontal grid line.  Social events are
+  left out: they are lined up at the foot instead, carrying their own time,
+  since they start at a different time in each room.  Coffee breaks keep their
+  line but not its label - they say their own time in the cell, so that the
+  axis stays down to the talks, lunch and registration.
   Times are zero padded in program.yml, so a plain sort puts them in order.
 {%- endcomment -%}
 {%- assign boundary_str = '' -%}
 {%- assign span_str = ',' -%}
 {%- assign tick_str = ',' -%}
-{%- for room_schedule in rooms -%}
-  {%- for t in room_schedule.talks -%}
-    {%- assign talk = site.talks | where: 'name', t.name | first -%}
-    {%- unless talk.categories contains 'Social' -%}
-      {%- assign boundary_str = boundary_str | append: t.time_start | append: ',' | append: t.time_end | append: ',' -%}
-      {%- assign span_str = span_str | append: t.time_start | append: '>' | append: t.time_end | append: ',' -%}
-      {%- unless t.name contains 'Coffee Break' -%}
-        {%- assign tick_str = tick_str | append: t.time_start | append: ',' -%}
-      {%- endunless -%}
-    {%- endunless -%}
-  {%- endfor -%}
+{%- for d in site.data.program.days -%}
+  {%- if wanted_days contains d.abbr -%}
+    {%- for room_schedule in d.rooms -%}
+      {%- for t in room_schedule.talks -%}
+        {%- assign talk = site.talks | where: 'name', t.name | first -%}
+        {%- unless talk.categories contains 'Social' -%}
+          {%- assign boundary_str = boundary_str | append: t.time_start | append: ',' | append: t.time_end | append: ',' -%}
+          {%- assign span_str = span_str | append: t.time_start | append: '>' | append: t.time_end | append: ',' -%}
+          {%- unless t.name contains 'Coffee Break' -%}
+            {%- assign tick_str = tick_str | append: t.time_start | append: ',' -%}
+          {%- endunless -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endif -%}
 {%- endfor -%}
 
 {%- assign boundaries = boundary_str | split: ',' | uniq | sort -%}
 {%- assign nbr_bands = boundaries | size | minus: 1 -%}
-{%- assign social_row = boundaries | size | plus: 1 -%}
+{%- assign social_row = boundaries | size | plus: hdr_rows -%}
 
 {%- comment -%}
   Row sizes.  A band that some entry both starts and ends in is sized by its
@@ -377,6 +426,8 @@ html, body {
     {%- endif -%}
   {%- endunless -%}
 {%- endfor -%}
+{%- assign hdr_defs = 'max-content' -%}
+{%- if hdr_rows == 2 -%}{%- assign hdr_defs = 'max-content max-content' -%}{%- endif -%}
 
 <div class="toolbar">
   <label for="paper">Paper</label>
@@ -395,6 +446,7 @@ html, body {
   <span class="hint">Times line up across the rooms. Text size is fitted to the sheet automatically; print with margins set to "None" and background graphics on.</span>
 </div>
 
+
 <div id="scaler">
 <div id="sheet" style="--sheet-w: 594mm; --sheet-h: 841mm;">
 
@@ -403,12 +455,16 @@ html, body {
       <h1>{{ page.poster_title | default: page.title }}</h1>
     </div>
     <div class="meta">
-      <strong>{{ day.date | date: "%A %-d %B %Y" }}</strong>
+      <strong>
+        {{- first_date | date: "%A %-d" -}}
+        {%- unless first_date == last_date %} &ndash; {{ last_date | date: "%A %-d" }}{% endunless %}
+        {{ last_date | date: "%B %Y" -}}
+      </strong>
     </div>
   </header>
 
   <div id="gridwrap">
-  <div id="grid" style="grid-template-columns: max-content repeat({{ nbr_cols }}, minmax(0, 1fr)); grid-template-rows: max-content{{ row_defs }} max-content;">
+  <div id="grid" style="grid-template-columns: max-content repeat({{ nbr_cols }}, minmax(0, 1fr)); grid-template-rows: {{ hdr_defs }}{{ row_defs }} max-content;">
 
     {%- comment -%}
       The shared time axis.  Only lines where a talk, lunch or registration
@@ -419,131 +475,166 @@ html, body {
       {%- unless forloop.last -%}
         {%- assign tick_key = ',' | append: b | append: ',' -%}
         {%- if tick_str contains tick_key -%}
-          <div class="tick" style="grid-row: {{ forloop.index | plus: 1 }} / {{ forloop.index | plus: 2 }};">{{ b }}</div>
+          {%- assign tick_row = forloop.index | plus: hdr_rows -%}
+          <div class="tick" style="grid-row: {{ tick_row }} / {{ tick_row | plus: 1 }};">{{ b }}</div>
         {%- endif -%}
       {%- endunless -%}
     {%- endfor -%}
 
-    {%- for room_schedule in rooms -%}
-      {%- assign room_col = forloop.index | plus: 1 -%}
+    {%- assign col = 1 -%}
+    {%- for d in site.data.program.days -%}
+      {%- if wanted_days contains d.abbr -%}
+        {%- assign day_first_col = col | plus: 1 -%}
+        {%- assign day_nbr_rooms = d.rooms | size -%}
 
-      <div class="day-head" style="grid-column: {{ room_col }};">
-        <span class="dname">{{ room_schedule.conference | default: room_schedule.name }}</span>
-        {%- if room_schedule.conference -%}
-          <span class="ddate">{{ room_schedule.name }}</span>
-        {%- endif -%}
-      </div>
-
-      {%- comment -%}
-        Each room is its own column, so every one of its entries is placed
-        between the grid lines of its own start and end time.  Social events go
-        to the closing row instead, one below the other if a room has more than
-        one, and carry their own time.
-      {%- endcomment -%}
-      {%- assign social_seen = 0 -%}
-      {%- for t in room_schedule.talks -%}
-        {%- assign talk = site.talks | where: 'name', t.name | first -%}
-
-        {%- assign is_social = false -%}
-        {%- if talk.categories contains 'Social' -%}{%- assign is_social = true -%}{%- endif -%}
-        {%- if is_social -%}
-          {%- assign row_start = social_row | plus: social_seen -%}
-          {%- assign row_end = row_start | plus: 1 -%}
-          {%- assign social_seen = social_seen | plus: 1 -%}
-        {%- else -%}
-          {%- assign row_start = 0 -%}
-          {%- assign row_end = 0 -%}
-          {%- for b in boundaries -%}
-            {%- if b == t.time_start -%}{%- assign row_start = forloop.index | plus: 1 -%}{%- endif -%}
-            {%- if b == t.time_end -%}{%- assign row_end = forloop.index | plus: 1 -%}{%- endif -%}
-          {%- endfor -%}
+        {%- if hdr_rows == 2 -%}
+          <div class="day-super" style="grid-column: {{ day_first_col }} / span {{ day_nbr_rooms }};">
+            <span class="dname">{{ d.name }}</span>
+            <span class="ddate">{{ d.date | date: "%-d %b" }}</span>
+          </div>
         {%- endif -%}
 
-        {%- comment -%} colour, exactly as on the web program {%- endcomment -%}
-        {%- assign talk_color = 'secondary' -%}
-        {%- assign talk_legend_name = '' -%}
-        {%- if t.talks -%}
-          {%- assign first_sub_t = t.talks | first -%}
-          {%- assign first_sub_obj = site.talks | where: 'name', first_sub_t.name | first -%}
-          {%- for color_cat in site.conference.talks.main_categories -%}
-            {%- if first_sub_obj.categories contains color_cat.name -%}
-              {%- assign talk_color = color_cat.color -%}
-              {%- assign talk_legend_name = color_cat.name -%}
-              {%- break -%}
+        {%- comment -%}
+          Entries listed in more than one room - the joint sessions - are drawn
+          once, spanning that day's columns.
+        {%- endcomment -%}
+        {%- assign joint_done = ',' -%}
+
+        {%- for room_schedule in d.rooms -%}
+          {%- assign col = col | plus: 1 -%}
+
+          <div class="day-head{% if hdr_rows == 2 %} room-head{% endif %}" style="grid-row: {{ hdr_rows }}; grid-column: {{ col }};">
+            <span class="dname">{{ room_schedule.conference | default: room_schedule.name }}</span>
+            {%- if room_schedule.conference -%}
+              <span class="ddate">{{ room_schedule.name }}</span>
             {%- endif -%}
-          {%- endfor -%}
-        {%- elsif talk.categories contains 'Invited' -%}
-          {%- for color_cat in site.conference.talks.main_categories -%}
-            {%- if color_cat.name == 'Invited' -%}
-              {%- assign talk_color = color_cat.color -%}
-              {%- assign talk_legend_name = color_cat.name -%}
-              {%- break -%}
+          </div>
+
+          {%- assign social_seen = 0 -%}
+          {%- for t in room_schedule.talks -%}
+            {%- assign talk = site.talks | where: 'name', t.name | first -%}
+
+            {%- assign is_joint = false -%}
+            {%- if talk.categories contains 'Joint' -%}{%- assign is_joint = true -%}{%- endif -%}
+            {%- assign joint_key = ',' | append: t.name | append: '@' | append: t.time_start | append: ',' -%}
+            {%- assign skip_entry = false -%}
+            {%- if is_joint -%}
+              {%- if joint_done contains joint_key -%}
+                {%- assign skip_entry = true -%}
+              {%- else -%}
+                {%- assign joint_done = joint_done | append: t.name | append: '@' | append: t.time_start | append: ',' -%}
+              {%- endif -%}
             {%- endif -%}
-          {%- endfor -%}
-        {%- else -%}
-          {%- for color_cat in site.conference.talks.main_categories -%}
-            {%- if talk.categories contains color_cat.name -%}
-              {%- assign talk_color = color_cat.color -%}
-              {%- assign talk_legend_name = color_cat.name -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
-        {%- if talk_legend_name != '' and talk_legend_name != 'Schedule' and talk_legend_name != 'Joint' and talk_legend_name != 'Test of Time' -%}
-          {%- assign used_legend_cats = used_legend_cats | append: '||' | append: talk_legend_name | append: '||' -%}
-        {%- endif -%}
-        {%- include partials/get_main_category.html -%}
 
-        {%- assign is_break = false -%}
-        {%- unless t.talks -%}
-          {%- if talk.categories contains 'Schedule' -%}{%- assign is_break = true -%}{%- endif -%}
-        {%- endunless -%}
-        {%- comment -%} coffee breaks are off the axis, so they say their own time {%- endcomment -%}
-        {%- assign shows_own_time = is_social -%}
-        {%- if t.name contains 'Coffee Break' -%}{%- assign shows_own_time = true -%}{%- endif -%}
+            {%- unless skip_entry -%}
+              {%- assign is_social = false -%}
+              {%- if talk.categories contains 'Social' -%}{%- assign is_social = true -%}{%- endif -%}
+              {%- if is_social -%}
+                {%- assign row_start = social_row | plus: social_seen -%}
+                {%- assign row_end = row_start | plus: 1 -%}
+                {%- assign social_seen = social_seen | plus: 1 -%}
+              {%- else -%}
+                {%- assign row_start = 0 -%}
+                {%- assign row_end = 0 -%}
+                {%- for b in boundaries -%}
+                  {%- if b == t.time_start -%}{%- assign row_start = forloop.index | plus: hdr_rows -%}{%- endif -%}
+                  {%- if b == t.time_end -%}{%- assign row_end = forloop.index | plus: hdr_rows -%}{%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
 
-        <div class="slot c-{{ talk_color }}{% if is_break or is_social %} compact{% endif %}{% if is_social %} social{% endif %}"
-             style="grid-column: {{ room_col }}; grid-row: {{ row_start }} / {{ row_end }};">
-          {%- if shows_own_time -%}<span class="tlocal">{{ t.time_start }}</span>{%- endif -%}
-          <div class="stitle">{{ t.name }}</div>
+              {%- comment -%} a joint session spans its day's rooms {%- endcomment -%}
+              {%- if is_joint -%}
+                {%- assign col_style = 'grid-column: ' | append: day_first_col | append: ' / span ' | append: day_nbr_rooms -%}
+              {%- else -%}
+                {%- assign col_style = 'grid-column: ' | append: col -%}
+              {%- endif -%}
 
-          {%- if t.talks -%}
-            <div class="subs">
-              {%- for sub_t in t.talks -%}
-                {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
-                <div class="sub">
-                  <div class="t">{{ sub_t.name }}</div>
-                  {%- if sub_obj.speakers -%}
-                    {%- assign talk = sub_obj -%}
-                    <div class="a">{%- include partials/list_speakers.html text_only=true -%}</div>
-                  {%- elsif sub_t.authors -%}
-                    <div class="a">{{ sub_t.authors }}</div>
+              {%- comment -%} colour, exactly as on the web program {%- endcomment -%}
+              {%- assign talk_color = 'secondary' -%}
+              {%- assign talk_legend_name = '' -%}
+              {%- if t.talks -%}
+                {%- assign first_sub_t = t.talks | first -%}
+                {%- assign first_sub_obj = site.talks | where: 'name', first_sub_t.name | first -%}
+                {%- for color_cat in site.conference.talks.main_categories -%}
+                  {%- if first_sub_obj.categories contains color_cat.name -%}
+                    {%- assign talk_color = color_cat.color -%}
+                    {%- assign talk_legend_name = color_cat.name -%}
+                    {%- break -%}
                   {%- endif -%}
-                </div>
-              {%- endfor -%}
-            </div>
-          {%- elsif is_break -%}
-          {%- else -%}
-            {%- unless talk.categories contains 'Social' -%}
-              {%- if talk.speakers -%}
-                <div class="speakers">{%- include partials/list_speakers.html text_only=true -%}</div>
+                {%- endfor -%}
+              {%- elsif talk.categories contains 'Invited' -%}
+                {%- for color_cat in site.conference.talks.main_categories -%}
+                  {%- if color_cat.name == 'Invited' -%}
+                    {%- assign talk_color = color_cat.color -%}
+                    {%- assign talk_legend_name = color_cat.name -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- else -%}
+                {%- for color_cat in site.conference.talks.main_categories -%}
+                  {%- if talk.categories contains color_cat.name -%}
+                    {%- assign talk_color = color_cat.color -%}
+                    {%- assign talk_legend_name = color_cat.name -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
               {%- endif -%}
-              {%- if talk.categories contains 'Invited' and talk.categories contains 'Joint' -%}
-                <div class="tags">
-                  {%- assign entry_room_name = t.room_override | default: room_schedule.name -%}
-                  <span class="tag">Joint</span>
-                  {%- unless entry_room_name == room_schedule.name -%}
-                    <span class="tag">{{ entry_room_name }}</span>
+              {%- if talk_legend_name != '' and talk_legend_name != 'Schedule' and talk_legend_name != 'Joint' and talk_legend_name != 'Test of Time' -%}
+                {%- assign used_legend_cats = used_legend_cats | append: '||' | append: talk_legend_name | append: '||' -%}
+              {%- endif -%}
+              {%- include partials/get_main_category.html -%}
+
+              {%- assign is_break = false -%}
+              {%- unless t.talks -%}
+                {%- if talk.categories contains 'Schedule' -%}{%- assign is_break = true -%}{%- endif -%}
+              {%- endunless -%}
+              {%- comment -%} coffee breaks are off the axis, so they say their own time {%- endcomment -%}
+              {%- assign shows_own_time = is_social -%}
+              {%- if t.name contains 'Coffee Break' -%}{%- assign shows_own_time = true -%}{%- endif -%}
+
+              <div class="slot c-{{ talk_color }}{% if is_break or is_social %} compact{% endif %}{% if is_social %} social{% endif %}"
+                   style="{{ col_style }}; grid-row: {{ row_start }} / {{ row_end }};">
+                {%- if shows_own_time -%}<span class="tlocal">{{ t.time_start }}</span>{%- endif -%}
+                <div class="stitle">{{ t.name }}</div>
+
+                {%- if t.talks -%}
+                  <div class="subs">
+                    {%- for sub_t in t.talks -%}
+                      {%- assign sub_obj = site.talks | where: 'name', sub_t.name | first -%}
+                      <div class="sub">
+                        <div class="t">{{ sub_t.name }}</div>
+                        {%- if sub_obj.speakers -%}
+                          {%- assign talk = sub_obj -%}
+                          <div class="a">{%- include partials/list_speakers.html text_only=true -%}</div>
+                        {%- elsif sub_t.authors -%}
+                          <div class="a">{{ sub_t.authors }}</div>
+                        {%- endif -%}
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                {%- elsif is_break -%}
+                {%- else -%}
+                  {%- unless is_social -%}
+                    {%- if talk.speakers -%}
+                      <div class="speakers">{%- include partials/list_speakers.html text_only=true -%}</div>
+                    {%- endif -%}
+                    {%- if is_joint -%}
+                      <div class="tags">
+                        {%- assign entry_room_name = t.room_override | default: room_schedule.name -%}
+                        <span class="tag">Joint</span><span class="tag">{{ entry_room_name }}</span>
+                      </div>
+                    {%- endif -%}
                   {%- endunless -%}
-                </div>
-              {%- endif -%}
+                {%- endif -%}
+              </div>
             {%- endunless -%}
-          {%- endif -%}
-        </div>
-      {%- endfor -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      {%- endif -%}
     {%- endfor -%}
   </div>
   </div>
+
 
   <div class="legend">
     <span class="lbl">{{ site.data.lang[site.conference.lang].program.legend | default: "Caption" }}</span>
