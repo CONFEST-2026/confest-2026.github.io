@@ -615,7 +615,7 @@ days:
         authors: "Sjors Wortelboer, Dan Frumin and Jorge A. Pérez"
       - name: The MAY-preorder for timed systems with asynchronous communication
         authors: "Giovanni Bernardi, Maryline Zhang and Pedro Ribeiro"
-      - name:	Encoding call-by-push-value in the pi-calculus
+      - name: Encoding call-by-push-value in the pi-calculus
         authors: "Hans Hüttel, Nikolaj Kristensen, Benjamin Bennetzen and Peter Steffensen"
       - name: Weighted barbed congruence
         authors: "Iwan Quémerais"
@@ -638,11 +638,11 @@ days:
       show_time: true
       session_chair: ''
       talks:
-      - name:	The Theory of Sequential Value Passing
+      - name: The Theory of Sequential Value Passing
         authors: "Eduardo Costa Martins"
       - name: Deadlock-Free Parallel Regions for Projected Workflows
         authors: "Benedikt Bollig"
-      - name:	A Formal Comparison of Controllability Definitions for Deterministic and Nondeterministic Automata
+      - name: A Formal Comparison of Controllability Definitions for Deterministic and Nondeterministic Automata
         authors: "Jeroen Keiren and Michel Reniers"
       - name: Discounted-Sum Automata - Reductions between the Universality Problems
         authors: "Udi Boker"
@@ -666,7 +666,7 @@ days:
       time_end: '12:00'
       show_time: true
       talks:
-      - name:	Game Semantics for De Morgan Algebras
+      - name: Game Semantics for De Morgan Algebras
         authors: "Can Baskent and Andrew Lewis-Smith"
       - name: Shielding for Higher-Order Safety
         authors: "Filip Cano, Thomas Henzinger and Konstantin Kueffner"
@@ -782,9 +782,9 @@ days:
       time_end: '16:30'
       show_time: true
       talks:
-      - name:	Forward-Responsibility in Petri Nets
+      - name: Forward-Responsibility in Petri Nets
         authors: "Caroline Lemke and Heike Wehrheim"
-      - name:	Duality for Horn Disjunctive Linear Relations
+      - name: Duality for Horn Disjunctive Linear Relations
         authors: "Om Swostik Mishra and Christoph Haase"
       - name: "ATCAL: a model of information manipulation by concurrent announcements"
         authors: "Louwe B. Kuijer and Klara Rawska-Furman"

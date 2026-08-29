@@ -1,0 +1,717 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONFEST 2026 — Welcome</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap">
+<style>
+:root {
+  --primary-yellow: #F5D547;
+  --accent-yellow: #f3be42;
+  --deep-blue: #00205B;
+  --sky-blue: #8CC8F0;
+  --mid-blue: rgb(58,95,128);
+  --maritime-blue: rgb(83,128,163);
+  --navy-blue: #0D133D;
+  --sea-green: #2ECCB0;
+  --sub-orange: #FF9900;
+  --funky-purple: #A259CA;
+  --cream-bg: #FCFCFC;
+  --bright-red: #FF3B3B;
+  --neutral: #E6EBF0;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--navy-blue);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: radial-gradient(ellipse at 50% 30%, var(--mid-blue) 0%, var(--deep-blue) 55%, var(--navy-blue) 100%);
+}
+
+/* ---------- psychedelic light rays ---------- */
+.rays {
+  position: absolute;
+  inset: -20%;
+  width: 140%;
+  height: 140%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(245, 213, 71, 0.10) 8deg,
+    transparent 20deg,
+    transparent 40deg,
+    rgba(46, 204, 176, 0.08) 48deg,
+    transparent 60deg,
+    transparent 100deg,
+    rgba(162, 89, 202, 0.08) 108deg,
+    transparent 120deg,
+    transparent 190deg,
+    rgba(255, 153, 0, 0.08) 198deg,
+    transparent 210deg,
+    transparent 280deg,
+    rgba(140, 200, 240, 0.10) 288deg,
+    transparent 300deg,
+    transparent 360deg
+  );
+  animation: spin 90s linear infinite;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.seabed-fade {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 26vh;
+  background: linear-gradient(to top, var(--navy-blue) 0%, rgba(13,19,61,0.0) 100%);
+  pointer-events: none;
+}
+
+/* ---------- rising bubbles ---------- */
+.bubbles { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.bubble {
+  position: absolute;
+  bottom: -10vh;
+  border-radius: 50%;
+  opacity: 0.55;
+  animation-name: rise;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  box-shadow: inset -4px -4px 8px rgba(0,0,0,0.15), inset 3px 3px 6px rgba(255,255,255,0.5);
+}
+@keyframes rise {
+  0%   { transform: translateY(0) translateX(0); opacity: 0; }
+  8%   { opacity: 0.6; }
+  100% { transform: translateY(-115vh) translateX(var(--drift, 20px)); opacity: 0; }
+}
+
+/* ---------- header ---------- */
+.header {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding-top: 4.2vh;
+  width: 100%;
+}
+.title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 6.4vw;
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: 0.01em;
+  background: linear-gradient(90deg,
+    var(--primary-yellow), var(--sub-orange), var(--bright-red),
+    var(--funky-purple), var(--sky-blue), var(--sea-green), var(--primary-yellow));
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: hue-slide 14s linear infinite;
+  text-shadow: 0 0 40px rgba(245,213,71,0.15);
+}
+@keyframes hue-slide {
+  from { background-position: 0% 50%; }
+  to   { background-position: 300% 50%; }
+}
+.subtitle {
+  margin: 1.1vh 0 0;
+  font-size: 1.7vw;
+  color: var(--cream-bg);
+  letter-spacing: 0.06em;
+  opacity: 0.92;
+}
+.subtitle strong { color: var(--primary-yellow); font-weight: 700; }
+
+.confs {
+  margin-top: 1.6vh;
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pill {
+  font-size: 1.05vw;
+  font-weight: 600;
+  padding: 0.5vh 1.4vw;
+  border-radius: 999px;
+  color: var(--navy-blue);
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+.pill.concur { background: var(--sea-green); }
+.pill.fmics  { background: var(--sky-blue); }
+.pill.qf     { background: var(--primary-yellow); }
+
+/* ---------- now / up next schedule ---------- */
+.schedule-wrap {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6vh;
+  padding: 0 3vw;
+}
+.schedule-heading {
+  font-family: "Luckiest Guy", cursive;
+  color: var(--primary-yellow);
+  font-size: 1.9vw;
+  letter-spacing: 0.03em;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  text-align: center;
+}
+.empty-state {
+  color: var(--cream-bg);
+  opacity: 0.85;
+  text-align: center;
+  font-size: 1.3vw;
+  line-height: 1.6;
+}
+.social-banner {
+  background: linear-gradient(90deg, var(--sub-orange), var(--accent-yellow));
+  color: var(--navy-blue);
+  font-weight: 700;
+  padding: 0.9vh 2vw;
+  border-radius: 999px;
+  font-size: 1.05vw;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  text-align: center;
+  max-width: 82vw;
+}
+.social-banner .time { font-weight: 800; }
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22vw, 26vw));
+  gap: 1.4vw;
+  justify-content: center;
+  width: 100%;
+}
+.room-card {
+  background: rgba(252,252,252,0.95);
+  border-radius: 16px;
+  padding: 1.3vh 1.3vw;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.4);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7vh;
+}
+.room-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6vw;
+}
+.room-name {
+  font-weight: 800;
+  color: var(--navy-blue);
+  font-size: 1.2vw;
+}
+.room-tag-pill {
+  font-size: 0.68vw;
+  font-weight: 700;
+  padding: 0.3vh 0.8vw;
+  border-radius: 999px;
+  color: var(--navy-blue);
+  white-space: nowrap;
+}
+.tag-concur  { background: var(--sea-green); }
+.tag-fmics   { background: var(--sky-blue); }
+.tag-qf      { background: var(--primary-yellow); }
+.tag-expr    { background: var(--funky-purple); color: var(--cream-bg); }
+.tag-snr     { background: var(--sub-orange); }
+.tag-trends  { background: var(--maritime-blue); color: var(--cream-bg); }
+.tag-yr      { background: var(--bright-red); color: var(--cream-bg); }
+.tag-default { background: var(--neutral); }
+
+.session-row {
+  font-size: 0.98vw;
+  color: var(--navy-blue);
+  line-height: 1.35;
+}
+.session-row .label {
+  display: inline-block;
+  font-size: 0.62vw;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.15vh 0.55vw;
+  border-radius: 5px;
+  margin-right: 0.5vw;
+}
+.session-row.now .label  { background: var(--sea-green); }
+.session-row.next .label { background: var(--neutral); color: var(--maritime-blue); }
+.session-row .time {
+  display: block;
+  color: var(--maritime-blue);
+  font-weight: 600;
+  font-size: 0.85vw;
+  margin-top: 0.1vh;
+}
+.session-row.muted {
+  color: var(--maritime-blue);
+  font-style: italic;
+  opacity: 0.85;
+  font-size: 0.95vw;
+}
+
+/* ---------- footer / sponsor ticker ---------- */
+.footer {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.thanks-label {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1vw;
+  background: var(--cream-bg);
+  box-shadow: 6px 0 18px rgba(0,0,0,0.25);
+  font-size: 0.85vw;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--maritime-blue);
+  font-weight: 700;
+}
+.ticker-msg {
+  position: relative;
+  text-align: center;
+  color: var(--cream-bg);
+  font-size: 1.15vw;
+  letter-spacing: 0.04em;
+  height: 3.4vh;
+  opacity: 0.95;
+}
+.ticker-msg span {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation-name: fadeswap;
+  animation-duration: 16s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes fadeswap {
+  0%, 2%   { opacity: 0; }
+  6%, 21%  { opacity: 1; }
+  25%, 100%{ opacity: 0; }
+}
+
+.sponsor-bar {
+  background: var(--cream-bg);
+  padding: 1.6vh 0;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.35);
+  overflow: hidden;
+  position: relative;
+}
+.sponsor-track {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  width: max-content;
+  animation: scroll 32s linear infinite;
+  padding-left: 14vw;
+}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.sponsor-track img {
+  height: 4.6vh;
+  max-width: 11vw;
+  object-fit: contain;
+  filter: grayscale(0.15);
+}
+
+/* ---------- subby, cruising past ---------- */
+.subby-swim {
+  position: absolute;
+  top: 62%;
+  left: 116vw;
+  width: 9vw;
+  z-index: 2;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.4));
+  animation: swim-across 26s linear infinite, subby-bob 3.2s ease-in-out infinite;
+}
+@keyframes swim-across {
+  0%   { left: 116vw; }
+  100% { left: -16vw; }
+}
+@keyframes subby-bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-1.4vh) rotate(2deg); }
+}
+
+.clock {
+  position: absolute;
+  top: 2.2vh;
+  right: 2vw;
+  z-index: 4;
+  color: var(--cream-bg);
+  font-size: 1.5vw;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- testing / debug time control ---------- */
+.debug-bar[hidden] { display: none; }
+.debug-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0,0,0,0.78);
+  color: #fff;
+  font: 12px/1.4 monospace;
+  padding: 6px 10px;
+  border-bottom-right-radius: 10px;
+}
+.debug-bar .debug-label {
+  opacity: 0.7;
+  margin-right: 4px;
+}
+.debug-bar button {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 3px 7px;
+  font: inherit;
+  cursor: pointer;
+}
+.debug-bar button:hover { background: #555; }
+.debug-bar input[type="datetime-local"] {
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid #555;
+  padding: 2px 4px;
+  background: #222;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="rays"></div>
+  <div class="bubbles" id="bubbles"></div>
+  <div class="seabed-fade"></div>
+  <img src="/assets/images/subby.webp" class="subby-swim" alt="Subby the Yellow Submarine, cruising past">
+
+  <div class="clock" id="clock"></div>
+
+  <div class="header">
+    <h1 class="title">Welcome to CONFEST 2026</h1>
+    <p class="subtitle">University of Liverpool &nbsp;&bull;&nbsp; <strong>1&ndash;5 September 2026</strong></p>
+    <div class="confs">
+      <span class="pill concur">CONCUR</span>
+      <span class="pill fmics">FMICS</span>
+      <span class="pill qf">QEST + FORMATS</span>
+    </div>
+  </div>
+
+  <div class="schedule-wrap" id="scheduleWrap"></div>
+
+  <div class="footer">
+    <div class="ticker-msg" id="ticker"></div>
+    <div class="sponsor-bar">
+      <div class="thanks-label">With thanks to</div>
+      <div class="sponsor-track" id="sponsorTrack"></div>
+    </div>
+  </div>
+</div>
+
+<div class="debug-bar" id="debugBar" hidden>
+  <span class="debug-label">TEST TIME</span>
+  <button data-adj="-1440">&minus;1d</button>
+  <button data-adj="-60">&minus;1h</button>
+  <button data-adj="-15">&minus;15m</button>
+  <button data-adj="now">Now</button>
+  <button data-adj="15">+15m</button>
+  <button data-adj="60">+1h</button>
+  <button data-adj="1440">+1d</button>
+  <input type="datetime-local" id="debugPicker">
+</div>
+
+<script>
+// ---- bubbles ----
+const bubbleColors = [
+  'var(--primary-yellow)', 'var(--sea-green)', 'var(--sky-blue)',
+  'var(--sub-orange)', 'var(--funky-purple)', 'rgba(255,255,255,0.7)'
+];
+const bubbleField = document.getElementById('bubbles');
+const BUBBLE_COUNT = 26;
+for (let i = 0; i < BUBBLE_COUNT; i++) {
+  const b = document.createElement('div');
+  b.className = 'bubble';
+  const size = 8 + Math.random() * 46;
+  const left = Math.random() * 100;
+  const duration = 9 + Math.random() * 10;
+  const delay = Math.random() * duration;
+  const drift = (Math.random() * 120 - 60).toFixed(0) + 'px';
+  b.style.width = b.style.height = size + 'px';
+  b.style.left = left + 'vw';
+  b.style.background = bubbleColors[i % bubbleColors.length];
+  b.style.animationDuration = duration + 's';
+  b.style.animationDelay = '-' + delay + 's';
+  b.style.setProperty('--drift', drift);
+  bubbleField.appendChild(b);
+}
+
+// ---- sponsors (duplicated for seamless scroll) ----
+const sponsors = [
+  { name: 'Amazon Automated Reasoning Group', logo: 'amazonscience.png' },
+  { name: 'EPSRC', logo: 'epsrc.png' },
+  { name: 'ERCIM', logo: 'ercim.png' },
+  { name: 'Formal Methods Europe', logo: 'fme.png' },
+  { name: 'The Royal Society', logo: 'royal-society.png' },
+  { name: 'Springer', logo: 'springer.svg' },
+  { name: 'University of Liverpool', logo: 'uol.png' }
+];
+const track = document.getElementById('sponsorTrack');
+[...sponsors, ...sponsors].forEach(s => {
+  const img = document.createElement('img');
+  img.src = '/assets/images/' + s.logo;
+  img.alt = s.name;
+  track.appendChild(img);
+});
+
+// ---- housekeeping ticker ----
+const messages = [
+  'Please silence your phones before the session begins',
+  'Full programme: confest-2026.github.io/program',
+  'Sessions begin promptly',
+  'Wi-Fi: Eduroam or GuestUoL logins available at registration desk.'
+];
+const tickerEl = document.getElementById('ticker');
+messages.forEach((m, i) => {
+  const s = document.createElement('span');
+  s.innerHTML = m;
+  s.style.animationDelay = (i * (16 / messages.length)) + 's';
+  tickerEl.appendChild(s);
+});
+
+// ---- programme data (from _data/program.yml) ----
+const PROGRAM_DAYS = {{ site.data.program.days | jsonify }};
+
+const BREAK_NAMES = new Set(['Registration & Coffee', 'Coffee Break', 'Lunch']);
+const SOCIAL_PATTERN = /reception|social dinner|football|social activity/i;
+
+function classify(name) {
+  if (BREAK_NAMES.has(name)) return 'break';
+  if (SOCIAL_PATTERN.test(name)) return 'social';
+  return 'session';
+}
+
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+const CONF_TAGS = {
+  'CONCUR': 'concur',
+  'FMICS': 'fmics',
+  'QEST+FORMATS': 'qf',
+  'EXPRESS/SOS': 'expr',
+  'SNR': 'snr',
+  'Trends': 'trends',
+  'YR-CONCUR': 'yr'
+};
+
+function pad2(n) { return String(n).padStart(2, '0'); }
+
+function localDateStr(d) {
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+}
+
+function localDateTimeStr(d) {
+  return `${localDateStr(d)}T${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+}
+
+function findDay(dateStr) {
+  return PROGRAM_DAYS.find(d => d.date === dateStr);
+}
+
+function withTimes(day, talk) {
+  return Object.assign({}, talk, {
+    start: new Date(`${day.date}T${talk.time_start}:00`),
+    end: new Date(`${day.date}T${talk.time_end}:00`)
+  });
+}
+
+function roomStatus(day, room, now) {
+  const sessions = room.talks
+    .filter(t => classify(t.name) === 'session')
+    .map(t => withTimes(day, t))
+    .sort((a, b) => a.start - b.start);
+  const current = sessions.find(s => now >= s.start && now < s.end);
+  const next = sessions.find(s => s.start > now);
+  return { current, next };
+}
+
+function daySocial(day) {
+  for (const room of day.rooms) {
+    const hit = room.talks.find(t => classify(t.name) === 'social');
+    if (hit) return withTimes(day, hit);
+  }
+  return null;
+}
+
+function fmtTime(d) {
+  return d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+}
+
+function fmtDayHeading(day) {
+  const d = new Date(`${day.date}T00:00:00`);
+  return `${day.name} · ${d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })}`;
+}
+
+function renderSchedule(now) {
+  const wrap = document.getElementById('scheduleWrap');
+  wrap.innerHTML = '';
+  const day = findDay(localDateStr(now));
+
+  if (!day) {
+    wrap.innerHTML =
+      '<div class="empty-state">The full programme will appear here during CONFEST 2026<br>(1&ndash;5 September 2026)</div>';
+    return;
+  }
+
+  const heading = document.createElement('div');
+  heading.className = 'schedule-heading';
+  heading.textContent = fmtDayHeading(day);
+  wrap.appendChild(heading);
+
+  const social = daySocial(day);
+  if (social) {
+    const banner = document.createElement('div');
+    banner.className = 'social-banner';
+    banner.innerHTML = `&#127881; This evening &mdash; ${esc(social.name)} <span class="time">from ${fmtTime(social.start)}</span>`;
+    wrap.appendChild(banner);
+  }
+
+  const grid = document.createElement('div');
+  grid.className = 'room-grid';
+
+  day.rooms.forEach(room => {
+    const { current, next } = roomStatus(day, room, now);
+    const tagClass = CONF_TAGS[room.conference] || 'default';
+
+    let rows = '';
+    if (current) {
+      rows += `<div class="session-row now"><span class="label">Now</span>${esc(current.name)}<span class="time">${fmtTime(current.start)}&ndash;${fmtTime(current.end)}</span></div>`;
+    }
+    if (next) {
+      rows += `<div class="session-row next"><span class="label">Next</span>${esc(next.name)}<span class="time">${fmtTime(next.start)}</span></div>`;
+    }
+    if (!current && !next) {
+      rows += '<div class="session-row muted">Today&rsquo;s sessions have concluded</div>';
+    }
+
+    const card = document.createElement('div');
+    card.className = 'room-card';
+    card.innerHTML = `
+      <div class="room-card-head">
+        <span class="room-name">${esc(room.name)}</span>
+        <span class="room-tag-pill tag-${tagClass}">${esc(room.conference)}</span>
+      </div>
+      ${rows}
+    `;
+    grid.appendChild(card);
+  });
+
+  wrap.appendChild(grid);
+}
+
+// ---- clock / live-vs-simulated time ----
+const params = new URLSearchParams(location.search);
+let simTime = null;
+if (params.has('sim')) {
+  const parsed = new Date(params.get('sim'));
+  if (!isNaN(parsed)) simTime = parsed;
+}
+const debugMode = params.has('debug');
+const clockEl = document.getElementById('clock');
+
+function getNow() {
+  return simTime || new Date();
+}
+
+function setSim(d) {
+  simTime = d;
+  const u = new URL(location.href);
+  if (d) u.searchParams.set('sim', localDateTimeStr(d));
+  else u.searchParams.delete('sim');
+  history.replaceState(null, '', u);
+  renderAll();
+}
+
+function renderAll() {
+  const now = getNow();
+  clockEl.textContent = fmtTime(now);
+  renderSchedule(now);
+  if (debugMode) {
+    const picker = document.getElementById('debugPicker');
+    if (document.activeElement !== picker) picker.value = localDateTimeStr(now);
+  }
+}
+
+if (debugMode) {
+  const bar = document.getElementById('debugBar');
+  bar.hidden = false;
+  const picker = document.getElementById('debugPicker');
+  picker.value = localDateTimeStr(getNow());
+  picker.addEventListener('change', () => {
+    const d = new Date(picker.value);
+    if (!isNaN(d)) setSim(d);
+  });
+  bar.querySelectorAll('button[data-adj]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.adj === 'now') { setSim(null); return; }
+      const mins = parseInt(btn.dataset.adj, 10);
+      setSim(new Date(getNow().getTime() + mins * 60000));
+    });
+  });
+}
+
+renderAll();
+setInterval(renderAll, 30000);
+</script>
+</body>
+</html>
