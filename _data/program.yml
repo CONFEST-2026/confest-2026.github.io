@@ -370,7 +370,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Kristin-Yvonne Rozier'
       talks:
       - name: "Industrial Adoption of Formal Methods: An Industry Perspective on the Transition to SPARK for Security Critical Firmware Development"
       - name: A Formally Verified N-Dimensional Safety Shield for Autonomous Systems
@@ -392,7 +392,7 @@ days:
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Martin Georg Fränzle'
       talks:
       - name: Reasoning about concurrent loops and recursion with rely-guarantee rules
       - name: "Consistency proofs for axiomatic extensions: translating VerCors's Axiomatic Data Types into Isabelle"
@@ -558,7 +558,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Maurice ter Beek'
       talks:
       - name: "Exploiting the Layout of a Railway Interlocking System for Path Reliability Evaluation"
       - name: "Lazy Three-Way Model Merging in Cinco Cloud: A Lattice-Theoretic Approach"
@@ -576,11 +576,11 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: Panel Session discussing the Industrial use of Formal Methods
+    - name: "Panel Session discussing the Industrial use of Formal Methods, with Maurice ter Beek, Julia Badger and Colin O'Halloran"
       time_start: '15:00'
       time_end: '16:00'
       show_time: true
-      session_chair: ''
+      session_chair: 'Peter Gorm Larsen (moderator)'
     - name: Football
       time_start: '18:00'
       time_end: '20:00'
