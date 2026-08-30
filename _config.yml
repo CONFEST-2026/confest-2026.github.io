@@ -70,7 +70,7 @@ conference:
   lang: en
 
   # Timezone
-  tz: "+00:00"
+  tz: "+01:00"
 
   # Show theme errors:
   show_errors: True

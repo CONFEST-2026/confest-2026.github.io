@@ -380,7 +380,7 @@
                       {%- else -%}
                         <td rowspan="{{ talk_nbr_steps }}" class="alert alert-{{ talk_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}; width: {{ day_col_width }}; min-width: {{ day_col_width }};">
                           {%- assign live_button_styleclass = "mb-2" -%}
-                          {%- include partials/show_live_button.html -%}
+                          {%- include partials/show_live_button.html disable_link=true -%}
                           <p class="mb-2">{%- include partials/show_talk.html -%}</p>
                           {%- if t.session_chair and t.session_chair != '' -%}
                             <p class="mb-2 small">Session chair: {{ t.session_chair }}</p>
@@ -614,7 +614,7 @@
                             </div>
                           {%- else -%}
                             {%- assign live_button_styleclass = "mb-2" -%}
-                            {%- include partials/show_live_button.html -%}
+                            {%- include partials/show_live_button.html disable_link=true -%}
                             <p class="mb-2">{%- include partials/show_talk.html -%}</p>
                             {%- if t.session_chair and t.session_chair != '' -%}
                               <p class="mb-2 small">Session chair: {{ t.session_chair }}</p>

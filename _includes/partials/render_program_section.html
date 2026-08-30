@@ -269,7 +269,7 @@
               {%- include partials/get_main_category.html -%}
               <td colspan="{{ nbr_rooms | times: 2 | minus: 1 }}" rowspan="{{ shared_schedule_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}">
                 {%- assign live_button_styleclass = "mb-2" -%}
-                {%- include partials/show_live_button.html -%}
+                {%- include partials/show_live_button.html disable_link=true -%}
                 <p class="mb-2">{%- include partials/show_talk.html %}</p>
               </td>
             {%- endif -%}
@@ -280,7 +280,7 @@
               {%- include partials/get_main_category.html -%}
               <td colspan="{{ nbr_rooms | times: 2 | minus: 1 }}" rowspan="{{ shared_joint_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}">
                 {%- assign live_button_styleclass = "mb-2" -%}
-                {%- include partials/show_live_button.html -%}
+                {%- include partials/show_live_button.html disable_link=true -%}
                 <p class="mb-2">{%- include partials/show_talk.html %}</p>
                 {%- if shared_joint_session_chair and shared_joint_session_chair != '' -%}
                   <p class="mb-2 small">Session chair: {{ shared_joint_session_chair }}</p>
@@ -357,7 +357,7 @@
                     {%- include partials/get_main_category.html -%}
                     <td rowspan="{{ talk_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}; width: {{ room_col_width }}; min-width: {{ room_col_width }};">
                       {%- assign live_button_styleclass = "mb-2" %}
-                      {%- include partials/show_live_button.html %}
+                      {%- include partials/show_live_button.html disable_link=true %}
                       <p class="mb-2">{%- include partials/show_talk.html %}</p>
                       {%- if t.session_chair and t.session_chair != '' -%}
                         <p class="mb-2 small">Session chair: {{ t.session_chair }}</p>
@@ -573,7 +573,7 @@
                       </div>
                     {%- else -%}
                       {%- assign live_button_styleclass = "mb-2" -%}
-                      {%- include partials/show_live_button.html -%}
+                      {%- include partials/show_live_button.html disable_link=true -%}
                       <p class="mb-2">{%- include partials/show_talk.html -%}</p>
                       {%- if t.session_chair and t.session_chair != '' -%}
                         <p class="mb-2 small">Session chair: {{ t.session_chair }}</p>
