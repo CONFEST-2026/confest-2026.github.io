@@ -1,5 +1,5 @@
 ---
-name: "Panel Session discussing the Industrial use of Formal Methods, with Maurice ter Beek, Julia Badger and Colin O'Halloran"
+name: "Panel Session discussing the Industrial use of Formal Methods"
 speakers:
   - Peter Gorm Larsen (moderator)
   - Maurice ter Beek
