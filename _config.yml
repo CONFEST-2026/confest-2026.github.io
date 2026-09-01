@@ -197,7 +197,7 @@ conference:
       - name: Social
         color: social
       - name: Test of Time
-        color: warning
+        color: success
 
     # Hide icons on talk overview page
     hide_icons: false
