@@ -17,7 +17,24 @@
         "n_plane": 5,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          },
+          "QEST+FORMATS": {
+            "n_participants": 3,
+            "n_plane": 3,
+            "n_train": 0
+          },
+          "Workshops": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -36,7 +53,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -55,7 +79,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -74,7 +105,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -93,7 +131,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -112,7 +157,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -131,7 +183,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -150,7 +209,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -169,7 +235,14 @@
         "n_plane": 0,
         "n_train": 2,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 0,
+            "n_train": 2
+          }
+        }
       }
     },
     {
@@ -188,7 +261,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -207,7 +287,14 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -226,7 +313,14 @@
         "n_plane": 0,
         "n_train": 2,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 0,
+            "n_train": 2
+          }
+        }
       }
     },
     {
@@ -245,7 +339,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -264,7 +365,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -283,7 +391,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -302,7 +417,19 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          },
+          "Workshops": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -321,7 +448,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -340,7 +474,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -359,7 +500,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -378,7 +526,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -397,7 +552,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -416,7 +578,19 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          },
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -435,7 +609,19 @@
         "n_plane": 1,
         "n_train": 1,
         "fraction_flying": 0.5,
-        "color": "#800080"
+        "color": "#800080",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          },
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -454,7 +640,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -473,7 +666,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -492,7 +692,19 @@
         "n_plane": 0,
         "n_train": 2,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          },
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -511,7 +723,24 @@
         "n_plane": 3,
         "n_train": 1,
         "fraction_flying": 0.75,
-        "color": "#bf0040"
+        "color": "#bf0040",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          },
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          },
+          "Workshops": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -530,7 +759,19 @@
         "n_plane": 2,
         "n_train": 2,
         "fraction_flying": 0.5,
-        "color": "#800080"
+        "color": "#800080",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 3,
+            "n_plane": 1,
+            "n_train": 2
+          },
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -549,7 +790,14 @@
         "n_plane": 3,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 3,
+            "n_plane": 3,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -568,7 +816,19 @@
         "n_plane": 4,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          },
+          "FMICS": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -587,7 +847,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -606,7 +873,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -625,7 +899,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -644,7 +925,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "Workshops": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -663,7 +951,14 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -682,7 +977,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -701,7 +1003,14 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -720,7 +1029,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -739,7 +1055,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -758,7 +1081,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -777,7 +1107,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -796,7 +1133,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -815,7 +1159,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -834,7 +1185,14 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -853,7 +1211,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -872,7 +1237,24 @@
         "n_plane": 0,
         "n_train": 5,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 2,
+            "n_plane": 0,
+            "n_train": 2
+          },
+          "Workshops": {
+            "n_participants": 2,
+            "n_plane": 0,
+            "n_train": 2
+          },
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -891,7 +1273,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -910,7 +1299,14 @@
         "n_plane": 0,
         "n_train": 2,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 0,
+            "n_train": 2
+          }
+        }
       }
     },
     {
@@ -929,7 +1325,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -948,7 +1351,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -967,7 +1377,19 @@
         "n_plane": 3,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          },
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -986,7 +1408,14 @@
         "n_plane": 0,
         "n_train": 2,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 2,
+            "n_plane": 0,
+            "n_train": 2
+          }
+        }
       }
     },
     {
@@ -1005,7 +1434,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1024,7 +1460,19 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          },
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1043,7 +1491,24 @@
         "n_plane": 0,
         "n_train": 4,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "Workshops": {
+            "n_participants": 2,
+            "n_plane": 0,
+            "n_train": 2
+          },
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          },
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -1062,7 +1527,29 @@
         "n_plane": 2,
         "n_train": 8,
         "fraction_flying": 0.2,
-        "color": "#3300cc"
+        "color": "#3300cc",
+        "events": {
+          "FMICS": {
+            "n_participants": 3,
+            "n_plane": 1,
+            "n_train": 2
+          },
+          "CONCUR": {
+            "n_participants": 4,
+            "n_plane": 0,
+            "n_train": 4
+          },
+          "Workshops": {
+            "n_participants": 2,
+            "n_plane": 1,
+            "n_train": 1
+          },
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -1081,7 +1568,24 @@
         "n_plane": 3,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          },
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          },
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1100,7 +1604,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -1119,7 +1630,14 @@
         "n_plane": 0,
         "n_train": 4,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 4,
+            "n_plane": 0,
+            "n_train": 4
+          }
+        }
       }
     },
     {
@@ -1138,7 +1656,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1157,7 +1682,14 @@
         "n_plane": 2,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 2,
+            "n_plane": 2,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1176,7 +1708,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1195,7 +1734,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1214,7 +1760,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "FMICS": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -1233,7 +1786,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -1252,7 +1812,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1271,7 +1838,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1290,7 +1864,14 @@
         "n_plane": 4,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 4,
+            "n_plane": 4,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1309,7 +1890,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1328,7 +1916,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "QEST+FORMATS": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1347,7 +1942,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1366,7 +1968,14 @@
         "n_plane": 3,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 3,
+            "n_plane": 3,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1385,7 +1994,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "Workshops": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     },
     {
@@ -1404,7 +2020,14 @@
         "n_plane": 1,
         "n_train": 0,
         "fraction_flying": 1.0,
-        "color": "#ff0000"
+        "color": "#ff0000",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 1,
+            "n_train": 0
+          }
+        }
       }
     },
     {
@@ -1423,7 +2046,14 @@
         "n_plane": 0,
         "n_train": 1,
         "fraction_flying": 0.0,
-        "color": "#0000ff"
+        "color": "#0000ff",
+        "events": {
+          "CONCUR": {
+            "n_participants": 1,
+            "n_plane": 0,
+            "n_train": 1
+          }
+        }
       }
     }
   ]

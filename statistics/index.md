@@ -23,6 +23,8 @@ Anonymised data and scripts are available at <https://github.com/CONFEST-2026/st
 {% assign n_train = 0 %}
 {% assign n_travel = 0 %}
 {% assign co2_total = 0 %}
+{% assign co2_values = "" | split: "" %}
+{% assign travelling_values = "" | split: "" %}
 {% assign train_distance = 0 %}
 {% assign plane_distance = 0 %}
 {% assign bus_distance = 0 %}
@@ -34,6 +36,8 @@ Anonymised data and scripts are available at <https://github.com/CONFEST-2026/st
   {% assign train_km = r.train_km | plus: 0 %}
   {% assign bus_km = r.bus_km | plus: 0 %}
   {% assign co2 = r.total_co2_kg | plus: 0 %}
+  {% assign co2_values = co2_values | push: co2 %}
+  {% if co2 > 0 %}{% assign travelling_values = travelling_values | push: co2 %}{% endif %}
   {% assign train_distance = train_distance | plus: train_km %}
   {% assign plane_distance = plane_distance | plus: plane_km %}
   {% assign bus_distance = bus_distance | plus: bus_km %}
@@ -50,6 +54,26 @@ Anonymised data and scripts are available at <https://github.com/CONFEST-2026/st
   {% assign co2_total = co2_total | plus: co2 %}
   {% if co2 > 0 %}{% assign n_travel = n_travel | plus: 1 %}{% endif %}
 {% endfor %}
+{% assign co2_values = co2_values | sort %}
+{% assign travelling_values = travelling_values | sort %}
+{% assign co2_middle = co2_values.size | divided_by: 2 %}
+{% assign travelling_middle = travelling_values.size | divided_by: 2 %}
+{% assign co2_remainder = co2_values.size | modulo: 2 %}
+{% assign travelling_remainder = travelling_values.size | modulo: 2 %}
+{% if co2_values.size > 0 %}
+  {% assign co2_median = co2_values[co2_middle] %}
+  {% if co2_remainder == 0 %}
+    {% assign co2_lower_middle = co2_middle | minus: 1 %}
+    {% assign co2_median = co2_values[co2_lower_middle] | plus: co2_values[co2_middle] | divided_by: 2 %}
+  {% endif %}
+{% else %}{% assign co2_median = 0 %}{% endif %}
+{% if travelling_values.size > 0 %}
+  {% assign travelling_median = travelling_values[travelling_middle] %}
+  {% if travelling_remainder == 0 %}
+    {% assign travelling_lower_middle = travelling_middle | minus: 1 %}
+    {% assign travelling_median = travelling_values[travelling_lower_middle] | plus: travelling_values[travelling_middle] | divided_by: 2 %}
+  {% endif %}
+{% else %}{% assign travelling_median = 0 %}{% endif %}
 {% assign n_travelling = n_plane | plus: n_train %}
 {% if n_travelling > 0 %}
   {% assign pct_plane = n_plane | times: 100.0 | divided_by: n_travelling | round %}
@@ -135,12 +159,22 @@ The second (bar) chart shows the number of papers published in the proceedings o
   </div>
 </div>
 
+## Travel
+
+<fieldset class="statistics-filters">
+  <legend>Include events in the travel analysis</legend>
+  <label><input type="checkbox" name="statistics-event" value="CONCUR" checked> CONCUR</label>
+  <label><input type="checkbox" name="statistics-event" value="QEST+FORMATS" checked> QEST+FORMATS</label>
+  <label><input type="checkbox" name="statistics-event" value="FMICS" checked> FMICS</label>
+  <label><input type="checkbox" name="statistics-event" value="Workshops" checked> Workshops</label>
+</fieldset>
+
 ### Where participants travelled from
 
-We associated one country with each participant. This is derived from their stated travel origin, or, where not given, from their affiliation. The data contains
+<p id="statistics-origin-summary">We associated one country with each participant. This is derived from their stated travel origin, or, where not given, from their affiliation. The data contains
 {{ n_local }} local participants from Liverpool; among the rest, {{ n_plane }}
 ({{ pct_plane }}%) travelled primarily by plane, {{ n_train }}
-({{ pct_train }}%) primarily by train.
+({{ pct_train }}%) primarily by train.</p>
 
 On the map, each marker is a distinct origin city (excluding local participants, who did
 not travel); size reflects the number of participants from that city, colour
@@ -150,11 +184,11 @@ flying (blue = all train/bus, red = all plane).
 <div class="row statistics-origin-layout">
   <div class="col-lg-6">
     <div class="statistics-panel"><h3>Participants by country</h3>
-      <div class="statistics-card"><p class="statistics-country-list">{% for country in country_groups %}{% assign country_share = country.size | times: 100.0 | divided_by: statisticsRows.size | round %}<span><img class="statistics-country-flag" src="https://flagcdn.com/24x18/{{ country.name | downcase }}.png" alt="" width="24" height="18">{{ country.name }} {{ country.size }} ({{ country_share }}%)</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p></div>
+      <div class="statistics-card"><p id="statistics-country-list" class="statistics-country-list">{% for country in country_groups %}{% assign country_share = country.size | times: 100.0 | divided_by: statisticsRows.size | round %}<span><img class="statistics-country-flag" src="https://flagcdn.com/24x18/{{ country.name | downcase }}.png" alt="" width="24" height="18">{{ country.name }} {{ country.size }} ({{ country_share }}%)</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p></div>
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="statistics-panel"><h3>Origin/Mode</h3><div id="origins-map" class="statistics-map" role="region" aria-label="Map of participant travel origins"></div></div>
+    <div class="statistics-panel"><h3>Origin/Mode</h3><div class="statistics-card"><div id="origins-map" class="statistics-map" role="region" aria-label="Map of participant travel origins"></div></div></div>
   </div>
 </div>
 
@@ -164,16 +198,16 @@ Estimates are based on each participant's travel origin (explicit or, where
 missing, deduced from their affiliation) and travel mode (explicit or, where
 missing, deduced as described below).
 
-The estimated grand total is <strong>{{ co2_total | divided_by: 1000 | round }} t</strong>
-of CO2e, averaging <strong>{{ co2_total | divided_by: statisticsRows.size | round }} kg</strong>
-per participant and <strong>{{ co2_total | divided_by: n_travel | round }} kg</strong>
-per non-local participant (i.e. excluding those with no estimated travel
-emissions).
+The estimated grand total is <strong id="statistics-co2-total">{{ co2_total | divided_by: 1000 | round }} t</strong>
+of CO2e, averaging <strong id="statistics-co2-per-participant">{{ co2_total | divided_by: statisticsRows.size | round }} kg</strong>
+per participant (median <strong id="statistics-co2-median">{{ co2_median | round }} kg</strong>) and
+<strong id="statistics-co2-per-traveller">{{ co2_total | divided_by: n_travel | round }} kg</strong>
+per non-local participant (median <strong id="statistics-co2-traveller-median">{{ travelling_median | round }} kg</strong>).
 
 
 <div class="row statistics-analysis">
   <div class="col-lg-4">
-    <div class="statistics-panel"><h3>Main mode of transport</h3><div class="statistics-card statistics-pie-layout"><div class="statistics-pie statistics-pie--modes" style="--statistics-train-share: {{ pct_train }}%" role="img" aria-label="Train: {{ n_train }} participants ({{ pct_train }}%). Plane: {{ n_plane }} participants ({{ pct_plane }}%)."></div><p class="statistics-key"><span><i class="statistics-key__train"></i>Train: {{ n_train }} ({{ pct_train }}%)</span><span><i class="statistics-key__plane"></i>Plane: {{ n_plane }} ({{ pct_plane }}%)</span></p></div></div>
+    <div class="statistics-panel"><h3>Main mode of transport</h3><div class="statistics-card statistics-pie-layout"><div id="statistics-mode-pie" class="statistics-pie statistics-pie--modes" style="--statistics-train-share: {{ pct_train }}%" role="img" aria-label="Train: {{ n_train }} participants ({{ pct_train }}%). Plane: {{ n_plane }} participants ({{ pct_plane }}%)."></div><p class="statistics-key"><span><i class="statistics-key__train"></i><span id="statistics-train-key">Train: {{ n_train }} ({{ pct_train }}%)</span></span><span><i class="statistics-key__plane"></i><span id="statistics-plane-key">Plane: {{ n_plane }} ({{ pct_plane }}%)</span></span></p></div></div>
   </div>
   <div class="col-lg-4">
     <div class="statistics-panel"><h3>Total distance by mode</h3>
@@ -185,10 +219,10 @@ emissions).
         {% else %}
           {% assign train_distance_share = 0 %}{% assign plane_distance_share = 0 %}{% assign bus_distance_share = 0 %}
         {% endif %}
-        <div class="statistics-vertical-chart" role="img" aria-label="Total distance by travel mode">
-          <div class="statistics-vertical-bar"><span class="statistics-vertical-bar__value">{{ train_distance | round }} km ({{ train_distance_share }}%)</span><span class="statistics-vertical-bar__column statistics-vertical-bar__column--train" style="--statistics-bar-height: {{ train_distance_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Train</span></div>
-          <div class="statistics-vertical-bar"><span class="statistics-vertical-bar__value">{{ plane_distance | round }} km ({{ plane_distance_share }}%)</span><span class="statistics-vertical-bar__column statistics-vertical-bar__column--plane" style="--statistics-bar-height: {{ plane_distance_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Plane</span></div>
-          <div class="statistics-vertical-bar"><span class="statistics-vertical-bar__value">{{ bus_distance | round }} km ({{ bus_distance_share }}%)</span><span class="statistics-vertical-bar__column statistics-vertical-bar__column--bus" style="--statistics-bar-height: {{ bus_distance_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Bus</span></div>
+        <div id="statistics-distance-chart" class="statistics-vertical-chart" role="img" aria-label="Total distance by travel mode">
+          <div class="statistics-vertical-bar"><span id="statistics-train-distance-value" class="statistics-vertical-bar__value">{{ train_distance | round }} km ({{ train_distance_share }}%)</span><span id="statistics-train-distance-bar" class="statistics-vertical-bar__column statistics-vertical-bar__column--train" style="--statistics-bar-height: {{ train_distance_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Train</span></div>
+          <div class="statistics-vertical-bar"><span id="statistics-plane-distance-value" class="statistics-vertical-bar__value">{{ plane_distance | round }} km ({{ plane_distance_share }}%)</span><span id="statistics-plane-distance-bar" class="statistics-vertical-bar__column statistics-vertical-bar__column--plane" style="--statistics-bar-height: {{ plane_distance_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Plane</span></div>
+          <div class="statistics-vertical-bar"><span id="statistics-bus-distance-value" class="statistics-vertical-bar__value">{{ bus_distance | round }} km ({{ bus_distance_share }}%)</span><span id="statistics-bus-distance-bar" class="statistics-vertical-bar__column statistics-vertical-bar__column--bus" style="--statistics-bar-height: {{ bus_distance_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Bus</span></div>
         </div>
       </div>
     </div>
@@ -203,16 +237,33 @@ emissions).
         {% else %}
           {% assign train_co2_share = 0 %}{% assign plane_co2_share = 0 %}{% assign bus_co2_share = 0 %}
         {% endif %}
-        <div class="statistics-vertical-chart" role="img" aria-label="Total CO2 emissions by travel mode">
-          <div class="statistics-vertical-bar"><span class="statistics-vertical-bar__value">{{ train_co2 | round }} kg ({{ train_co2_share }}%)</span><span class="statistics-vertical-bar__column statistics-vertical-bar__column--train" style="--statistics-bar-height: {{ train_co2_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Train</span></div>
-          <div class="statistics-vertical-bar"><span class="statistics-vertical-bar__value">{{ plane_co2 | round }} kg ({{ plane_co2_share }}%)</span><span class="statistics-vertical-bar__column statistics-vertical-bar__column--plane" style="--statistics-bar-height: {{ plane_co2_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Plane</span></div>
-          <div class="statistics-vertical-bar"><span class="statistics-vertical-bar__value">{{ bus_co2 | round }} kg ({{ bus_co2_share }}%)</span><span class="statistics-vertical-bar__column statistics-vertical-bar__column--bus" style="--statistics-bar-height: {{ bus_co2_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Bus</span></div>
+        <div id="statistics-co2-chart" class="statistics-vertical-chart" role="img" aria-label="Total CO2 emissions by travel mode">
+          <div class="statistics-vertical-bar"><span id="statistics-train-co2-value" class="statistics-vertical-bar__value">{{ train_co2 | round }} kg ({{ train_co2_share }}%)</span><span id="statistics-train-co2-bar" class="statistics-vertical-bar__column statistics-vertical-bar__column--train" style="--statistics-bar-height: {{ train_co2_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Train</span></div>
+          <div class="statistics-vertical-bar"><span id="statistics-plane-co2-value" class="statistics-vertical-bar__value">{{ plane_co2 | round }} kg ({{ plane_co2_share }}%)</span><span id="statistics-plane-co2-bar" class="statistics-vertical-bar__column statistics-vertical-bar__column--plane" style="--statistics-bar-height: {{ plane_co2_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Plane</span></div>
+          <div class="statistics-vertical-bar"><span id="statistics-bus-co2-value" class="statistics-vertical-bar__value">{{ bus_co2 | round }} kg ({{ bus_co2_share }}%)</span><span id="statistics-bus-co2-bar" class="statistics-vertical-bar__column statistics-vertical-bar__column--bus" style="--statistics-bar-height: {{ bus_co2_share }}%" aria-hidden="true"></span><span class="statistics-vertical-bar__label">Bus</span></div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<div class="row statistics-analysis">
+  <div class="col-lg-12">
+    <div class="statistics-panel"><h3>CO2 emissions per participant</h3>
+      <div class="statistics-card">
+        <p>Each bar is one participant's estimated round-trip emissions, sorted from lowest to highest.</p>
+        <p class="statistics-key"><span><i class="statistics-key__local"></i>Local</span><span><i class="statistics-key__train"></i>Train</span><span><i class="statistics-key__plane"></i>Plane</span></p>
+        <div id="statistics-co2-histogram" class="statistics-histogram" role="img" aria-label="Histogram of CO2 emissions per participant">
+          <p>Enable JavaScript to view the histogram.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.statisticsParticipants = {{ statisticsRows | jsonify }};
+</script>
 <script>{% include js/statistics-map.js %}</script>
 
 ## Methodology
