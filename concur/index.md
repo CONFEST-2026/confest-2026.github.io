@@ -86,18 +86,23 @@ Congratulations to all authors!
 
 ### Best Paper Award
 
-The following papers are nominated for the CONCUR 2026 Best Paper Award.  
-The winner will be announced at the social reception on Tuesday evening.
+The following papers were nominated for the CONCUR 2026 Best Paper Award.
 
 - *Robin Jourde, Henning Urbat, Sergey Goncharov, Stelios Tsampas and Jonas Forster*, Compositionality in Coalgebraic Trace Semantics
 - *Jonas Forster, Lutz Schröder, Paul Wild, Barbara König and Pedro Nora*, Threshold-Based Behavioural Distances
 - *Nathalie Bertrand, Patricia Bouyer, Luc Lapointe and Corto Mascle*, WinPop: Making populations win together
 - *Syyeda Zainab Fatmi, Stefan Kiefer, David Parker and Franck van Breugel*, On the Continuity of the Probabilistic Bisimilarity Distance
-- *Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski*, Reachability in Fixed-Dimensional Continuous VASS
+- ***Michal Ajdarów, A. R. Balasubramanian and Łukasz Orlikowski*, Reachability in Fixed-Dimensional Continuous VASS**
 
 
-This list is ordered by paper ID and the result of a condorcet voting among the PC.
-The full anonymised voting data will be made available after the event.
+This list is ordered by paper ID and is the result of
+a [ranked voting](https://en.wikipedia.org/wiki/Ranked_voting);
+among the PC. The winner (highlighted above) came out as the unique
+[Condorcet winner](https://en.wikipedia.org/wiki/Condorcet_winner_criterion).
+We used the [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
+to break ties to compute the top 5 as nominees.
+Anonymised ballots can be found [here](concur-bpa-votes.txt).
+
 
 
 ---
