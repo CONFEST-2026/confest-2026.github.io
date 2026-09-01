@@ -38,12 +38,12 @@
 }
 
 /* category colours: --bg / --bd (border) / --fg (text) / --st (stripe) */
-.c-success { --bg:#D5F5EF; --bd:#C4F1E9; --fg:#0D3931; --st:#2ECCB0; }  /* Joint, Invited, Trends */
+.c-success { --bg:#D5F5EF; --bd:#C4F1E9; --fg:#0D3931; --st:#2ECCB0; }  /* Joint, Invited, Trends, Test of Time */
 .c-info    { --bg:#E8F4FC; --bd:#DFF0FB; --fg:#273843; --st:#8CC8F0; }  /* CONCUR */
 .c-danger  { --bg:#FFEBCC; --bd:#FFE2B8; --fg:#472B00; --st:#FF9900; }  /* Q+F */
 .c-purple  { --bg:#ECDEF4; --bd:#E5D1F0; --fg:#2D1939; --st:#A259CA; }  /* FMICS, YR-CONCUR */
 .c-social  { --bg:#FFD8D8; --bd:#FFC8C8; --fg:#471111; --st:#FF3B3B; }  /* Social, Express/SOS */
-.c-warning { --bg:#FDF7DA; --bd:#FCF3CC; --fg:#453C14; --st:#F5D547; }  /* SNR, Test of Time */
+.c-warning { --bg:#FDF7DA; --bd:#FCF3CC; --fg:#453C14; --st:#F5D547; }  /* SNR */
 .c-neutral { --bg:#E6EBF0; --bd:#D6DDE5; --fg:#2E2E2E; --st:#C6D0DA; }  /* Schedule */
 .c-secondary { --bg:#DEE5EB; --bd:#CFD9E1; --fg:#12191F; --st:#3A5F80; }
 
@@ -641,14 +641,12 @@ html, body {
                   {%- assign talk_legend_name = '' -%}
                   {%- if t.talks -%}
                     {%- assign first_sub_t = t.talks | first -%}
-                    {%- assign first_sub_obj = site.talks | where: 'name', first_sub_t.name | first -%}
-                    {%- for color_cat in site.conference.talks.main_categories -%}
-                      {%- if first_sub_obj.categories contains color_cat.name -%}
-                        {%- assign talk_color = color_cat.color -%}
-                        {%- assign talk_legend_name = color_cat.name -%}
-                        {%- break -%}
-                      {%- endif -%}
-                    {%- endfor -%}
+                    {%- assign session_talk = talk -%}
+                    {%- assign talk = site.talks | where: 'name', first_sub_t.name | first -%}
+                    {%- include partials/get_main_category.html -%}
+                    {%- assign talk = session_talk -%}
+                    {%- assign talk_color = main_cat_color -%}
+                    {%- assign talk_legend_name = main_cat -%}
                   {%- elsif talk.categories contains 'Invited' -%}
                     {%- for color_cat in site.conference.talks.main_categories -%}
                       {%- if color_cat.name == 'Invited' -%}
