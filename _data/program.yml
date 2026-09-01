@@ -285,7 +285,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
-      session_chair: ''
+      session_chair: 'Dmitry Chistikov'
       talks:
       - name: "WinPop: Making populations win together"
         authors: "Nathalie Bertrand, Patricia Bouyer, Luc Lapointe and Corto Mascle"
@@ -470,7 +470,7 @@ days:
       time_start: '16:30'
       time_end: '17:40'
       show_time: true
-      session_chair: '' #Sergey Goncharov'
+      session_chair: 'Sven Schewe'
       talks:
       - name: Active Diagnosis with Costs and Rewards
         authors: "Serge Haddad, Engel Lefaucheux and Stefan Schwoon"
