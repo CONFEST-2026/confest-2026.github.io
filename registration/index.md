@@ -35,7 +35,9 @@ subnav: local
       <h3>Full Ticket Late Registration</h3>
       <p>
       <span class="price">£700</span><br>
-      <span class="availableuntil">Available from: 1 August 2026</span>
+      <span class="availableuntil">Available from: 1 August 2026</span><br>
+      <span class="availableuntil">Available until: 4 September 2026</span>
+
       </p>
       <ul>
         <li>Access to all conferences and workshops, 1-5 September 2026</li>
@@ -48,7 +50,8 @@ subnav: local
       <h3>Workshop Only Registration</h3>
       <p>
         <span class="price">£75</span><br>
-        No late registration charge
+        No late registration charge<br>
+      <span class="availableuntil">Available until: 4 September 2026</span>
        </p>
        <ul>
         <li>Access to all workshops, 5 September 2026</li>
