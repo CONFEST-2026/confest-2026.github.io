@@ -7,6 +7,9 @@ speakers:
 categories:
   - Q+F
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.1007/978-3-032-35298-9_23
 ---
 
 The decision diagram (DD) data structure enables fast linear-algebra calculations by bringing vectors into a normal form and subsequently merging equivalent ones, yielding a minimally-sized DD modulo the equivalence relation. One fruitful application area is quantum-circuit simulation, where the vectors represent quantum states, i.e., pseudo-boolean functions $\{0, 1\}^n \rightarrow \mathbb{C}$. Local-Invertible Map Decision Diagrams (LIMDD) merge LIM-equivalent (typically Pauli-gate equivalent) vectors and have been theoretically proven exponentially faster for simulation than other well-developed data structures, not the least other common DD variants. However, these exponential advantages have not fully materialized yet in existing implementations, for which the normal-form procedure, which is a highly complex algorithm, is either absent or only partially implemented.

@@ -9,6 +9,9 @@ speakers:
 categories:
   - Q+F
 hide: false
+links:
+  - name: DOI
+    absolute_url: https://doi.org/10.1007/978-3-032-35298-9_12
 ---
 
 While the theoretical foundation for model checking timed systems against Metric Interval Temporal Logic (MITL) specifications was established in the early 1990s, the first practical tool implementa- tion (MightyL) did not emerge until 2017. Recently, there has been a resurgence of interest to accommodate more expressive logical operators, including Pnueli modalities and limited support for punctual (singular) intervals. The tool MightyPPL achieves this.
