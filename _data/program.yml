@@ -370,7 +370,7 @@ days:
       time_start: '10:30'
       time_end: '12:00'
       show_time: true
-      session_chair: 'Kristin-Yvonne Rozier'
+      session_chair: 'Alessandro Fantechi'
       talks:
       - name: "Industrial Adoption of Formal Methods: An Industry Perspective on the Transition to SPARK for Security Critical Firmware Development"
       - name: A Formally Verified N-Dimensional Safety Shield for Autonomous Systems
@@ -383,7 +383,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
-      session_chair: ''
+      session_chair: 'Kristin-Yvonne Rozier'
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
@@ -571,7 +571,7 @@ days:
       time_start: '13:30'
       time_end: '14:40'
       show_time: true
-      session_chair: ''
+      session_chair: 'Peter Gorm Larsen'
     - name: Coffee Break
       time_start: '14:40'
       time_end: '15:00'
