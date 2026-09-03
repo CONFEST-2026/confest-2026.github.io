@@ -457,18 +457,14 @@ days:
       time_start: '14:40'
       time_end: '15:00'
       show_time: true
-    - name: On the role of prose in specifications
+    # - name: On the role of prose in specifications
+    #   time_start: '15:00'
+    #   time_end: '16:00'
+    #   show_time: true
+    #   session_chair: 'Ana Sokolova'
+    - name: CONCUR Session 13 - Partial Observation
       time_start: '15:00'
       time_end: '16:00'
-      show_time: true
-      session_chair: 'Ana Sokolova'
-    - name: Coffee Break
-      time_start: '16:00'
-      time_end: '16:30'
-      show_time: true
-    - name: CONCUR Session 13 - Partial Observation
-      time_start: '16:30'
-      time_end: '17:40'
       show_time: true
       session_chair: 'Sven Schewe'
       talks:
@@ -478,6 +474,10 @@ days:
         authors: "Mayuko Kori and Kazuki Watanabe"
       - name: Classification under uncertainty
         authors: "Ofer Leshkowitz and Orna Kupferman"
+    - name: Coffee Break
+      time_start: '16:00'
+      time_end: '16:30'
+      show_time: true
     - name: Football
       time_start: '18:00'
       time_end: '20:00'
