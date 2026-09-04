@@ -204,6 +204,11 @@ html, body {
   max-width: 82vw;
 }
 .social-banner .time { font-weight: 800; }
+.social-banner .social-subline {
+  font-weight: 600;
+  font-size: 0.85vw;
+  margin-top: 0.4vh;
+}
 
 .alert-banner {
   background: linear-gradient(90deg, #C40000, var(--bright-red));
@@ -636,6 +641,9 @@ function renderSchedule(now) {
     const banner = document.createElement('div');
     banner.className = 'social-banner';
     banner.innerHTML = `&#127881; This evening &mdash; ${esc(social.name)} <span class="time">from ${fmtTime(social.start)}</span>`;
+    if (social.name === 'Football') {
+      banner.innerHTML += '<div class="social-subline">Meet by registration at 17:40 to walk over together</div>';
+    }
     wrap.appendChild(banner);
   }
 
