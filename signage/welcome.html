@@ -205,6 +205,19 @@ html, body {
 }
 .social-banner .time { font-weight: 800; }
 
+.alert-banner {
+  background: linear-gradient(90deg, #C40000, var(--bright-red));
+  color: var(--cream-bg);
+  font-weight: 700;
+  padding: 0.9vh 2vw;
+  border-radius: 999px;
+  font-size: 1.05vw;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  text-align: center;
+  max-width: 82vw;
+  margin-top: 1.4vw;
+}
+
 .room-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22vw, 26vw));
@@ -657,6 +670,13 @@ function renderSchedule(now) {
   });
 
   wrap.appendChild(grid);
+
+  if (day.name === 'Friday') {
+    const alert = document.createElement('div');
+    alert.className = 'alert-banner';
+    alert.innerHTML = '&#9888; Jade Alglave&rsquo;s invited CONCUR talk cancelled. CONCUR Session 13 on Partial Observation moved to 15:00.';
+    wrap.appendChild(alert);
+  }
 }
 
 // ---- clock / live-vs-simulated time ----
