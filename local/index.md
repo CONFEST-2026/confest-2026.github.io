@@ -17,7 +17,7 @@ heroiframe: https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJ
     <div class="card">
       <h4>Reaching Liverpool</h4>
       <p>
-        For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local">Reaching Liverpool pages</a>.
+        For information on getting to Liverpool, trains, airports, and parking, please see <a href="/local/liverpool">Reaching Liverpool pages</a>.
       </p>
       <p>
         <strong>Visa/ETA:</strong> You may need a <a href="https://www.gov.uk/check-uk-visa" >visa</a> or an <a href="https://www.gov.uk/eta/apply">Electronic Travel Authorization (ETA)</a> to enter the UK (even if you did not previously need one).
@@ -280,8 +280,8 @@ heroiframe: https://www.google.com/maps/d/u/0/embed?mid=1vTCpf90yjwU6IO8nJmiKOOJ
 
   <div class="card">
     <p>
-      Participants are reminded that they must conform to the <a href="/local/code-of-conduct">CONFEST code of conduct</a> thoughout the event.<br/>
-      You can aproach the CONFEST Advocate <a href="https://www.csc.liv.ac.uk/~hausmann/">Daniel Hausmann</a> for confidential advice and support if you encounter any issue.
+      Participants are reminded that they must conform to the <a href="/local/code-of-conduct">CONFEST code of conduct</a> throughout the event.<br/>
+      You can approach the CONFEST Advocate <a href="https://www.csc.liv.ac.uk/~hausmann/">Daniel Hausmann</a> for confidential advice and support if you encounter any issue.
     </p>
   </div>
 </section>
