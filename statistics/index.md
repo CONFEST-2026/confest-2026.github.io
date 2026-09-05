@@ -274,13 +274,10 @@ per non-local participant (median <strong id="statistics-co2-traveller-median">{
 - Train routing: UK-origin journeys go directly to Liverpool, using exact
   rail route mileages (from the [RailMiles Mileage
   Engine](https://my.railmiles.me/mileage-engine/)) hard-coded for every
-  British origin in the data — no London detour. Continental European rail
+  British origin in the data. Continental European rail
   travel is routed via whichever Eurostar hub (Amsterdam, Rotterdam, or
-  Paris) is closest to the origin, then via London to Liverpool; the
-  London–Liverpool and hub–London legs use fixed, hard-coded real rail
-  distances, while the origin–hub leg is computed from the origin's
-  coordinates.
-- Long-haul origins (e.g. Australia, USA) are modelled as flying to London
+  Paris) is closest to the origin, then via London to Liverpool.
+- Long-haul origins are modelled as flying to London
   Heathrow, then continuing by train to Liverpool.
 - Other flying participants are modelled as flying to Manchester, followed
   by a short, fixed round-trip bus transfer to Liverpool.
@@ -292,13 +289,10 @@ per non-local participant (median <strong id="statistics-co2-traveller-median">{
   rail/great-circle ratios range from 1.10 for London to 1.41 for Edinburgh,
   median 1.16).
 - Emission factors:
-  - Train: 0.041 kgCO2e/pkm.
-  - Plane: distance-banded, following the labos1point5/ADEME methodology
-    (also used by comparable academic conference-footprint studies) to
-    reflect that short-haul flights are less fuel-efficient per km than
-    long-haul cruise: 0.258 kg/pkm up to 1000 km, 0.187 kg/pkm between 1000
-    and 3500 km, 0.152 kg/pkm above 3500 km (all one-way leg distances).
-  - Bus: 0.028 kgCO2e/pkm.
+  - Train: *0.041 kgCO2e/pkm*.
+  - Plane: distance-banded, to reflect that short-haul flights are less fuel-efficient per km than long-haul cruise:
+    *0.258 kg/pkm* up to 1000 km, *0.187 kg/pkm* between 1000 and 3500 km, *0.152 kg/pkm* above 3500 km (all one-way leg distances).
+  - Bus: *0.028 kgCO2e/pkm*.
 
 ## Leg-based data for cross-conference comparison
 
