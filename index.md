@@ -19,6 +19,11 @@ The 2026 edition will take place on the main campus of the University of Liverpo
 - **[QEST+FORMATS 2026](https://www.qest-formats.org/)**, the joint International Conference on *Quantitative Evaluation of SysTems* and on *Formal Modeling and Analysis of Timed Systems*
 
 ---
+### Group photo
+
+<img src="/assets/images/group-photo.jpg" style="width:100%" />
+
+---
 
 ### Schedule
 
